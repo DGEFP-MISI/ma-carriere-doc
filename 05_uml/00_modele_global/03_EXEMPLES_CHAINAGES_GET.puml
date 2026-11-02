@@ -1,0 +1,43 @@
+@startuml
+skinparam backgroundColor white
+skinparam shadowing false
+title DGEFP / RCO — Chaînes d'appels API, ROME V3 uniquement
+actor Consommateur
+participant "API GET /domaines" as D
+participant "API GET /metiers" as M
+participant "API GET /metiers/{rome}" as MF
+participant "API GET /metiers/{rome}/competences" as MC
+participant "API GET /competences" as C
+participant "API GET /territoires" as T
+participant "API GET /indicateurs" as I
+participant "API GET /certifications" as Cert
+participant "API GET /sessions_a_venir" as SA
+
+== Métier et compétences ==
+Consommateur -> D : GET /domaines
+D --> Consommateur : domaine_code
+Consommateur -> M : GET /metiers?domaine=F16&page=1
+M --> Consommateur : items[].rome_code (V3)
+Consommateur -> MF : GET /metiers/F1610
+MF --> Consommateur : fiche ROME V3, contexte_travail_codes[]
+Consommateur -> MC : GET /metiers/F1610/competences
+MC --> Consommateur : competence_code (OGR), tx_fiches_rome4
+Consommateur -> C : GET /competences?code=103659&page=1
+C --> Consommateur : rome_codes[] (V3)
+
+== Territoire et indicateurs ==
+Consommateur -> T : GET /territoires?zonage=commune&code=34172&page=1
+T --> Consommateur : territoire_code
+Consommateur -> I : GET /indicateurs?rome=F1610&zonage=commune&territoire=34172
+I --> Consommateur : mesures, maille_reelle, repli, valeurs
+note over I
+  La maille réelle dépend de chaque mesure.
+  0, null, [], secret_stat ne sont pas équivalents.
+end note
+
+== Certifications et sessions ==
+Consommateur -> Cert : GET /certifications?rome=F1610&page=1
+Cert --> Consommateur : certifinfo_code
+Consommateur -> SA : GET /sessions_a_venir?certifinfo=112561&zonage=region&territoire=76&page=1
+SA --> Consommateur : sessions (sans identifiant session / certifinfo dans résultats observés)
+@enduml

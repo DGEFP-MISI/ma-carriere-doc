@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "clpe_code": "CLPE34003",
+      "clpe_libelle": "Montpellier",
+      "commune_codes": [],
+      "densite_libelle": "Grands centres urbains",
+      "departement_code": "34",
+      "departement_libelle": "HERAULT",
+      "epci_code": "243400017",
+      "epci_libelle": "Montpellier Méditerranée Métropole",
+      "nb_communes": null,
+      "region_code": "76",
+      "region_libelle": "OCCITANIE",
+      "territoire_code": "34172",
+      "territoire_libelle": "Montpellier",
+      "zonage": "commune",
+      "zone_emploi_code": "7616",
+      "zone_emploi_libelle": "Montpellier"
+    }
+  ],
+  "total": 1,
+  "page_size": 100,
+  "page": 1,
+  "last_page": 1
+}

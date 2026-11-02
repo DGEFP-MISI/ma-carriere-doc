@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-02",
+  "us": 35,
+  "fonctionnalites_conservees": 31,
+  "us_transversales": 4,
+  "rubriques_par_us": 10,
+  "schemas_svg_accessibles": 35,
+  "mesures": 29,
+  "visualisations": 25,
+  "endpoints_get": 21,
+  "champs_traces": 1736,
+  "criteres_acceptation": 324,
+  "liens_internes_rompus": 0,
+  "references_protegees_verifiees": 155,
+  "references_modifiees": [],
+  "requete_HTTP_executee": false,
+  "application_modifiee": false
+}

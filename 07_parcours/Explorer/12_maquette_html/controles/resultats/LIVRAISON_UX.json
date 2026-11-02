@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-02",
+  "liens_verifies": 68,
+  "liens_invalides": [],
+  "donnees_anterieures_inchangees": true,
+  "champs_anterieurs": 21,
+  "ajouts": [
+    "competencesRecherche"
+  ],
+  "sha256_html": "d648fc0af9cbe1064a6796bfcfc961c9b4c0608f6500557464c35b8d8d1c430b",
+  "compilation": "sources/construire.py",
+  "test_http_metier": false
+}

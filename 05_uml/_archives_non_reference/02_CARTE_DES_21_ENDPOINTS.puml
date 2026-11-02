@@ -1,0 +1,82 @@
+@startuml
+!pragma layout smetana
+left to right direction
+skinparam backgroundColor white
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam linetype ortho
+skinparam defaultFontName Arial
+skinparam nodesep 16
+skinparam ranksep 22
+skinparam package {
+ BackgroundColor #F9FBFF
+ BorderColor #6A7988
+}
+title API DGEFP-RCO — Carte globale des 21 routes GET
+caption Les flèches indiquent des références/paramètres d'appel, jamais des FK SQL.
+package "Metiers / ROME" {
+ component "/domaines" as domaines
+ component "/metiers" as metiers
+ component "/metiers/{rome}" as metier
+ component "/competences" as competences
+ component "/metiers/{rome}/competences" as metiercomp
+}
+package "Certifications / Formacode" {
+ component "/certifications" as certs
+ component "/certifications/{certifinfo}" as cert
+ component "/certifications/blocs" as blocs
+ component "/formacodes" as formacodes
+}
+package "Territoires / sessions" {
+ component "/territoires" as territoires
+ component "/sessions_a_venir" as avenir
+ component "/sessions_en_cours" as cours
+}
+package "Indicateurs" {
+ component "/mesures" as mesures
+ component "/indicateurs" as indic
+ component "/recrutements" as recrut
+ component "/salaires" as salaires
+ component "/salaires/secteurs" as salairsect
+ component "/mobilites" as mobil
+ component "/prospective/metiers" as prospmet
+ component "/prospective/regions" as prospreg
+ component "/secteurs" as secteurs
+}
+domaines ..> metiers : domaine
+metiers ..> metier : rome_code
+metier ..> metiercomp : rome_code
+competences ..> metiers : competence_code [R23]
+metier ..> metiers : contexte_travail_codes [R24]
+metier ..> certs : rome
+metier ..> formacodes : rome
+certs ..> cert : certifinfo_code
+certs ..> blocs : fiche_code/certifinfo_code
+certs ..> formacodes : formacode_codes
+certs ..> avenir : certifinfo [R18]
+certs ..> cours : certifinfo [R19]
+territoires ..> avenir : zonage,territoire [R18]
+territoires ..> cours : zonage,territoire [R19]
+territoires ..> indic : zonage,territoire [R16]
+territoires ..> secteurs : zonage,territoire [R17 partiel]
+metier ..> indic : rome
+metier ..> recrut : rome
+metier ..> salaires : rome
+metier ..> salairsect : rome
+metier ..> mobil : rome
+metier ..> prospreg : rome
+metier ..> secteurs : rome [R17 ouvert]
+metier ..> prospmet : lien ROME/FAP87
+mesures ..> indic : mesure / valeur
+note bottom of secteurs
+  R17 : filtre territoire et repli OK.
+  Filtre rome=F1610 : items vides,
+  meme en region, contrairement a /indicateurs.
+end note
+legend bottom
+  21 composants = 21 routes GET officielles du Swagger.
+  Les flux sont des correspondances de codes ou filtres documentes.
+  R16/R18/R19/R23/R24 ont fait l'objet de tests directs (certains limites).
+  R17 reste partiellement valide et ouvert.
+endlegend
+@enduml

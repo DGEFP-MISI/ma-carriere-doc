@@ -1,0 +1,3 @@
+
+DevTools listening on ws://127.0.0.1:63807/devtools/browser/c6ba290f-6d94-41d7-a419-01eff18e64e7
+[10180:29796:1102/131009.913:ERROR:chrome\elevation_service\edge_elevation_service_browser_helper.cc:94] LaunchUpdateCmdElevatedAndWait:  hr = 80070002 with exit code: 32

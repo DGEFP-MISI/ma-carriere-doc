@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "domaine_formacode_code": "108",
+      "domaine_formacode_libelle": "BTP - bâtiment travaux publics ",
+      "formacode_code": "22437",
+      "formacode_libelle": "Couverture",
+      "nb_certifications": 9,
+      "nb_certifications_formacode_principal": 7,
+      "rome_codes": [
+        "F1610"
+      ],
+      "rome_libelles": [
+        "Pose et restauration de couvertures"
+      ],
+      "source_libelle": "Centre Inffo, Formacode V14 ; Certif Info (RCO)",
+      "sous_domaine_formacode_code": "224",
+      "sous_domaine_formacode_libelle": "Bâtiment second oeuvre",
+      "tag_numerique": false,
+      "tag_sanitaire_social": false,
+      "tag_transition_ecologique": true
+    }
+  ],
+  "total": 1,
+  "page_size": 100,
+  "page": 1,
+  "last_page": 1
+}

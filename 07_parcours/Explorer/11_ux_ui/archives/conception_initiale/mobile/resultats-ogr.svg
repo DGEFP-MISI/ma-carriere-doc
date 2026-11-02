@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="2045" viewBox="0 0 390 2045" role="img" aria-labelledby="title desc"><title id="title">Des métiers portent les compétences choisies</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="2045" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Des métiers portent</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">les compétences</text>
+<text x="24" y="372" font-size="30" font-weight="700" fill="#161616">choisies</text>
+<text x="24" y="415" font-size="16" font-weight="400" fill="#666">Mode « au moins une » · 125416 et</text>
+<text x="24" y="439" font-size="16" font-weight="400" fill="#666">103659 · résultats observés dans la</text>
+<text x="24" y="463" font-size="16" font-weight="400" fill="#666">campagne R23.</text>
+<rect x="24" y="495" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="527" font-size="12" font-weight="700" fill="#666">Métier</text>
+<text x="44" y="549" font-size="16" font-weight="700" fill="#161616">Pose et restauration de</text>
+<text x="44" y="573" font-size="16" font-weight="700" fill="#161616">couvertures</text>
+<text x="44" y="605" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="627" font-size="16" font-weight="400" fill="#161616">F1610</text>
+<text x="44" y="659" font-size="12" font-weight="700" fill="#666">Compétences trouvées</text>
+<text x="44" y="681" font-size="16" font-weight="400" fill="#161616">125416 · 103659</text>
+<rect x="24" y="725" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="757" font-size="12" font-weight="700" fill="#666">Métier</text>
+<text x="44" y="779" font-size="16" font-weight="700" fill="#161616">Pose de canalisations</text>
+<text x="44" y="811" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="833" font-size="16" font-weight="400" fill="#161616">F1705</text>
+<text x="44" y="865" font-size="12" font-weight="700" fill="#666">Compétences trouvées</text>
+<text x="44" y="887" font-size="16" font-weight="400" fill="#161616">125416</text>
+<rect x="24" y="931" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="963" font-size="12" font-weight="700" fill="#666">Métier</text>
+<text x="44" y="985" font-size="16" font-weight="700" fill="#161616">Mécanique automobile et</text>
+<text x="44" y="1009" font-size="16" font-weight="700" fill="#161616">entretien de véhicules</text>
+<text x="44" y="1041" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="1063" font-size="16" font-weight="400" fill="#161616">I1604</text>
+<text x="44" y="1095" font-size="12" font-weight="700" fill="#666">Compétences trouvées</text>
+<text x="44" y="1117" font-size="16" font-weight="400" fill="#161616">103659</text>
+<rect x="24" y="1161" width="342" height="240" fill="#ececfe" stroke="none"/>
+<text x="44" y="1197" font-size="16" font-weight="700" fill="#161616">Un rattachement référentiel</text>
+<text x="44" y="1221" font-size="16" font-weight="700" fill="#161616">n'est pas une recommandation</text>
+<text x="44" y="1245" font-size="16" font-weight="700" fill="#161616">personnelle</text>
+<text x="44" y="1277" font-size="16" font-weight="400" fill="#161616">Les correspondances reçues sont</text>
+<text x="44" y="1301" font-size="16" font-weight="400" fill="#161616">montrées sans correction</text>
+<text x="44" y="1325" font-size="16" font-weight="400" fill="#161616">sémantique inventée, sans score</text>
+<text x="44" y="1349" font-size="16" font-weight="400" fill="#161616">et sans conclusion sur votre</text>
+<text x="44" y="1373" font-size="16" font-weight="400" fill="#161616">aptitude.</text>
+<rect x="24" y="1425" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="essentiel.svg" aria-label="Ouvrir F1610">
+<text x="40" y="1453" font-size="16" font-weight="700" fill="#fff">Ouvrir F1610</text>
+</a>
+<rect x="24" y="1485" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="guide.svg" aria-label="Affiner mes choix">
+<text x="40" y="1513" font-size="16" font-weight="700" fill="#000091">Affiner mes choix</text>
+</a>
+<rect x="24" y="1545" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Ajouter une piste">
+<text x="40" y="1573" font-size="16" font-weight="700" fill="#000091">Ajouter une piste</text>
+</a>
+<rect x="24" y="1605" width="342" height="104" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="1637" font-size="16" font-weight="700" fill="#000091">+ Comprendre l'ordre :</text>
+<text x="40" y="1661" font-size="16" font-weight="700" fill="#000091">macro-compétences puis</text>
+<text x="40" y="1685" font-size="16" font-weight="700" fill="#000091">compétences trouvées</text>
+<text x="24" y="1739" font-size="14" font-weight="400" fill="#666">R23 : trois métiers en mode au moins une</text>
+<text x="24" y="1760" font-size="14" font-weight="400" fill="#666">; F1610 seul sur le même jeu en mode</text>
+<text x="24" y="1781" font-size="14" font-weight="400" fill="#666">toutes. Ces nombres sont des résultats</text>
+<text x="24" y="1802" font-size="14" font-weight="400" fill="#666">d'échantillon, pas une promesse de volume</text>
+<text x="24" y="1823" font-size="14" font-weight="400" fill="#666">futur.</text>
+<rect x="24" y="1854" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="1882" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="1952" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="1971" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="1989" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="2007" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

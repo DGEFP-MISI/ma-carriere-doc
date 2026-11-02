@@ -1,0 +1,296 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #FFFFFF
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+hide methods
+top to bottom direction
+title API DGEFP-RCO — Contrats de données / 04 Emploi Prospective
+skinparam class {
+ BackgroundColor<<Swagger>> #F0F6FF
+ BorderColor<<Swagger>> #3965A0
+ BackgroundColor<<Observe>> #FFF7E9
+ BorderColor<<Observe>> #B67C2B
+ BackgroundColor<<NonDocumente>> #F4F4F4
+ BorderColor<<NonDocumente>> #999999
+}
+class "GET /mobilites\nRéponse" as P1 <<Observe>> {
+  grain : string
+  millesime : string
+  region : inconnu
+  region_libelle : inconnu
+  rome_code : string
+  sens : string
+  source_libelle : string
+  total : integer
+  tranche_age_libelle : string
+}
+class "/mobilites\nitems" as P1_items <<Observe>> {
+  destination_code : string
+  destination_libelle : string
+  fap_225_code : string
+  fap_225_libelle : string
+  maille : string
+  nb_rome_famille : integer
+  origine_code : string
+  origine_libelle : string
+  rang : integer
+  repli : boolean
+  tag_en_emploi : boolean
+  tag_meme_metier : boolean
+  tranche_age_libelle : string
+  tx_personnes : number
+}
+P1 *-- "0..*" P1_items : items
+
+class "GET /prospective/metiers\nRéponse" as P2 <<Observe>> {
+  grain : string
+  millesime : string
+  region : inconnu
+  region_libelle : inconnu
+  source_libelle : string
+  total : integer
+  tri : string
+}
+class "/prospective/metiers\nitems" as P2_items <<Observe>> {
+  fap_87_code : string
+  fap_87_libelle : string
+  indice_specificite_region_2019 : inconnu
+  nb_creations_nettes_emplois_2030 : integer
+  nb_departs_fin_carriere_2030 : integer
+  nb_desequilibre_potentiel_2030 : integer
+  nb_emplois_2019 : integer
+  nb_jeunes_debutants_2030 : integer
+  nb_postes_a_pourvoir_2030 : integer
+  nb_rome_famille : integer
+  rang : integer
+  rome_codes : string[]
+  tension_niveau_2019 : string
+  tx_creations_nettes_emplois_2030 : number
+  tx_departs_fin_carriere_2030 : number
+  tx_desequilibre_potentiel_2030 : number
+  tx_jeunes_debutants_2030 : number
+  tx_part_emploi_region_2019 : inconnu
+  tx_postes_a_pourvoir_2030 : number
+}
+P2 *-- "0..*" P2_items : items
+
+class "GET /prospective/regions\nRéponse" as P3 <<Observe>> {
+  grain : string
+  millesime : string
+  rome_code : string
+  source_libelle : string
+  total : integer
+  tri : string
+}
+class "/prospective/regions\nfrance" as P3_france <<Observe>> {
+  fap_87_code : string
+  fap_87_libelle : string
+  indice_specificite_region_2019 : inconnu
+  nb_creations_nettes_emplois_2030 : integer
+  nb_departs_fin_carriere_2030 : integer
+  nb_desequilibre_potentiel_2030 : integer
+  nb_emplois_2019 : integer
+  nb_jeunes_debutants_2030 : integer
+  nb_postes_a_pourvoir_2030 : integer
+  nb_rome_famille : integer
+  tension_niveau_2019 : string
+  tx_creations_nettes_emplois_2030 : number
+  tx_departs_fin_carriere_2030 : number
+  tx_desequilibre_potentiel_2030 : number
+  tx_jeunes_debutants_2030 : number
+  tx_part_emploi_region_2019 : inconnu
+  tx_postes_a_pourvoir_2030 : number
+}
+P3 *-- "0..*" P3_france : france
+class "/prospective/regions\nitems" as P3_items <<Observe>> {
+  fap_87_code : string
+  fap_87_libelle : string
+  indice_specificite_region_2019 : number
+  nb_creations_nettes_emplois_2030 : integer
+  nb_departs_fin_carriere_2030 : integer
+  nb_desequilibre_potentiel_2030 : integer
+  nb_emplois_2019 : integer
+  nb_jeunes_debutants_2030 : integer
+  nb_postes_a_pourvoir_2030 : integer
+  nb_rome_famille : integer
+  rang : integer
+  tension_niveau_2019 : string
+  territoire_code : string
+  territoire_libelle : string
+  tx_creations_nettes_emplois_2030 : number
+  tx_departs_fin_carriere_2030 : integer
+  tx_desequilibre_potentiel_2030 : number
+  tx_jeunes_debutants_2030 : number
+  tx_part_emploi_region_2019 : number
+  tx_postes_a_pourvoir_2030 : number
+}
+P3 *-- "0..*" P3_items : items
+
+class "GET /recrutements\nRéponse" as P4 <<Observe>> {
+  grain : string
+  millesime : string
+  perimetre : inconnu
+  rome_code : string
+  source_libelle : string
+  total : integer
+  tri : string
+  zonage : string
+}
+class "/recrutements\nfrance" as P4_france <<Observe>> {
+  fap_228_code : string
+  fap_228_libelle : string
+  nb_projets_recrutement : integer
+  nb_projets_recrutement_difficiles : integer
+  nb_projets_recrutement_saisonniers : integer
+  nb_rome_famille : integer
+  tx_projets_recrutement_difficiles : number
+  tx_projets_recrutement_saisonniers : number
+}
+P4 *-- "0..*" P4_france : france
+class "/recrutements\nitems" as P4_items <<Observe>> {
+  fap_228_code : string
+  fap_228_libelle : string
+  nb_projets_recrutement : integer
+  nb_projets_recrutement_difficiles : integer
+  nb_projets_recrutement_saisonniers : integer
+  nb_rome_famille : integer
+  rang : integer
+  territoire_code : string
+  territoire_libelle : string
+  tx_projets_recrutement_difficiles : number
+  tx_projets_recrutement_saisonniers : number
+}
+P4 *-- "0..*" P4_items : items
+
+class "GET /salaires\nRéponse" as P5 <<Observe>> {
+  grain : string
+  millesime : string
+  region : inconnu
+  region_libelle : inconnu
+  rome_code : string
+  source_libelle : string
+  total : integer
+  zonage : string
+}
+class "/salaires\nfrance" as P5_france <<Observe>> {
+  fap_225_code : string
+  fap_225_libelle : string
+  nb_rome_famille : integer
+  nb_salaries_temps_complet : integer
+  salaire_net_annuel_median : integer
+  salaire_net_annuel_q1 : integer
+  salaire_net_annuel_q3 : integer
+  salaire_net_mensuel_median : integer
+  tranche_salaire_median_libelle : string
+}
+P5 *-- "0..*" P5_france : france
+class "/salaires\nitems" as P5_items <<Observe>> {
+  fap_225_code : string
+  fap_225_libelle : string
+  nb_rome_famille : integer
+  nb_salaries_temps_complet : integer
+  rang : integer
+  salaire_net_annuel_median : integer
+  salaire_net_annuel_q1 : integer
+  salaire_net_annuel_q3 : integer
+  salaire_net_mensuel_median : integer
+  territoire_code : string
+  territoire_libelle : string
+  tranche_salaire_median_libelle : string
+}
+P5 *-- "0..*" P5_items : items
+
+class "GET /salaires/secteurs\nRéponse" as P6 <<Observe>> {
+  grain : string
+  millesime : string
+  region : inconnu
+  region_libelle : inconnu
+  rome_code : string
+  source_libelle : string
+  total : integer
+}
+class "/salaires/secteurs\nensemble" as P6_ensemble <<Observe>> {
+  fap_225_code : string
+  fap_225_libelle : string
+  maille : string
+  nb_rome_famille : integer
+  nb_salaries_temps_complet : integer
+  salaire_net_annuel_median : integer
+  salaire_net_annuel_q1 : integer
+  salaire_net_annuel_q3 : integer
+  salaire_net_mensuel_median : integer
+  tranche_salaire_median_libelle : string
+}
+P6 *-- "0..*" P6_ensemble : ensemble
+class "/salaires/secteurs\nitems" as P6_items <<Observe>> {
+  fap_225_code : string
+  fap_225_libelle : string
+  maille : string
+  nb_rome_famille : integer
+  nb_salaries_temps_complet : integer
+  rang : integer
+  repli : boolean
+  salaire_net_annuel_median : integer
+  salaire_net_annuel_q1 : integer
+  salaire_net_annuel_q3 : integer
+  salaire_net_mensuel_median : integer
+  secteur_naf38_code : string
+  secteur_naf38_libelle : string
+  tranche_salaire_median_libelle : string
+  tx_salaries_secteur : number
+}
+P6 *-- "0..*" P6_items : items
+
+class "GET /secteurs\nRéponse" as P7 <<Observe>> {
+  grain : string
+  items : string[]
+  maille_demandee : string
+  maille_reelle : string
+  metier_maille : inconnu
+  millesime : string
+  repli : boolean
+  rome_code : string
+  source_libelle : string
+  territoire : string
+  territoire_code : string
+  territoire_libelle : string
+  total : integer
+  zonage : string
+}
+class "/secteurs\nensemble" as P7_ensemble <<Observe>> {
+  date_debut_defaillances : string
+  date_fin_defaillances : string
+  nb_creations_etablissements : integer
+  nb_creations_etablissements_n1 : integer
+  nb_defaillances : integer
+  nb_etablissements : integer
+  nb_etablissements_employeurs : integer
+  nb_etablissements_n5 : integer
+  nb_salaries_prives : integer
+  nb_salaries_prives_n5 : integer
+  nb_unites_legales : integer
+  secteur_naf38_code : string
+  secteur_naf38_libelle : string
+  tx_defaillances_1000_unites_legales : number
+  tx_evolution_creations_1an : number
+  tx_evolution_etablissements_5ans : number
+  tx_evolution_salaries_5ans : number
+}
+P7 *-- "0..1" P7_ensemble : ensemble
+class "/secteurs\nterritoires" as P7_territoires <<Observe>> {
+  code : string
+  libelle : string
+  maille : string
+}
+P7 *-- "0..*" P7_territoires : territoires
+
+legend bottom
+  Bleu : schema de reponse 200 du Swagger (contrat).
+  Orange : structure constatee dans les JSON (ne constitue pas un schema 200 OpenAPI).
+  Gris : structure non decrite / sans exemple dans les sources disponibles.
+  Les cardinalites 0..* expriment uniquement les tableaux JSON; 0..1 les objets facultatifs/observes.
+  Aucun lien n implique une contrainte de cle etrangere dans Octopilot.
+endlegend
+@enduml

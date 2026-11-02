@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-02",
+  "champs_anterieurs": 21,
+  "champs_anterieurs_modifies": [],
+  "ajouts": [
+    "competencesRecherche"
+  ],
+  "nouveaux_objets_nat_meme_contenu": true,
+  "sources_ajouts": [
+    "06_controles/resultats/R23 test/GET_competences__code_103659__page_1.json",
+    "06_controles/resultats/R23 test/R23 GET competencescode=125416&page=1.json"
+  ],
+  "appels_http_metier": 0
+}

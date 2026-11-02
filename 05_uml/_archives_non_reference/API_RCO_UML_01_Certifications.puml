@@ -1,0 +1,281 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #FFFFFF
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+hide methods
+top to bottom direction
+title API DGEFP-RCO — Contrats de données / 01 Certifications
+skinparam class {
+ BackgroundColor<<Swagger>> #F0F6FF
+ BorderColor<<Swagger>> #3965A0
+ BackgroundColor<<Observe>> #FFF7E9
+ BorderColor<<Observe>> #B67C2B
+ BackgroundColor<<NonDocumente>> #F4F4F4
+ BorderColor<<NonDocumente>> #999999
+}
+class "GET /certifications\nRéponse" as P1 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/certifications\nitems[]" as P1_Item <<Swagger>> {
+  certifinfo_code : string?
+  certifinfo_libelle : string?
+  etat_certifinfo_libelle : string?
+  type_certification_libelle : string?
+  certificateur_libelle : string?
+  repertoire_code : string?
+  fiche_code : string?
+  fiche_libelle : string?
+  type_enregistrement_libelle : string?
+  date_fin_enregistrement : string?
+  niveau_certification_code : string?
+  nsf_code : string?
+  nsf_libelle : string?
+  formacode_principal_code : string?
+  formacode_principal_libelle : string?
+  formacode_codes : string[]
+  formacode_libelles : string[]
+  tag_acces_formation_initiale : boolean?
+  tag_acces_apprentissage : boolean?
+  tag_acces_formation_continue : boolean?
+  tag_acces_contrat_professionnalisation : boolean?
+  tag_acces_candidature_individuelle : boolean?
+  tag_acces_vae : boolean?
+  nb_blocs_competences : integer?
+  bloc_competences_codes : string[]
+  bloc_competences_libelles : string[]
+  tag_validation_partielle : boolean?
+  nb_rome : integer?
+  rome_code : string?
+  rome_libelle : string?
+  rome_codes : string[]
+  rome_libelles : string[]
+  fap228_principale_code : string?
+  fap228_principale_libelle : string?
+  fap228_methode_libelle : string?
+  nb_fap228 : integer?
+  fap228_codes : string[]
+  indice_tension_fap228_principale : number?
+  tension_discret_fap228_principale : string?
+  tension_niveau_max : string?
+  nb_fap228_tension_4_et_plus : integer?
+  tension_discret_par_fap228 : string?
+  nb_ij_scolaire_sortants : integer | secret_stat | null
+  nb_ij_scolaire_emploi_12m : integer | secret_stat | null
+  tx_ij_scolaire_emploi_12m : number | secret_stat | null
+  nb_ij_apprentissage_sortants : integer | secret_stat | null
+  nb_ij_apprentissage_emploi_12m : integer | secret_stat | null
+  tx_ij_apprentissage_emploi_12m : number | secret_stat | null
+  nb_ij_scolaire_annee_terminale : integer | secret_stat | null
+  nb_ij_scolaire_poursuite_etudes : integer | secret_stat | null
+  tx_ij_scolaire_poursuite_etudes : number | secret_stat | null
+  nb_ij_apprentissage_annee_terminale : integer | secret_stat | null
+  nb_ij_apprentissage_poursuite_etudes : integer | secret_stat | null
+  tx_ij_apprentissage_poursuite_etudes : number | secret_stat | null
+  promotion_insersup_libelle : string?
+  nb_insersup_diplomes : integer | secret_stat | null
+  nb_insersup_emploi_salarie_12m : integer | secret_stat | null
+  tx_insersup_emploi_salarie_12m : number | secret_stat | null
+  nb_insersup_diplomes_ensemble : integer | secret_stat | null
+  nb_insersup_poursuivants : integer | secret_stat | null
+  tx_insersup_poursuite_etudes : number | secret_stat | null
+  nb_insersup_salaire_base_12m : integer?
+  salaire_insersup_q1_12m : integer?
+  salaire_insersup_median_12m : integer?
+  salaire_insersup_q3_12m : integer?
+  salaire_insersup_q1_18m : integer?
+  salaire_insersup_median_18m : integer?
+  salaire_insersup_q3_18m : integer?
+  salaire_insersup_q1_30m : integer?
+  salaire_insersup_median_30m : integer?
+  salaire_insersup_q3_30m : integer?
+  nb_de_sortants : integer | secret_stat | null
+  nb_de_acces_emploi_6m : integer | secret_stat | null
+  tx_de_acces_emploi_6m : number | secret_stat | null
+  nb_de_abandons : integer | secret_stat | null
+  tx_de_abandons : number | secret_stat | null
+  tag_renovation_energetique_batiment : boolean?
+  thematique_reb_libelle : string?
+  nb_inscrits_voie_scolaire : integer | secret_stat | null
+  nb_inscrits_apprentissage : integer | secret_stat | null
+  nb_inscrits_enseignement_sup : integer | secret_stat | null
+  nb_inscrits_sanitaire_social : integer | secret_stat | null
+  nb_entrees_formation_de : integer | secret_stat | null
+  nb_examen_presents : integer | secret_stat | null
+  nb_examen_admis : integer | secret_stat | null
+  tx_examen_reussite : number | secret_stat | null
+  nb_diplomes_enseignement_sup : integer | secret_stat | null
+  nb_sanitaire_social_presents : integer | secret_stat | null
+  nb_diplomes_sanitaire_social : integer | secret_stat | null
+  tx_sanitaire_social_reussite : number | secret_stat | null
+  nb_affelnet_places : integer?
+  nb_affelnet_voeux_1 : integer | secret_stat | null
+  indice_affelnet_pression : number | secret_stat | null
+  nb_parcoursup_places : integer?
+  nb_parcoursup_candidatures : integer?
+  nb_parcoursup_admis : integer | secret_stat | null
+  indice_parcoursup_candidatures_par_place : number?
+  tag_transition_ecologique : boolean?
+  source_libelle : string?
+}
+P1 *-- "0..*" P1_Item : items[]
+
+class "GET /certifications/blocs\nRéponse" as P2 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/certifications/blocs\nitems[]" as P2_Item <<Swagger>> {
+  bloc_code : string?
+  rang_bloc : integer?
+  bloc_libelle : string?
+  competences : string?
+  modalites_evaluation : string?
+  fiche_code : string?
+  fiche_libelle : string?
+  niveau_certification_code : string?
+  certifinfo_codes : string[]
+  rome_codes : string[]
+  source_libelle : string?
+}
+P2 *-- "0..*" P2_Item : items[]
+
+class "GET /certifications/{certifinfo}\nRéponse" as P3 <<Swagger>> {
+  certifinfo_code : string?
+  certifinfo_libelle : string?
+  etat_certifinfo_libelle : string?
+  type_certification_libelle : string?
+  certificateur_libelle : string?
+  repertoire_code : string?
+  fiche_code : string?
+  fiche_libelle : string?
+  type_enregistrement_libelle : string?
+  date_fin_enregistrement : string?
+  niveau_certification_code : string?
+  nsf_code : string?
+  nsf_libelle : string?
+  formacode_principal_code : string?
+  formacode_principal_libelle : string?
+  formacode_codes : string[]
+  formacode_libelles : string[]
+  tag_acces_formation_initiale : boolean?
+  tag_acces_apprentissage : boolean?
+  tag_acces_formation_continue : boolean?
+  tag_acces_contrat_professionnalisation : boolean?
+  tag_acces_candidature_individuelle : boolean?
+  tag_acces_vae : boolean?
+  nb_blocs_competences : integer?
+  bloc_competences_codes : string[]
+  bloc_competences_libelles : string[]
+  tag_validation_partielle : boolean?
+  nb_rome : integer?
+  rome_code : string?
+  rome_libelle : string?
+  rome_codes : string[]
+  rome_libelles : string[]
+  fap228_principale_code : string?
+  fap228_principale_libelle : string?
+  fap228_methode_libelle : string?
+  nb_fap228 : integer?
+  fap228_codes : string[]
+  indice_tension_fap228_principale : number?
+  tension_discret_fap228_principale : string?
+  tension_niveau_max : string?
+  nb_fap228_tension_4_et_plus : integer?
+  tension_discret_par_fap228 : string?
+  nb_ij_scolaire_sortants : integer | secret_stat | null
+  nb_ij_scolaire_emploi_12m : integer | secret_stat | null
+  tx_ij_scolaire_emploi_12m : number | secret_stat | null
+  nb_ij_apprentissage_sortants : integer | secret_stat | null
+  nb_ij_apprentissage_emploi_12m : integer | secret_stat | null
+  tx_ij_apprentissage_emploi_12m : number | secret_stat | null
+  nb_ij_scolaire_annee_terminale : integer | secret_stat | null
+  nb_ij_scolaire_poursuite_etudes : integer | secret_stat | null
+  tx_ij_scolaire_poursuite_etudes : number | secret_stat | null
+  nb_ij_apprentissage_annee_terminale : integer | secret_stat | null
+  nb_ij_apprentissage_poursuite_etudes : integer | secret_stat | null
+  tx_ij_apprentissage_poursuite_etudes : number | secret_stat | null
+  promotion_insersup_libelle : string?
+  nb_insersup_diplomes : integer | secret_stat | null
+  nb_insersup_emploi_salarie_12m : integer | secret_stat | null
+  tx_insersup_emploi_salarie_12m : number | secret_stat | null
+  nb_insersup_diplomes_ensemble : integer | secret_stat | null
+  nb_insersup_poursuivants : integer | secret_stat | null
+  tx_insersup_poursuite_etudes : number | secret_stat | null
+  nb_insersup_salaire_base_12m : integer?
+  salaire_insersup_q1_12m : integer?
+  salaire_insersup_median_12m : integer?
+  salaire_insersup_q3_12m : integer?
+  salaire_insersup_q1_18m : integer?
+  salaire_insersup_median_18m : integer?
+  salaire_insersup_q3_18m : integer?
+  salaire_insersup_q1_30m : integer?
+  salaire_insersup_median_30m : integer?
+  salaire_insersup_q3_30m : integer?
+  nb_de_sortants : integer | secret_stat | null
+  nb_de_acces_emploi_6m : integer | secret_stat | null
+  tx_de_acces_emploi_6m : number | secret_stat | null
+  nb_de_abandons : integer | secret_stat | null
+  tx_de_abandons : number | secret_stat | null
+  tag_renovation_energetique_batiment : boolean?
+  thematique_reb_libelle : string?
+  nb_inscrits_voie_scolaire : integer | secret_stat | null
+  nb_inscrits_apprentissage : integer | secret_stat | null
+  nb_inscrits_enseignement_sup : integer | secret_stat | null
+  nb_inscrits_sanitaire_social : integer | secret_stat | null
+  nb_entrees_formation_de : integer | secret_stat | null
+  nb_examen_presents : integer | secret_stat | null
+  nb_examen_admis : integer | secret_stat | null
+  tx_examen_reussite : number | secret_stat | null
+  nb_diplomes_enseignement_sup : integer | secret_stat | null
+  nb_sanitaire_social_presents : integer | secret_stat | null
+  nb_diplomes_sanitaire_social : integer | secret_stat | null
+  tx_sanitaire_social_reussite : number | secret_stat | null
+  nb_affelnet_places : integer?
+  nb_affelnet_voeux_1 : integer | secret_stat | null
+  indice_affelnet_pression : number | secret_stat | null
+  nb_parcoursup_places : integer?
+  nb_parcoursup_candidatures : integer?
+  nb_parcoursup_admis : integer | secret_stat | null
+  indice_parcoursup_candidatures_par_place : number?
+  tag_transition_ecologique : boolean?
+  source_libelle : string?
+}
+
+class "GET /formacodes\nRéponse" as P4 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/formacodes\nitems[]" as P4_Item <<Swagger>> {
+  formacode_code : string?
+  formacode_libelle : string?
+  sous_domaine_formacode_code : string?
+  sous_domaine_formacode_libelle : string?
+  domaine_formacode_code : string?
+  domaine_formacode_libelle : string?
+  tag_transition_ecologique : boolean?
+  tag_numerique : boolean?
+  tag_sanitaire_social : boolean?
+  rome_codes : string[]
+  rome_libelles : string[]
+  nb_certifications : integer?
+  nb_certifications_formacode_principal : integer?
+  source_libelle : string?
+}
+P4 *-- "0..*" P4_Item : items[]
+
+legend bottom
+  Bleu : schema de reponse 200 du Swagger (contrat).
+  Orange : structure constatee dans les JSON (ne constitue pas un schema 200 OpenAPI).
+  Gris : structure non decrite / sans exemple dans les sources disponibles.
+  Les cardinalites 0..* expriment uniquement les tableaux JSON; 0..1 les objets facultatifs/observes.
+  Aucun lien n implique une contrainte de cle etrangere dans Octopilot.
+endlegend
+@enduml

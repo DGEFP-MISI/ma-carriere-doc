@@ -1,0 +1,5 @@
+﻿endpoint;champ_observe_non_declare;type_observe;constat;correction_a_confirmer
+/metiers/{rome}/competences;rome_code;string;Champ trouvé dans la réponse JSON, absent du schema 200 Swagger;Déclarer dans schéma 200 avec type et description
+/metiers/{rome}/competences;rome_libelle;string;Champ trouvé dans la réponse JSON, absent du schema 200 Swagger;Déclarer dans schéma 200 avec type et description
+/sessions_a_venir;items[].tag_onisep;boolean;Champ trouvé dans la réponse JSON, absent du schema 200 Swagger;Déclarer dans schéma 200 avec type et description
+/sessions_en_cours;items[].tag_onisep;boolean;Champ trouvé dans la réponse JSON, absent du schema 200 Swagger;Déclarer dans schéma 200 avec type et description

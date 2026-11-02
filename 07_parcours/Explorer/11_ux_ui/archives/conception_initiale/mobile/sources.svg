@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="2225" viewBox="0 0 390 2225" role="img" aria-labelledby="title desc"><title id="title">Comprendre les données</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="2225" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Comprendre les</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">données</text>
+<text x="24" y="370" font-size="16" font-weight="400" fill="#666">Une source, une population et une</text>
+<text x="24" y="394" font-size="16" font-weight="400" fill="#666">période pour chaque indicateur.</text>
+<rect x="24" y="426" width="342" height="216" fill="#ececfe" stroke="none"/>
+<text x="44" y="462" font-size="16" font-weight="700" fill="#161616">Le lieu demandé et le lieu</text>
+<text x="44" y="486" font-size="16" font-weight="700" fill="#161616">mesuré</text>
+<text x="44" y="518" font-size="16" font-weight="400" fill="#161616">Montpellier peut conduire au</text>
+<text x="44" y="542" font-size="16" font-weight="400" fill="#161616">bassin de Montpellier, à</text>
+<text x="44" y="566" font-size="16" font-weight="400" fill="#161616">l'Hérault, à l'Occitanie ou à</text>
+<text x="44" y="590" font-size="16" font-weight="400" fill="#161616">la France selon la mesure. Le</text>
+<text x="44" y="614" font-size="16" font-weight="400" fill="#161616">lieu réel reste visible.</text>
+<text x="24" y="706" font-size="24" font-weight="700" fill="#161616">Ce que signifient les</text>
+<text x="24" y="742" font-size="24" font-weight="700" fill="#161616">valeurs</text>
+<rect x="24" y="774" width="342" height="136" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="806" font-size="12" font-weight="700" fill="#666">État</text>
+<text x="44" y="828" font-size="16" font-weight="700" fill="#161616">Nombre nul</text>
+<text x="44" y="860" font-size="12" font-weight="700" fill="#666">Présentation</text>
+<text x="44" y="882" font-size="16" font-weight="400" fill="#161616">0, quand la source publie zéro</text>
+<rect x="24" y="926" width="342" height="160" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="958" font-size="12" font-weight="700" fill="#666">État</text>
+<text x="44" y="980" font-size="16" font-weight="700" fill="#161616">Valeur null ou absente</text>
+<text x="44" y="1012" font-size="12" font-weight="700" fill="#666">Présentation</text>
+<text x="44" y="1034" font-size="16" font-weight="400" fill="#161616">Non renseigné, sans calcul de</text>
+<text x="44" y="1058" font-size="16" font-weight="400" fill="#161616">remplacement</text>
+<rect x="24" y="1102" width="342" height="160" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1134" font-size="12" font-weight="700" fill="#666">État</text>
+<text x="44" y="1156" font-size="16" font-weight="700" fill="#161616">secret_stat</text>
+<text x="44" y="1188" font-size="12" font-weight="700" fill="#666">Présentation</text>
+<text x="44" y="1210" font-size="16" font-weight="400" fill="#161616">Non diffusé — secret</text>
+<text x="44" y="1234" font-size="16" font-weight="400" fill="#161616">statistique</text>
+<rect x="24" y="1278" width="342" height="160" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1310" font-size="12" font-weight="700" fill="#666">État</text>
+<text x="44" y="1332" font-size="16" font-weight="700" fill="#161616">Famille professionnelle</text>
+<text x="44" y="1364" font-size="12" font-weight="700" fill="#666">Présentation</text>
+<text x="44" y="1386" font-size="16" font-weight="400" fill="#161616">Libellé, code et nombre de</text>
+<text x="44" y="1410" font-size="16" font-weight="400" fill="#161616">métiers si reçu</text>
+<rect x="24" y="1454" width="342" height="160" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1486" font-size="12" font-weight="700" fill="#666">État</text>
+<text x="44" y="1508" font-size="16" font-weight="700" fill="#161616">Tranche ouverte</text>
+<text x="44" y="1540" font-size="12" font-weight="700" fill="#666">Présentation</text>
+<text x="44" y="1562" font-size="16" font-weight="400" fill="#161616">Libellé annuel reçu, sans</text>
+<text x="44" y="1586" font-size="16" font-weight="400" fill="#161616">milieu calculé</text>
+<rect x="24" y="1630" width="342" height="160" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1662" font-size="12" font-weight="700" fill="#666">État</text>
+<text x="44" y="1684" font-size="16" font-weight="700" fill="#161616">Page incomplète</text>
+<text x="44" y="1716" font-size="12" font-weight="700" fill="#666">Présentation</text>
+<text x="44" y="1738" font-size="16" font-weight="400" fill="#161616">Suite à charger, sans</text>
+<text x="44" y="1762" font-size="16" font-weight="400" fill="#161616">conclusion d'absence</text>
+<rect x="24" y="1806" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="essentiel.svg" aria-label="Retour au métier">
+<text x="40" y="1834" font-size="16" font-weight="700" fill="#fff">Retour au métier</text>
+</a>
+<rect x="24" y="1866" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Comparer les métiers">
+<text x="40" y="1894" font-size="16" font-weight="700" fill="#000091">Comparer les métiers</text>
+</a>
+<text x="24" y="1940" font-size="14" font-weight="400" fill="#666">Catalogue détaillé :</text>
+<text x="24" y="1961" font-size="14" font-weight="400" fill="#666">MATRICE_VISUALISATIONS.csv et fiches</text>
+<text x="24" y="1982" font-size="14" font-weight="400" fill="#666">visuelles de chaque mesure. Ce catalogue</text>
+<text x="24" y="2003" font-size="14" font-weight="400" fill="#666">n'est pas une validation HTTP.</text>
+<rect x="24" y="2034" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="2062" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="2132" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="2151" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="2169" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="2187" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

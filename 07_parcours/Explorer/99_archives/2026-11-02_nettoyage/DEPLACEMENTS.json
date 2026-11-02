@@ -1,0 +1,98 @@
+[
+  {
+    "avant": "12_maquette_html/LIRE_MOI.md",
+    "apres": "12_maquette_html/archives/2026-11-02_avant_rangement/LIRE_MOI.md"
+  },
+  {
+    "avant": "12_maquette_html/AFFICHAGE_GRAND_PUBLIC.md",
+    "apres": "12_maquette_html/archives/2026-11-02_avant_rangement/AFFICHAGE_GRAND_PUBLIC.md"
+  },
+  {
+    "avant": "12_maquette_html/libelles_publics.js",
+    "apres": "12_maquette_html/archives/2026-11-02_avant_rangement/libelles_publics.js"
+  },
+  {
+    "avant": "12_maquette_html/construire.py",
+    "apres": "12_maquette_html/sources/construire.py"
+  },
+  {
+    "avant": "12_maquette_html/interface_citoyenne.js",
+    "apres": "12_maquette_html/sources/interface_citoyenne.js"
+  },
+  {
+    "avant": "12_maquette_html/modele.html",
+    "apres": "12_maquette_html/sources/modele.html"
+  },
+  {
+    "avant": "12_maquette_html/verifier_navigateur.js",
+    "apres": "12_maquette_html/controles/scripts/verifier_navigateur.js"
+  },
+  {
+    "avant": "12_maquette_html/extraire_controle.py",
+    "apres": "12_maquette_html/controles/scripts/extraire_controle.py"
+  },
+  {
+    "avant": "12_maquette_html/CONTROLE_DESKTOP.json",
+    "apres": "12_maquette_html/controles/resultats/CONTROLE_DESKTOP.json"
+  },
+  {
+    "avant": "12_maquette_html/CONTROLE_MOBILE.json",
+    "apres": "12_maquette_html/controles/resultats/CONTROLE_MOBILE.json"
+  },
+  {
+    "avant": "12_maquette_html/ASSEMBLAGE.json",
+    "apres": "12_maquette_html/controles/resultats/ASSEMBLAGE.json"
+  },
+  {
+    "avant": "12_maquette_html/controle-desktop.dom.html",
+    "apres": "12_maquette_html/controles/traces/controle-desktop.dom.html"
+  },
+  {
+    "avant": "12_maquette_html/controle-mobile.dom.html",
+    "apres": "12_maquette_html/controles/traces/controle-mobile.dom.html"
+  },
+  {
+    "avant": "12_maquette_html/controle-mobile.html",
+    "apres": "12_maquette_html/controles/controle-mobile.html"
+  },
+  {
+    "avant": "12_maquette_html/apercu-desktop.png",
+    "apres": "12_maquette_html/apercus/apercu-desktop.png"
+  },
+  {
+    "avant": "12_maquette_html/apercu-mobile.png",
+    "apres": "12_maquette_html/apercus/apercu-mobile.png"
+  },
+  {
+    "avant": "12_maquette_html/PREUVES_LIBELLES.json",
+    "apres": "12_maquette_html/preuves/PREUVES_LIBELLES.json"
+  },
+  {
+    "avant": "12_maquette_html/REDACTION_CITOYENNE.md",
+    "apres": "12_maquette_html/documentation/REDACTION_CITOYENNE.md"
+  },
+  {
+    "avant": "11_ux_ui/mobile",
+    "apres": "11_ux_ui/archives/conception_initiale/mobile"
+  },
+  {
+    "avant": "11_ux_ui/apercus_controle",
+    "apres": "11_ux_ui/archives/conception_initiale/apercus_controle"
+  },
+  {
+    "avant": "11_ux_ui/ARCHITECTURE_EXPERIENCE.svg",
+    "apres": "11_ux_ui/archives/conception_initiale/ARCHITECTURE_EXPERIENCE.svg"
+  },
+  {
+    "avant": "11_ux_ui/ETATS_ET_ERREURS.svg",
+    "apres": "11_ux_ui/archives/conception_initiale/ETATS_ET_ERREURS.svg"
+  },
+  {
+    "avant": "11_ux_ui/PLANCHE_VISUALISATIONS.svg",
+    "apres": "11_ux_ui/archives/conception_initiale/PLANCHE_VISUALISATIONS.svg"
+  },
+  {
+    "avant": "11_ux_ui/controle_apercus.ps1",
+    "apres": "11_ux_ui/archives/conception_initiale/controle_apercus.ps1"
+  }
+]

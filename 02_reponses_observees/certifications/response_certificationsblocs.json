@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "bloc_code": "RNCP36101BC01",
+      "bloc_libelle": "Réaliser la couverture de combles à deux versants en petits éléments",
+      "certifinfo_codes": [
+        "112561"
+      ],
+      "competences": "Monter, utiliser et démonter un échafaudage de pied. Préparer un chantier de couverture sur un pavillon neuf. Poser des tuiles sur un comble à deux versants. Poser des ardoises naturelles sur un comble à deux versants.",
+      "fiche_code": "RNCP36101",
+      "fiche_libelle": "Couvreur-zingueur",
+      "modalites_evaluation": "Mise en situation professionnelle : 03h30   A partir de documents et de consignes, chaque candidat réalise une production professionnelle sur un support de couverture existant.   Entretien technique : 00h10   Le jury mène cet entretien avec chaque candidat, après la mise en situation professionnelle et à partir d’une trame de questionnement qui lui est proposée.   Questionnaire professionnel : 00h10  Durée totale : 3h50",
+      "niveau_certification_code": "NIV3",
+      "rang_bloc": 1,
+      "rome_codes": [
+        "F1610"
+      ],
+      "source_libelle": "France compétences, RNCP (via Certif Info)"
+    },
+    {
+      "bloc_code": "RNCP36101BC02",
+      "bloc_libelle": "Réaliser la couverture de combles de formes diverses en petits éléments",
+      "certifinfo_codes": [
+        "112561"
+      ],
+      "competences": "Monter, utiliser et démonter un échafaudage de pied. Mettre un comble en conformité aux exigences de la performance énergétique. Poser des tuiles sur combles de formes diverses avec abergements industrialisés. Poser des ardoises naturelles sur combles de formes diverses avec abergements industrialisés.",
+      "fiche_code": "RNCP36101",
+      "fiche_libelle": "Couvreur-zingueur",
+      "modalites_evaluation": "Mise en situation professionnelle 03h30   A partir de documents et de consignes, chaque candidat réalise une production professionnelle sur un support de couverture existant.   Entretien technique 00h10   Le jury mène cet entretien avec chaque candidat, après la mise en situation professionnelle et à partir d’une trame de questionnement qui lui est proposée.   Questionnaire professionnel 00h10  Durée totale : 03h50",
+      "niveau_certification_code": "NIV3",
+      "rang_bloc": 2,
+      "rome_codes": [
+        "F1610"
+      ],
+      "source_libelle": "France compétences, RNCP (via Certif Info)"
+    },
+    {
+      "bloc_code": "RNCP36101BC03",
+      "bloc_libelle": "Réaliser la couverture de combles à deux versants en zinc",
+      "certifinfo_codes": [
+        "112561"
+      ],
+      "competences": "Monter, utiliser et démonter un échafaudage de pied. Préparer un chantier de couverture en zinc. Mettre un comble en conformité aux exigences de la performance énergétique. Réaliser en plan carré une couverture en zinc avec abergements industrialisés.",
+      "fiche_code": "RNCP36101",
+      "fiche_libelle": "Couvreur-zingueur",
+      "modalites_evaluation": "Mise en situation professionnelle 03h30   A partir de documents et de consignes, chaque candidat réalise une production professionnelle sur un support de couverture existant.   Entretien technique 00h10  Le jury mène cet entretien avec chaque candidat, après la mise en situation professionnelle et à partir d’une trame de questionnement qui lui est proposée.   Questionnaire professionnel 00h10  Durée totale : 03:50",
+      "niveau_certification_code": "NIV3",
+      "rang_bloc": 3,
+      "rome_codes": [
+        "F1610"
+      ],
+      "source_libelle": "France compétences, RNCP (via Certif Info)"
+    },
+    {
+      "bloc_code": "RNCP36101BC04",
+      "bloc_libelle": "Réaliser et mettre en œuvre les abergements et l'évacuation des eaux pluviales",
+      "certifinfo_codes": [
+        "112561"
+      ],
+      "competences": "Monter, utiliser et démonter un échafaudage de pied. Réaliser et mettre en œuvre les abergements pour tous types de couvertures. Installer des gouttières et des tuyaux de descente en zinc.",
+      "fiche_code": "RNCP36101",
+      "fiche_libelle": "Couvreur-zingueur",
+      "modalites_evaluation": "Mise en situation professionnelle 04h00   A partir de documents et de consignes, chaque candidat réalise une production professionnelle sur un support de couverture existant.   Entretien technique 00h10   Le jury mène cet entretien avec chaque candidat, après la mise en situation professionnelle et à partir d’une trame de questionnement qui lui est proposée.   Questionnaire professionnel 00h10   Le questionnaire professionnel est réalisé simultanément par tous les candidats de la session d’examen.   Durée totale : 04h20",
+      "niveau_certification_code": "NIV3",
+      "rang_bloc": 4,
+      "rome_codes": [
+        "F1610"
+      ],
+      "source_libelle": "France compétences, RNCP (via Certif Info)"
+    }
+  ],
+  "total": 4,
+  "page_size": 100,
+  "page": 1,
+  "last_page": 1
+}

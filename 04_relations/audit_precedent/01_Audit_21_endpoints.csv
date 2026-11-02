@@ -1,0 +1,22 @@
+﻿endpoint;operation_id;nb_parametres;schema_200_present;nb_fichiers_JSON_examines;nb_champs_observes_y_compris_imbriques;nb_champs_non_declares;decision
+/certifications;get_api_certifications_list;8;Oui;1;104;0;OK SUR ECHANTILLONS
+/certifications/blocs;get_api_certifications_blocs_list;6;Oui;1;16;0;OK SUR ECHANTILLONS
+/certifications/{certifinfo};get_api_certifications_get;2;Oui;1;99;0;OK SUR ECHANTILLONS
+/competences;get_api_competences_list;9;Oui;0;0;0;JSON NON DISPONIBLE ICI
+/formacodes;get_api_formacodes_list;6;Oui;1;19;0;OK SUR ECHANTILLONS
+/indicateurs;get_api_indicateurs_get;4;Non;1;131;0;SCHEMA 200 A COMPLETER
+/mesures;get_api_mesures_list;1;Non;1;18;0;SCHEMA 200 A COMPLETER
+/metiers;get_api_metiers_list;9;Oui;0;0;0;JSON NON DISPONIBLE ICI
+/metiers/{rome};get_api_metiers_get;2;Oui;1;22;0;OK SUR ECHANTILLONS
+/metiers/{rome}/competences;get_api_metiers_competences;6;Oui;1;24;2;CHAMPS JSON HORS CONTRAT
+/domaines;get_api_domaines_list;1;Non;0;0;0;SCHEMA 200 A COMPLETER
+/mobilites;get_api_mobilites_list;5;Non;12;24;0;SCHEMA 200 A COMPLETER
+/prospective/metiers;get_api_prospective_metiers_list;3;Non;9;27;0;SCHEMA 200 A COMPLETER
+/prospective/regions;get_api_prospective_regions_list;3;Non;11;45;0;SCHEMA 200 A COMPLETER
+/recrutements;get_api_recrutements_list;6;Non;3;29;0;SCHEMA 200 A COMPLETER
+/salaires;get_api_salaires_list;4;Non;2;31;0;SCHEMA 200 A COMPLETER
+/salaires/secteurs;get_api_salaires_secteurs_list;3;Non;1;34;0;SCHEMA 200 A COMPLETER
+/secteurs;get_api_secteurs_list;5;Non;4;36;0;SCHEMA 200 A COMPLETER
+/sessions_a_venir;get_api_ressources_get_sessions;5;Oui;1;18;1;CHAMPS JSON HORS CONTRAT
+/sessions_en_cours;get_api_ressources_get_sessions_current;5;Oui;1;18;1;CHAMPS JSON HORS CONTRAT
+/territoires;get_api_territoires_list;8;Oui;4;21;0;OK SUR ECHANTILLONS

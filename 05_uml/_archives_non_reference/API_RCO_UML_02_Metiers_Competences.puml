@@ -1,0 +1,138 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #FFFFFF
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+hide methods
+top to bottom direction
+title API DGEFP-RCO — Contrats de données / 02 Metiers Competences
+skinparam class {
+ BackgroundColor<<Swagger>> #F0F6FF
+ BorderColor<<Swagger>> #3965A0
+ BackgroundColor<<Observe>> #FFF7E9
+ BorderColor<<Observe>> #B67C2B
+ BackgroundColor<<NonDocumente>> #F4F4F4
+ BorderColor<<NonDocumente>> #999999
+}
+class "GET /competences\nRéponse" as P1 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/competences\nitems[]" as P1_Item <<Swagger>> {
+  competence_code : string?
+  competence_libelle : string?
+  categorie_competence_code : string?
+  categorie_competence_libelle : string?
+  macro_competence_code : string?
+  macro_competence_libelle : string?
+  enjeu_competence_code : string?
+  enjeu_competence_libelle : string?
+  domaine_competence_code : string?
+  domaine_competence_libelle : string?
+  nb_metiers : integer?
+  rome_codes : string[]
+  rome_libelles : string[]
+  rome_coeur_metier_codes : string[]
+  source_libelle : string?
+}
+P1 *-- "0..*" P1_Item : items[]
+
+class "GET /metiers\nRéponse" as P2 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/metiers\nitems[]" as P2_Item <<Swagger>> {
+  rome_code : string?
+  rome_libelle : string?
+  domaine_code : string?
+  domaine_libelle : string?
+  grand_domaine_code : string?
+  grand_domaine_libelle : string?
+  appellations : string[]
+  definitions : string[]
+  tag_transition_ecologique : boolean?
+  tag_transition_numerique : boolean?
+  tag_transition_demographique : boolean?
+  tag_emploi_reglemente : boolean?
+  tag_emploi_cadre : boolean?
+  metiers_proches_codes : string[]
+  metiers_proches_libelles : string[]
+  savoir_etre_libelles : string[]
+  contexte_travail_codes : string[]
+  contexte_travail_libelles : string[]
+  fap228_codes : string[]
+  formacode_codes : string[]
+  formacode_libelles : string[]
+  source_libelle : string?
+}
+P2 *-- "0..*" P2_Item : items[]
+
+class "GET /metiers/{rome}\nRéponse" as P3 <<Swagger>> {
+  rome_code : string?
+  rome_libelle : string?
+  domaine_code : string?
+  domaine_libelle : string?
+  grand_domaine_code : string?
+  grand_domaine_libelle : string?
+  appellations : string[]
+  definitions : string[]
+  tag_transition_ecologique : boolean?
+  tag_transition_numerique : boolean?
+  tag_transition_demographique : boolean?
+  tag_emploi_reglemente : boolean?
+  tag_emploi_cadre : boolean?
+  metiers_proches_codes : string[]
+  metiers_proches_libelles : string[]
+  savoir_etre_libelles : string[]
+  contexte_travail_codes : string[]
+  contexte_travail_libelles : string[]
+  fap228_codes : string[]
+  formacode_codes : string[]
+  formacode_libelles : string[]
+  source_libelle : string?
+}
+
+class "GET /metiers/{rome}/competences\nRéponse" as P4 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/metiers/{rome}/competences\nitems[]" as P4_Item <<Swagger>> {
+  competence_code : string?
+  competence_libelle : string?
+  categorie_competence_code : string?
+  categorie_competence_libelle : string?
+  tag_coeur_metier : boolean?
+  macro_competence_code : string?
+  macro_competence_libelle : string?
+  enjeu_competence_code : string?
+  enjeu_competence_libelle : string?
+  domaine_competence_code : string?
+  domaine_competence_libelle : string?
+  nb_fiches_rome4 : integer?
+  nb_fiches_rome4_metier : integer?
+  tx_fiches_rome4 : number?
+  tag_acquise : boolean?
+  tag_meme_macro_competence : boolean?
+  source_libelle : string?
+}
+P4 *-- "0..*" P4_Item : items[]
+
+class "GET /domaines\nRéponse" as P5 <<NonDocumente>> {
+  Aucune structure 200 documentee
+}
+
+legend bottom
+  Bleu : schema de reponse 200 du Swagger (contrat).
+  Orange : structure constatee dans les JSON (ne constitue pas un schema 200 OpenAPI).
+  Gris : structure non decrite / sans exemple dans les sources disponibles.
+  Les cardinalites 0..* expriment uniquement les tableaux JSON; 0..1 les objets facultatifs/observes.
+  Aucun lien n implique une contrainte de cle etrangere dans Octopilot.
+endlegend
+@enduml

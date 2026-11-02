@@ -1,0 +1,312 @@
+[
+  {
+    "number": 32,
+    "title": "Retrouver ses choix pendant l’exploration",
+    "objective": "Permettre à la personne de chercher, ouvrir plusieurs fiches et revenir à ses résultats sans perdre le fil. Distinguer les choix conservés pendant la navigation du comportement de conservation au rechargement ou dans les futurs parcours.",
+    "story": "En tant que personne qui explore plusieurs possibilités professionnelles, je souhaite retrouver ma recherche, mon lieu et les métiers que j’ai choisis lorsque je navigue, afin de poursuivre ma réflexion sans recommencer mes démarches.",
+    "preconditions": [
+      "Le parcours existant propose les trois modes Métier, Diplôme ou titre et Domaine professionnel, ainsi qu’une entrée par les savoir-faire et les conditions de travail.",
+      "Les résultats et les objets sélectionnables disposent d’un identifiant natif et d’un nom provenant des réponses API ; aucun choix n’est déduit de la seule saisie.",
+      "Les fonctions métier de recherche, fiche, territoire, comparaison et pistes restent celles des US-FON-001 à US-FON-031.",
+      "Les états de navigation sont distincts des réponses statistiques : conserver un lieu ne signifie pas disposer de chiffres pour ce lieu."
+    ],
+    "steps": [
+      ["Ouvre le parcours sans lien vers une fiche particulière.", "Affiche la recherche comme entrée, ses trois modes nommés et l’accès à l’exploration guidée ; ne choisit aucun métier à sa place."],
+      ["Choisit Métier, saisit une recherche puis lance la recherche.", "Affiche les résultats de ce mode, conserve la saisie et le lieu choisis et attend une sélection explicite avant d’ouvrir une fiche."],
+      ["Sélectionne une fiche, puis consulte ses salaires ou d’autres informations détaillées.", "Affiche le nom de l’objet réellement sélectionné, garde la recherche accessible et conserve le territoire, les pistes et la paire comparée."],
+      ["Utilise le retour aux résultats ou les commandes précédent et suivant du navigateur.", "Retrouve la vue correspondante et ses choix de navigation sans substituer une fiche de démonstration ; adapte le titre et le focus à la vue affichée."],
+      ["Passe du mode Métier au mode Domaine professionnel.", "Efface la saisie, la recherche soumise, les anciens résultats et leur erreur ; annonce ce changement et rend le focus au champ. Conserve le lieu, les pistes et la comparaison."],
+      ["Effectue une nouvelle recherche puis ouvre un domaine identifié.", "Présente les noms et les résultats propres au nouveau mode. Permet de poursuivre vers les métiers du domaine, une fiche, la comparaison ou Mes pistes."]
+    ],
+    "alternatives": [
+      "Un lien direct vers un métier ou une certification ouvre cet objet identifié et rend la recherche disponible ; l’absence de recherche antérieure ne produit pas de résultats factices.",
+      "Un identifiant inconnu ou une ressource introuvable conduit à une explication et à la recherche ; il ne redirige pas silencieusement vers F1610 ou vers une autre certification.",
+      "La personne change de mode pendant une recherche : les résultats et erreurs de l’ancien mode ne remplacent pas ceux du nouveau mode, même si la réponse ancienne arrive ensuite.",
+      "Le lieu choisi ne dispose pas de données correspondantes : le lieu reste sélectionné et l’absence de chiffres est expliquée sans transposer les observations d’un autre territoire.",
+      "Le stockage de session est indisponible : l’exploration reste possible ; la conservation des pistes est traitée par US-FON-027, sans promesse de sauvegarde durable.",
+      "Les autres parcours MaCarrière ne sont pas encore fournis : la sélection reste exportable selon US-FON-027, sans lien ni page simulant un parcours absent."
+    ],
+    "rules": [
+      "La navigation entre fiches dans un même mode conserve la saisie ; le changement de mode déclenche sa remise à zéro annoncée. Cette règle actuelle prime les anciennes formulations générales de conservation de saisie.",
+      "Une ouverture de fiche exige une sélection ou un lien direct identifié. Une saisie, un nom ressemblant ou le premier résultat ne constitue pas une sélection.",
+      "L’état contient séparément le mode, la saisie, la recherche soumise, les résultats, le territoire, les pistes et les deux métiers comparés ; une mise à jour locale ne réinitialise pas les autres choix.",
+      "Un retour depuis le comparateur retrouve la fiche d’origine et conserve les deux métiers comparés ; les identités A et B restent visibles dans tous les volets du comparateur.",
+      "Les identifiants de route et de stockage restent internes ; les titres, liens et commandes montrent les noms des métiers, certifications, domaines et lieux.",
+      "La conservation de session concerne la sélection portable existante. Une persistance de la saisie après fermeture ou sur un autre appareil n’est pas décidée ni promise.",
+      "L’origine commune, la durée de stockage et le raccordement aux autres parcours en production restent à préciser en D08/D10 ; ce point ne réduit pas le périmètre d’exploration.",
+      "Les fragments d’URL, le cache et le stockage ne deviennent pas une source métier : les noms et données affichés restent issus des réponses autorisées."
+    ],
+    "acceptance": [
+      ["une ouverture sans lien direct ni recherche antérieure", "la personne ouvre le parcours", "la recherche apparaît et aucun métier n’est sélectionné automatiquement"],
+      ["une recherche Métier soumise et une fiche choisie", "la personne consulte une rubrique puis retourne aux résultats", "elle retrouve le mode et la saisie de cette recherche, sans perte de ses pistes ou de son lieu"],
+      ["une recherche Métier et des pistes déjà gardées", "la personne choisit Domaine professionnel", "la saisie, les résultats et l’erreur précédents sont effacés, le changement est annoncé et le focus revient au champ tandis que pistes et lieu sont conservés"],
+      ["une fiche ouverte depuis un résultat identifié", "la personne utilise précédent puis suivant", "les vues correspondent aux entrées d’historique et les titres désignent les objets réellement sélectionnés"],
+      ["deux métiers choisis dans le comparateur depuis une fiche", "la personne utilise le retour à cette fiche", "la fiche d’origine s’ouvre et la paire comparée reste sélectionnée"],
+      ["un lien direct portant un identifiant valide", "la personne ouvre ce lien", "la fiche associée s’affiche par son nom et la recherche reste accessible"],
+      ["un identifiant de lien inconnu ou une ressource introuvable", "la personne ouvre le lien", "un état compréhensible propose de rechercher un autre objet sans afficher une fiche de substitution"],
+      ["un territoire choisi sans réponse statistique correspondante", "la personne change de rubrique", "ce territoire reste sélectionné et aucune valeur d’un autre lieu ne lui est attribuée"]
+    ],
+    "ux": [
+      "Recherche DSFR avec libellé permanent, choix du mode identifié et action nommée selon l’objet recherché ; version repliable sur mobile pour ne pas masquer le contenu.",
+      "Navigation, liens vers les fiches et historique du navigateur utilisables au clavier ; titres de page et h1 adaptés au nom de l’objet sélectionné.",
+      "Annonce discrète du changement de mode et de l’effacement ; focus rendu au champ, sans annonce à chaque frappe.",
+      "Sommaire par questions et liens de retour explicites ; conservation des volets détaillés, dont mobilités, prospective et salaires sectoriels.",
+      "Comparateur avec identités A/B, deux sélecteurs, inversion et liens vers les deux fiches dans chaque volet.",
+      "Sélecteur de lieu avec validation d’un objet observé et message associé en cas de choix non reconnu."
+    ],
+    "related": ["E01", "E02", "E03", "E04", "E05", "E09", "E17", "E19", "E27", "E28", "E30"],
+    "api_note": "Aucun GET supplémentaire. Cette US coordonne les données déjà obtenues par /metiers, /metiers/{rome}, /certifications, /certifications/{certifinfo}, /domaines et /territoires et réutilise les réponses des rubriques concernées. Les champs d’identité sont notamment rome_code/rome_libelle, certifinfo_code/certifinfo_libelle et les codes/libellés de domaine et territoire natifs. Les signatures et filtres exacts restent ceux des US métier ; l’historique ne déclenche aucun endpoint de sauvegarde.",
+    "proofs": [
+      "07_parcours/Explorer/03_TABLE_CONCEPTION.csv",
+      "07_parcours/Explorer/TESTS_UX_EXPLORER.md",
+      "07_parcours/Explorer/12_maquette_html/documentation/EVOLUTION_STRUCTURE_UX.md",
+      "07_parcours/Explorer/12_maquette_html/sources/experience_exploration.js",
+      "07_parcours/Explorer/12_maquette_html/controles/resultats/TESTS_UX_CDP_APRES.json"
+    ],
+    "tests": [
+      "Compléter la recette des liens directs inconnus, malformés et des ressources devenues introuvables, en conservant les choix utiles.",
+      "Vérifier manuellement Ctrl+R/F5 après navigation par fragments : ce rechargement natif reste NON TESTÉ, contrairement aux nouveaux chargements complets déjà contrôlés pour la sélection.",
+      "Rejouer précédent/suivant, changement de mode et annulation de réponse périmée après branchement HTTP réel.",
+      "Définir puis tester D08/D10 pour l’environnement de production et le futur passage aux autres parcours, sans assimiler une session de fichier local à un partage interapplications."
+    ],
+    "lot": "Transversal L2/L9 ; intégration L1 et recette L10",
+    "state": "Règles UX actuelles actées ; recherche persistante, changement de mode, historique et retours du comparateur testés localement sur les JSON disponibles. Liens et états HTTP réels à tester ; stockage et raccordement de production D08/D10 ouverts. Aucun nouveau test HTTP revendiqué."
+  },
+  {
+    "number": 33,
+    "title": "Explorer au clavier, sur mobile et avec une alternative aux graphiques",
+    "objective": "Rendre les fonctionnalités et les données accessibles avec les différents équipements et modes d’accès, sans imposer une lecture visuelle d’un graphique. Maintenir une première information métier lisible si JavaScript est désactivé et annoncer clairement les limites des interactions disponibles.",
+    "story": "En tant que personne qui utilise un téléphone, le clavier, un agrandissement ou une aide technique, je souhaite lire les informations et agir avec des commandes compréhensibles, afin d’explorer les mêmes possibilités professionnelles de façon autonome.",
+    "preconditions": [
+      "Les 31 fonctionnalités et leurs états sont conservés ; l’adaptation de présentation ne supprime aucune rubrique ou action.",
+      "DSFR constitue le socle de l’interface ; les visualisations pertinentes utilisent les composants officiels DSFR Chart déjà intégrés.",
+      "Les graphiques disposent d’une alternative tabulaire donnant les mêmes valeurs et métadonnées ; la lecture d’une infobulle n’est pas la seule façon d’obtenir une valeur.",
+      "La description métier utilisée dans l’aperçu sans JavaScript provient d’une réponse native et conserve sa source."
+    ],
+    "steps": [
+      ["Ouvre le parcours et utilise le lien d’évitement au clavier.", "Place le focus sur le contenu principal et permet d’identifier le titre, les zones de navigation et la recherche."],
+      ["Parcourt les modes, le champ de recherche et les résultats avec le clavier.", "Fournit des libellés permanents, un ordre de focus logique, un focus visible et les commandes attendues sans souris."],
+      ["Ouvre une fiche et développe une rubrique contenant une visualisation.", "Expose un titre intelligible, les unités, la population, le lieu, la période et les commandes natives de la visualisation."],
+      ["Choisit l’affichage en tableau.", "Présente les mêmes valeurs, absences et sources dans un tableau nommé avec ses en-têtes associés ; le graphique n’est pas nécessaire pour comprendre les données."],
+      ["Consulte la fiche sur petit écran ou avec un fort agrandissement.", "Réorganise le contenu sans masquer les actions ; limite le défilement horizontal aux tableaux réellement bidimensionnels et conserve l’identification des deux métiers dans la comparaison."],
+      ["Revient consulter la page avec JavaScript désactivé.", "Affiche l’aperçu métier natif et sa source dans le contenu principal, puis explique les interactions nécessitant JavaScript sans présenter un écran principal vide."]
+    ],
+    "alternatives": [
+      "Une erreur de champ survient : le message est relié au contrôle, le choix est conservé et le focus permet sa correction.",
+      "Une sélection de critères modifie le nombre de résultats : une annonce discrète signale le changement sans répéter chaque frappe ni déplacer arbitrairement le focus.",
+      "Le graphique ne peut pas être monté : le tableau autonome et les informations de provenance restent consultables.",
+      "Un tableau ne peut pas tenir sur une colonne : un défilement local identifié est proposé sans débordement horizontal de toute la page.",
+      "La personne demande une réduction des mouvements : les informations et actions restent disponibles sans animation ou défilement obligatoire.",
+      "Sans JavaScript, la recherche interactive n’est pas disponible : cette limite est annoncée ; aucune recherche ou navigation dynamique n’est simulée."
+    ],
+    "rules": [
+      "Chaque vue possède un titre principal cohérent, une langue française déclarée et des commandes HTML sémantiques ; les noms des commandes décrivent leur action.",
+      "Une information ne dépend ni de la seule couleur, ni du seul survol, ni d’une animation. Les sources, unités et bases statistiques restent lisibles hors infobulle.",
+      "Les accordéons, onglets, sélecteurs et dialogues exposent leur nom, leur rôle et leur état et conservent un parcours clavier cohérent.",
+      "Les actualisations locales préservent le focus de l’action, notamment après retrait de piste ou de critère, changement de filtre et inversion du comparateur.",
+      "L’alternative tabulaire conserve exactement zéro, valeur négative, secret et absence ; elle ne complète pas les données omises du graphique.",
+      "La présentation mobile du comparateur conserve le nom de A et B pour chaque critère ; une simplification de mise en page ne retire pas un volet fonctionnel.",
+      "Le montage progressif des graphiques évite de créer toutes les visualisations à l’ouverture ; les tableaux et informations nécessaires restent accessibles.",
+      "L’usage de DSFR et DSFR Chart ainsi que les tests automatisés ne constituent pas une attestation RGAA ; la conformité finale dépend de la recette de l’application intégrée."
+    ],
+    "acceptance": [
+      ["une page ouverte au clavier", "la personne active le lien d’évitement", "le contenu principal reçoit le focus et la personne peut poursuivre dans un ordre de lecture cohérent"],
+      ["le guide sans critères précochés", "la personne choisit puis retire un savoir-faire avec le clavier", "le choix, le compteur et l’annonce restent synchronisés et le focus ne disparaît pas"],
+      ["un graphique contenant des valeurs publiées et une valeur indisponible", "la personne active le tableau", "les mêmes valeurs et absences sont lisibles avec leurs libellés, unité, population, période et source"],
+      ["une visualisation dont le montage échoue", "la personne consulte la rubrique", "le tableau autonome et la provenance demeurent disponibles sans valeur de remplacement"],
+      ["une consultation à largeur de reflow 320 pixels", "la personne parcourt une fiche et le comparateur", "la page ne déborde pas horizontalement et les éventuels défilements locaux de tableaux sont identifiables"],
+      ["une préférence de réduction des mouvements", "la personne ouvre les panneaux et utilise les commandes", "aucune animation n’est nécessaire pour lire ou atteindre le contenu"],
+      ["JavaScript désactivé", "la personne ouvre le document", "un aperçu métier lisible avec sa source apparaît dans le contenu principal et les limites interactives sont explicites"],
+      ["une navigation avec lecteur d’écran ou un zoom navigateur de 200 ou 400 pour cent", "la recette manuelle est exécutée sur l’interface intégrée", "les résultats sont consignés et toute limite non vérifiée reste annoncée comme non testée"]
+    ],
+    "ux": [
+      "Lien d’évitement, landmarks, h1 unique, liens et boutons DSFR sémantiques ; focus visible et non masqué.",
+      "Champs avec labels permanents, aides et erreurs associées ; groupes de choix nommés et statut annoncé discrètement.",
+      "Accordéons, onglets et dialogues avec gestion du clavier, du focus et des états développés ou sélectionnés.",
+      "DataBox avec BarChart, LineChart, MapChart ou TableChart officiels selon les US ; tableau autonome nommé, en-têtes et libellés complets.",
+      "Cibles de commande adaptées au tactile ; les boutons de retrait des critères sont actuellement mesurés à 44 × 44 pixels.",
+      "Une colonne sur mobile, comparaison lisible par critère, défilement local des tables, recherche repliable pour libérer la lecture.",
+      "Réduction des mouvements, contrastes vérifiés sur les états intégrés et absence d’information transmise uniquement par la couleur.",
+      "Bloc sans JavaScript dans le contenu principal existant ; description métier native, source et explication des limites."
+    ],
+    "related": ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10", "E11", "E12", "E13", "E14", "E15", "E16", "E17", "E18", "E19", "E20", "E21", "E22", "E23", "E24", "E25", "E26", "E27", "E28", "E29", "E30", "E31"],
+    "api_note": "Aucun GET supplémentaire. L’alternative et le graphique consomment les mêmes réponses et les mêmes champs des 21 GET autorisés. Les adaptations de format, d’ordre de lecture et de code géographique sont techniques et contrôlées ; elles n’ajoutent ni indicateur ni valeur. L’aperçu sans JavaScript reprend la description métier native déjà disponible.",
+    "proofs": [
+      "07_parcours/Explorer/TESTS_UX_EXPLORER.md",
+      "07_parcours/Explorer/11_INTEGRATION_DSFR_CHART.md",
+      "07_parcours/Explorer/11_ux_ui/CONCEPTION_UX_UI.md",
+      "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/06_REGLES_STATISTIQUES_RGAA.md",
+      "07_parcours/Explorer/12_maquette_html/controles/resultats/TESTS_UX_CDP_APRES.json",
+      "07_parcours/Explorer/12_maquette_html/controles/resultats/CONTROLE_MOBILE.json"
+    ],
+    "tests": [
+      "Vérifier le vrai zoom navigateur 200/400 pour cent : le grossissement CDP et le reflow déjà contrôlés ne le remplacent pas.",
+      "Réaliser les parcours avec lecteurs d’écran et compléter la recette clavier des composants et dialogues non couverts.",
+      "Compléter les contrastes de tous les états : les six échantillons contrôlés par format, au minimum 5,34:1, ne couvrent pas tout le service.",
+      "Tester une panne de montage du graphique avec conservation effective du tableau autonome.",
+      "Effectuer l’audit RGAA de l’application de production ; ne pas transformer les contrôles locaux en certification."
+    ],
+    "lot": "Transversal L2 à L9 ; intégration et recette L10",
+    "state": "Clavier ciblé, focus, reflow, réduction des mouvements, échantillons de contraste, tableaux et aperçu sans JavaScript testés localement. Zoom navigateur réel et lecteurs d’écran NON TESTÉS ; audit RGAA complet restant. Les données proviennent des JSON observés ; aucune validation HTTP nouvelle."
+  },
+  {
+    "number": 34,
+    "title": "Comprendre les données et leurs sources sans connaître les référentiels",
+    "objective": "Présenter les informations de façon utile aux salariés de tous profils : ce qui est mesuré, pour qui, où et quand. Conserver la précision statistique et les sources sans imposer les codes, le vocabulaire interne ou une lecture experte de la donnée.",
+    "story": "En tant que personne qui veut décider de son avenir professionnel sans être spécialiste des données, je souhaite comprendre les noms, les chiffres et leurs limites, afin de réfléchir à mes possibilités avec des repères fiables.",
+    "preconditions": [
+      "Les noms des métiers, domaines, certifications, compétences, contextes, lieux et secteurs sont issus des libellés natifs associés aux identifiants.",
+      "Les notices des 29 mesures, les sources et les définitions contractuelles sont disponibles pour les restitutions concernées.",
+      "Chaque réponse statistique conserve son grain, sa population, sa période, son unité et sa géographie effective ; une absence de valeur reste distincte d’une absence de documentation.",
+      "Les textes d’explication s’appuient sur les définitions disponibles ; la validation Métier/Data des formulations définitives reste à mener."
+    ],
+    "steps": [
+      ["Ouvre une fiche métier depuis une recherche par nom.", "Affiche le nom du métier et les questions de première lecture : activités, opportunités, salaires et autres pistes ; garde les rubriques détaillées accessibles ensuite."],
+      ["Consulte un salaire.", "Présente la médiane et une explication de son sens, l’unité nette mensuelle ou annuelle, la population à temps complet, le groupe de métiers concerné, le lieu effectif, l’année et la source."],
+      ["Consulte les recrutements et les perspectives à 2030.", "Distingue projets de recrutement, offres publiées et estimations à horizon 2030 ; conserve les valeurs reçues et explique qu’il ne s’agit pas d’emplois garantis à la personne."],
+      ["Ouvre un détail ou la rubrique Sources.", "Présente les définitions, organismes, périodes, populations, périmètres et limites utiles avec des mots compréhensibles, sans noms de champs techniques ni mentions de version du projet."],
+      ["Rencontre une donnée absente, confidentielle ou portant sur une zone plus large.", "Explique la situation avec le bon message et propose de poursuivre en modifiant ses choix ou en consultant une autre rubrique ; ne présente pas l’absence d’information comme une absence d’emploi."],
+      ["Compare deux métiers puis garde une piste.", "Laisse lire les repères séparément, signale les groupes et populations différents et conserve l’action de choix à la personne, sans note globale ni recommandation de réussite individuelle."]
+    ],
+    "alternatives": [
+      "Le libellé nécessaire est absent : le système indique qu’il ne peut pas nommer cet élément et conserve la trace technique pour investigation ; il ne fabrique pas un nom ni ne remplace le titre citoyen par un code incompréhensible.",
+      "Une statistique concerne une famille de plusieurs métiers : le nom du groupe et la portée de la statistique sont indiqués au voisinage du chiffre, sans l’attribuer au seul métier consulté.",
+      "Une médiane numérique est absente mais une tranche annuelle ouverte est publiée : la tranche est expliquée en texte ; aucun montant mensuel précis n’est inventé.",
+      "Les nombres et taux de recrutement semblent divergents : les valeurs originales sont conservées avec une explication prudente de leur statut ; le client ne les corrige pas par calcul.",
+      "Une situation de mobilité désigne une famille ou une situation hors emploi sans identifiant de métier : le nom reçu est lisible, mais aucun lien vers une fiche métier n’est déduit.",
+      "Une information sur l’insertion concerne une autre population ou un autre horizon : elle reste dans son groupe propre, sans comparaison directe trompeuse."
+    ],
+    "rules": [
+      "Les codes restent dans les relations techniques ; les résultats et commandes affichent les noms natifs. Les noms officiels des organismes sources restent accessibles.",
+      "Les mentions Explorer V2, maquette, campagnes de tests, schémas, paramètres et contraintes d’intégration ne font pas partie de l’écran citoyen. Les limites statistiques nécessaires à sa décision y restent.",
+      "ROME V3 est le référentiel interne autorisé ; aucun code métier ROME 4.0 n’est restitué. Les groupes FAP sont expliqués comme groupes statistiques sans imposer leurs codes.",
+      "La médiane n’est ni une moyenne ni un salaire garanti ; Q1 et Q3 ne sont pas un minimum et un maximum ; annuel et mensuel restent distincts sans conversion.",
+      "Les projets BMO, les offres et les emplois occupés restent des objets différents. Aucune probabilité d’embauche, score de territoire, moyenne de médianes ou corrélation n’est ajoutée.",
+      "Mobilités et compétences communes décrivent des observations et relations entre métiers ; elles ne prouvent ni les acquis personnels ni la réussite d’une reconversion.",
+      "Les perspectives 2030 conservent leur horizon et leurs composantes publiées ; aucun récit de croissance annuelle ni garantie individuelle n’est généré.",
+      "Les 29 mesures restent accessibles par leur usage et leur notice. La présence d’une notice ne fait pas croire qu’une valeur est publiée pour chaque métier ou territoire.",
+      "La catégorie de tension reçue est conservée ; une explication conditionnelle accompagne la catégorie concernée, sans la transformer en score ou en promesse.",
+      "La charte éditoriale disponible reste une proposition sur les formulations non explicitement décidées ; la validation de compréhension auprès de personnes réelles n’est pas déduite des tests navigateur."
+    ],
+    "acceptance": [
+      ["un objet disposant d’un nom dans la réponse", "la personne le retrouve dans un résultat ou un filtre", "son nom est affiché et aucun code de référentiel n’est nécessaire pour le reconnaître ou le choisir"],
+      ["un salaire au grain familial", "la personne lit le montant", "elle trouve à proximité le sens de la médiane, l’unité, la population, le groupe, le lieu, l’année et la source"],
+      ["une valeur sous secret statistique", "la personne consulte l’indicateur", "le message explique la confidentialité et aucune valeur numérique de remplacement ou déduction par différence n’apparaît"],
+      ["une mesure disponible seulement sur une zone plus large", "la personne consulte les résultats de son lieu", "le lieu effectivement mesuré et le repli sont expliqués sans attribuer le chiffre à la zone demandée"],
+      ["des résultats après formation concernant apprentis et demandeurs d’emploi", "la personne consulte les deux repères", "les populations, bases et horizons propres restent lisibles et ne sont pas présentés comme équivalents"],
+      ["une notice connue mais une valeur absente pour la sélection", "la personne ouvre Sources puis revient à l’indicateur", "la définition reste accessible et l’absence de valeur ne devient ni zéro ni impossibilité d’exercer le métier"],
+      ["une fiche complète et ses panneaux repliés", "la personne parcourt les contenus citoyens", "les sources et limites utiles restent présentes tandis que versions du projet, noms de champs et détails de test ne sont pas affichés"],
+      ["deux métiers comparés ou une mobilité observée", "la personne lit les résultats", "aucun score personnel, taux de réussite individuel ou lien métier fondé uniquement sur un libellé de famille n’est ajouté"]
+    ],
+    "ux": [
+      "Questions en langage courant, paragraphes courts, titres par besoin et présentation progressive sans suppression des rubriques.",
+      "DataBox ou carte de chiffre clé lorsque le nombre suffit ; graphique officiel seulement si la comparaison apporte une information utile.",
+      "Texte d’aide à proximité des notions statistiques ; détails et notices consultables sans survol obligatoire.",
+      "Sources nommées, dates, unités, populations et territoire effectif visibles ou directement accessibles ; 29 notices sans noms de champs internes.",
+      "États textuels distincts pour donnée inconnue, non publiée pour confidentialité, zéro observé, liste sans résultat et zone plus large.",
+      "Listes, accordéons et tableaux pour compétences, voies d’accès et sessions ; aucune visualisation décorative ou personnalisation fictive."
+    ],
+    "related": ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10", "E11", "E12", "E13", "E14", "E15", "E16", "E17", "E18", "E19", "E20", "E21", "E22", "E23", "E24", "E25", "E26", "E27", "E28", "E29", "E30", "E31"],
+    "api_note": "Aucun GET supplémentaire. Réutiliser les libellés et valeurs des réponses de chaque US ainsi que /mesures pour les définitions et métadonnées. Dans /indicateurs, la provenance inclut notamment items[].mesure, libelle, grain, maille_demandee, maille_reelle, territoire_libelle, repli, source_libelle et millesime. Lire les métadonnées propres aux autres routes sans leur inventer cette enveloppe. Les explications sont fondées sur le contrat et les notices ; elles n’ajoutent aucun calcul ni source de données.",
+    "proofs": [
+      "AGENTS.md",
+      "07_parcours/Explorer/02_SPECIFICATIONS_API.md",
+      "07_parcours/Explorer/12_maquette_html/documentation/REDACTION_CITOYENNE.md",
+      "07_parcours/Explorer/12_maquette_html/preuves/PREUVES_LIBELLES.json",
+      "07_parcours/Explorer/TESTS_UX_EXPLORER.md",
+      "07_parcours/Explorer/11_INTEGRATION_DSFR_CHART.md",
+      "07_parcours/Explorer/11_ux_ui/MATRICE_VISUALISATIONS.csv"
+    ],
+    "tests": [
+      "Faire relire les explications conditionnelles, notamment la tension extrême, par Métier/Data avant diffusion.",
+      "Vérifier la compréhension avec des salariés de profils, niveaux de lecture et familiarités numériques variés ; aucun entretien réel n’est revendiqué à ce stade.",
+      "Tester des libellés absents ou longs et des cas de tranche ouverte sans afficher de code comme seul nom public.",
+      "Vérifier les 29 notices et les textes d’absence après branchement de nouvelles réponses, notamment cohortes, replis et secrets.",
+      "Faire clore Q06/Q07 sur les règles de secret et les nombres/taux BMO sans réécrire les valeurs côté interface."
+    ],
+    "lot": "Transversal L2 à L9 ; validation Métier/Data et recette L10",
+    "state": "Instruction citoyenne actée ; libellés, sources, valeurs et absence de vocabulaire interne contrôlés localement. Métadonnées documentées et JSON observés, avec notices disponibles pour 29 mesures. Validation de compréhension et formulations métier finales à mener ; aucun score de lisibilité ni résultat d’étude réelle inventé. HTTP réel à tester séparément."
+  },
+  {
+    "number": 35,
+    "title": "Poursuivre malgré une attente, une donnée manquante ou une erreur",
+    "objective": "Maintenir un parcours compréhensible lorsqu’une réponse tarde, manque ou échoue, sans perdre les choix de la personne ni substituer une autre donnée. Éviter qu’une ancienne réponse, une page partielle ou une combinaison non renseignée produise une conclusion fausse.",
+    "story": "En tant que personne qui explore des métiers, je souhaite savoir ce qui se passe quand une recherche ou une rubrique ne répond pas, afin de corriger mes choix, réessayer ou continuer sans perdre mon travail.",
+    "preconditions": [
+      "Chaque demande est reliée à son objet et à ses paramètres exacts : mode, recherche, identifiant métier ou certification, lieu et filtres concernés.",
+      "L’état des données est distinct de celui du transport et de celui de la navigation ; les pistes, le territoire et les choix A/B ne sont pas effacés par une erreur de rubrique.",
+      "Les 21 GET, leurs paramètres, leur pagination et leurs erreurs documentées sont les seuls appels métier autorisés.",
+      "Le fournisseur local de JSON et les contrôles peuvent simuler attente et erreur pour vérifier l’interface ; ces simulations ne valident pas le fonctionnement HTTP du fournisseur."
+    ],
+    "steps": [
+      ["Lance une recherche ou ouvre une rubrique nécessitant des données.", "Affiche un état de chargement nommé et conserve les choix de navigation sans présenter un ancien résultat comme celui de la nouvelle demande."],
+      ["Modifie ses critères avant la fin de la réponse.", "Identifie la nouvelle demande comme active et annule ou ignore l’ancienne ; seule la réponse correspondant aux critères actuels peut actualiser les résultats."],
+      ["Rencontre une erreur sur la rubrique demandée.", "Présente un message utile à cet endroit, conserve la saisie et les autres contenus disponibles et propose de réessayer ou de modifier le choix."],
+      ["Corrige un paramètre signalé ou active Réessayer.", "Relance uniquement la demande concernée dans les limites prévues ; ne répète pas automatiquement une requête invalide et ne déclenche pas une boucle d’appels."],
+      ["Reçoit une réponse sans valeur, partielle ou sans résultat.", "Distingue le cas reçu : zéro réel, absence, confidentialité, liste vide, page incomplète ou combinaison non renseignée ; conserve les limites et ne crée pas de valeur de remplacement."],
+      ["Poursuit vers une autre rubrique ou une piste déjà gardée.", "Laisse les autres fonctions utilisables, conserve les choix et permet un retour ultérieur à la rubrique indisponible."]
+    ],
+    "alternatives": [
+      "Recherche réellement vide : afficher l’absence de résultats et permettre de modifier les mots ou critères ; une panne réseau ne produit pas ce message.",
+      "Combinaison absente du jeu de JSON local : afficher que cette combinaison n’est pas renseignée ici, conserver les filtres et ne pas annoncer zéro métier.",
+      "Page 1 seulement d’une liste plus longue : indiquer que la liste est incomplète ; charger la suite ou permettre sa consultation avant de conclure à une absence ou à une comparaison exhaustive.",
+      "400 ou 422 : proposer la correction du choix ou du paramètre sans répétition automatique ; ne pas exposer de jeton, URL sensible ou détail interne au citoyen.",
+      "401 : expliquer l’indisponibilité d’accès au service et garder la navigation ; ne pas demander au citoyen un jeton technique. 404 : distinguer l’objet introuvable d’une donnée statistique manquante.",
+      "429, 503, autre erreur serveur ou réseau : permettre une reprise bornée selon l’erreur et conserver les autres sections ; respecter le quota partagé sans rafales de relances.",
+      "Une mesure se replie vers un périmètre plus large alors qu’une autre reste locale : présenter séparément leurs lieux effectifs au lieu de faire échouer toute la fiche.",
+      "Le filtre ROME de /secteurs renvoie la liste vide du cas R17 : ne pas conclure à l’absence d’employeurs ; conserver le suivi fournisseur et les lectures distinctes réellement disponibles."
+    ],
+    "rules": [
+      "Une réponse périmée ne modifie ni les résultats ni les messages d’erreur de la demande active, y compris après changement de mode.",
+      "Les erreurs sont gérées par recherche ou rubrique ; une panne de mobilité, certification ou salaire ne masque pas les autres informations déjà disponibles.",
+      "Une réponse n’est réutilisée que pour les mêmes paramètres et une provenance compatible. Les chiffres d’un autre métier ou lieu ne constituent jamais une solution de remplacement.",
+      "Si des données antérieures sont conservées pendant une actualisation, leur contexte et leur statut restent explicites ; elles ne sont pas présentées comme la nouvelle réponse.",
+      "null, champ absent, zéro, secret_stat, liste vide, non applicable et erreur sont distincts ; les valeurs non numériques n’entrent pas dans les graphiques comme des zéros.",
+      "Une réponse paginée conserve items, total, page_size, page et last_page lorsqu’ils sont documentés. Une liste partielle ne permet pas une conclusion négative sur une compétence ou une association.",
+      "Les GET peuvent être repris de façon bornée selon leur erreur ; 400/422 exigent une correction. Le quota contractuel de 40 requêtes par seconde et par jeton concerne le service partagé.",
+      "L’authentification et le jeton restent techniques et non publics. Le choix d’hébergement et de passage serveur est à finaliser dans D10, sans nouveau service de données métier.",
+      "Les preuves de test gardent le niveau réel : simulation locale, JSON observé, contrôle hors ligne et requête HTTP tracée sont des catégories différentes.",
+      "Une dépendance RCO ou une variante non testée reste dans le périmètre avec son suivi ; elle n’autorise ni suppression de fonctionnalité ni création de données."
+    ],
+    "acceptance": [
+      ["une recherche encore en cours", "la personne lance une autre recherche ou change de mode", "la réponse tardive de la première demande ne remplace pas les résultats ou erreurs de la demande active"],
+      ["une rubrique en erreur et des pistes déjà gardées", "la personne revient à la fiche ou à Mes pistes", "les autres contenus et les choix conservés restent utilisables"],
+      ["une réponse réseau en échec", "le système présente son état", "un message d’erreur avec une action appropriée apparaît et aucun état zéro résultat n’est déduit"],
+      ["une requête rejetée pour paramètre invalide", "la personne consulte le message", "le choix à corriger est identifiable, la saisie utile est conservée et aucune boucle de relance automatique n’est exécutée"],
+      ["une liste paginée incomplète", "la personne consulte les compétences ou leur comparaison", "la limite est visible et aucune absence ni exhaustivité n’est conclue avant l’obtention des pages nécessaires"],
+      ["une combinaison de critères sans réponse observée dans la maquette", "la personne lance cette combinaison", "le système annonce une combinaison non renseignée, conserve les filtres et ne prétend pas qu’aucun métier n’existe"],
+      ["des réponses contenant respectivement zéro, null et secret_stat", "la personne consulte les valeurs et leur tableau", "zéro reste numérique, null reste indisponible et la confidentialité est expliquée sans remplacement ou calcul"],
+      ["une erreur transitoire donnant lieu à une reprise", "la personne active Réessayer", "seule la demande concernée est relancée selon une politique bornée et les données d’un autre métier ou lieu ne sont pas utilisées"]
+    ],
+    "ux": [
+      "Chargement textuel localisé et annoncé, sans bloquer inutilement toute la page ni effacer les filtres.",
+      "Alerte DSFR contextualisée, action Réessayer pour l’erreur compatible ou retour au champ pour une correction.",
+      "Messages distincts : aucun résultat, combinaison non renseignée, valeur indisponible, confidentialité, liste incomplète et service momentanément indisponible.",
+      "Focus conservé sur les interactions locales ; correction associée au champ et résultats annoncés sans déplacement arbitraire.",
+      "DataBox et tableaux conservant leur contexte quand une autre section échoue ; absence statistique hors graphique mais explicitée dans l’alternative.",
+      "Sources et limites consultables sans exposer au public les traces techniques, jetons ou détails de l’environnement."
+    ],
+    "related": ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10", "E11", "E12", "E13", "E14", "E15", "E16", "E17", "E18", "E19", "E20", "E21", "E22", "E23", "E24", "E25", "E26", "E27", "E28", "E29", "E30", "E31"],
+    "api_note": "Aucun GET supplémentaire. Cette US encadre les 21 GET déjà affectés aux fonctions métier : paramètres exacts, identifiant de demande, pagination, contrôle des états et réutilisation à contexte égal. Les réponses /indicateurs conservent leur maille_reelle et leur repli par mesure ; les autres routes utilisent leur propre enveloppe documentée. Les tests de transport devront conserver requête, environnement, statut et corps expurgés, sans publier le jeton.",
+    "proofs": [
+      "AGENTS.md",
+      "07_parcours/Explorer/02_SPECIFICATIONS_API.md",
+      "07_parcours/Explorer/06_DECISIONS_ET_POINTS_A_VALIDER.md",
+      "07_parcours/Explorer/10_DECISIONS_A_ARBITRER.md",
+      "07_parcours/Explorer/TESTS_UX_EXPLORER.md",
+      "07_parcours/Explorer/12_maquette_html/sources/experience_exploration.js",
+      "07_parcours/Explorer/12_maquette_html/controles/resultats/TESTS_UX_CDP_APRES.json",
+      "07_parcours/Explorer/BACKLOG_EXPLORER_RESTANT.md"
+    ],
+    "tests": [
+      "Brancher et tracer les GET dans l’environnement Q01 ; vérifier les erreurs HTTP réelles et le quota sans déduire leur comportement des simulations locales.",
+      "Tester les demandes successives, annulations et réponses tardives sur réseau réel, y compris après changement de mode et de territoire.",
+      "Collecter un vrai zéro serveur en recherche par savoir-faire, les pages manquantes et les combinaisons compétences/domaines/contextes non observées.",
+      "Tester reprise bornée, échec d’une seule section et refus d’accès sans perte des pistes ou de la paire comparée.",
+      "Compléter les variantes sous secret, tranches ouvertes, replis et listes vides ; les assertions d’état ne remplacent pas leurs preuves de données natives.",
+      "Clore Q14/R17 par un test fournisseur tracé et ne qualifier Q05 d’anomalie qu’après reproduction d’une projection conforme."
+    ],
+    "lot": "Transversal L1 à L9 ; intégration HTTP L1 et recette L10",
+    "state": "Attente, erreur de recherche, absence et protection contre réponse périmée testées dans le fournisseur local ; variantes statistiques et fidélité des JSON contrôlées hors ligne. Authentification, erreurs réseau réelles, reprise et quota HTTP restent à valider dans l’environnement Q01. Aucun test statique ni simulation n’est présenté comme preuve HTTP."
+  }
+]

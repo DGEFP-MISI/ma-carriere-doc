@@ -1,0 +1,206 @@
+@startuml
+' Modèle logique des données PUBLIÉES par l'API DGEFP-RCO
+' Les liens de codes ne constituent pas des FK SQL.
+!pragma layout smetana
+left to right direction
+skinparam backgroundColor #FFFFFF
+skinparam shadowing false
+skinparam roundcorner 12
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam defaultFontName Arial
+skinparam nodesep 22
+skinparam ranksep 32
+hide methods
+skinparam class {
+ BackgroundColor<<Referentiel>> #EAF3FE
+ BackgroundColor<<Association>> #F4EDFC
+ BackgroundColor<<Reponse>> #FFF3DE
+ BackgroundColor<<Granularite>> #E9F7EE
+ BackgroundColor<<Attention>> #FFE9E9
+ BorderColor #485769
+ FontColor #17212C
+}
+title API DGEFP-RCO — UML global des donnees exposees (21 GET)
+caption Modele logique/API, PAS schema SQL. Edition 2026-11-01.
+package "ROME / Competences" #F2F7FD {
+  class GrandDomaine <<Referentiel>> {
+    grand_domaine_code: string
+    grand_domaine_libelle: string
+  }
+  class Domaine <<Referentiel>> {
+    domaine_code: string
+    domaine_libelle: string
+  }
+  class Metier <<Referentiel>> {
+    rome_code: string [ROME V3]
+    rome_libelle: string
+    appellations: string[]
+    contexte_travail_codes: string[]
+    metiers_proches_codes: string[]
+    fap228_codes: string[]
+    formacode_codes: string[]
+  }
+  class CompetenceOGR <<Referentiel>> {
+    competence_code: string [ROME 4.0]
+    competence_libelle: string
+    categorie_competence_code: string
+    macro_competence_code: string?
+    rome_codes: string[]
+    rome_coeur_metier_codes: string[]
+  }
+  class CompetenceDuMetier <<Association>> {
+    competence_code: string
+    tag_coeur_metier: boolean?
+    tx_fiches_rome4: number
+    tag_acquise: boolean? [avec depuis]
+  }
+}
+package "Certification et formation" #F8F3FD {
+  class Certification <<Referentiel>> {
+    certifinfo_code: string
+    fiche_code: string? [RNCP/RS]
+    rome_codes: string[]
+    formacode_codes: string[]
+    bloc_competences_codes: string[]
+  }
+  class BlocCertification <<Referentiel>> {
+    bloc_code: string
+    fiche_code: string [RNCP]
+    certifinfo_codes: string[]
+  }
+  class Formacode <<Referentiel>> {
+    formacode_code: string
+    rome_codes: string[]
+  }
+  class Session <<Reponse>> {
+    code_insee: string
+    siret_formateur: string
+    date_debut: date
+    date_fin: date
+    nb_sessions: int
+    tag_onisep: boolean
+    --
+    certifinfo_code: NON EXPOSE
+    id_session: NON EXPOSE
+  }
+}
+package "Territoires" #F0FAF8 {
+  class Territoire <<Referentiel>> {
+    zonage: string
+    territoire_code: string
+    commune_codes: string[]
+    clpe_code: string?
+    departement_code: string?
+    region_code: string?
+  }
+  class ChaineTerritoriale <<Reponse>> {
+    maille: com/clpe/dep/reg/nat
+    code: string?
+    libelle: string
+  }
+}
+package "Statistiques et observables" #FFFAEE {
+  class CatalogueMesure <<Referentiel>> {
+    code: string
+    libelle: string
+    grain: string
+    champs: string[]
+  }
+  class IndicateursMetier <<Reponse>> {
+    rome_code: string
+    zonage: string
+    territoire: string?
+    territoires: ChaineTerritoriale[]
+    items: IndicateurMesure[]
+  }
+  class IndicateurMesure <<Reponse>> {
+    mesure: string
+    grain: string
+    maille_demandee: string
+    maille_reelle: string?
+    territoire_code: string?
+    repli: boolean
+    source_libelle: string
+    millesime: string
+    valeurs: object[] [variable]
+  }
+  class ReponseStatistique <<Reponse>> {
+    rome_code: string? [filtre]
+    grain: string
+    france: object? [selon route]
+    ensemble: object? [selon route]
+    items: object[] [selon route]
+  }
+  class FamilleFAP228 <<Granularite>> {
+    fap_228_code: string
+    --
+    tension, recrutements BMO
+  }
+  class FamilleFAP225 <<Granularite>> {
+    fap_225_code: string
+    --
+    salaires, emploi_secteurs, mobilites
+  }
+  class FamilleFAP87 <<Granularite>> {
+    fap_87_code: string
+    --
+    prospective 2030
+  }
+  class SecteurNAF38 <<Granularite>> {
+    secteur_naf38_code: string
+    --
+    secteurs d'activite
+  }
+}
+GrandDomaine "1" ..> "0..*" Domaine : code de domaine
+Domaine "1" ..> "0..*" Metier : filtre domaine
+Metier "0..*" ..> "0..*" Metier : metiers_proches_codes[]
+Metier "1" ..> "0..*" CompetenceDuMetier : /metiers/{rome}/competences
+CompetenceDuMetier "0..*" ..> "1" CompetenceOGR : competence_code
+CompetenceOGR "0..*" ..> "0..*" Metier : /metiers?competence= [R23 teste]
+Metier "0..*" ..> "0..*" Certification : rome -> /certifications
+Certification "0..*" ..> "0..*" BlocCertification : fiche ou certifinfo [R11-R13]
+Certification "0..*" ..> "0..*" Formacode : formacode_codes[]
+Metier "0..*" ..> "0..*" Formacode : formacode_codes[]
+Session ..> Certification : certifinfo [FILTRE, pas champ de sortie]
+Session ..> Territoire : zonage/territoire [FILTRE] + code_insee
+Territoire ..> ChaineTerritoriale : parents de la maille
+IndicateursMetier *-- "0..*" IndicateurMesure : items[]
+IndicateursMetier *-- "1..*" ChaineTerritoriale : territoires[]
+IndicateursMetier ..> Metier : rome [FILTRE]
+IndicateursMetier ..> Territoire : zonage, territoire [R16 teste]
+IndicateurMesure ..> CatalogueMesure : mesure = code
+IndicateurMesure ..> FamilleFAP228 : valeurs[] si grain=fap_228
+IndicateurMesure ..> FamilleFAP225 : valeurs[] si grain=fap_225
+IndicateurMesure ..> FamilleFAP87 : valeurs[] si grain=fap_87
+IndicateurMesure ..> SecteurNAF38 : emploi_secteurs
+ReponseStatistique ..> Metier : rome [FILTRE]
+ReponseStatistique ..> Territoire : mailles selon route
+ReponseStatistique ..> FamilleFAP228 : recrutements
+ReponseStatistique ..> FamilleFAP225 : salaires, mobilites
+ReponseStatistique ..> FamilleFAP87 : prospective
+ReponseStatistique ..> SecteurNAF38 : secteurs, salaires/secteurs
+note bottom of IndicateurMesure
+  'grain' et 'maille_reelle' sont definis PAR MESURE.
+  valeurs[] est polymorphe (14 mesures observees).
+  null != 0 != [] != "secret_stat".
+end note
+note bottom of Session
+  R18/R19 : filtre certifinfo et territoire observe,
+  mais ni identifiant session, ni certifinfo
+  ne sont restitues pour verifier la jointure.
+end note
+note right of ReponseStatistique
+  /secteurs avec rome F1610 : items=[] et
+  metier_maille=null observes (R17 non resolu).
+  Les autres routes ont des structures propres.
+end note
+legend bottom
+  = MODELE LOGIQUE DE L'API =
+  Classes bleues = objets de referentiel ; violettes = lien logique ; orange = reponses JSON ; vertes = granularites.
+  Pointilles = relation de code ou utilisation d'un filtre, pas une cle etrangere SQL.
+  Les multiplicites montrent des possibilites fonctionnelles, pas la cardinalite des tables physiques.
+  ROME V3 et competence OGR issue du ROME 4.0 ; FAP228, FAP225 et FAP87 sont distincts.
+endlegend
+@enduml

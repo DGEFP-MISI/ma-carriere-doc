@@ -1,0 +1,47 @@
+digraph APIRCO {
+  graph [label="API DGEFP-RCO | Modèle global des données exposées (pas une base SQL)", labelloc=t, fontsize=22, fontname="Arial", pad="0.45", ranksep="1.0", nodesep="0.5", bgcolor="white", splines=polyline, compound=true, fontcolor="#1B2F43"];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=12, color="#728398", penwidth=1.3, margin="0.18,0.14"];
+  edge [color="#7B8796", arrowhead=vee, arrowsize=0.65, fontname="Arial", fontsize=9, fontcolor="#4C5967"];
+  subgraph cluster_rome {label="Référentiels ROME"; color="#8DBAF4"; style=rounded; bgcolor="#F5F9FF";
+    domaines [label="Grand domaine / Domaine\nA-N | F16", fillcolor="#E6F1FE"];
+    metier [label="Métier ROME V3\nrome_code", fillcolor="#DDEDFE"];
+    comp [label="Compétence OGR (ROME 4.0)\ncompetence_code", fillcolor="#DDEDFE"];
+    liaison [label="Liaison métier-compétence\ntag_coeur_metier, tx_fiches_rome4", fillcolor="#EEE8FB"];
+  }
+  subgraph cluster_cert {label="Certifications & formation"; color="#BCA8E9"; style=rounded; bgcolor="#FAF7FF";
+    certif [label="Certification\ncertifinfo_code | fiche_code", fillcolor="#EEE7FF"];
+    bloc [label="Bloc RNCP\nbloc_code", fillcolor="#EEE7FF"];
+    formacode [label="Formacode\nformacode_code", fillcolor="#EEE7FF"];
+    session [label="Sessions\ndates | INSEE | SIRET\n(certifinfo uniquement en filtre)", fillcolor="#FFF0DE"];
+  }
+  subgraph cluster_terr {label="Territoires"; color="#8DCBB8"; style=rounded; bgcolor="#F5FBF8";
+    territoire [label="Territoire\nzonage | territoire_code", fillcolor="#E3F6EC"];
+    repli [label="Chaîne de repli\ncommune > CLPE > dep > reg > France", fillcolor="#E3F6EC"];
+  }
+  subgraph cluster_stats {label="Statistiques"; color="#E6C36C"; style=rounded; bgcolor="#FFFCF5";
+    mesure [label="Mesure\ncode | grain | champs", fillcolor="#FFF1D5"];
+    indic [label="Indicateur / mesure\nmaille_reelle | repli | valeurs[]", fillcolor="#FFF1D5"];
+    fap [label="Grains FAP\nFAP 228 ≠ FAP 225 ≠ FAP 87", fillcolor="#E7F7E9"];
+    naf [label="Secteur NAF38\nsecteur_naf38_code", fillcolor="#E7F7E9"];
+    autres [label="Recrutements, salaires, mobilités,\nprospective, dynamique des secteurs", fillcolor="#FFF1D5"];
+  }
+  domaines -> metier [label="domaine"];
+  metier -> liaison; liaison -> comp [label="codes OGR"];
+  metier -> certif [label="rome_codes[]"];
+  certif -> bloc [label="fiche / certifinfo"];
+  certif -> formacode [label="formacode_codes[]"];
+  metier -> formacode [style=dashed];
+  certif -> session [label="filtre certifinfo",style=dashed];
+  territoire -> session [label="filtre zonage / territoire",style=dashed];
+  territoire -> repli [style=dashed];
+  metier -> indic [label="filtre rome",style=dashed];
+  territoire -> indic [label="zonage / territoire",style=dashed];
+  mesure -> indic [label="code mesure"];
+  indic -> fap [label="grain variable"];
+  indic -> naf [style=dashed,label="emploi_secteurs"];
+  metier -> autres [style=dashed,label="filtre rome"];
+  autres -> fap [style=dashed];
+  autres -> naf [style=dashed];
+  territoire -> autres [style=dashed];
+  {rank=same; domaines; certif; territoire; mesure}
+}

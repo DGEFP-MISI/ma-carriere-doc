@@ -1,0 +1,24 @@
+[
+  {
+    "sha256": "09C55BADF941FFD51C3F1EC760B7CBE47567FFD4B10FC783DA368FBECFA32EB4",
+    "version": "2.1.1",
+    "license": "MIT",
+    "integrity": "sha512-+d31EVpxqfA/O5xrPZzOTF8C4usHCVmt+fk00twyMyDp8Tpcz8J7hP4s4a6M+OgkOwnOriRoV5ET55gJmWoIZA==",
+    "name": "@gouvfr/dsfr-chart",
+    "url": "https://registry.npmjs.org/@gouvfr/dsfr-chart/-/dsfr-chart-2.1.1.tgz"
+  },
+  {
+    "sha256": "E40BFE360002F7E8C3B62B11D9433FDF2D0ECC670B4FD48453B8B7BEB603A8EB",
+    "version": "1.15.4",
+    "license": "etalab-2.0",
+    "integrity": "sha512-Yu+4TuR7wBI7bBuPMNH4fstwmMweve+lJhopLkPZJ7i4pygjEtzfq4zaniibH5QNd+xjTWb/fEJiqe8nmYqcxg==",
+    "name": "@gouvfr/dsfr",
+    "url": "https://registry.npmjs.org/@gouvfr/dsfr/-/dsfr-1.15.4.tgz"
+  },
+  {
+    "url": "https://nodejs.org/dist/v24.22.2/node-v24.22.2-win-x64.zip",
+    "name": "Node.js",
+    "sha256": "ca1bff5d8ead13c9f2ea404a176db46bd430704d5b5113734049fa365e7799e2",
+    "version": "v24.22.2"
+  }
+]

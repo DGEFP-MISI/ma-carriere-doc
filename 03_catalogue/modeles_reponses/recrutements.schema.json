@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "properties": {
+    "france": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fap_228_code": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "fap_228_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_projets_recrutement": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_projets_recrutement_difficiles": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_projets_recrutement_saisonniers": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_rome_famille": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_projets_recrutement_difficiles": {
+            "type": "number",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_projets_recrutement_saisonniers": {
+            "type": "number",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          }
+        },
+        "additionalProperties": true,
+        "x-niveau-preuve": "reponse_JSON_observee"
+      },
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "grain": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fap_228_code": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "fap_228_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_projets_recrutement": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_projets_recrutement_difficiles": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_projets_recrutement_saisonniers": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_rome_famille": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "rang": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "territoire_code": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "territoire_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_projets_recrutement_difficiles": {
+            "type": "number",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_projets_recrutement_saisonniers": {
+            "type": "number",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          }
+        },
+        "additionalProperties": true,
+        "x-niveau-preuve": "reponse_JSON_observee"
+      },
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "millesime": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "perimetre": {
+      "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+      "nullable": true,
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "rome_code": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "source_libelle": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "total": {
+      "type": "integer",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "tri": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "zonage": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    }
+  },
+  "additionalProperties": true,
+  "x-niveau-preuve": "JSON_OBSERVE_et_contrat",
+  "x-nombre-echantillons": 3,
+  "description": "Modèle complémentaire de travail, NON OFFICIEL. Inféré des JSON collectés et lu avec le contrat du 19/10/2026. Ne garantit pas les variantes non testées."
+}

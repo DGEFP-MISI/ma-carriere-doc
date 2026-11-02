@@ -1,0 +1,130 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor white
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+hide methods
+top to bottom direction
+title API DGEFP-RCO — Associations justifiees par le contrat
+skinparam class {
+ BackgroundColor<<Reference>> #F0F6FF
+ BackgroundColor<<Reponse>> #FFF7E9
+}
+package "Referentiels exposes" {
+ class Metier <<Reference>> {
+   rome_code : string
+   domaine_code : string
+   metiers_proches_codes : string[]
+   formacode_codes : string[]
+ }
+ class DomaineROME <<Reference>> {
+   grand_domaine : string [parametre]
+   domaine : string [filtre /metiers]
+ }
+ class Competence <<Reference>> {
+   competence_code : string
+   rome_codes : string[]
+ }
+ class CompetenceDuMetier <<Reponse>> {
+   competence_code : string
+   tag_coeur_metier : boolean
+   tx_fiches_rome4 : number
+   tag_acquise : boolean? [si depuis]
+ }
+ class Certification <<Reference>> {
+   certifinfo_code : string
+   fiche_code : string
+   rome_codes : string[]
+   formacode_codes : string[]
+   bloc_competences_codes : string[]
+ }
+ class BlocRNCP <<Reference>> {
+   bloc_code : string
+   fiche_code : string
+   certifinfo_codes : string[]
+ }
+ class Formacode <<Reference>> {
+   formacode_code : string
+   rome_codes : string[]
+ }
+}
+package "Territoires, sessions, donnees" {
+ class Territoire <<Reference>> {
+   zonage : string
+   territoire_code : string
+   region_code : string?
+   departement_code : string?
+   clpe_code : string?
+   commune_codes : string[]
+ }
+ class Session <<Reponse>> {
+   code_insee : string
+   siret_formateur : string
+   date_debut : date
+   date_fin : date
+   nb_sessions : integer
+ }
+ class IndicateurParMesure <<Reponse>> {
+   mesure : string
+   grain : string
+   maille_demandee : string
+   maille_reelle : string
+   repli : boolean
+   valeurs : object[]
+ }
+ class DefinitionMesure <<Reponse>> {
+   code : string
+   ressource : string
+   champs : string[]
+   mailles : string[]
+ }
+ class ProspectiveFAP87 <<Reponse>> {
+   fap_87_code : string
+   rome_codes : string[] [sur /prospective/metiers]
+ }
+ class SalaireFAP225 <<Reponse>> {
+   fap_225_code : string
+ }
+ class RecrutementFAP228 <<Reponse>> {
+   fap_228_code : string
+ }
+ class MobiliteFAP225 <<Reponse>> {
+   fap_225_code : string
+   origine_code : string? / destination_code : string?
+ }
+}
+Metier ..> DomaineROME : domaine_code [filtre]
+Metier ..> Metier : metiers_proches_codes[]
+Metier ..> CompetenceDuMetier : rome [path]
+CompetenceDuMetier ..> Competence : competence_code
+Certification ..> Metier : rome_codes[]
+Certification ..> BlocRNCP : bloc_competences_codes[] / fiche_code
+BlocRNCP ..> Certification : certifinfo_codes[]
+Certification ..> Formacode : formacode_codes[]
+Metier ..> Formacode : formacode_codes[]
+Formacode ..> Metier : rome_codes[]
+Session ..> Territoire : code_insee [commune]
+IndicateurParMesure ..> DefinitionMesure : mesure = code
+IndicateurParMesure ..> Territoire : maille_reelle / territoire_code
+Metier ..> ProspectiveFAP87 : filtre rome (pas mesure ROME)
+Metier ..> RecrutementFAP228 : filtre rome (pas mesure ROME)
+Metier ..> SalaireFAP225 : filtre rome (pas mesure ROME)
+Metier ..> MobiliteFAP225 : filtre rome (pas transition ROME)
+note right of Session
+  /sessions* accepte certifinfo comme filtre.
+  La reponse ne renvoie pas de code certifinfo :
+  relation au niveau de la requete seulement.
+  Aucun identifiant de session documente.
+end note
+note right of IndicateurParMesure
+  Les valeurs[] changent de structure selon mesure.
+  Le repli est exprime par mesure, non pour tout le metier.
+end note
+legend bottom
+  Pointilles = reference de code ou parametre d appel, PAS association persistante ni FK.
+  Aucune multiplicite conceptuelle certaine : arrays[] sont modelises dans les diagrammes de contrats.
+  FAP87, FAP225, FAP228 sont des granularites differentes : ne pas les fusionner.
+  ROME V3 pour les metiers ; contributions ROME 4.0 ramenees au parent V3.
+endlegend
+@enduml

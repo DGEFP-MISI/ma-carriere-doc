@@ -1,0 +1,261 @@
+# Explorer V2 — Plan de réalisation de la cible complète
+
+## Évolution UX ciblée — 2 novembre 2026
+
+La maquette existante est conservée comme socle de restitution des données. Son point d'entrée est désormais la recherche, qui reste disponible dans les fiches avec ses trois modes et sa saisie. La première lecture du métier suit quatre questions : activités, opportunités, salaires et autres pistes ; les contenus détaillés, dont mobilités et prospective2030, restent accessibles ensuite. Les filtres savoir-faire/contextes sont simultanés, sans étapes numérotées. Le comparateur porte sur les deux métiers effectivement choisis ; le lieu est sélectionné parmi les territoires observés, sans transposer les chiffres d'un autre lieu.
+
+Mes pistes utilise une session d'onglet et un format de reprise portable dans la maquette. Il s'agit d'une préparation opérationnelle, pas d'un arbitrage définitif de stockage de production. L'utilisatrice a demandé d'avancer sans les deux autres parcours, à raccorder plus tard : aucune liaison vers un produit absent n'est simulée. D08/D10 restent ouverts sur les modalités de production. Aucune des31 fonctionnalités n'est retirée et aucun nouveau GET n'est ajouté.
+
+Voir [l'évolution appliquée et ses limites](12_maquette_html/documentation/EVOLUTION_STRUCTURE_UX.md) et [les contrôles actuels](12_maquette_html/README.md). Les nombres de contrôles cités dans les sections historiques correspondent à leurs étapes respectives. La recherche reste alimentée par les JSON observés ; ces contrôles locaux ne prouvent pas une recherche HTTP réelle, un partage interapplications, ni une conformité RGAA.
+
+
+**Mise à jour du 2 novembre 2026 — dossier rangé.** Le lot L0 est terminé. La présentation actuelle est la [maquette HTML citoyenne](12_maquette_html/index.html), dont les [sources et contrôles](12_maquette_html/README.md) sont rangés séparément. Voir le [guide du dossier](README.md). Les noms du projet, identifiants et référentiels employés dans les documents techniques ne doivent pas apparaître dans les écrans citoyens. Les 31 fonctionnalités restent conservées ; les captures locales ne valent pas des tests HTTP de l’API.
+
+Date : 1er novembre 2026. Révision appliquant la décision produit majeure : **E01–E31 sont tous conservés dans le périmètre fonctionnel cible**. Les lots organisent le travail, sans définir une version réduite du produit. Les solutions sont préparées sans développement ni nouveaux tests HTTP. Référence : audit 08 ; décisions d'exécution et questions fournisseur : document 10.
+
+## 1. Point de départ et conditions d'engagement
+
+Le dossier contient une base documentaire, des contrôles API et une maquette HTML locale. Aucune application de production connectée à l’API n’est identifiée. Il ne permet pas de choisir les conventions d'un produit existant, son framework, son routage, son système de composants ou son hébergement. Ne pas initialiser de projet applicatif dans ce dossier à partir du seul prompt 07.
+
+Avant réalisation : identifier le dépôt d'accueil et son propriétaire technique, confirmer les composants DSFR et les exigences RGAA applicables, l'environnement de déploiement, l'URL de base API, l'accès au jeton et sa gestion. L'export officiel n'indique pas de `servers`. L'accès HTTP et CORS ne sont pas testés. Le contrat fixe 40 requêtes/seconde par jeton et demande l'affichage du logo RCO.
+
+Le périmètre n'est plus à arbitrer : les 31 fonctionnalités sont décidées. Les modalités de réalisation restent proposées, sans autorisation de démarrer le développement dans cette tâche documentaire. Les anciennes mentions de report, d'exclusion ou d'extension facultative dans 01–07 sont caduques en tant que recommandations de périmètre. Le lot L0 est désormais exécuté : les sept documents01–07 sont actualisés en place. La table commune03 contient les 31 lignes consolidées, les appels détaillés, les tests et les lots ; la matrice ci-dessous en reste une vue de résolution, pas une version parallèle. Les sources et preuves de référence sont inchangées.
+
+Une fixture manquante déclenche une collecte et un test de contrat. Elle n'empêche pas de spécifier le parcours et les adaptateurs à partir du contrat. Une anomalie reproduite déclenche une demande fournisseur, des tests de diagnostic et une condition de recette locale. La cible complète ne sera pas déclarée terminée tant qu'une de ses capacités reste bloquée ; les travaux indépendants peuvent avancer.
+
+## 2. Organisation technique proposée
+
+| Couche | Responsabilité | Limites à préserver |
+|---|---|---|
+| Transport API | Sérialisation des paramètres propres à chaque route, authentification, annulation, gestion HTTP, débit partagé | Liste autorisée des 21 GET ; aucun appel documentaire traité comme donnée, aucun SQL ou service de données supplémentaire |
+| Adaptateurs par ressource | Vérifier les enveloppes, distinguer les variantes, conserver les champs et métadonnées d'origine | Les dix schémas analytiques restent non officiels ; ne pas prétendre à une génération exhaustive depuis Swagger |
+| Cache de requêtes | Dédupliquer et réutiliser fiches/listes/catalogues ; distinguer complet/partiel/projeté | Clé comprenant route et tous les paramètres pertinents ; ne pas assimiler réponse réduite et fiche complète |
+| État de navigation | Mode, recherche, sélection exacte, territoire, filtres OGR, intention certification | Identifiants stables et chaînes de caractères ; aucune maîtrise personnelle déduite |
+| Modèles d'affichage | État d'un champ, provenance, catégories, familles et populations | Modèles internes explicitement distincts de champs API ; aucun indicateur chiffré inventé |
+| Composants fonctionnels | Recherche, fiches, listes, comparateur et blocs méthodologiques | Couverture de toutes les fonctions décidées ; chargement progressif et détails à la demande pour maîtriser la densité, sans retirer du contenu |
+
+**Authentification proposée :** si le jeton fournisseur est confidentiel et partagé, faire porter son usage par une couche serveur de l'application d'accueil, avec liste de routes/paramètres autorisés et limiteur commun. Cette couche relaie exclusivement les GET prévus ; elle n'ajoute aucune source de données et ne doit pas exposer le jeton au navigateur. Le mode de passage dans l'application d'accueil est à valider techniquement. Ne pas choisir spontanément une infrastructure ou inventer une route publique de proxy dans le contrat DGEFP–RCO.
+
+Les journaux techniques doivent indiquer route, paramètres non sensibles utiles, statut, durée et identifiant de requête si disponible. Ne jamais y inscrire le jeton. Pour les preuves, enregistrer requête effective expurgée, date, environnement/version connus, statut HTTP et JSON brut ; conserver aussi les tests négatifs, en distinguant capture réseau et simulation.
+
+## 3. Composants fonctionnels nécessaires
+
+| Composant proposé | IDs | Comportement et dépendances |
+|---|---|---|
+| Recherche unique et sélecteur de mode | E01–E03 | Champ métier/certification 2–100 caractères ; Domaine en navigation tant qu'une autre interaction n'est pas décidée ; changement de mode annule les requêtes précédentes |
+| Résultats identifiés et pagination | E01/E02/E04/E14/E16/E20 | Libellé + identifiant + type, sélection explicite, chargement suivant contrôlé, aucun résultat périmé substitué à la recherche actuelle |
+| Arbre et fiche Domaine | E03/E04 | Grand domaine → domaine choisi → fiche et liste métiers ; aucun total statistique calculé pour le domaine |
+| Fiche métier et alternatives | E05/E07/E29 | Définitions et appellations, contexte du parent V3, liens proches, badges et exploration des transitions sur les tags reçus |
+| Compétences par catégorie | E06 | Pagination complète ou catégories demandées explicitement ; part des spécialités, état incomplet visible |
+| Sélection OGR et filtres métiers | E13–E16 | Codes validés, 1–10 par paramètre concerné, toutes/au moins une, contextes distincts des compétences ; pas de saisie libre convertie en code |
+| Fiche Certification et bascule d'intention | E17–E20 | Source identique quelle que soit l'intention ; voies, RNCP/RS, blocs et métiers liés ; message certification active introuvable |
+| Résultats d'insertion par population | Complément E17 | Sections distinctes scolaire/apprentissage/InserSup/DE, horizon, période, unité et secret ; aucune territorialisation de la fiche nationale |
+| Sélection du territoire | E09 | Couple zonage/code et parents ; France comme option spécifique aux appels compatibles ; homonymes distingués |
+| Mesures locales | E08/E12/E31 | Bloc par mesure, valeurs propres à son type, territoire réel et repli, familles multiples conservées |
+| Classements territoriaux | E10/E11 | Choix de périmètre compatible ; rang par FAP ; classements salaire et BMO séparés ; tranche salariale ouverte gérée |
+| Mes pistes | E27 | Codes métier uniques, ajouter/retirer, plafond et durée après décision ; actions locales accessibles |
+| Comparateur | E28 + E05/E06/E08/E09/E10/E11/E12/E20/E31 ; accès aux détails E23–E25 | Deux métiers identifiés ; descriptions, contextes, compétences, certifications et indicateurs ; listes complètes pour comparaison OGR ; données familiales côte à côte sans delta ou score inventé |
+| Explication des sources et états | Transversal | Définition du champ, source, période, population, maille et grain ; logo RCO ; aucun recours à une unité JSON inexistante |
+| Sessions à venir et en cours | E21/E22 | Deux vues d'une même certification sur territoire compatible, pagination, organismes, dates et modalités ; validation de filtrage planifiée, sans réservation ni places disponibles |
+| Mobilités observées | E23 | Origines et destinations, région/France, âge, familles et situations hors emploi ; parts et repli conservés |
+| Prospective détaillée 2030 | E24 | Synthèse puis détail par famille, comparaison région/France et entrée par région vers les ROME associés ; tous les effectifs/taux documentés |
+| Salaires sectoriels | E25 | Tableau par FAP225 et NAF38 avec référence tous secteurs, unités, rang, seuils et maille de chaque ligne |
+| Secteurs d'emploi et contexte territorial | E26 | Parts familiales via E08 et dynamique territoriale via `/secteurs` distinguées ; traitement métier-territoire contractuel à résoudre avec RCO (R17), fonction maintenue |
+| Formacodes et certifications | E30 | Thèmes associés → certifications filtrées → fiche et sessions par Certif Info ; limite explicite des formations non certifiantes |
+
+Ces noms décrivent des responsabilités, pas des fichiers ni des composants déjà développés. La navigation principale doit rendre les trois fiches accessibles sans sélectionner un métier avant la fiche Domaine.
+
+## 4. Ordre des GET et chaînages
+
+Les appels indépendants peuvent être parallélisés avec une concurrence bornée compatible avec le quota global. Les résultats suivants restent dépendants des codes effectivement sélectionnés. `fields` est omis dans les premières intégrations, puis introduit route par route avec preuve de non-régression.
+
+| Étape | Ordre proposé | Paramètres/champs transmis | États et contrôle |
+|---|---|---|---|
+| Catalogue méthodologique | `/mesures` une fois, au premier besoin statistique/certification | Dictionnaire local par `items[].code`, conserver `ressource`, `champs`, `mailles`, `source`, `millesime`, définition/grain | Échec indépendant de la navigation ; ne pas publier une statistique dépourvue d'explication indispensable |
+| Entrée métier | `/metiers?q={texte}&page=1` → sélection → `/metiers/{rome}` | `items[].rome_code` uniquement ; pas de fiche sur texte brut | q trop court : pas d'appel ; 0 résultat, erreur ou page suivante séparés |
+| Entrée Domaine | `/domaines` ou `?grand_domaine=F` → domaine choisi → `/metiers?domaine=F16&page=1` | Code du sous-objet `items[].domaines[]` ; parent conservé dans l'état | Pas de `q/page/fields` sur `/domaines` ; conception d'après contrat et collecte réelle dans le même chantier |
+| Fiche métier | Après détail : `/metiers/{rome}/competences?page=1` et/ou catégories, `/certifications?rome={rome}&page=1` selon sections ouvertes | Détail réutilisé entre fiche, pistes et comparaison | Les erreurs des enrichissements ne doivent pas remplacer la fiche par une erreur globale |
+| Compétences complètes | Lire `last_page` et charger les pages utiles ; pour une comparaison, toutes les pages du périmètre retenu | Même code/catégorie/projection sur toutes les pages ; dédoublonnage par code dans cette ressource | Indiquer incomplet si une page manque ; ne pas conclure « spécifique » à partir d'un jeu partiel |
+| Métiers proches | Codes et libellés de la fiche → détail de la cible à l'ouverture | `metiers_proches_codes[]` → `/metiers/{code}` | Aucun besoin de charger toutes les cibles pour leur seul libellé déjà reçu |
+| Recherche OGR | `/competences?q=...&categorie=...&page=1` ou réemploi des codes déjà reçus → `/metiers?competence=...&mode_competence=...&page=1` | Codes six chiffres ; 1–10 ; éventuellement `code=...,...` pour résolution documentée | Champs de match seulement si présents ; ordre API préservé, distinction macro-compétences |
+| Contextes | Réemploi fiche/catégorie ou `/competences?categorie=contexte_travail&q=...&page=1` → `/metiers?domaine=...&contexte=...` OU `sans_contexte=...` | Pas de filtre catégorie fictif ; ne pas passer un code domaine métier à `/competences?domaine` (ce dernier vaut 1–6) | R24 sans `fields` ; 422 non relancé en boucle ; combinaisons multi-contextes à tester |
+| Entrée Certification | `/certifications?q=...&page=1` → `/certifications/{certifinfo}` | `items[].certifinfo_code`, chaîne ; bascule d'intention ne refait pas le GET | Gestion active introuvable, pas de fallback inventé vers un ancien diplôme |
+| Blocs et métiers associés | Après fiche, si RNCP pertinent : `/certifications/blocs?certifinfo=...&page=1` ou `?fiche=RNCP...` ; ouverture d'un `rome_codes[]` via `/metiers/{rome}` | Un filtre démontré ; vérifier `fiche_code`/`certifinfo_codes[]` des blocs | RS : pas de blocs ; RNCP sans blocs : message documentaire ; ne pas transformer `competences` texte en OGR |
+| Mesures d'un lieu | `/territoires?q=...&zonage=...&page=1` → sélection → `/indicateurs?rome=...&zonage=...&territoire=...` | Pour R16 : `F1610`, `commune`, `34172` ; France : `zonage=france`, sans territoire | Chaque mesure garde sa maille ; nouvelle sélection invalide les requêtes d'affichage de l'ancien couple |
+| Classement BMO | Au choix de l'utilisateur : `/recrutements?rome=...&zonage=...&tri=...` avec périmètre compatible | `region` si département/CLPE, `departement` si CLPE ; aucun `territoire` | Pas de pagination sur cette route ; familles et rang conservés |
+| Classement salaires | `/salaires?rome=...&zonage=region` ou `zonage=departement&region=...` | Ni `tri`, ni `territoire`, ni `page` inventés | Utiliser ordre/rang API et gérer tranche ouverte ; toutes familles séparées |
+| Comparateur | Réemploi des détails puis complétion des compétences des deux métiers ; `/indicateurs` par métier et territoire et `/certifications?rome=...` | Même territoire demandé ne garantit pas même territoire réel ; données E23–E25 chargées dans leurs volets détaillés | Données individuelles absentes ; ne pas confondre deux appels avec deux observations indépendantes de famille |
+| Sessions | Fiche + territoire compatible → `/sessions_a_venir?certifinfo=...&zonage=...&territoire=...&onisep=exclure&page=1`, et `/sessions_en_cours` pour l'autre vue | Pas de commune/France ; mode Onisep explicite | Réalisation et tests du filtrage prévus pour les deux routes ; garantie fournisseur à documenter pour la recette du rattachement |
+
+Les appels E23–E26/E29/E30 font partie du même plan obligatoire de couverture. Leur ordonnancement détaillé et leurs restitutions sont spécifiés en sections 7 et 9. Les appels diagnostiques `/secteurs?rome=...` sont nécessaires pour résoudre R17 ; leurs résultats vides ne sont pas publiés comme une absence d'emploi. Aucune nouvelle validation du périmètre n'est requise pour engager ces chantiers quand le développement sera autorisé.
+
+## 5. États, cache et erreurs
+
+**États distincts :** initial, saisie insuffisante, chargement, succès, aucun résultat, succès partiel (pages ou sections manquantes), erreur récupérable, ressource introuvable, indisponibilité d'une mesure. À l'intérieur d'un succès, chaque champ garde son état nombre/zéro/null/secret/absent/tranche ouverte. Une collection vide n'est pas une valeur scalaire. Le modèle interne peut nommer ces états, mais ne doit pas les présenter comme des propriétés JSON reçues.
+
+| Incident | Comportement proposé |
+|---|---|
+| 400 / 422 | Afficher une erreur de paramétrage utile, enregistrer les violations expurgées ; corriger la requête, pas de répétition automatique |
+| 401 | Bloquer le chargement concerné, signaler l'accès indisponible au niveau adapté ; pas de jeton demandé dans l'interface publique ; pas de boucle de retry |
+| 404 | Distinguer fiche inexistante/inactive, territoire inconnu et route ; conserver pistes et navigation |
+| 429 | Temporisation bornée, `Retry-After` seulement s'il existe et est valide ; file et quota partagés par jeton |
+| 503 / 5xx / timeout | Reprise bornée d'un GET si appropriée, bouton réessayer, indication d'échec du bloc ; aucun résultat fictif de remplacement |
+| Requête annulée ou réponse tardive | Ne pas afficher d'erreur utilisateur pour l'annulation volontaire ; empêcher le résultat d'un ancien mode/métier/territoire d'écraser l'état courant |
+| JSON inattendu | Conserver la preuve expurgée et l'état du reste de la fiche ; ne pas coercer une chaîne arbitraire en nombre |
+| Catalogue indisponible | Réutiliser les métadonnées valides déjà chargées ; masquer le bloc qui ne peut plus être expliqué correctement plutôt que créer des unités/périodes |
+
+**Clés de cache :** méthode GET + route + paramètres effectifs (incluant `page`, `categorie`, `fields`, `depuis`, `coeur_metier`, `mode_competence`, Onisep, périmètre). Conserver l'ordre des codes OGR pour ne pas changer l'ordre de `competences_trouvees_codes`. Détails métier par ROME, détails certification par Certif Info, territoires par zonage+code. Les données comparées sont identifiées aussi par code FAP et période ; l'égalité des seuls libellés n'est pas une clé.
+
+Réutiliser `/mesures` et `/domaines` durant la session après succès. Partager les détails et listes entre fiche et comparateur. Ne pas fusionner naïvement réponses `fields` partielles et réponses complètes. Le contrat prévoit des rechargements par lots sans durée de cache garantie : aucune durée longue chiffrée n'est décidée ici. L'ajout d'une piste ne nécessite pas d'appel API. Une réouverture ne recharge une fiche que selon la politique de fraîcheur validée. Le mode « Je possède / Je souhaite obtenir » change uniquement la présentation.
+
+## 6. Stratégie de tests et preuves
+
+Trois niveaux doivent être publiés séparément : **contrôle statique**, **comportement avec fixtures**, **intégration HTTP réelle**. Les deux premiers ne constituent pas la preuve du troisième. Aucun des tests de produit ci-dessous n'a été développé ou exécuté pendant cet audit.
+
+| Jeu / test proposé | Données réelles disponibles | Résultat attendu / manque à combler |
+|---|---|---|
+| Contrats et liste autorisée | O, CSV, contrôles existants | 21 GET seulement ; rejeter paramètres non supportés ; modèles tolérants aux champs ajoutés et champs conditionnels |
+| Recherche libre et pagination | O documente `q`, R23/R24 ne testent pas `q` | Collecter métier/certification/compétence/territoire : préfixe, accents, 0 résultat, ambiguïté, 2 et 100 caractères, pages ; pas de correction orthographique promise |
+| Domaine | C + schéma analytique uniquement | Export réel `/domaines` et chaîne `/metiers?domaine=...` requis ; ne pas rebaptiser l'exemple contractuel en réponse observée |
+| Fiche métier | M F1610 | Définitions multiples, codes et libellés, tags ; aucun code ROME V4 ni champ activité inventé |
+| Compétences | MC : page 1 de 144 | Détecter l'incomplétude ; collecter page 2 ou catégories complètes ; ajouter un second métier avant comparaison exhaustive |
+| R23 | JSON du dossier `06_controles/resultats/R23 test/` | `toutes` : F1610 ; `au_moins_une` : F1610/F1705/I1604 ; codes de match présents seulement selon variante ; pas de score créé |
+| R24 | Deux succès + deux corps 422 sous `R24/` | Inclusion 10, exclusion 3 pour F16/300782 ; présence/absence du code ; erreur de projection isolée ; tester ensuite d'autres codes et combinaisons en HTTP |
+| R16 | Deux JSON `R16 test/` | 14 mesures, 5 CLPE/5 département/3 région/1 France ; vérifier maille réelle par mesure, familles et trois secrets dans formations |
+| Valeurs et types | CL et R16 pour `secret_stat`, CD/MC pour null, R16 pour zéro, R17 pour vide | Aucun remplacement par zéro, pas de déduction de secret, booléen null distinct ; tableau vide distinct du champ absent |
+| Salaire tranche ouverte | Règle C ; aucun cas SAL observé | Spécifier la branche null+tranche/rang selon le contrat et demander un cas réel pour sa recette ; ne pas fabriquer de salaire ou de réponse API de démonstration |
+| Familles / comparateur | BMO/SAL/PRO multi-FAP ; MC unique et partiel | Familles séparées, rang non global ; deux ROME partageant famille et deux ROME de familles différentes à collecter ; vérifier repli différent entre les deux |
+| Certification/blocs | CD 112561, CB RNCP36101, CL | Identités et quatre blocs ; compétence de bloc en texte ; non-équivalence OGR ; capturer requêtes exactes et un cas RS/absence blocs/inactive pour couverture réelle |
+| Insertion | CD/CL et MES | Populations distinctes, emploi 12 mois vs accès 6 mois ; millésimes et secret ; aucun taux recalculé |
+| Sessions | R18 : 10 ; R19 : 8, dates à la date de collecte | Tester les deux vues ; certifications distinctes, pagination et exclusion Onisep ; documenter la garantie de filtre sans inventer d'ID ; ne pas assimiler lignes, sessions et places |
+| R17 | 35 lignes sans ROME, 0 sur deux mailles avec ROME | Reproduction et résolution fournisseur ; recette séparée des parts familiales accessibles, du contexte territorial et du résultat métier-territoire attendu ; aucune interprétation « aucun employeur » |
+| Mobilités | MOB : deux sens et variantes d'âge | Modèles selon sens, groupes FAP225, hors emploi, repli région/France, parts incomplètes ; tests HTTP région et âge à tracer |
+| Prospective détaillée | PRO : variantes des tris, familles et régions | Tous les effectifs/taux documentés ; valeurs négatives conservées, familles multiples et limites métropole/Corse, navigation `rome_codes[]` ; jamais de somme avec BMO |
+| Salaires sectoriels | SS : référence `ensemble` et lignes sectorielles | FAP/NAF/rang, mensuel vs annuel, repli par ligne, secteurs sous seuil non assimilés à zéro ; appel régional à tracer |
+| Transitions et Formacodes | M pour tags, FC pour thèmes | Pages complètes du catalogue pour filtre local ; chaîne thème → certification → sessions, sans recherche de sessions par Formacode inventée |
+| Pistes et navigation | Codes métier reçus | Ajout/retrait unique, plafond choisi, deux sélections, retour, changement territoire/mode ; aucun POST ni faux endpoint de sauvegarde |
+| États HTTP | Corps 422 R24 ; pas de capture complète des autres erreurs | Tests simulés pour 400/401/404/429/503/5xx/réseau ; tests HTTP distincts avec capture de statut avant de conclure à l'intégration |
+| Accessibilité | Aucune interface actuelle | Tests clavier, focus après sélection/changement, messages de charge/erreur annoncés, tableaux comparatifs lisibles, textes associés aux graphes, absence de couleur seule |
+
+Les fixtures réelles sont référencées sans modification, avec leur origine et leurs paramètres connus. Ne pas remplir les lacunes par des chiffres ou réponses métier inventés. Spécifier les branches manquantes d'après le contrat et collecter leurs preuves réelles pour la recette. Les simulations de transport/erreur et les contrôles d'états restent explicitement distincts de résultats métier observés et ne valident aucune disponibilité HTTP.
+
+Une future validation HTTP doit conserver date, URL/paramètres effectifs, statut et corps, sans jeton. Rejouer un nombre limité de scénarios significatifs sur l'environnement autorisé ; ne pas figer comme vérité future les nombres 10/8 de sessions ou les millésimes. Les assertions sur comptes exacts sont réservées aux fixtures immuables de la campagne.
+
+## 7. Lots techniques couvrant toute la cible après autorisation de développement
+
+| Lot | IDs / résultat concret | Dépendances | Critère de sortie |
+|---|---|---|---|
+| L0 — Alignement et chantier fournisseur | Réalisé : alignement01–07 en place, 31 lignes/31 stories, 29 mesures détaillées ; Q01–Q14 triées entre acquis, GET et fournisseur | Périmètre confirmé ; suivi des captures et rôles proposés dans 06/10, demandes non envoyées | Six contrôles hors ligne réussis, cohérence documentaire et intégrité vérifiées ;31 IDs maintenus ; aucune fonction supprimée ni application démarrée |
+| L1 — Intégration dans l'application d'accueil | Transport GET, auth, adaptateurs pour les familles de réponses, erreurs, cache et provenance | D10, URL et jeton gérés, conventions connues | Tests de transport/variantes ; preuve HTTP réelle distincte des tests sur fixtures ; aucun jeton dans le client public |
+| L2 — Navigation, fiches et certifications | E01–E07, E09, E17–E20 | L1, décisions de présentation D02/D03 ; collecte Domaine et pages dans ce lot | Trois fiches et chaînages accessibles ; compétences complètes ; insertion par populations et blocs RNCP ; limites explicites |
+| L3 — Exploration OGR, transitions et thèmes | E06/E13–E16/E18/E29/E30 ; complément cœur de métier/arborescence et recherche de blocs | L1/L2 utiles ; D04 ; données de catalogue complètes pour filtres locaux | Recette R23/R24, tags locaux sans paramètre fictif, thème → certifications ; recherches additionnelles documentées |
+| L4 — Indicateurs et territoires | E08/E10/E11/E12/E31 | L1/L2, D06/D07, modèles multi-FAP | Mesures locales et classements complets, mailles/secret/tranches/horizons exacts ; méthodologie réutilisée par tous les lots |
+| L5 — Mobilités professionnelles | E23 | L1 et sélection métier/territoire ; composant de provenance L4 réutilisable sans attendre sa recette complète | Deux sens, âges, France/région, familles et hors emploi, repli et parts non exhaustives ; tests dédiés |
+| L6 — Prospective détaillée 2030 | E24, complément découverte par région → métiers | L1, sélection métier/région, dictionnaire et familles | Effectifs et taux reçus, croissance/départs/postes/jeunes/déséquilibre, spécificité/part, tris et référence France ; limites géographiques testées |
+| L7 — Secteurs économiques et salaires sectoriels | E25/E26 | L1, E08 pour parts familiales, résolution R17 engagée dès L0 | Salaires FAP×NAF et contexte territorial distincts ; recette du résultat métier-territoire après clarification/correction R17. E26 reste ouvert tant que celle-ci manque |
+| L8 — Sessions à venir et en cours | E21/E22 | L1, E17/E09, D09 et validations RCO préparées dès L0 | Deux temporalités et modalités, filtres et pagination testés, garantie de rattachement établie ; pas de places/admission promises |
+| L9 — Pistes et comparateur complet | E27/E28, réutilisation E05/E06/E08/E10/E11/E17–E25/E31 | Cache L1, décisions D05/D08 ; vues descriptives et statistiques alimentées progressivement par les autres lots | Deux métiers, compétences/contextes complets, certifications, familles communes identifiées et volets détaillés ; aucun score ou calcul inventé |
+| L10 — Recette intégrée et publication | Parcours complet E01–E31, accessibilité et preuves | Tous les lots ; D10 pour modalités de publication | Matrice de 31 recettes ; aucun ID écarté pour obtenir artificiellement un résultat complet ; livré/simulé/testé HTTP/bloqué distingués |
+
+Les lots L3–L8 peuvent progresser indépendamment dès que leur transport et leurs sélections existent. L5/L6/L7 ne dépendent pas de la fin du comparateur ou des sessions. L9 assemble les données disponibles et conserve ses tâches restantes jusqu'à couverture complète. Les délais de réponse RCO doivent être suivis dès L0, pas découverts en fin de réalisation. Aucune estimation chiffrée de charge n'est fiable avant connaissance de l'application d'accueil ; le périmètre complet est déjà fixé.
+
+## 8. Dépendances et résolution des difficultés
+
+- **Contexte technique à obtenir :** application cible et architecture d'accès non identifiées ; cela empêche de choisir une implémentation concrète, pas de concevoir les 31 fonctions. Aucun projet neuf créé dans cette tâche.
+- **Domaine :** spécifier l'arbre selon C et collecter `/domaines` dans L2 ; une fixture manquante est une action de recette, pas une réduction du produit.
+- **Comparaison exhaustive :** charger page 2 et une seconde fiche complète ; réaliser les variantes multi-FAP et collecter les scénarios complémentaires au fil des lots.
+- **Sessions :** construire les vues et les appels prévus, tester les certifications contrastées et obtenir la garantie RCO du filtre dans les champs actuels ; la recette du rattachement reste ouverte si cette preuve manque.
+- **E26 :** réaliser les lectures familiales et territoriales déjà documentées séparément ; diagnostiquer et résoudre le filtre ROME avec RCO pour la restitution contractuelle métier-territoire. Les résultats partiels ne soldent pas l'anomalie R17 ni E26 complet.
+- **Réserves statistiques :** arrondis BMO, tranche salariale ouverte, règles de secret encore signalées comme points ouverts dans C ; conserver les valeurs fournies et demander validation des interprétations, sans recalcul.
+
+Le lot documentaire L0 est réalisé. Aucun lot de développement n'a démarré ; les sept livrables01–07 sont actualisés et les sources, JSON/UML de référence restent intacts. Les cinq dossiers réellement fournisseur sont Q01, Q06, Q07, Q11, Q14 ; les autres vérifications GET ne sont pas des questions contractuelles à reposer systématiquement.
+
+## 9. Matrice de résolution et de couverture E01–E31
+
+**Toutes les lignes sont dans la cible.** Une cellule « à tester » porte sur la preuve réseau, pas sur l'inclusion de la fonction. Les Qxx renvoient au triage opérationnel de06, repris en10, préparé mais non envoyé. Ils ne sont pas tous des demandes au fournisseur : les faits documentés et les tests GET autonomes en sont distingués. Les demandes d'exports à RCO restent limitées aux 21 GET et n'impliquent pas une modification du contrat. Les sources C/O/M/MC/etc. sont définies dans l'audit 08.
+
+| ID | Solution d'appel et relation exploitable | Parcours et restitution proposés | Test manquant / résolution concrète | Information RCO | Lot |
+|---|---|---|---|---|---|
+| E01 | `/metiers?q=...&page=...` → `items[].rome_code` | Recherche unique, résultats identifiés, ouvrir la fiche choisie ; nouvelles recherches depuis la fiche | Capturer préfixes/accents/mots multiples, 0 résultat et pagination ; valider annulation des anciennes réponses | Q02 : recherche et version du référentiel | L2 |
+| E02 | `/certifications?q=...&page=...` → `certifinfo_code` | Résultat avec type, RNCP/RS et code ; conserver l'intention de consultation en ouvrant la fiche | Recherches représentatives dont titre/RS et plusieurs résultats ; distinguer non trouvé et erreur | Q02/Q09 : limites de recherche et certifications actives | L2 |
+| E03 | `/domaines?grand_domaine=...` ou arbre complet | Grand domaine → domaine → fiche ; filtre local des libellés reçus comme proposition pour conserver une barre unique sans `q` serveur | Collecter l'arbre, vérifier codes/nombres/types contractuels ; tester sélection du sous-domaine | Q03 : export réel et règle `nb_metiers` | L2 |
+| E04 | `/metiers?domaine=...&page=...` | Métiers du domaine, filtres compétences/contextes combinables ; pagination progressive | Tracer domaine seul puis avec filtres, vérifier chaque `domaine_code` et toutes pages requises | Q03/Q05 : combinaison et périmètre | L2 |
+| E05 | `/metiers/{rome}` | Définitions, appellations, domaine, savoir-être et contextes référencés ; actions vers tous les volets détaillés | Deux fiches supplémentaires et 404 ; rendre listes/valeurs absentes sans texte généré | Q01 : stabilité/version du référentiel | L2 |
+| E06 | `/metiers/{rome}/competences?categorie=...&page=...`, complément `coeur_metier=true` | Catégories, hiérarchie macro/enjeu/domaine quand reçue, part des spécialités et cœur de métier ; pas de compétence personnelle inférée | Collecter page 2 F1610 et une seconde fiche complète ; tester chaque catégorie et cœur, `tag_coeur_metier=null` | Q04 : exhaustivité et portée des tags | L2/L3 |
+| E07 | `metiers_proches_codes[]` + libellés → détail de la cible | Alternatives ordonnées comme reçues, ouverture/ajout aux pistes ; pas d'appel par carte pour un libellé déjà présent | Ouvrir effectivement plusieurs cibles ; tester doublons éventuels/404 sans inventer d'autre proximité | Q01 si divergence de codes entre liste et détail | L2 |
+| E08 | `/indicateurs?rome=...&zonage=...&territoire=...` | Synthèse questionnelle puis accès à toutes les mesures exposées, chacune avec ses valeurs, source, grain, période et lieu effectif | Étendre R16 à autre ROME/territoire dont cas sans valeur ; vérifier toutes variantes des 14 mesures documentées, pas seulement une structure commune | Q06 : repli et métadonnées/secret | L4 |
+| E09 | `/territoires?q=...&zonage=...&page=...` → code, zonage et parents | Choix explicite ; proposer les périmètres autorisés dans chaque volet en nommant le parent ; France pour routes compatibles | Homonymes, commune/CLPE/Corse/DOM ; absence de parent et incompatibilité de zonage ; pas de recherche code postal | Q03/Q06 : référentiel territorial et parents | L2 |
+| E10 | `/recrutements?rome=...&zonage=...&region=...&departement=...&tri=...` selon signature | Projets, difficultés, saisonniers ; tris fournis et référence France ; rang par FAP228 | Tracer périmètres compatibles et 422 incompatible ; plusieurs familles ; zéro/taux saisonnier observé | Q07 : arrondis/dénominateurs et précision des petits volumes | L4 |
+| E11 | `/salaires?rome=...&zonage=...&region=...` | Classements par FAP225, référence France, médiane mensuelle et distribution annuelle distinctes ; tranche ouverte explicite | Cas tranche ouverte et seuil territorial ; région seule vs départements d'une région ; préserver `rang` et null | Q08 : seuils, tranche et rang | L4 |
+| E12 | `/mesures` jointure locale `code=mesure` + métadonnées des résultats | Expliquer pourquoi deux valeurs sont ou ne sont pas comparables ; préciser bases et populations sans score | Comparaison même famille, familles différentes, périodes/mailles différentes ; tester catalogue indisponible | Q06 : correspondance métadonnées et évolutions | L4 |
+| E13 | `/competences?q=...&categorie=...`, résolution `code=...,...` (1–10) | Choisir les OGR depuis le métier ou le catalogue ; voir leurs métiers associés sans conclure à une maîtrise | Recherche libre et multi-code ; conserver zéro initial et catégories ; pas de correspondance RNCP par texte | Q02/Q04 : recherche et codes | L3 |
+| E14 | `/metiers?competence=...&mode_competence=toutes` ou `au_moins_une` | Choisir tous/au moins un ; montrer uniquement les correspondances renvoyées et le classement API par macro-compétences | Rejouer R23 puis autres codes, 1/10/11 entrées, pagination et champs de match conditionnels | Q04 : classement et périmètre des correspondances | L3 |
+| E15 | `/competences?categorie=contexte_travail&q=...` ou réemploi de la catégorie métier | Contextes libellés et explicites avant filtrage ; conserver distinction contextes/compétences | Capturer catalogue de contextes, vérifier catégorie et sélection ; pas d'alias arbitraire | Q02/Q05 : recherche de contexte | L3 |
+| E16 | `/metiers?domaine=...&contexte=...&sans_contexte=...&page=...` selon choix | Inclusion/exclusion de contextes référencés au parent V3 ; appliquer ensemble les sélections compatibles, expliquer absence non garantie dans tout emploi réel | R24 puis multi-contextes/combinés ; re-test `fields` correctement encodé ; exclusion à l'échelle des spécialités | Q05 : combinaison, projection et sémantique | L3 |
+| E17 | `/certifications/{certifinfo}`, MES pour définitions/périodes | Deux intentions, statut et voies, insertion scolaire/apprentissage/InserSup/DE séparée, résultats disponibles et masqués ; enrichissements salariaux InserSup à leurs horizons propres | Cas RNCP/RS, multi-ROME, champs null/secrets, anciennes certifications introuvables ; tests des populations et promotions | Q09 : cycle actif, périodes/coverage insertion | L2 |
+| E18 | `/certifications/blocs?certifinfo=...` ou `fiche=...` ; complément recherche `q` | Blocs RNCP, texte des compétences et évaluation, navigation vers `certifinfo_codes[]` ; trouver une certification via le texte publié d'un bloc | Capturer filtres exacts ; vérifier 4 blocs RNCP36101 et absence de blocs publiés ; recherche texte, pagination | Q10 : filtres et couverture des blocs | L2/L3 |
+| E19 | `rome_codes[]` de la certification → `/metiers/{rome}` | Tous les métiers associés en liens, sans garantir accès à l'emploi ; réutiliser le cache | Certification à plusieurs ROME, ouverture des cibles ; ne pas dépendre du seul `rome_code` nullable | Q09 si relation contradictoire | L2 |
+| E20 | `/certifications?rome=...&page=...` ; compléments `acces`, `validation_partielle` | Certifications associées au métier, voies et validation partielle filtrables ; accès aux blocs/fiches/sessions | ROME exact + filtres d'accès/validation, pages et RNCP/RS ; ne pas transformer en diplôme obligatoire | Q09/Q10 : filtrage et validation partielle | L2/L3 |
+| E21 | `/sessions_a_venir?certifinfo=...&zonage=...&territoire=...&onisep=...&page=...` | Sessions publiées à venir, dates, lieu, organisme, modalités ; mode Onisep séparé si consulté ; aucune place/inscription promise | Tests contrastés de certifications et territoires, temporalité, pagination, trois modes Onisep ; confirmation du filtre sans identifiant par ligne | Q11 : garantie et traçabilité contractuelle | L8 |
+| E22 | `/sessions_en_cours` avec même signature | Onglet en cours partageant sélection et composants E21, dates et modalités ; aucune admission déduite du statut temporel | Paire d'appels même contexte aux deux routes, date de référence, filtres ; pas de déduplication inter-vues inventée | Q11 : règles temporelles et traçabilité | L8 |
+| E23 | `/mobilites?rome=...&sens=...&region=...&age=...` | Deux sens, âge, France/région, tableaux/graphiques par FAP225, situations hors emploi et parts incomplètes | Tracer région et âges ; valider `maille/repli`, présence d'un seul couple origine/destination et libellés hors emploi | Q12 : âges, repli, couverture des parts | L5 |
+| E24 | `/prospective/regions?rome=...&tri=...` et `/prospective/metiers?region=...&tri=...` → `rome_codes[]` | Prospective détaillée par famille et région, effectifs/taux fournis, référence France, navigation vers ROME V3 | Tracer chaque famille de tri, métropole/DOM/Corse, négatifs et null ; tester la chaîne région → famille → métiers | Q13 : agrégats, géographie et taux | L6 |
+| E25 | `/salaires/secteurs?rome=...&region=...` | Salaires par secteur NAF38 dans chaque FAP225 ; référence `ensemble`, parts de salariés et repli ; affichage mensuel/annuel séparé | France/région, plusieurs familles, secteurs absents pour seuil, tranche ouverte, repli d'une seule famille | Q08 : population, seuil et référence tous secteurs | L7 |
+| E26 | E08 `emploi_secteurs` + `/secteurs?zonage=...&territoire=...` pour contexte ; `/secteurs?zonage=...&territoire=...&rome=...` pour résultat contractuel attendu | Deux lectures explicitement séparées : où travaillent les familles (région/France) et dynamique NAF territoriale. Le volet métier-territoire attend résolution R17 ; aucun compte local attribué au métier par jointure | Reproduire avec/sans ROME sur plusieurs codes/mailles ; conserver 13 lignes R16 et 35 sans filtre comme preuves distinctes ; retester après réponse RCO | Q14 : anomalie R17, `metier_maille` et interprétation métier-territoire | L7 |
+| E27 | État local des `rome_code` ; réemploi `/metiers/{rome}` | Ajouter/retirer, conserver jusqu'à trois pistes proposé, comparer deux ; durée affichée selon décision de stockage | Unicité, plafond, navigation/rechargement selon D08 ; aucun GET requis à chaque ajout | Aucun blocage RCO ; aucune sauvegarde serveur parmi les 21 GET | L9 |
+| E28 | Réemploi des fiches, compétences, certifications et statistiques ; complément `/metiers/{cible}/competences?depuis={origine}` | Comparateur complet par questions, accès détails mobilité/prospective/secteurs ; compétences communes et spécifiques sur listes complètes ; synthèse API directionnelle expliquée si utilisée | Deux jeux complets ; familles identiques/différentes, mailles/périodes différentes ; tester `depuis`, sens inverse et catégories ; aucun score personnel | Q04/Q06 : comparaison et métadonnées | L9 |
+| E29 | `/metiers?page=...` complet, `tag_transition_*` ; cache détail partagé | Badges et exploration par tags via filtre local explicitement présenté, combinable avec Domaine ; pas de filtre transition serveur fictif | Toutes les pages du catalogue ; true/false/null ; résultats locaux incomplets identifiés jusqu'à fin de collecte | Q01 : stabilité des tags et référentiel | L3 |
+| E30 | `/formacodes?rome=...` ou `code=...` → `/certifications?formacode=...` → détail/session par Certif Info | Thèmes de formation → certifications → sessions publiées ; thème distinct d'une offre de formation ; garder les thèmes sans certification visible | Chaîne complète capturée, pagination et thème sans certification ; pas d'accès sessions non certifiantes par Formacode | Q10 : couverture des associations et filtres | L3 |
+| E31 | `/mesures`, dictionnaire par code et ressource | Méthodologie commune et disponibilité effective d'après réponses, consultable dans chaque volet | Vérifier que les 29 entrées historiques ne sont pas présumées toutes présentes sous `/indicateurs` ; nouvelles entrées tolérées | Q01/Q06 : schémas et version du catalogue | L4 |
+
+## 10. Restitutions détaillées et solutions des fonctions auparavant proposées au report
+
+### Mobilités professionnelles — E23
+
+Depuis « Quelles autres pistes ? », ouvrir « D'où viennent et où vont les personnes de cette famille professionnelle ? ». Garder le ROME choisi en contexte, montrer la FAP225 de chaque groupe et `nb_rome_famille`. Choisir `sens=origines` ou `destinations`, la France (paramètre région omis) ou une région, puis `age=ensemble`, `15-29`, `30-39`, `40-49`, `50-59` ou `60+`.
+
+Champs : racine `source_libelle`, `grain`, `millesime`, `tranche_age_libelle` ; lignes `fap_225_code/libelle`, `rang`, `maille`, `repli`, `origine_code/libelle` **ou** `destination_code/libelle`, `tag_meme_metier`, `tag_en_emploi`, `tx_personnes`. La FAP actuelle et chaque situation d'origine/destination ne sont pas des codes ROME. Les situations chômage/retraite/autres restent visibles. Le tag même métier signifie même FAP dans cette source. Le mode âge change le moment de mesure selon le sens : fin de période pour les origines, début pour les destinations.
+
+Proposition d'affichage : deux vues accessibles avec barres et tableau de valeurs reçues ; pas de camembert exigeant un total de 100. Les 15 situations les plus fréquentes au plus et les suppressions pour secret de la source expliquent une somme éventuellement inférieure à 100 ; aucun « reste » numérique n'est calculé. Pas d'effectif de personnes exposé et pas de probabilité individuelle. Aucune conversion d'une FAP destination vers un ROME par correspondance supposée : le texte peut être consulté, tandis que la découverte de métiers continue par les liens ROME effectivement exposés ailleurs. Ce défaut de lien direct n'empêche pas de réaliser la lecture de mobilité.
+
+### Prospective détaillée 2030 — E24
+
+Deux entrées complémentaires : depuis un métier, `/prospective/regions` expose les régions et la France par FAP87 ; depuis un choix de région, `/prospective/metiers` expose les familles et leurs `rome_codes[]`, ouvrables en fiches ROME V3. La synthèse locale E08 utilise `metiers_2030` sans refaire un calcul. Les mêmes familles apparaissant dans les deux vues sont identifiées par leur code, pas seulement par libellé.
+
+Afficher, à partir des champs reçus : `nb_emplois_2019`, `nb_creations_nettes_emplois_2030`, `nb_departs_fin_carriere_2030`, `nb_postes_a_pourvoir_2030`, `nb_jeunes_debutants_2030`, `nb_desequilibre_potentiel_2030`, leurs taux `tx_*` exposés, `tx_part_emploi_region_2019`, `indice_specificite_region_2019`, `tension_niveau_2019`, code/libellé FAP87 et `nb_rome_famille`. Ne pas fabriquer les champs régionaux absents au national. Croissance, renouvellement et déséquilibre sont des onglets/sections de lecture ; on affiche les composantes fournies, sans recalculer postes ou déséquilibre.
+
+Les tris servent à changer la question : postes, créations, départs, déséquilibre, effectifs 2019 et versions de taux ; `/prospective/regions` ajoute spécificité et part d'emploi. Pas de paramètre de tri `jeunes_debutants` inventé : ce champ reste affichable dans le détail. Préserver créations négatives et déséquilibres négatifs. Période 2019–2030, projection et non recrutement garanti ; BMO reste séparé. France/13 régions métropolitaines seulement ; DOM : montrer la projection France avec son périmètre explicite lorsqu'E08 la fournit. Les agrégats spécifiques à la Corse ne sont pas artificiellement classés avec une famille de périmètre différent. Ces limites géographiques sont une caractéristique de la source, pas une suppression de la fonction.
+
+### Salaires sectoriels — E25
+
+Depuis « Combien gagne-t-on ? », ouvrir « Dans quels secteurs travaille et est rémunérée cette famille ? ». Appeler `/salaires/secteurs?rome=...`, puis ajouter `region` pour l'autre périmètre. Présenter un groupe par FAP225 avec la référence `ensemble[]` tous secteurs et les lignes NAF38 : `secteur_naf38_code/libelle`, `rang`, `tx_salaries_secteur`, `nb_salaries_temps_complet`, médianes/quartiles exposés, `tranche_salaire_median_libelle`, `maille`, `repli`, `nb_rome_famille`.
+
+La médiane mensuelle est un montant distinct du bloc annuel Q1/médiane/Q3. Conserver le rang fournisseur et la tranche ouverte lorsque la médiane numérique est null. Afficher la part des salariés de la famille dans chaque secteur sans la renormaliser : secteurs sous seuil absents. Le repli est propre à une FAP/ligne : ne pas présenter tout le tableau comme régional si certaines lignes sont nationales. Le comparateur ouvre ces groupes côte à côte pour les deux métiers sans calculer un avantage salarial ou un score d'attractivité. Demande RCO Q08 et tests régionaux complètent SS, sans reporter E25.
+
+### Secteurs d'emploi — E26 et anomalie R17
+
+La réalisation est décomposée en trois capacités dont la couverture reste tracée dans un seul ID :
+
+1. **Parts d'emploi familiales accessibles** : E08 `emploi_secteurs` → lignes `fap_225_code/libelle`, `secteur_naf38_code/libelle`, `rang_secteur`, `nb_actifs_emploi`, `tx_actifs_secteur`, `nb_rome_famille`. R16 en conserve 13 à la région. Présenter une famille à la fois ou plusieurs groupes, sans somme entre FAP. Ce sont les actifs occupés salariés et non salariés, non la population des salaires sectoriels.
+2. **Contexte économique du territoire accessible** : `/secteurs` sans `rome` et éventuellement `naf` donne des comptages et évolutions par secteur : établissements, salariés privés, créations, défaillances et dates/périodes exposées. Afficher comme contexte du secteur, avec `maille_reelle/repli` et les limites de diffusion propres aux mesures. L'égalité du code NAF permet une navigation vers ce contexte, pas une attribution de ses effectifs au métier.
+3. **Restitution contractuelle métier-territoire à résoudre** : `/secteurs?rome=...` devrait exposer le résultat décrit par C, avec `metier_maille`, `nb_actifs_metier`, `tx_actifs_metier`. R17 ne le fait pas pour F1610. Préparer la vue et son adaptateur d'après C, les tests avec/sans ROME et le dossier Q14, puis rejouer après clarification/correction fournisseur. Tant que l'écart subsiste, afficher une indisponibilité explicite pour ce résultat, jamais un faux zéro ou des comptes locaux reconstruits. La recette E26 reste partielle et le défaut fournisseur ouvert.
+
+Ces deux premières capacités sont utiles et contractuelles, mais ne sont pas déclarées équivalentes à la troisième. Ni suppression d'E26, ni promesse d'une fonction totalement opérationnelle avant résolution R17.
+
+### Sessions, transitions et thèmes — E21/E22/E29/E30
+
+Les sessions partagent sélection de certification/territoire et composants ; elles ont deux listes temporelles distinctes. Tester aussi les modes Onisep `exclure`, `inclure`, `seulement` et présenter les offres Onisep comme offres à date conventionnelle, séparées des sessions datées. La proposition de défaut `exclure` n'interdit pas l'accès aux autres modes. `presentiel_distantiel` 0/1/2 permet déjà une restitution présentiel/mixte/distanciel, sans nouvelle source. L'absence de clé métier stable interdit de construire une fiche session persistante garantie unique ; elle n'interdit pas une liste dans l'appel courant. RCO doit confirmer la garantie de filtrage même si la réponse ne répète pas Certif Info.
+
+E29 peut dépasser de simples badges : charger toutes les pages `/metiers`, utiliser les trois tags `tag_transition_ecologique`, `tag_transition_numerique`, `tag_transition_demographique` et filtrer localement les métiers identifiés. Ce filtre est annoncé comme local sur le catalogue reçu ; afficher l'incomplétude tant que des pages manquent. Aucun paramètre transition n'est envoyé à l'API et aucun rang d'avenir n'est déduit des booléens.
+
+E30 s'appuie sur la chaîne entièrement interne : thème Formacode → certifications filtrées → fiche Certif Info → sessions. Une certification peut être explorée aussi via ses blocs ou ses voies d'accès ; ces compléments enrichissent E17/E18/E20. Conserver les thèmes sans résultat de certification ; la recherche de formations non certifiantes par Formacode reste non couverte par ces 21 GET et ne sera pas simulée avec une autre source.
+
+## 11. Suivi de couverture et critère d'achèvement
+
+Pour chaque ID, suivre séparément : **inclus dans la cible** (oui pour les 31), solution contractuelle, conception, adaptateur, tests sur JSON, tests HTTP, recette fonctionnelle, anomalie fournisseur, prochain responsable/action/preuve. Un statut « à tester », « partiellement observé » ou « anomalie fournisseur » ne modifie jamais le premier attribut. Une correction fournisseur attendue n'est pas une décision de suppression.
+
+La cible n'est achevée que lorsque les 31 fonctionnalités et leurs critères de recette sont couverts, ou qu'une véritable impossibilité est explicitement soumise à la maîtrise d'ouvrage avec sa preuve et son besoin précis. Aucun retrait automatique n'est autorisé. Les états null/secret/absent et les indisponibilités réelles font partie de la qualité du produit ; ils ne doivent pas être employés pour déclarer livrée une capacité dont l'API attendue reste défaillante.
+
+### Vérification de cette révision documentaire
+
+Les matrices de synthèse de 08 et de résolution de 09 couvrent chacune les 31 IDs uniques. Les lots L0–L10 sont définis, les 14 références Q01–Q14 sont résolues dans 10, les tableaux sont cohérents et les fichiers lisibles en UTF-8. Un contrôle statique des exemples explicites du plan et du registre retrouve les 21 routes de l'export officiel et leurs noms de paramètres autorisés ; ce contrôle ne valide ni les valeurs de test, ni le transport HTTP. Pendant le lot L0, les sept livrables01–07 sont actualisés en place et les mentions de suivi08–10 sont synchronisées, sans nouvelle version parallèle. Le bilan et la vérification SHA-256 des sources/preuves figurent en06. Aucun nouveau test HTTP n'est revendiqué.

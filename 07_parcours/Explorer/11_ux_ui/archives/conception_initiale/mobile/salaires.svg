@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="3501" viewBox="0 0 390 3501" role="img" aria-labelledby="title desc"><title id="title">Combien gagne-t-on, selon la famille et le secteur ?</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="3501" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Combien gagne-t-on,</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">selon la famille et</text>
+<text x="24" y="372" font-size="30" font-weight="700" fill="#161616">le secteur ?</text>
+<text x="24" y="415" font-size="16" font-weight="400" fill="#666">Un salaire de famille</text>
+<text x="24" y="439" font-size="16" font-weight="400" fill="#666">professionnelle, pas une promesse</text>
+<text x="24" y="463" font-size="16" font-weight="400" fill="#666">pour un poste précis.</text>
+<rect x="24" y="495" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Garder cette piste">
+<text x="40" y="523" font-size="16" font-weight="700" fill="#fff">Garder cette piste</text>
+</a>
+<rect x="24" y="555" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Comparer">
+<text x="40" y="583" font-size="16" font-weight="700" fill="#000091">Comparer</text>
+</a>
+<rect x="24" y="615" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="menu.svg" aria-label="Sommaire de la fiche">
+<text x="40" y="643" font-size="16" font-weight="700" fill="#000091">Sommaire de la fiche</text>
+</a>
+<rect x="24" y="687" width="342" height="216" fill="#ececfe" stroke="none"/>
+<text x="44" y="723" font-size="16" font-weight="700" fill="#161616">Une donnée familiale pour votre</text>
+<text x="44" y="747" font-size="16" font-weight="700" fill="#161616">territoire</text>
+<text x="44" y="779" font-size="16" font-weight="400" fill="#161616">La valeur locale reçue concerne</text>
+<text x="44" y="803" font-size="16" font-weight="400" fill="#161616">B0Z21, ouvriers non qualifiés</text>
+<text x="44" y="827" font-size="16" font-weight="400" fill="#161616">du gros œuvre, commune à 8</text>
+<text x="44" y="851" font-size="16" font-weight="400" fill="#161616">métiers. Le lieu mesuré est</text>
+<text x="44" y="875" font-size="16" font-weight="400" fill="#161616">l'Hérault, pas la commune.</text>
+<rect x="24" y="927" width="342" height="176" fill="#fff" stroke="#ddd"/>
+<text x="48" y="967" font-size="16" font-weight="700" fill="#161616">Médiane mensuelle nette</text>
+<text x="48" y="1011" font-size="28" font-weight="700" fill="#161616">1 690 €</text>
+<text x="48" y="1051" font-size="14" font-weight="400" fill="#666">Famille B0Z21 · Hérault · salariés</text>
+<text x="48" y="1072" font-size="14" font-weight="400" fill="#666">à temps complet · INSEE BTS 2023</text>
+<text x="24" y="1159" font-size="24" font-weight="700" fill="#161616">Situer les salaires</text>
+<text x="24" y="1195" font-size="24" font-weight="700" fill="#161616">annuels</text>
+<text x="24" y="1231" font-size="16" font-weight="400" fill="#666">Les quartiles sont annuels : ils ne</text>
+<text x="24" y="1255" font-size="16" font-weight="400" fill="#666">sont pas présentés comme mensuels.</text>
+<rect x="24" y="1283" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1315" font-size="12" font-weight="700" fill="#666">Salaire net annuel</text>
+<text x="44" y="1337" font-size="16" font-weight="700" fill="#161616">Premier quartile (Q1)</text>
+<text x="44" y="1369" font-size="12" font-weight="700" fill="#666">Montant reçu</text>
+<text x="44" y="1391" font-size="16" font-weight="400" fill="#161616">17 400 €</text>
+<text x="44" y="1423" font-size="12" font-weight="700" fill="#666">Lecture</text>
+<text x="44" y="1445" font-size="16" font-weight="400" fill="#161616">Un quart des salaires sous</text>
+<text x="44" y="1469" font-size="16" font-weight="400" fill="#161616">cette valeur</text>
+<rect x="24" y="1513" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1545" font-size="12" font-weight="700" fill="#666">Salaire net annuel</text>
+<text x="44" y="1567" font-size="16" font-weight="700" fill="#161616">Médiane</text>
+<text x="44" y="1599" font-size="12" font-weight="700" fill="#666">Montant reçu</text>
+<text x="44" y="1621" font-size="16" font-weight="400" fill="#161616">20 300 €</text>
+<text x="44" y="1653" font-size="12" font-weight="700" fill="#666">Lecture</text>
+<text x="44" y="1675" font-size="16" font-weight="400" fill="#161616">La moitié des salaires sous</text>
+<text x="44" y="1699" font-size="16" font-weight="400" fill="#161616">cette valeur</text>
+<rect x="24" y="1743" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1775" font-size="12" font-weight="700" fill="#666">Salaire net annuel</text>
+<text x="44" y="1797" font-size="16" font-weight="700" fill="#161616">Troisième quartile (Q3)</text>
+<text x="44" y="1829" font-size="12" font-weight="700" fill="#666">Montant reçu</text>
+<text x="44" y="1851" font-size="16" font-weight="400" fill="#161616">22 000 €</text>
+<text x="44" y="1883" font-size="12" font-weight="700" fill="#666">Lecture</text>
+<text x="44" y="1905" font-size="16" font-weight="400" fill="#161616">Trois quarts des salaires sous</text>
+<text x="44" y="1929" font-size="16" font-weight="400" fill="#161616">cette valeur</text>
+<text x="24" y="2013" font-size="24" font-weight="700" fill="#161616">Quels salaires selon le</text>
+<text x="24" y="2049" font-size="24" font-weight="700" fill="#161616">secteur économique ?</text>
+<text x="24" y="2085" font-size="16" font-weight="400" fill="#666">France · INSEE BTS 2023 · FAP225 ×</text>
+<text x="24" y="2109" font-size="16" font-weight="400" fill="#666">NAF38 ; familles séparées.</text>
+<rect x="24" y="2137" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2169" font-size="12" font-weight="700" fill="#666">Famille et secteur</text>
+<text x="44" y="2191" font-size="16" font-weight="700" fill="#161616">B0Z21 · Construction</text>
+<text x="44" y="2223" font-size="12" font-weight="700" fill="#666">Médiane mensuelle</text>
+<text x="44" y="2245" font-size="16" font-weight="400" fill="#161616">1 750 €</text>
+<text x="44" y="2277" font-size="12" font-weight="700" fill="#666">Part des salariés</text>
+<text x="44" y="2299" font-size="16" font-weight="400" fill="#161616">95,3 % · France</text>
+<rect x="24" y="2343" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2375" font-size="12" font-weight="700" fill="#666">Famille et secteur</text>
+<text x="44" y="2397" font-size="16" font-weight="700" fill="#161616">B0Z21 · Activités de services</text>
+<text x="44" y="2421" font-size="16" font-weight="700" fill="#161616">administratifs et de soutien</text>
+<text x="44" y="2453" font-size="12" font-weight="700" fill="#666">Médiane mensuelle</text>
+<text x="44" y="2475" font-size="16" font-weight="400" fill="#161616">1 620 €</text>
+<text x="44" y="2507" font-size="12" font-weight="700" fill="#666">Part des salariés</text>
+<text x="44" y="2529" font-size="16" font-weight="400" fill="#161616">1,3 % · France</text>
+<rect x="24" y="2573" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2605" font-size="12" font-weight="700" fill="#666">Famille et secteur</text>
+<text x="44" y="2627" font-size="16" font-weight="700" fill="#161616">B2Z44 · Construction</text>
+<text x="44" y="2659" font-size="12" font-weight="700" fill="#666">Médiane mensuelle</text>
+<text x="44" y="2681" font-size="16" font-weight="400" fill="#161616">2 090 €</text>
+<text x="44" y="2713" font-size="12" font-weight="700" fill="#666">Part des salariés</text>
+<text x="44" y="2735" font-size="16" font-weight="400" fill="#161616">97,9 % · France</text>
+<rect x="24" y="2779" width="342" height="80" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="2811" font-size="16" font-weight="700" fill="#000091">+ Quartiles annuels et référence</text>
+<text x="40" y="2835" font-size="16" font-weight="700" fill="#000091">tous secteurs</text>
+<rect x="24" y="2875" width="342" height="240" fill="#ececfe" stroke="none"/>
+<text x="44" y="2911" font-size="16" font-weight="700" fill="#161616">Une sélection de secteurs</text>
+<text x="44" y="2935" font-size="16" font-weight="700" fill="#161616">publiée</text>
+<text x="44" y="2967" font-size="16" font-weight="400" fill="#161616">Seuls les secteurs au seuil</text>
+<text x="44" y="2991" font-size="16" font-weight="400" fill="#161616">figurent. Les parts ne sont pas</text>
+<text x="44" y="3015" font-size="16" font-weight="400" fill="#161616">renormalisées. Une médiane non</text>
+<text x="44" y="3039" font-size="16" font-weight="400" fill="#161616">chiffrable en tranche ouverte</text>
+<text x="44" y="3063" font-size="16" font-weight="400" fill="#161616">est présentée comme tranche</text>
+<text x="44" y="3087" font-size="16" font-weight="400" fill="#161616">annuelle.</text>
+<rect x="24" y="3139" width="342" height="72" fill="#000091" stroke="#000091"/>
+<a href="territoires.svg" aria-label="Comparer les territoires sur les salaires">
+<text x="40" y="3167" font-size="16" font-weight="700" fill="#fff">Comparer les territoires sur les</text>
+<text x="40" y="3191" font-size="16" font-weight="700" fill="#fff">salaires</text>
+</a>
+<text x="24" y="3237" font-size="14" font-weight="400" fill="#666">INSEE · Base Tous salariés 2023, calculs</text>
+<text x="24" y="3258" font-size="14" font-weight="400" fill="#666">RCO. Population et méthode détaillées</text>
+<text x="24" y="3279" font-size="14" font-weight="400" fill="#666">dans Sources.</text>
+<rect x="24" y="3310" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="3338" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="3408" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="3427" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="3445" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="3463" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

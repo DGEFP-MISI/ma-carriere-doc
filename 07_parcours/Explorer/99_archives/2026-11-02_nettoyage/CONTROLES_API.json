@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-02",
+  "commande": "python -B scripts/verifier_dossier.py",
+  "code_sortie": 0,
+  "controles_reussis": [
+    "verifier_contrat.py",
+    "verifier_echantillons.py",
+    "verifier_schemas_complementaires.py",
+    "verifier_relations_api.py",
+    "verifier_uml_global.py",
+    "verifier_preuves_directes.py"
+  ],
+  "nombre": 6,
+  "hors_ligne": true,
+  "nouvel_appel_HTTP": false,
+  "anomalie_R17": "Toujours ouverte ; réussite du contrôle sans résolution fournisseur"
+}

@@ -1,0 +1,103 @@
+@startuml
+!pragma layout smetana
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+hide methods
+title API DGEFP-RCO — Formes des reponses JSON
+class "ListePagee<T>" as LP {
+ items: T[]
+ total: int
+ page: int
+ page_size: int
+ last_page: int
+}
+class "ObjetMetier" as M {
+ rome_code: string
+ rome_libelle: string
+ domaine_code: string
+ contexte_travail_codes: string[]
+ formacode_codes: string[]
+}
+class "ObjetCertification" as C {
+ certifinfo_code: string
+ fiche_code: string
+ rome_codes: string[]
+}
+class "ObjetSession" as S {
+ code_insee: string
+ siret_formateur: string
+ date_debut: date
+ date_fin: date
+ nb_sessions: int
+}
+class "CompetenceAssociee" as K {
+ competence_code: string
+ tag_coeur_metier: boolean?
+ tx_fiches_rome4: number
+}
+class "ResultatIndicateurs" as RI {
+ rome_code: string
+ zonage: string
+ territoire: string
+ territoires: TerritoireRepli[]
+}
+class "TerritoireRepli" as TR {
+ maille: string
+ code: string?
+ libelle: string
+}
+class "MesureDansIndicateurs" as IM {
+ mesure: string
+ grain: string
+ maille_demandee: string
+ maille_reelle: string?
+ repli: boolean
+ valeurs: object[]
+}
+class "ValeursSelonMesure" as V {
+ rome / fap_228 / fap_225 / fap_87
+ structure variable par mesure
+}
+class "ResultatSecteurs" as RS {
+ maille_demandee: string
+ maille_reelle: string?
+ repli: boolean
+ rome_code: string?
+ metier_maille: string?
+ ensemble: object
+ items: object[]
+ total: int
+}
+class "ResultatParTerritoire" as RT {
+ grain: string
+ france: object? [selon route]
+ items: object[]
+}
+LP o-- M : /metiers
+LP o-- C : /certifications
+LP o-- S : /sessions_*
+LP o-- K : /metiers/{rome}/competences
+RI *-- IM : items[]
+RI *-- TR : territoires[]
+IM *-- V : valeurs[] (polymorphe)
+RS o-- V : ensemble/items
+RT o-- V : items[]
+note bottom of LP
+ Les listes /domaines et /mesures ne suivent
+ pas obligatoirement ce gabarit complet.
+ /metiers/{rome} et /certifications/{certifinfo}
+ renvoient un objet, pas une liste.
+end note
+note bottom of RS
+ R17 : cas teste en commune, region,
+ avec/sans rome. Sans rome: 35 items.
+ Avec rome F1610: 0 item.
+end note
+note bottom of V
+ Values peuvent contenir 0, null, [],
+ ou la chaine 'secret_stat'.
+end note
+@enduml

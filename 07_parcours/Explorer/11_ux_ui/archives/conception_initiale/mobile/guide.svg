@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="2406" viewBox="0 0 390 2406" role="img" aria-labelledby="title"><title id="title">Explorer avec des compétences et des contextes — proposition de contrôles mobiles</title><rect width="390" height="2406" fill="white"/><g font-family="Marianne, Arial, sans-serif"><text x="24" y="44" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="68" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="107" width="342" height="48" fill="white" stroke="#000091"/>
+<a href="recherche.svg">
+<text x="40" y="135" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="171" width="342" height="48" fill="white" stroke="#000091"/>
+<a href="pistes.svg">
+<text x="40" y="199" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="277" font-size="30" font-weight="700" fill="#161616">Explorer avec vos</text>
+<text x="24" y="322" font-size="30" font-weight="700" fill="#161616">compétences et vos</text>
+<text x="24" y="367" font-size="30" font-weight="700" fill="#161616">conditions</text>
+<text x="24" y="414" font-size="16" font-weight="400" fill="#666">Choisissez des éléments du</text>
+<text x="24" y="438" font-size="16" font-weight="400" fill="#666">référentiel pour découvrir des</text>
+<text x="24" y="462" font-size="16" font-weight="400" fill="#666">métiers, sans test de niveau.</text>
+<text x="24" y="508" font-size="14" font-weight="700" fill="#000091">1 · Choisir → 2 · Affiner → 3 · Explorer</text>
+<text x="24" y="563" font-size="24" font-weight="700" fill="#161616">Quelles compétences ?</text>
+<text x="24" y="607" font-size="16" font-weight="700" fill="#161616">Chercher une compétence</text>
+<rect x="24" y="623" width="342" height="48" fill="#eee" stroke="none"/>
+<text x="36" y="651" font-size="16" font-weight="400" fill="#161616">Poser des panneaux solaires</text>
+<text x="24" y="697" font-size="14" font-weight="400" fill="#666">Deux compétences sélectionnées</text>
+<rect x="24" y="716" width="342" height="85" fill="#ececfe" stroke="none"/>
+<text x="40" y="748" font-size="16" font-weight="700" fill="#000091">Poser des panneaux solaires</text>
+<text x="40" y="778" font-size="14" font-weight="700" fill="#000091">× Retirer cette compétence</text>
+<rect x="24" y="813" width="342" height="109" fill="#ececfe" stroke="none"/>
+<text x="40" y="845" font-size="16" font-weight="700" fill="#000091">Réaliser un raccordement</text>
+<text x="40" y="869" font-size="16" font-weight="700" fill="#000091">d'étanchéité</text>
+<text x="40" y="899" font-size="14" font-weight="700" fill="#000091">× Retirer cette compétence</text>
+<text x="24" y="982" font-size="24" font-weight="700" fill="#161616">Quels métiers afficher ?</text>
+<circle cx="38" cy="1028" r="10" fill="white" stroke="#000091" stroke-width="2"/>
+<circle cx="38" cy="1028" r="5" fill="#000091"/>
+<text x="60" y="1030" font-size="16" font-weight="700" fill="#161616">Au moins une compétence</text>
+<circle cx="38" cy="1076" r="10" fill="white" stroke="#000091" stroke-width="2"/>
+<text x="60" y="1078" font-size="16" font-weight="400" fill="#161616">Toutes les compétences</text>
+<text x="24" y="1138" font-size="16" font-weight="700" fill="#161616">Domaine professionnel</text>
+<rect x="24" y="1154" width="342" height="48" fill="#eee" stroke="none"/>
+<text x="36" y="1182" font-size="16" font-weight="400" fill="#161616">Tous les domaines ▾</text>
+<text x="24" y="1270" font-size="24" font-weight="700" fill="#161616">Quelles conditions ?</text>
+<text x="24" y="1314" font-size="16" font-weight="400" fill="#666">Pour chaque contexte, choisissez ce</text>
+<text x="24" y="1338" font-size="16" font-weight="400" fill="#666">que vous souhaitez explorer.</text>
+<text x="24" y="1390" font-size="20" font-weight="700" fill="#161616">En grande hauteur</text>
+<circle cx="38" cy="1430" r="10" fill="white" stroke="#000091" stroke-width="2"/>
+<circle cx="38" cy="1430" r="5" fill="#000091"/>
+<text x="60" y="1432" font-size="16" font-weight="700" fill="#161616">Indifférent</text>
+<circle cx="38" cy="1478" r="10" fill="white" stroke="#000091" stroke-width="2"/>
+<text x="60" y="1480" font-size="16" font-weight="400" fill="#161616">Rechercher ce contexte</text>
+<circle cx="38" cy="1526" r="10" fill="white" stroke="#000091" stroke-width="2"/>
+<text x="60" y="1528" font-size="16" font-weight="400" fill="#161616">Éviter ce contexte</text>
+<text x="24" y="1596" font-size="20" font-weight="700" fill="#161616">En extérieur</text>
+<circle cx="38" cy="1636" r="10" fill="white" stroke="#000091" stroke-width="2"/>
+<circle cx="38" cy="1636" r="5" fill="#000091"/>
+<text x="60" y="1638" font-size="16" font-weight="700" fill="#161616">Indifférent</text>
+<circle cx="38" cy="1684" r="10" fill="white" stroke="#000091" stroke-width="2"/>
+<text x="60" y="1686" font-size="16" font-weight="400" fill="#161616">Rechercher ce contexte</text>
+<circle cx="38" cy="1732" r="10" fill="white" stroke="#000091" stroke-width="2"/>
+<text x="60" y="1734" font-size="16" font-weight="400" fill="#161616">Éviter ce contexte</text>
+<rect x="24" y="1782" width="342" height="192" fill="#ececfe" stroke="none"/>
+<text x="44" y="1818" font-size="16" font-weight="700" fill="#161616">Un contexte n'est pas une</text>
+<text x="44" y="1842" font-size="16" font-weight="700" fill="#161616">garantie terrain</text>
+<text x="44" y="1874" font-size="16" font-weight="400" fill="#161616">Un métier sans ce contexte dans</text>
+<text x="44" y="1898" font-size="16" font-weight="400" fill="#161616">le référentiel peut comporter des</text>
+<text x="44" y="1922" font-size="16" font-weight="400" fill="#161616">emplois où il est présent.</text>
+<text x="44" y="1946" font-size="16" font-weight="400" fill="#161616">Vérifiez les conditions réelles.</text>
+<rect x="24" y="1998" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="resultats-ogr.svg">
+<text x="40" y="2026" font-size="16" font-weight="700" fill="#fff">Voir les métiers associés</text>
+</a>
+<rect x="24" y="2062" width="342" height="48" fill="white" stroke="#000091"/>
+<a href="essentiel.svg">
+<text x="40" y="2090" font-size="16" font-weight="700" fill="#000091">Revenir à la fiche</text>
+</a>
+<text x="24" y="2140" font-size="14" font-weight="400" fill="#666">Maquette : les boutons et choix</text>
+<text x="24" y="2161" font-size="14" font-weight="400" fill="#666">représentent les interactions à</text>
+<text x="24" y="2182" font-size="14" font-weight="400" fill="#666">développer. Les résultats liés illustrent</text>
+<text x="24" y="2203" font-size="14" font-weight="400" fill="#666">R23, avant application de contextes</text>
+<text x="24" y="2224" font-size="14" font-weight="400" fill="#666">supplémentaires.</text>
+<rect x="24" y="2255" width="342" height="48" fill="white" stroke="#000091"/>
+<a href="sources.svg">
+<text x="40" y="2283" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="2349" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="2368" font-size="12" font-weight="400" fill="#666">Référence : OGR103659 et125416 · R23/R24.</text></g></svg>

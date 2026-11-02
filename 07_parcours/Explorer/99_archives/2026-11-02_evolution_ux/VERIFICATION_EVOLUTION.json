@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-02",
+  "references_hors_explorer": 165,
+  "references_modifiees": [],
+  "ids_31_conserves": true,
+  "colonnes_table": 31,
+  "modifications_API_dans_table": [],
+  "liens_verifies": 140,
+  "liens_casses": [],
+  "tests_locaux": {
+    "DESKTOP": {
+      "reussis": 145,
+      "echoues": 0
+    },
+    "MOBILE": {
+      "reussis": 145,
+      "echoues": 0
+    }
+  },
+  "nouveaux_tests_HTTP": false,
+  "autres_parcours_reellement_relies": false,
+  "persistance_prototype": "session d’onglet et fichier de reprise, pas de compte serveur"
+}

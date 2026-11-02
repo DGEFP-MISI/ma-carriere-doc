@@ -1,0 +1,74 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CONTROLE GLOBAL API (Python)",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/d",
+        "/c",
+        "\"${workspaceFolder}\\LANCER_CONTROLES.cmd\"",
+        "/nopause"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Controle UML (Python)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts/verifier_uml_global.py"
+      ],
+      "problemMatcher": [],
+      "group": "test",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Controle preuves R16-R24 (Python)",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts/verifier_preuves_directes.py"
+      ],
+      "problemMatcher": [],
+      "group": "test",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Audit du contrat (PowerShell historique)",
+      "type": "shell",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}\\scripts\\verifier_contrat.ps1"
+      ],
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "Comparer JSON et Swagger (PowerShell historique)",
+      "type": "shell",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-File",
+        "${workspaceFolder}\\scripts\\verifier_echantillons.ps1"
+      ],
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}

@@ -1,0 +1,749 @@
+{
+  "items": [
+    {
+      "code": "tension",
+      "ressource": "/indicateurs",
+      "libelle": "Tension sur le marché du travail",
+      "grain": "fap_228",
+      "definition": "Indicateur DARES - France Travail de tension par famille professionnelle (FAP 2021, 228 postes) et ses sept composantes, rattaché au ROME V3 par la table de passage DARES FAP 2021 x ROME. Un ROME peut relever de plusieurs FAP : une valeur par FAP.",
+      "champs": [
+        "fap_228_code",
+        "fap_228_libelle",
+        "tension_globale",
+        "tension_intensite_embauche",
+        "tension_lien_formation_emploi",
+        "tension_manque_main_oeuvre",
+        "tension_non_durabilite_emploi",
+        "tension_conditions_travail_contraignantes",
+        "tension_inadequation_geographique",
+        "tension_non_attractivite_salariale"
+      ],
+      "mailles": [
+        "dep",
+        "reg",
+        "nat"
+      ],
+      "source": "DARES - France Travail, Les tensions sur le marché du travail",
+      "millesime": "2024",
+      "nb_rome_couverts": 504,
+      "tx_rome_couverts": 94.7
+    },
+    {
+      "code": "demandeurs_emploi",
+      "ressource": "/indicateurs",
+      "libelle": "Demandeurs d'emploi",
+      "grain": "rome",
+      "definition": "Demandeurs d'emploi inscrits à France Travail en catégories A, B, C, par ROME V3 recherché (API DEFM).",
+      "champs": [
+        "nb_demandeurs_emploi"
+      ],
+      "mailles": [
+        "clpe",
+        "dep",
+        "reg"
+      ],
+      "source": "France Travail, demandeurs d'emploi catégories ABC",
+      "millesime": "2026T1",
+      "nb_rome_couverts": 532,
+      "tx_rome_couverts": 100
+    },
+    {
+      "code": "offres_emploi_diffusees",
+      "ressource": "/indicateurs",
+      "libelle": "Offres d'emploi diffusées",
+      "grain": "rome",
+      "definition": "Postes proposés dans les offres d'emploi partenaires diffusées par France Travail sur les trois derniers mois complets, par ROME V3.",
+      "champs": [
+        "nb_offres_emploi_diffusees"
+      ],
+      "mailles": [
+        "clpe",
+        "dep"
+      ],
+      "source": "France Travail, API Offres d'emploi",
+      "millesime": "3 derniers mois",
+      "nb_rome_couverts": 529,
+      "tx_rome_couverts": 99.4
+    },
+    {
+      "code": "offres_emploi_collectees",
+      "ressource": "/indicateurs",
+      "libelle": "Offres d'emploi collectées",
+      "grain": "rome",
+      "definition": "Postes proposés dans les offres d'emploi déposées à France Travail sur les trois derniers mois complets, par ROME V3.",
+      "champs": [
+        "nb_offres_emploi_collectees"
+      ],
+      "mailles": [
+        "clpe",
+        "dep"
+      ],
+      "source": "France Travail, API Offres d'emploi",
+      "millesime": "3 derniers mois",
+      "nb_rome_couverts": 526,
+      "tx_rome_couverts": 98.9
+    },
+    {
+      "code": "salaires",
+      "ressource": "/indicateurs",
+      "libelle": "Salaires nets annuels",
+      "grain": "fap_225",
+      "definition": "Quartiles et médiane du salaire net annuel des salariés à temps complet présents toute l'année (poste principal, emploi ordinaire), par famille professionnelle (FAP 225) rattachée au ROME V3, au lieu de travail. Estimés par interpolation dans les tranches de rémunération de la BTS ; null au-delà de 50 000 euros (tranche ouverte). Publiés à partir de 30 salariés dans l'échantillon, sinon repli sur le territoire parent. Un ROME peut relever de plusieurs FAP : une valeur par FAP.",
+      "champs": [
+        "fap_225_code",
+        "fap_225_libelle",
+        "salaire_net_annuel_q1",
+        "salaire_net_annuel_median",
+        "salaire_net_annuel_q3",
+        "salaire_net_mensuel_median",
+        "tranche_salaire_median_libelle",
+        "nb_salaries_temps_complet"
+      ],
+      "mailles": [
+        "dep",
+        "reg",
+        "nat"
+      ],
+      "source": "INSEE, Base Tous salariés, fichier salariés open data",
+      "millesime": "2023",
+      "nb_rome_couverts": 530,
+      "tx_rome_couverts": 99.6
+    },
+    {
+      "code": "projets_recrutement",
+      "ressource": "/indicateurs",
+      "libelle": "Projets de recrutement (BMO)",
+      "grain": "fap_228",
+      "definition": "Projets de recrutement déclarés par les employeurs pour l'année dans l'enquête Besoins en main-d'œuvre, par famille professionnelle (FAP 2021, 228 postes) rattachée au ROME V3 : nombre de projets, projets jugés difficiles et projets saisonniers, et leur part. Estimations issues d'une enquête, arrondies à l'unité : un petit nombre est peu précis. Un ROME peut relever de plusieurs FAP : une valeur par FAP.",
+      "champs": [
+        "fap_228_code",
+        "fap_228_libelle",
+        "nb_projets_recrutement",
+        "nb_projets_recrutement_difficiles",
+        "tx_projets_recrutement_difficiles",
+        "nb_projets_recrutement_saisonniers",
+        "tx_projets_recrutement_saisonniers"
+      ],
+      "mailles": [
+        "clpe",
+        "dep",
+        "reg",
+        "nat"
+      ],
+      "source": "France Travail, enquête Besoins en main-d'œuvre",
+      "millesime": "2026",
+      "nb_rome_couverts": 513,
+      "tx_rome_couverts": 96.4
+    },
+    {
+      "code": "metiers_2030",
+      "ressource": "/indicateurs",
+      "libelle": "Les métiers en 2030 (prospective)",
+      "grain": "fap_87",
+      "definition": "Projection 2019-2030 de l'exercice Prospective des métiers et qualifications (scénario de référence), par famille professionnelle FAP 87 rattachée au ROME V3 : emploi 2019, créations nettes d'emploi, départs en fin de carrière, postes à pourvoir (départs + créations), jeunes débutants et déséquilibre potentiel (postes à pourvoir - jeunes débutants, et en région solde des mobilités entre régions : positif, les jeunes débutants ne suffiraient pas). Taux en % de l'emploi 2019. En région : part du métier dans l'emploi régional et indice de spécificité (> 1 : métier plus présent qu'en France). Régions de métropole uniquement.",
+      "champs": [
+        "fap_87_code",
+        "fap_87_libelle",
+        "nb_emplois_2019",
+        "tx_part_emploi_region_2019",
+        "indice_specificite_region_2019",
+        "nb_creations_nettes_emplois_2030",
+        "tx_creations_nettes_emplois_2030",
+        "nb_departs_fin_carriere_2030",
+        "tx_departs_fin_carriere_2030",
+        "nb_postes_a_pourvoir_2030",
+        "tx_postes_a_pourvoir_2030",
+        "nb_jeunes_debutants_2030",
+        "tx_jeunes_debutants_2030",
+        "nb_desequilibre_potentiel_2030",
+        "tx_desequilibre_potentiel_2030",
+        "tension_niveau_2019"
+      ],
+      "mailles": [
+        "reg",
+        "nat"
+      ],
+      "source": "DARES - France Stratégie, Les métiers en 2030 (PMQ)",
+      "millesime": "2019-2030",
+      "nb_rome_couverts": 531,
+      "tx_rome_couverts": 99.8
+    },
+    {
+      "code": "offres_emploi_caracteristiques",
+      "ressource": "/indicateurs",
+      "libelle": "Caractéristiques des offres d'emploi",
+      "grain": "rome",
+      "definition": "Offres d'emploi collectées par France Travail créées sur les 12 derniers mois complets (`periode_libelle`), par ROME V3 : part des CDI (y compris CDI intérimaires), CDD (y compris d'insertion), intérim, saisonniers et emplois non salariés ; part des offres d'emploi durable (CDI ou contrat d'au moins 6 mois) ; part des contrats en alternance (apprentissage, professionnalisation) ; part des offres ouvertes aux débutants ; répartition par qualification demandée (ouvriers, employés, techniciens et agents de maîtrise, cadres). Le niveau de formation n'est renseigné que dans une partie des offres (`nb_offres_niveau_formation_renseigne`) : sa répartition est calculée sur ces offres seulement. Taux en %. Offres des partenaires exclues. Publié à partir de 20 offres, sinon repli sur le territoire parent.",
+      "champs": [
+        "periode_libelle",
+        "nb_offres_emploi_base",
+        "tx_offres_cdi",
+        "tx_offres_cdd",
+        "tx_offres_interim",
+        "tx_offres_saisonnier",
+        "tx_offres_non_salarie",
+        "tx_offres_emploi_durable",
+        "tx_offres_alternance",
+        "tx_offres_debutant_accepte",
+        "tx_offres_ouvrier_non_qualifie",
+        "tx_offres_ouvrier_qualifie",
+        "tx_offres_employe_non_qualifie",
+        "tx_offres_employe_qualifie",
+        "tx_offres_technicien_agent_maitrise",
+        "tx_offres_cadre",
+        "nb_offres_niveau_formation_renseigne",
+        "tx_niveau_formation_infra_bac",
+        "tx_niveau_formation_bac",
+        "tx_niveau_formation_bac2",
+        "tx_niveau_formation_bac3_4",
+        "tx_niveau_formation_bac5"
+      ],
+      "mailles": [
+        "dep",
+        "reg",
+        "nat"
+      ],
+      "source": "France Travail, API Offres d'emploi (offres collectées)",
+      "millesime": "12 derniers mois",
+      "nb_rome_couverts": 520,
+      "tx_rome_couverts": 97.7
+    },
+    {
+      "code": "offres_emploi_mensuelles",
+      "ressource": "/indicateurs",
+      "libelle": "Offres d'emploi par mois",
+      "grain": "rome",
+      "definition": "Série mensuelle des offres d'emploi collectées par France Travail, par mois de création (`periode_code`, AAAA-MM), sur les 12 derniers mois complets, par ROME V3 : nombre d'offres et de postes proposés. Valeurs dans l'ordre chronologique ; un mois sans offre est absent. Offres des partenaires exclues. Les mois ne sont pas corrigés des variations saisonnières : comparer des mois d'années différentes plutôt que des mois successifs.",
+      "champs": [
+        "periode_code",
+        "nb_offres_emploi_mois",
+        "nb_postes_offres_emploi_mois"
+      ],
+      "mailles": [
+        "dep",
+        "reg",
+        "nat"
+      ],
+      "source": "France Travail, API Offres d'emploi (offres collectées)",
+      "millesime": "12 derniers mois",
+      "tri": {
+        "rang_periode": "asc"
+      },
+      "nb_rome_couverts": 532,
+      "tx_rome_couverts": 100
+    },
+    {
+      "code": "competences_offres",
+      "ressource": "/indicateurs",
+      "libelle": "Compétences demandées dans les offres d'emploi",
+      "grain": "rome",
+      "definition": "Les 20 compétences (référentiel ROME 4.0) les plus citées dans les offres d'emploi collectées par France Travail et enregistrées en 2024, par ROME V3, en % des offres du métier qui citent au moins une compétence (`nb_offres_avec_competences`). Type : savoir-faire ou compétence détaillée. Environ 17 % des offres citent une compétence. France entière uniquement. Publié à partir de 20 offres citant une compétence.",
+      "champs": [
+        "rang_competence",
+        "competence_code",
+        "competence_libelle",
+        "competence_type_libelles",
+        "nb_offres_competence",
+        "nb_offres_avec_competences",
+        "tx_offres_competence"
+      ],
+      "mailles": [
+        "nat"
+      ],
+      "source": "France Travail, offres d'emploi enregistrées (OEFM)",
+      "millesime": "2024",
+      "tri": {
+        "rang_competence": "asc"
+      },
+      "nb_rome_couverts": 463,
+      "tx_rome_couverts": 87
+    },
+    {
+      "code": "emploi_secteurs",
+      "ressource": "/indicateurs",
+      "libelle": "Secteurs d'activité qui emploient le métier",
+      "grain": "fap_225",
+      "definition": "Actifs en emploi de chaque famille professionnelle (FAP 225) rattachée au ROME V3 par secteur d'activité de l'employeur (NAF 38 postes), salariés et non-salariés : les 10 premiers secteurs par FAP (`rang_secteur`), avec la part des actifs de la FAP qui y travaillent (`tx_actifs_secteur`). Estimations du recensement, publiées à partir de 20 actifs. Pour la dynamique de ces secteurs sur le territoire, cf. /secteurs?rome=.",
+      "champs": [
+        "fap_225_code",
+        "fap_225_libelle",
+        "rang_secteur",
+        "secteur_naf38_code",
+        "secteur_naf38_libelle",
+        "nb_actifs_emploi",
+        "tx_actifs_secteur"
+      ],
+      "mailles": [
+        "reg",
+        "nat"
+      ],
+      "source": "INSEE, recensement de la population",
+      "millesime": "2021",
+      "tri": {
+        "fap_225_code": "asc",
+        "rang_secteur": "asc"
+      },
+      "nb_rome_couverts": 531,
+      "tx_rome_couverts": 99.8
+    },
+    {
+      "code": "statut_emploi",
+      "ressource": "/indicateurs",
+      "libelle": "Statut d'emploi : salarié ou indépendant",
+      "grain": "rome",
+      "definition": "Répartition des actifs occupés qui exercent le métier (lieu de résidence) entre salariés, indépendants, employeurs et aides familiaux, en effectifs et en %. Métier : professions (PCS) des familles professionnelles (FAP 225) rattachées au ROME V3 (les FAP d'exploitants agricoles indépendants ne sont rattachées à aucun ROME : les ROME agricoles ne comptent que des salariés). Département identifié seulement pour les départements de plus de 700 000 habitants (les autres : repli sur la région). Estimations du recensement, publiées à partir de 200 actifs occupés. Grain `rome` : la valeur est propre au métier, mais agrège des professions (PCS) partagées avec les autres métiers des mêmes familles.",
+      "champs": [
+        "nb_actifs_emploi",
+        "nb_actifs_salaries",
+        "nb_actifs_independants",
+        "nb_actifs_employeurs",
+        "nb_actifs_aides_familiaux",
+        "tx_actifs_salaries",
+        "tx_actifs_independants",
+        "tx_actifs_employeurs",
+        "tx_actifs_aides_familiaux"
+      ],
+      "mailles": [
+        "dep",
+        "reg",
+        "nat"
+      ],
+      "source": "INSEE, recensement de la population, fichier détail individus",
+      "millesime": "2021",
+      "nb_rome_couverts": 531,
+      "tx_rome_couverts": 99.8
+    },
+    {
+      "code": "formations_metier",
+      "ressource": "/indicateurs",
+      "libelle": "Formations préparant au métier sur le territoire",
+      "grain": "rome",
+      "definition": "Effectifs des formations dont la certification est rattachée au ROME V3 (Certif Info), sur le territoire : inscrits en voie scolaire et en apprentissage, dans l'enseignement supérieur et dans les formations sanitaires et sociales (lieu de formation), entrées en formation et sortants de formation des demandeurs d'emploi avec leur accès à l'emploi à 6 mois (lieu de résidence), places et vœux de rang 1 Affelnet (département au plus fin, nuls à la CLPE), places et candidatures Parcoursup (un candidat compte dans chaque formation où il postule), sessions de formation à venir des Carif (les offres Onisep, formations initiales sans session datée, ne sont comptées qu'avec `onisep=inclure` ou `onisep=seulement`), nombre de certifications concernées. Une certification rattachée à plusieurs ROME compte pour chacun ; codes Certif Info archivés rattachés à leur successeur. Pour le détail par certification : /certifications?rome= (national) et /sessions_a_venir.",
+      "champs": [
+        "nb_inscrits_voie_scolaire",
+        "nb_inscrits_apprentissage",
+        "nb_inscrits_enseignement_sup",
+        "nb_inscrits_sanitaire_social",
+        "nb_entrees_formation_de",
+        "nb_de_sortants",
+        "nb_de_acces_emploi_6m",
+        "tx_de_acces_emploi_6m",
+        "nb_affelnet_places",
+        "nb_affelnet_voeux_1",
+        "indice_affelnet_pression",
+        "nb_parcoursup_places",
+        "nb_parcoursup_candidatures",
+        "nb_sessions_a_venir",
+        "nb_certifications"
+      ],
+      "mailles": [
+        "clpe",
+        "dep",
+        "reg",
+        "nat"
+      ],
+      "source": "DEPP ; SIES ; DREES ; France Travail ; DGESCO, Affelnet ; MESR, Parcoursup ; RCO, Offre info",
+      "millesime": "Rentrée 2023 (DEPP), 2024 (SIES, DREES), 2025 (Affelnet, Parcoursup, entrées DE), sortants DE 2024",
+      "nb_rome_couverts": 509,
+      "tx_rome_couverts": 95.7
+    },
+    {
+      "code": "insertion_formations_metier",
+      "ressource": "/indicateurs",
+      "libelle": "Insertion des sortants des formations au métier (InserJeunes)",
+      "grain": "rome",
+      "definition": "Pour les formations dont la certification est rattachée au ROME V3 : part des sortants de voie scolaire et d'apprentissage en emploi salarié 12 mois après la sortie, et part des inscrits en année terminale qui poursuivent leurs études (inscrits = poursuivants + sortants). Région ou France (somme des régions).",
+      "champs": [
+        "nb_ij_scolaire_sortants",
+        "nb_ij_scolaire_emploi_12m",
+        "tx_ij_scolaire_emploi_12m",
+        "nb_ij_apprentissage_sortants",
+        "nb_ij_apprentissage_emploi_12m",
+        "tx_ij_apprentissage_emploi_12m",
+        "nb_ij_scolaire_annee_terminale",
+        "nb_ij_scolaire_poursuite_etudes",
+        "tx_ij_scolaire_poursuite_etudes",
+        "nb_ij_apprentissage_annee_terminale",
+        "nb_ij_apprentissage_poursuite_etudes",
+        "tx_ij_apprentissage_poursuite_etudes"
+      ],
+      "mailles": [
+        "reg",
+        "nat"
+      ],
+      "source": "DEPP - DARES, InserJeunes",
+      "millesime": "Cumul 2023-2024",
+      "nb_rome_couverts": 385,
+      "tx_rome_couverts": 72.4
+    },
+    {
+      "code": "secteurs",
+      "libelle": "Dynamique des secteurs d'activité",
+      "grain": "secteur_naf38",
+      "definition": "Par secteur d'activité (NAF 38 postes) et pour l'ensemble des secteurs (`secteur_naf38_code` = ENS) : établissements actifs fin 2024 et évolution sur 5 ans, unités légales (SIDE, département au plus fin) ; créations d'établissements 2025 et évolution sur un an (SIDE) ; établissements employeurs et salariés du privé 2025, évolution des salariés sur 5 ans (URSSAF) ; défaillances d'entreprises (jugements d'ouverture de liquidation, redressement ou sauvegarde publiés au BODACC entre `date_debut_defaillances` et `date_fin_defaillances`, une entreprise comptant une fois) et leur nombre pour 1 000 unités légales. Pas de fermetures d'établissements. Comptages d'établissements seulement, sans liste nominative.",
+      "ressource": "/secteurs",
+      "champs": [
+        "secteur_naf38_code",
+        "secteur_naf38_libelle",
+        "nb_etablissements",
+        "nb_etablissements_n5",
+        "tx_evolution_etablissements_5ans",
+        "nb_unites_legales",
+        "nb_creations_etablissements",
+        "nb_creations_etablissements_n1",
+        "tx_evolution_creations_1an",
+        "nb_etablissements_employeurs",
+        "nb_salaries_prives",
+        "nb_salaries_prives_n5",
+        "tx_evolution_salaries_5ans",
+        "nb_defaillances",
+        "tx_defaillances_1000_unites_legales",
+        "date_debut_defaillances",
+        "date_fin_defaillances"
+      ],
+      "mailles": [
+        "clpe",
+        "dep",
+        "reg",
+        "nat"
+      ],
+      "source": "INSEE, SIDE ; URSSAF, établissements employeurs et effectifs salariés ; BODACC",
+      "millesime": "SIDE 2024-2025, URSSAF 2025, BODACC 2026",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "salaires_secteurs",
+      "libelle": "Salaires nets annuels par secteur d'activité",
+      "grain": "fap_225",
+      "definition": "Quartiles et médiane du salaire net annuel par famille professionnelle (FAP 225) rattachée au ROME V3 et par secteur d'activité de l'employeur (NAF 38 postes), même population et même méthode que la mesure `salaires`. `tx_salaries_secteur` : part des salariés de la FAP du territoire qui travaillent dans le secteur. Publiés à partir de 30 salariés dans l'échantillon : seuls les principaux secteurs de chaque FAP figurent.",
+      "ressource": "/salaires/secteurs",
+      "champs": [
+        "fap_225_code",
+        "fap_225_libelle",
+        "secteur_naf38_code",
+        "secteur_naf38_libelle",
+        "tx_salaries_secteur",
+        "salaire_net_annuel_q1",
+        "salaire_net_annuel_median",
+        "salaire_net_annuel_q3",
+        "salaire_net_mensuel_median",
+        "tranche_salaire_median_libelle",
+        "nb_salaries_temps_complet"
+      ],
+      "mailles": [
+        "reg",
+        "nat"
+      ],
+      "source": "INSEE, Base Tous salariés, fichier salariés open data",
+      "millesime": "2023",
+      "nb_rome_couverts": 529,
+      "tx_rome_couverts": 99.4
+    },
+    {
+      "code": "mobilites_origines",
+      "libelle": "Origine des personnes qui exercent un métier",
+      "grain": "fap_225",
+      "definition": "Situation en janvier 2022 des personnes en emploi en janvier 2023 dans la famille professionnelle (FAP 225) rattachée au ROME V3 : même métier, autre métier (FAP 225), demandeur d'emploi, apprenti, sortant d'études, autre situation. Part des personnes en %, par région de travail et tranche d'âge (en 2023). Les 15 situations les plus fréquentes par FAP ; parts sous secret statistique de la source omises.",
+      "ressource": "/mobilites?sens=origines",
+      "champs": [
+        "fap_225_code",
+        "fap_225_libelle",
+        "tranche_age_libelle",
+        "origine_code",
+        "origine_libelle",
+        "tag_meme_metier",
+        "tag_en_emploi",
+        "tx_personnes"
+      ],
+      "mailles": [
+        "reg",
+        "nat"
+      ],
+      "source": "DARES, dispositif ForCE et DSN-Sismmo",
+      "millesime": "2022-2023",
+      "nb_rome_couverts": 531,
+      "tx_rome_couverts": 99.8
+    },
+    {
+      "code": "mobilites_destinations",
+      "libelle": "Devenir des personnes qui exercent un métier",
+      "grain": "fap_225",
+      "definition": "Situation en janvier 2023 des personnes en emploi en janvier 2022 dans la famille professionnelle (FAP 225) rattachée au ROME V3 : même métier, autre métier (FAP 225), demandeur d'emploi, retraité, autre situation. Part des personnes en %, par région de travail et tranche d'âge (en 2022). Les 15 situations les plus fréquentes par FAP ; parts sous secret statistique de la source omises.",
+      "ressource": "/mobilites?sens=destinations",
+      "champs": [
+        "fap_225_code",
+        "fap_225_libelle",
+        "tranche_age_libelle",
+        "destination_code",
+        "destination_libelle",
+        "tag_meme_metier",
+        "tag_en_emploi",
+        "tx_personnes"
+      ],
+      "mailles": [
+        "reg",
+        "nat"
+      ],
+      "source": "DARES, dispositif ForCE et DSN-Sismmo",
+      "millesime": "2022-2023",
+      "nb_rome_couverts": 531,
+      "tx_rome_couverts": 99.8
+    },
+    {
+      "code": "tension_fap228_principale",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Tension de la FAP principale",
+      "grain": "fap_228",
+      "definition": "Tension nationale (indice et niveau discret 1 à 5.2) de la FAP 228 principale de la certification : FAP atteinte par le plus de ROME V3 de la certification compatibles avec son niveau, puis plus fort emploi moyen.",
+      "champs": [
+        "fap228_principale_code",
+        "fap228_principale_libelle",
+        "fap228_methode_libelle",
+        "indice_tension_fap228_principale",
+        "tension_discret_fap228_principale",
+        "tension_niveau_max",
+        "nb_fap228_tension_4_et_plus",
+        "tension_discret_par_fap228"
+      ],
+      "source": "Certif Info (RCO) ; DARES - France Travail",
+      "millesime": "2024",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "insertion_inserjeunes",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Taux d'emploi à 12 mois et poursuite d'études (InserJeunes)",
+      "grain": "certification",
+      "definition": "Part des sortants en emploi salarié 12 mois après la sortie, et part des inscrits en année terminale qui poursuivent leurs études l'année suivante (inscrits = poursuivants + sortants), voie scolaire et apprentissage, agrégées au niveau national.",
+      "champs": [
+        "nb_ij_scolaire_sortants",
+        "nb_ij_scolaire_emploi_12m",
+        "tx_ij_scolaire_emploi_12m",
+        "nb_ij_apprentissage_sortants",
+        "nb_ij_apprentissage_emploi_12m",
+        "tx_ij_apprentissage_emploi_12m",
+        "nb_ij_scolaire_annee_terminale",
+        "nb_ij_scolaire_poursuite_etudes",
+        "tx_ij_scolaire_poursuite_etudes",
+        "nb_ij_apprentissage_annee_terminale",
+        "nb_ij_apprentissage_poursuite_etudes",
+        "tx_ij_apprentissage_poursuite_etudes"
+      ],
+      "source": "DEPP - DARES, InserJeunes",
+      "millesime": "Cumul 2023-2024",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "insertion_insersup",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Taux d'emploi salarié à 12 mois et poursuite d'études (InserSup)",
+      "grain": "certification",
+      "definition": "Part des diplômés sortis des études en emploi salarié 12 mois après le diplôme, et part des diplômés qui poursuivent leurs études (diplômés = sortants + poursuivants), toutes populations, niveau national (lignes « National » de la source ; plusieurs diplômes SISE d'une même certification additionnés). Promotion 2024, ou cumul 2023/2024 pour un diplôme de moins de 20 sortants (`promotion_insersup_libelle`).",
+      "champs": [
+        "promotion_insersup_libelle",
+        "nb_insersup_diplomes",
+        "nb_insersup_emploi_salarie_12m",
+        "tx_insersup_emploi_salarie_12m",
+        "nb_insersup_diplomes_ensemble",
+        "nb_insersup_poursuivants",
+        "tx_insersup_poursuite_etudes"
+      ],
+      "source": "SIES, InserSup",
+      "millesime": "2025_S2 (diplômés 2024)",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "salaires_insersup",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Salaire des diplômés (InserSup)",
+      "grain": "certification",
+      "definition": "Quartiles et médiane du salaire mensuel net des diplômés en emploi salarié, 12 et 18 mois après le diplôme (promotion 2022) et 30 mois après (promotion 2021), niveau national. Diplômes de l'enseignement supérieur suivis par InserSup (licence, licence professionnelle, master, ingénieur, écoles de management) ; publiés à partir de 20 diplômés en emploi. Une certification couvrant plusieurs diplômes SISE prend celui qui compte le plus de diplômés en emploi salarié.",
+      "champs": [
+        "nb_insersup_salaire_base_12m",
+        "salaire_insersup_q1_12m",
+        "salaire_insersup_median_12m",
+        "salaire_insersup_q3_12m",
+        "salaire_insersup_q1_18m",
+        "salaire_insersup_median_18m",
+        "salaire_insersup_q3_18m",
+        "salaire_insersup_q1_30m",
+        "salaire_insersup_median_30m",
+        "salaire_insersup_q3_30m"
+      ],
+      "source": "SIES, InserSup",
+      "millesime": "2025_S2 (diplômés 2021 et 2022)",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "insertion_demandeurs_emploi",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Accès à l'emploi à 6 mois et abandons des demandeurs d'emploi formés",
+      "grain": "certification",
+      "definition": "Part des demandeurs d'emploi sortis de formation ayant accédé à l'emploi dans les 6 mois, et part de ceux qui ont abandonné la formation avant son terme.",
+      "champs": [
+        "nb_de_sortants",
+        "nb_de_acces_emploi_6m",
+        "tx_de_acces_emploi_6m",
+        "nb_de_abandons",
+        "tx_de_abandons"
+      ],
+      "source": "France Travail, sortants de formation",
+      "millesime": "2024",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "inscrits",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Inscrits en formation",
+      "grain": "certification",
+      "definition": "Inscrits dans la formation, au niveau national, par voie : voie scolaire et apprentissage (toutes années de la formation), enseignement supérieur, formations sanitaires et sociales, entrées en formation des demandeurs d'emploi. Les effectifs d'une version archivée de la certification sont rattachés à la version active (filiation Certif Info).",
+      "champs": [
+        "nb_inscrits_voie_scolaire",
+        "nb_inscrits_apprentissage",
+        "nb_inscrits_enseignement_sup",
+        "nb_inscrits_sanitaire_social",
+        "nb_entrees_formation_de"
+      ],
+      "source": "DEPP ; SIES ; DREES ; France Travail, entrées en formation",
+      "millesime": "Rentrée 2023 (DEPP), rentrée 2024 (SIES, DREES), 2025 (France Travail)",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "diplomes",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Diplômés et réussite aux examens",
+      "grain": "certification",
+      "definition": "Présents, admis et taux de réussite aux examens de l'Éducation nationale (CAP, bac professionnel, BTS…, toutes situations de candidats) et aux diplômes sanitaires et sociaux ; diplômés de l'enseignement supérieur. Niveau national ; filiation Certif Info appliquée.",
+      "champs": [
+        "nb_examen_presents",
+        "nb_examen_admis",
+        "tx_examen_reussite",
+        "nb_diplomes_enseignement_sup",
+        "nb_sanitaire_social_presents",
+        "nb_diplomes_sanitaire_social",
+        "tx_sanitaire_social_reussite"
+      ],
+      "source": "DEPP, résultats aux examens ; SIES ; DREES",
+      "millesime": "Session 2023 (DEPP, SIES), 2024 (DREES)",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "attractivite",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Attractivité de la formation",
+      "grain": "certification",
+      "definition": "Demande rapportée aux places : vœux de rang 1 par place dans Affelnet (voie scolaire après la 3e) et candidatures par place dans Parcoursup (un candidat compte dans chaque formation où il postule). Niveau national ; filiation Certif Info appliquée.",
+      "champs": [
+        "nb_affelnet_places",
+        "nb_affelnet_voeux_1",
+        "indice_affelnet_pression",
+        "nb_parcoursup_places",
+        "nb_parcoursup_candidatures",
+        "nb_parcoursup_admis",
+        "indice_parcoursup_candidatures_par_place"
+      ],
+      "source": "DGESCO, Affelnet ; MESR, Parcoursup",
+      "millesime": "Rentrée 2025 (Affelnet), session 2025 (Parcoursup)",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "voies_acces",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Voies d'accès, VAE et validation partielle",
+      "grain": "certification",
+      "definition": "Voies d'accès déclarées dans la fiche France compétences (formation initiale, apprentissage, formation continue, contrat de professionnalisation, candidature individuelle, VAE) ; blocs de compétences RNCP (chaque bloc est évalué et validé séparément, détail dans /certifications/blocs) ; validation partielle : RNCP avec blocs, ou fiche RS qui la déclare.",
+      "champs": [
+        "tag_acces_formation_initiale",
+        "tag_acces_apprentissage",
+        "tag_acces_formation_continue",
+        "tag_acces_contrat_professionnalisation",
+        "tag_acces_candidature_individuelle",
+        "tag_acces_vae",
+        "nb_blocs_competences",
+        "bloc_competences_codes",
+        "bloc_competences_libelles",
+        "tag_validation_partielle"
+      ],
+      "source": "France compétences, RNCP et RS (via Certif Info)",
+      "millesime": "2026",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "formacodes",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Formacodes de la certification",
+      "grain": "certification",
+      "definition": "Formacodes V14 liés à la certification (Formacode principal en premier), pour retrouver les formations du même thème, certifiantes ou non (cf. /formacodes).",
+      "champs": [
+        "formacode_principal_code",
+        "formacode_principal_libelle",
+        "formacode_codes",
+        "formacode_libelles"
+      ],
+      "source": "Certif Info (RCO) ; Centre Inffo, Formacode V14",
+      "millesime": "2026",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    },
+    {
+      "code": "tags",
+      "ressource": "/certifications",
+      "mailles": [
+        "nat"
+      ],
+      "libelle": "Tags stratégiques",
+      "grain": "certification",
+      "definition": "Rénovation énergétique des bâtiments (thématiques REB) et transition écologique (Formacode principal).",
+      "champs": [
+        "tag_renovation_energetique_batiment",
+        "thematique_reb_libelle",
+        "tag_transition_ecologique"
+      ],
+      "source": "RCO",
+      "millesime": "2026",
+      "nb_rome_couverts": null,
+      "tx_rome_couverts": null
+    }
+  ],
+  "total": 29
+}

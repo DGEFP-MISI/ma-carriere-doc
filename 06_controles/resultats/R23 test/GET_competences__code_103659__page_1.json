@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "categorie_competence_code": "savoir_faire",
+      "categorie_competence_libelle": "Savoir-faire",
+      "competence_code": "103659",
+      "competence_libelle": "Poser des panneaux solaires",
+      "domaine_competence_code": "3",
+      "domaine_competence_libelle": "Production, Construction, Qualité, Logistique",
+      "enjeu_competence_code": "3D",
+      "enjeu_competence_libelle": "Construction",
+      "macro_competence_code": "300228",
+      "macro_competence_libelle": "Fixer, poser, installer des éléments, des ouvrages",
+      "nb_metiers": 2,
+      "rome_codes": [
+        "F1610",
+        "I1604"
+      ],
+      "rome_coeur_metier_codes": [],
+      "rome_libelles": [
+        "Pose et restauration de couvertures",
+        "Mécanique automobile et entretien de véhicules"
+      ],
+      "source_libelle": "France Travail - ROME 4.0 (compétences et contextes de travail, codes OGR) rattaché au ROME V3"
+    }
+  ],
+  "total": 1,
+  "page_size": 100,
+  "page": 1,
+  "last_page": 1
+}

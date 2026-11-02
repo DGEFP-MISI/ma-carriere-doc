@@ -1,0 +1,3 @@
+[36448:20988:1102/132000.988:ERROR:chrome\browser\task_manager\providers\fallback_task_provider.cc:126] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/40528867.
+[36448:7748:1102/132002.473:ERROR:chrome\elevation_service\edge_elevation_service_browser_helper.cc:94] LaunchUpdateCmdElevatedAndWait:  hr = 80070002 with exit code: 32
+83111 bytes written to file C:\Users\Laetitia.Kouadria\Downloads\API_DGEFP_RCO_REFERENCE_V3\07_parcours\Explorer\12_maquette_html\apercus\apercu-desktop.png

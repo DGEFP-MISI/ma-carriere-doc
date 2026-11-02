@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-02",
+  "phase": "apres",
+  "page": "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\index.html",
+  "outil": "Edge headless via Chrome DevTools Protocol ; WebSocket Node natif",
+  "methode": "Souris et clavier CDP ; options des sélecteurs via événements DOM, comme selectOption ; fautes/latence injectées uniquement dans le fournisseur local.",
+  "httpMetier": false,
+  "suites": [
+    {
+      "width": 1280,
+      "height": 1000,
+      "scenarios": [
+        {
+          "id": "TRANS-PISTES",
+          "label": "Limite de trois, rechargement et retrait",
+          "checks": [
+            {
+              "name": "Quatrième piste refusée et limite annoncée",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Rechargement natif du document après navigation par fragments",
+              "status": "NON TESTÉ",
+              "detail": "Dans ce pilote Edge, Page.reload ne remplace pas le document à ce point du parcours. Les tentatives sont conservées ; un nouveau chargement complet est testé séparément."
+            },
+            {
+              "name": "Trois pistes reprises après nouveau chargement complet",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retrait opérationnel",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retrait conservé après un second chargement complet",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Format de passage existant, sans fausse navigation projet",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "PARTIEL"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Alternative sans JavaScript présente",
+          "status": "RÉUSSI"
+        },
+        {
+          "name": "Aperçu lisible sans JavaScript",
+          "status": "RÉUSSI"
+        }
+      ],
+      "captures": [
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-1280-recherche.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-1280-essentiel.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-1280-guide.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-1280-comparateur.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-1280-mobilites.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-1280-sans-js.png"
+      ],
+      "nonTestes": [
+        {
+          "name": "Rechargement natif du document après navigation par fragments",
+          "status": "NON TESTÉ",
+          "raison": "Dans ce pilote Edge, Page.reload ne remplace pas le document à ce point du parcours. Les tentatives sont conservées ; un nouveau chargement complet est testé séparément."
+        },
+        {
+          "name": "Zoom navigateur réel par raccourcis Ctrl + / Ctrl − à 200 et 400 %",
+          "status": "NON TESTÉ",
+          "raison": "CDP applique un grossissement visuel et des largeurs de reflow ; cela ne reproduit pas le zoom de l’interface du navigateur."
+        },
+        {
+          "name": "Audit RGAA complet et lecteurs d’écran",
+          "status": "NON TESTÉ",
+          "raison": "La recette couvre les comportements essentiels dans Edge, pas une certification ni des utilisateurs réels."
+        }
+      ],
+      "reloadNonTeste": true,
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "width": 375,
+      "height": 1000,
+      "scenarios": [
+        {
+          "id": "TRANS-PISTES",
+          "label": "Limite de trois, rechargement et retrait",
+          "checks": [
+            {
+              "name": "Quatrième piste refusée et limite annoncée",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Rechargement natif du document après navigation par fragments",
+              "status": "NON TESTÉ",
+              "detail": "Dans ce pilote Edge, Page.reload ne remplace pas le document à ce point du parcours. Les tentatives sont conservées ; un nouveau chargement complet est testé séparément."
+            },
+            {
+              "name": "Trois pistes reprises après nouveau chargement complet",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retrait opérationnel",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retrait conservé après un second chargement complet",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Format de passage existant, sans fausse navigation projet",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "PARTIEL"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Alternative sans JavaScript présente",
+          "status": "RÉUSSI"
+        },
+        {
+          "name": "Aperçu lisible sans JavaScript",
+          "status": "RÉUSSI"
+        }
+      ],
+      "captures": [
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-375-recherche.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-375-essentiel.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-375-guide.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-375-comparateur.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-375-mobilites.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\12_maquette_html\\apercus\\ux-apres-375-sans-js.png"
+      ],
+      "nonTestes": [
+        {
+          "name": "Rechargement natif du document après navigation par fragments",
+          "status": "NON TESTÉ",
+          "raison": "Dans ce pilote Edge, Page.reload ne remplace pas le document à ce point du parcours. Les tentatives sont conservées ; un nouveau chargement complet est testé séparément."
+        },
+        {
+          "name": "Zoom navigateur réel par raccourcis Ctrl + / Ctrl − à 200 et 400 %",
+          "status": "NON TESTÉ",
+          "raison": "CDP applique un grossissement visuel et des largeurs de reflow ; cela ne reproduit pas le zoom de l’interface du navigateur."
+        },
+        {
+          "name": "Audit RGAA complet et lecteurs d’écran",
+          "status": "NON TESTÉ",
+          "raison": "La recette couvre les comportements essentiels dans Edge, pas une certification ni des utilisateurs réels."
+        }
+      ],
+      "reloadNonTeste": true,
+      "passed": 7,
+      "failed": 0
+    }
+  ],
+  "runtimeErrors": [],
+  "passed": 14,
+  "failed": 0
+}

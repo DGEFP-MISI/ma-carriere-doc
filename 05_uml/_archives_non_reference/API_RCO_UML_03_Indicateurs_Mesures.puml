@@ -1,0 +1,82 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #FFFFFF
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+hide methods
+top to bottom direction
+title API DGEFP-RCO — Contrats de données / 03 Indicateurs Mesures
+skinparam class {
+ BackgroundColor<<Swagger>> #F0F6FF
+ BorderColor<<Swagger>> #3965A0
+ BackgroundColor<<Observe>> #FFF7E9
+ BorderColor<<Observe>> #B67C2B
+ BackgroundColor<<NonDocumente>> #F4F4F4
+ BorderColor<<NonDocumente>> #999999
+}
+class "GET /indicateurs\nRéponse" as P1 <<Observe>> {
+  rome_code : string
+  territoire : inconnu
+  zonage : string
+}
+class "/indicateurs\nitems" as P1_items <<Observe>> {
+  grain : string
+  libelle : string
+  maille_demandee : string
+  maille_reelle : string
+  mesure : string
+  millesime : string
+  repli : boolean
+  source_libelle : string
+  territoire_code : inconnu
+  territoire_libelle : string
+  valeurs : object[]
+}
+P1 *-- "0..*" P1_items : items
+class "/indicateurs\nvaleurs[]" as P1_valeurs <<Observe>> {
+  Structure variable selon mesure
+  Voir /mesures : champs[]
+}
+P1_items *-- "0..*" P1_valeurs : valeurs[]
+class "/indicateurs\nterritoires" as P1_territoires <<Observe>> {
+  code : inconnu
+  libelle : string
+  maille : string
+}
+P1 *-- "0..*" P1_territoires : territoires
+
+class "GET /mesures\nRéponse" as P2 <<Observe>> {
+  total : integer
+}
+class "/mesures\nitems" as P2_items <<Observe>> {
+  champs : string[]
+  code : string
+  definition : string
+  grain : string
+  libelle : string
+  mailles : string[]
+  millesime : string
+  nb_rome_couverts : integer
+  ressource : string
+  source : string
+  tri : object
+  tx_rome_couverts : number
+}
+P2 *-- "0..*" P2_items : items
+class "/mesures\nitems[].tri" as P2_tri <<Observe>> {
+  fap_225_code : string?
+  rang_competence : string?
+  rang_periode : string?
+  rang_secteur : string?
+}
+P2_items *-- "0..1" P2_tri : tri
+
+legend bottom
+  Bleu : schema de reponse 200 du Swagger (contrat).
+  Orange : structure constatee dans les JSON (ne constitue pas un schema 200 OpenAPI).
+  Gris : structure non decrite / sans exemple dans les sources disponibles.
+  Les cardinalites 0..* expriment uniquement les tableaux JSON; 0..1 les objets facultatifs/observes.
+  Aucun lien n implique une contrainte de cle etrangere dans Octopilot.
+endlegend
+@enduml

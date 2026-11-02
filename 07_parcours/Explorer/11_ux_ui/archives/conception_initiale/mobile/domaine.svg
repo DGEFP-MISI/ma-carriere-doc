@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="2429" viewBox="0 0 390 2429" role="img" aria-labelledby="title desc"><title id="title">Explorer le Second œuvre</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="2429" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Explorer le Second</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">œuvre</text>
+<text x="24" y="370" font-size="16" font-weight="400" fill="#666">Domaine professionnel ROME F16 ·</text>
+<text x="24" y="394" font-size="16" font-weight="400" fill="#666">Construction, bâtiment et travaux</text>
+<text x="24" y="418" font-size="16" font-weight="400" fill="#666">publics. À distinguer d'un secteur</text>
+<text x="24" y="442" font-size="16" font-weight="400" fill="#666">économique NAF.</text>
+<text x="24" y="490" font-size="16" font-weight="700" fill="#161616">Rechercher dans les domaines chargés</text>
+<text x="24" y="512" font-size="14" font-weight="400" fill="#666">Filtre local des libellés de l'arbre ;</text>
+<text x="24" y="533" font-size="14" font-weight="400" fill="#666">pas de recherche q sur /domaines.</text>
+<rect x="24" y="548" width="342" height="48" fill="#eee" stroke="none"/>
+<text x="36" y="576" font-size="16" font-weight="400" fill="#161616">Second œuvre</text>
+<path d="M24 596H366" stroke="#161616" stroke-width="2"/>
+<text x="24" y="660" font-size="24" font-weight="700" fill="#161616">Des métiers à découvrir</text>
+<text x="24" y="696" font-size="16" font-weight="400" fill="#666">Sélectionnez un métier, puis</text>
+<text x="24" y="720" font-size="16" font-weight="400" fill="#666">explorez ses compétences, données et</text>
+<text x="24" y="744" font-size="16" font-weight="400" fill="#666">certifications.</text>
+<rect x="24" y="772" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="804" font-size="12" font-weight="700" fill="#666">Métier</text>
+<text x="44" y="826" font-size="16" font-weight="700" fill="#161616">Pose et restauration de</text>
+<text x="44" y="850" font-size="16" font-weight="700" fill="#161616">couvertures</text>
+<text x="44" y="882" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="904" font-size="16" font-weight="400" fill="#161616">F1610</text>
+<text x="44" y="936" font-size="12" font-weight="700" fill="#666">Piste</text>
+<text x="44" y="958" font-size="16" font-weight="400" fill="#161616">Couverture</text>
+<rect x="24" y="1002" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1034" font-size="12" font-weight="700" fill="#666">Métier</text>
+<text x="44" y="1056" font-size="16" font-weight="700" fill="#161616">Travaux d'étanchéité et</text>
+<text x="44" y="1080" font-size="16" font-weight="700" fill="#161616">d'isolation</text>
+<text x="44" y="1112" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="1134" font-size="16" font-weight="400" fill="#161616">F1613</text>
+<text x="44" y="1166" font-size="12" font-weight="700" fill="#666">Piste</text>
+<text x="44" y="1188" font-size="16" font-weight="400" fill="#161616">Étanchéité et isolation</text>
+<rect x="24" y="1232" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1264" font-size="12" font-weight="700" fill="#666">Métier</text>
+<text x="44" y="1286" font-size="16" font-weight="700" fill="#161616">Montage de réseaux électriques</text>
+<text x="44" y="1310" font-size="16" font-weight="700" fill="#161616">et télécoms</text>
+<text x="44" y="1342" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="1364" font-size="16" font-weight="400" fill="#161616">F1605</text>
+<text x="44" y="1396" font-size="12" font-weight="700" fill="#666">Piste</text>
+<text x="44" y="1418" font-size="16" font-weight="400" fill="#161616">Réseaux électriques et télécoms</text>
+<rect x="24" y="1462" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="essentiel.svg" aria-label="Fiche métier F1610">
+<text x="40" y="1490" font-size="16" font-weight="700" fill="#fff">Fiche métier F1610</text>
+</a>
+<rect x="24" y="1522" width="342" height="72" fill="#fff" stroke="#000091"/>
+<a href="guide.svg" aria-label="Explorer par conditions de travail">
+<text x="40" y="1550" font-size="16" font-weight="700" fill="#000091">Explorer par conditions de</text>
+<text x="40" y="1574" font-size="16" font-weight="700" fill="#000091">travail</text>
+</a>
+<text x="24" y="1646" font-size="24" font-weight="700" fill="#161616">Affiner sans connaître</text>
+<text x="24" y="1682" font-size="24" font-weight="700" fill="#161616">le nom d'un métier</text>
+<text x="24" y="1718" font-size="16" font-weight="400" fill="#666">Compétences référencées, contextes à</text>
+<text x="24" y="1742" font-size="16" font-weight="400" fill="#666">rechercher ou éviter, transitions</text>
+<text x="24" y="1766" font-size="16" font-weight="400" fill="#666">décrites par les tags.</text>
+<rect x="24" y="1794" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="guide.svg" aria-label="Choisir des compétences">
+<text x="40" y="1822" font-size="16" font-weight="700" fill="#000091">Choisir des compétences</text>
+</a>
+<rect x="24" y="1854" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="transitions.svg" aria-label="Explorer les transitions">
+<text x="40" y="1882" font-size="16" font-weight="700" fill="#000091">Explorer les transitions</text>
+</a>
+<rect x="24" y="1914" width="342" height="192" fill="#ececfe" stroke="none"/>
+<text x="44" y="1950" font-size="16" font-weight="700" fill="#161616">Les statistiques sont</text>
+<text x="44" y="1974" font-size="16" font-weight="700" fill="#161616">consultées au niveau des</text>
+<text x="44" y="1998" font-size="16" font-weight="700" fill="#161616">métiers et familles</text>
+<text x="44" y="2030" font-size="16" font-weight="400" fill="#161616">Aucun salaire moyen, total de</text>
+<text x="44" y="2054" font-size="16" font-weight="400" fill="#161616">projets ou score n'est fabriqué</text>
+<text x="44" y="2078" font-size="16" font-weight="400" fill="#161616">pour le domaine.</text>
+<text x="24" y="2144" font-size="14" font-weight="400" fill="#666">Référentiel ROME : métiers et domaines</text>
+<text x="24" y="2165" font-size="14" font-weight="400" fill="#666">professionnels. Les statistiques se</text>
+<text x="24" y="2186" font-size="14" font-weight="400" fill="#666">consultent pour chaque métier et ses</text>
+<text x="24" y="2207" font-size="14" font-weight="400" fill="#666">familles.</text>
+<rect x="24" y="2238" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="2266" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="2336" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="2355" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="2373" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="2391" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

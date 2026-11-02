@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="3843" viewBox="0 0 390 3843" role="img" aria-labelledby="title desc"><title id="title">Comparer deux métiers, point par point</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="3843" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Comparer deux</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">métiers, point par</text>
+<text x="24" y="372" font-size="30" font-weight="700" fill="#161616">point</text>
+<text x="24" y="415" font-size="16" font-weight="400" fill="#666">Descriptions, compétences,</text>
+<text x="24" y="439" font-size="16" font-weight="400" fill="#666">certifications et données du marché,</text>
+<text x="24" y="463" font-size="16" font-weight="400" fill="#666">sans note globale ni classement</text>
+<text x="24" y="487" font-size="16" font-weight="400" fill="#666">personnel.</text>
+<rect x="24" y="519" width="342" height="238" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="551" font-size="12" font-weight="700" fill="#666">Repère</text>
+<text x="44" y="573" font-size="16" font-weight="700" fill="#161616">Métier</text>
+<text x="44" y="605" font-size="12" font-weight="700" fill="#666">Premier métier</text>
+<text x="44" y="627" font-size="16" font-weight="400" fill="#161616">Pose et restauration de</text>
+<text x="44" y="651" font-size="16" font-weight="400" fill="#161616">couvertures</text>
+<text x="44" y="683" font-size="12" font-weight="700" fill="#666">Second métier</text>
+<text x="44" y="705" font-size="16" font-weight="400" fill="#161616">Travaux d'étanchéité et</text>
+<text x="44" y="729" font-size="16" font-weight="400" fill="#161616">d'isolation</text>
+<rect x="24" y="773" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="805" font-size="12" font-weight="700" fill="#666">Repère</text>
+<text x="44" y="827" font-size="16" font-weight="700" fill="#161616">Code ROME V3</text>
+<text x="44" y="859" font-size="12" font-weight="700" fill="#666">Premier métier</text>
+<text x="44" y="881" font-size="16" font-weight="400" fill="#161616">F1610</text>
+<text x="44" y="913" font-size="12" font-weight="700" fill="#666">Second métier</text>
+<text x="44" y="935" font-size="16" font-weight="400" fill="#161616">F1613</text>
+<rect x="24" y="979" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1011" font-size="12" font-weight="700" fill="#666">Repère</text>
+<text x="44" y="1033" font-size="16" font-weight="700" fill="#161616">Domaine</text>
+<text x="44" y="1065" font-size="12" font-weight="700" fill="#666">Premier métier</text>
+<text x="44" y="1087" font-size="16" font-weight="400" fill="#161616">Second œuvre</text>
+<text x="44" y="1119" font-size="12" font-weight="700" fill="#666">Second métier</text>
+<text x="44" y="1141" font-size="16" font-weight="400" fill="#161616">Second œuvre</text>
+<text x="24" y="1197" font-size="12" font-weight="700" fill="#666">Vues disponibles</text>
+<rect x="24" y="1211" width="4" height="32" fill="#000091" stroke="none"/>
+<text x="40" y="1227" font-size="16" font-weight="700" fill="#000091">● Comprendre les métiers</text>
+<rect x="24" y="1247" width="4" height="32" fill="#ddd" stroke="none"/>
+<text x="40" y="1263" font-size="16" font-weight="400" fill="#000091">○ Compétences</text>
+<rect x="24" y="1283" width="4" height="32" fill="#ddd" stroke="none"/>
+<text x="40" y="1299" font-size="16" font-weight="400" fill="#000091">○ Marché et territoires</text>
+<rect x="24" y="1319" width="4" height="32" fill="#ddd" stroke="none"/>
+<text x="40" y="1335" font-size="16" font-weight="400" fill="#000091">○ Se former</text>
+<text x="24" y="1411" font-size="24" font-weight="700" fill="#161616">Compétences et</text>
+<text x="24" y="1447" font-size="24" font-weight="700" fill="#161616">conditions</text>
+<text x="24" y="1483" font-size="16" font-weight="400" fill="#666">Les deux listes doivent être</text>
+<text x="24" y="1507" font-size="16" font-weight="400" fill="#666">complètes avant de conclure qu'une</text>
+<text x="24" y="1531" font-size="16" font-weight="400" fill="#666">compétence est commune ou</text>
+<text x="24" y="1555" font-size="16" font-weight="400" fill="#666">spécifique.</text>
+<rect x="24" y="1583" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1615" font-size="12" font-weight="700" fill="#666">Élément</text>
+<text x="44" y="1637" font-size="16" font-weight="700" fill="#161616">Poser des panneaux solaires</text>
+<text x="44" y="1669" font-size="12" font-weight="700" fill="#666">F1610</text>
+<text x="44" y="1691" font-size="16" font-weight="400" fill="#161616">Référencé</text>
+<text x="44" y="1723" font-size="12" font-weight="700" fill="#666">F1613</text>
+<text x="44" y="1745" font-size="16" font-weight="400" fill="#161616">Compétences à charger</text>
+<rect x="24" y="1789" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1821" font-size="12" font-weight="700" fill="#666">Élément</text>
+<text x="44" y="1843" font-size="16" font-weight="700" fill="#161616">Raccordement d'étanchéité</text>
+<text x="44" y="1875" font-size="12" font-weight="700" fill="#666">F1610</text>
+<text x="44" y="1897" font-size="16" font-weight="400" fill="#161616">Référencé</text>
+<text x="44" y="1929" font-size="12" font-weight="700" fill="#666">F1613</text>
+<text x="44" y="1951" font-size="16" font-weight="400" fill="#161616">Compétences à charger</text>
+<rect x="24" y="1995" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2027" font-size="12" font-weight="700" fill="#666">Élément</text>
+<text x="44" y="2049" font-size="16" font-weight="700" fill="#161616">En grande hauteur</text>
+<text x="44" y="2081" font-size="12" font-weight="700" fill="#666">F1610</text>
+<text x="44" y="2103" font-size="16" font-weight="400" fill="#161616">Référencé</text>
+<text x="44" y="2135" font-size="12" font-weight="700" fill="#666">F1613</text>
+<text x="44" y="2157" font-size="16" font-weight="400" fill="#161616">Non référencé dans le JSON</text>
+<text x="44" y="2181" font-size="16" font-weight="400" fill="#161616">fourni</text>
+<rect x="24" y="2225" width="342" height="216" fill="#ececfe" stroke="none"/>
+<text x="44" y="2261" font-size="16" font-weight="700" fill="#161616">Comparer les métiers, pas</text>
+<text x="44" y="2285" font-size="16" font-weight="700" fill="#161616">présumer vos acquis</text>
+<text x="44" y="2317" font-size="16" font-weight="400" fill="#161616">Le rapprochement directionnel</text>
+<text x="44" y="2341" font-size="16" font-weight="400" fill="#161616">prévu par l'API reste une</text>
+<text x="44" y="2365" font-size="16" font-weight="400" fill="#161616">relation entre référentiels.</text>
+<text x="44" y="2389" font-size="16" font-weight="400" fill="#161616">Son résultat n'est pas rempli</text>
+<text x="44" y="2413" font-size="16" font-weight="400" fill="#161616">avec des chiffres d'exemple.</text>
+<text x="24" y="2505" font-size="24" font-weight="700" fill="#161616">Marché et territoires</text>
+<text x="24" y="2541" font-size="16" font-weight="400" fill="#666">Chaque colonne conserve famille,</text>
+<text x="24" y="2565" font-size="16" font-weight="400" fill="#666">territoire réel, source et période.</text>
+<rect x="24" y="2593" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2625" font-size="12" font-weight="700" fill="#666">Mesure / périmètre</text>
+<text x="44" y="2647" font-size="16" font-weight="700" fill="#161616">Projets · Couvreurs ·</text>
+<text x="44" y="2671" font-size="16" font-weight="700" fill="#161616">Montpellier · 2026</text>
+<text x="44" y="2703" font-size="12" font-weight="700" fill="#666">F1610</text>
+<text x="44" y="2725" font-size="16" font-weight="400" fill="#161616">26</text>
+<text x="44" y="2757" font-size="12" font-weight="700" fill="#666">F1613</text>
+<text x="44" y="2779" font-size="16" font-weight="400" fill="#161616">Données non chargées</text>
+<rect x="24" y="2823" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2855" font-size="12" font-weight="700" fill="#666">Mesure / périmètre</text>
+<text x="44" y="2877" font-size="16" font-weight="700" fill="#161616">Salaire · B0Z21 · Hérault ·</text>
+<text x="44" y="2901" font-size="16" font-weight="700" fill="#161616">2023</text>
+<text x="44" y="2933" font-size="12" font-weight="700" fill="#666">F1610</text>
+<text x="44" y="2955" font-size="16" font-weight="400" fill="#161616">1 690 € / mois</text>
+<text x="44" y="2987" font-size="12" font-weight="700" fill="#666">F1613</text>
+<text x="44" y="3009" font-size="16" font-weight="400" fill="#161616">Données non chargées</text>
+<rect x="24" y="3053" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="3085" font-size="12" font-weight="700" fill="#666">Mesure / périmètre</text>
+<text x="44" y="3107" font-size="16" font-weight="700" fill="#161616">Tension · Couvreurs · Hérault ·</text>
+<text x="44" y="3131" font-size="16" font-weight="700" fill="#161616">2024</text>
+<text x="44" y="3163" font-size="12" font-weight="700" fill="#666">F1610</text>
+<text x="44" y="3185" font-size="16" font-weight="400" fill="#161616">Tension extrême</text>
+<text x="44" y="3217" font-size="12" font-weight="700" fill="#666">F1613</text>
+<text x="44" y="3239" font-size="16" font-weight="400" fill="#161616">Données non chargées</text>
+<text x="24" y="3297" font-size="14" font-weight="400" fill="#666">Si deux métiers partagent la même FAP,</text>
+<text x="24" y="3318" font-size="14" font-weight="400" fill="#666">une seule observation familiale est</text>
+<text x="24" y="3339" font-size="14" font-weight="400" fill="#666">signalée comme partagée. L'absence de</text>
+<text x="24" y="3360" font-size="14" font-weight="400" fill="#666">chargement ne vaut ni zéro ni absence de</text>
+<text x="24" y="3381" font-size="14" font-weight="400" fill="#666">compétence.</text>
+<rect x="24" y="3412" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="essentiel.svg" aria-label="Retour à F1610">
+<text x="40" y="3440" font-size="16" font-weight="700" fill="#fff">Retour à F1610</text>
+</a>
+<rect x="24" y="3472" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Modifier les métiers">
+<text x="40" y="3500" font-size="16" font-weight="700" fill="#000091">Modifier les métiers</text>
+</a>
+<rect x="24" y="3532" width="342" height="104" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="3564" font-size="16" font-weight="700" fill="#000091">+ Certifications associées,</text>
+<text x="40" y="3588" font-size="16" font-weight="700" fill="#000091">mobilités, perspectives2030 et</text>
+<text x="40" y="3612" font-size="16" font-weight="700" fill="#000091">salaires sectoriels</text>
+<rect x="24" y="3652" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="3680" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="3750" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="3769" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="3787" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="3805" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

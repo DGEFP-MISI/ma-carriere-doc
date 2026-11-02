@@ -1,0 +1,48 @@
+{
+  "x-niveau-preuve": "CONTRAT_SEULEMENT",
+  "x-nombre-echantillons": 0,
+  "description": "Modèle complémentaire NON OFFICIEL, construit depuis les exemples du contrat du 19/10/2026 ; aucune réponse JSON collectée.",
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "grand_domaine_code": {
+            "type": "string"
+          },
+          "grand_domaine_libelle": {
+            "type": "string"
+          },
+          "nb_metiers": {
+            "type": "integer"
+          },
+          "domaines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "domaine_code": {
+                  "type": "string"
+                },
+                "domaine_libelle": {
+                  "type": "string"
+                },
+                "nb_metiers": {
+                  "type": "integer"
+                }
+              },
+              "x-niveau-preuve": "contrat_interface_uniquement"
+            }
+          }
+        },
+        "x-niveau-preuve": "contrat_interface_uniquement"
+      }
+    },
+    "total": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": true
+}

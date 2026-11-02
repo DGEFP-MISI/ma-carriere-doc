@@ -1,0 +1,610 @@
+[
+  {
+    "number": 17,
+    "title": "Comprendre une certification et ses résultats",
+    "benefit": "examiner un diplôme ou un titre, que je le possède déjà ou souhaite l'obtenir, pour comprendre ses voies d'accès, les métiers associés et les résultats des populations suivies",
+    "steps": [
+      ["Ouvre la certification choisie depuis les résultats, un métier ou un thème de formation.", "Charge le détail avec le certifinfo_code sélectionné et affiche son intitulé, son type, le certificateur, son état et les informations d'enregistrement réellement reçues."],
+      ["Indique je possède cette certification ou je souhaite l'obtenir.", "Adapte les questions et les actions proposées à cette intention sans changer de certification ni inventer des données personnelles, de nouvelles associations ou des droits."],
+      ["Consulte les voies d'accès et les possibilités de validation partielle.", "Présente les voies déclarées avec leur état renseigné ou inconnu, les blocs publiés lorsqu'ils existent, et les liens vers leur détail."],
+      ["Choisit les résultats qui correspondent à la population qu'elle souhaite comprendre.", "Distingue scolaire, apprentissage, supérieur et demandeurs d'emploi, puis emploi, poursuite d'études, réussite, effectifs et demande de formation, avec les bases et périodes propres."],
+      ["Ouvre les salaires après un diplôme du supérieur.", "Affiche les quartiles et médianes mensuels disponibles à douze, dix-huit et trente mois, en distinguant les promotions et la base réellement fournie à douze mois."],
+      ["Poursuit vers un métier, un bloc, un thème ou des sessions publiées.", "Utilise les identifiants de la certification courante pour ouvrir la bonne ressource et conserve l'intention, le lieu choisi et la navigation de retour."]
+    ],
+    "alternatives": [
+      "Certification introuvable ou inactive : conserver la recherche et les sélections, expliquer que cette fiche n'est pas disponible et ne pas substituer une certification de même nom ou une archive non exposée.",
+      "Une seule population statistique est renseignée : afficher ses résultats avec leur périmètre ; les autres volets restent identifiables comme non renseignés sans valeur de remplacement.",
+      "Un résultat vaut secret_stat, null, zéro ou est absent : appliquer le sens propre à chaque état et le conserver dans l'alternative tabulaire.",
+      "Changement d'intention ou de certification pendant un chargement : annuler la réponse devenue périmée et ne jamais afficher les résultats de la fiche précédente sous le nouveau titre."
+    ],
+    "rules": [
+      "Les deux intentions sont des modes de consultation : posséder une certification ne prouve ni maîtrise de toutes les compétences ni droit automatique d'exercer, et souhaiter l'obtenir ne démontre pas une admission ou un financement.",
+      "Les certifications accessibles sont celles exposées par les GET existants ; utiliser l'état reçu et ne pas déduire seul le statut actif d'une date de fin d'enregistrement.",
+      "Les résultats nationaux gardent source, population, base, millésime et horizon ; InserJeunes scolaire/apprentissage, InserSup et accès à l'emploi des demandeurs d'emploi restent distincts.",
+      "Les salaires InserSup à douze et dix-huit mois concernent les diplômés 2022 et ceux à trente mois les diplômés 2021 dans le catalogue observé ; ne pas tracer une progression individuelle ou réutiliser la promotion des taux d'emploi.",
+      "Les métiers, blocs et thèmes proviennent des listes associées reçues ; aucun résultat national de certification n'est attribué à une session ou à un organisme local."
+    ],
+    "acceptance": [
+      ["une certification est choisie dans une liste contenant plusieurs résultats", "sa fiche est ouverte", "l'identifiant technique de la requête est celui du résultat choisi et le titre ainsi que les données appartiennent à cette certification"],
+      ["la fiche est consultée dans l'intention je possède cette certification", "la personne passe à je souhaite l'obtenir", "les actions et explications sont adaptées sans modification des données ou attribution d'une éligibilité personnelle"],
+      ["les populations scolaire, apprentissage et demandeurs d'emploi sont renseignées", "les résultats d'emploi sont consultés", "les bases, horizons de douze ou six mois et populations restent séparés sans taux moyen"],
+      ["des salaires InserSup sont fournis aux trois horizons", "le détail salarial est ouvert", "les montants mensuels et quartiles, promotions distinctes et seule base disponible à douze mois sont explicités sans courbe de progression personnelle"],
+      ["une certification a plusieurs métiers et rome_code est null", "les métiers associés sont demandés", "tous les codes et libellés de rome_codes/rome_libelles sont proposés sans dépendre du champ singulier"],
+      ["un résultat statistique est protégé ou indisponible", "le graphique et le tableau sont rendus", "la même protection ou indisponibilité est affichée sans zéro artificiel, complément ou taux recalculé"]
+    ],
+    "ux": [
+      "DSFR : titre et résumé d'identité, groupe de choix d'intention, sommaire par questions, accordéons de voies et blocs, tableaux et liens explicites ; états chargement, fiche disponible, résultat partiel, introuvable et erreur.",
+      "DSFR Chart : DataBox et barres uniquement pour les indicateurs adaptés ; quartiles en tableau accessible si aucun composant officiel ne respecte leur sémantique ; sources, dates, populations et alternative tabulaire restent accessibles.",
+      "Au clavier, le changement d'intention n'ouvre pas une autre fiche ni ne déplace arbitrairement le focus ; annoncer les sections actualisées et offrir les mêmes contenus sur petit écran sans dépendre d'une couleur."
+    ],
+    "state": "Détail et statistiques documentés, avec JSON observés ; la maquette utilise ces observations et ne démontre pas la disponibilité HTTP générale des certifications, des populations ou des promotions. Les tests RNCP/RS, multi-métiers, null/secrets et introuvables restent nécessaires ; aucune réduction de la fiche cible."
+  },
+  {
+    "number": 18,
+    "title": "Comprendre les blocs et retrouver une certification par ses compétences publiées",
+    "benefit": "lire ce qu'un bloc certifie et comment il est évalué, puis retrouver les certifications dont le texte publié correspond à mon besoin",
+    "steps": [
+      ["Depuis une certification, choisit voir les blocs de compétences.", "Interroge /certifications/blocs avec le certifinfo_code ou le fiche_code exact reçu et affiche les blocs dans l'ordre publié."],
+      ["Ouvre un bloc de son choix.", "Présente son intitulé, les compétences sous forme de texte, les modalités d'évaluation et la certification de rattachement sans transformer le texte en liste de codes de compétences."],
+      ["Consulte les autres blocs ou la page suivante.", "Conserve le contexte de certification, charge les pages manquantes et distingue les blocs déjà lus des éléments encore non chargés."],
+      ["Saisit un besoin dans la recherche de blocs.", "Utilise q pour rechercher dans les intitulés et textes de compétences ; affiche des résultats nommés avec le contexte de certification pour désambiguïser."],
+      ["Choisit une certification associée à un bloc trouvé.", "Ouvre le détail en utilisant l'un des certifinfo_codes reçus et maintient un retour aux résultats de blocs."],
+      ["Examine les voies d'accès ou les sessions de cette certification.", "Réutilise les données de la fiche choisie et les parcours existants, sans prétendre que le texte du bloc prouve des acquis personnels."]
+    ],
+    "alternatives": [
+      "Fiche sans bloc publié : expliquer que le détail n'est pas renseigné ; pour une certification du répertoire spécifique, ne pas fabriquer de blocs RNCP.",
+      "Recherche textuelle vide ou ambiguë : garder la saisie, indiquer le contexte de chaque résultat et proposer de modifier les mots sans correspondance automatique par similarité.",
+      "Un texte de compétences ou d'évaluation est absent : conserver le bloc et signaler le champ non renseigné sans le compléter à partir d'un autre bloc.",
+      "Échec d'une page : garder les pages acquises, indiquer que la liste est incomplète et permettre la reprise sans annoncer un nombre complet de compétences."
+    ],
+    "rules": [
+      "competences et modalites_evaluation sont des textes de fiche ; ils ne constituent pas des compétences OGR et ne prouvent aucune équivalence avec le référentiel du métier.",
+      "Le bloc_code, le fiche_code et les certifinfo_codes sont distincts ; seul un Certif Info reçu permet d'ouvrir /certifications/{certifinfo}.",
+      "Respecter rang_bloc et la pagination ; les quatre blocs observés pour la fiche RNCP36101 ne démontrent pas le résultat des filtres pour toutes les certifications.",
+      "Le moteur q recherche les textes publiés, sans score de maîtrise, conseil d'équivalence ou garantie que la personne peut valider le bloc.",
+      "L'absence de blocs publiés n'affirme ni absence de compétences ni impossibilité générale de validation partielle ; celle-ci est une donnée séparée de la certification."
+    ],
+    "acceptance": [
+      ["une certification fournit un identifiant Certif Info et des blocs publiés", "la personne consulte ces blocs", "le filtre utilise cet identifiant exact et les intitulés sont rendus dans leur ordre avec les textes et évaluations reçus"],
+      ["un bloc comporte un texte long", "son détail est ouvert au clavier ou sur mobile", "le texte est lisible intégralement sans troncature irréversible ni transformation en compétences de référentiel inventées"],
+      ["un bloc trouvé fournit plusieurs certifinfo_codes", "la personne choisit une certification associée", "la bonne fiche est ouverte et le retour retrouve la recherche de blocs"],
+      ["une certification RS n'a pas de blocs RNCP", "la section des blocs est consultée", "l'état adapté est affiché sans créer de blocs ou supprimer une validation partielle déclarée ailleurs"],
+      ["la recherche q ne retourne aucun bloc", "les résultats sont affichés", "la saisie reste modifiable et aucune certification supposée équivalente n'est ajoutée"],
+      ["la pagination n'est pas entièrement chargée", "la personne consulte le nombre de blocs", "l'incomplétude est indiquée et la liste partielle n'est pas présentée comme exhaustive"]
+    ],
+    "ux": [
+      "DSFR : champ de recherche avec aide, liste de résultats, accordéons de blocs, pagination et liens de certification ; états liste, détail, recherche vide, liste partielle, absence de blocs et erreur.",
+      "Pas de graphique nécessaire pour les textes ; titres de bloc et commandes d'ouverture nommés, état développé annoncé, texte repliable accessible et focus conservé lors de la pagination."
+    ],
+    "state": "Contrat et JSON de quatre blocs disponibles ; les filtres certifinfo/fiche, la recherche q, la pagination et les cas sans bloc doivent encore être validés par des GET tracés. L'examen local des textes ne constitue pas une validation du filtrage HTTP ni une preuve d'équivalence OGR."
+  },
+  {
+    "number": 19,
+    "title": "Découvrir les métiers associés à une certification",
+    "benefit": "identifier les métiers associés à un diplôme ou un titre puis examiner leur contenu avant de retenir une piste",
+    "steps": [
+      ["Ouvre la rubrique quels métiers découvrir depuis la certification consultée.", "Lit les listes rome_codes et rome_libelles de cette certification, sans dépendre de l'éventuel rome_code singulier."],
+      ["Parcourt les métiers proposés.", "Affiche leurs noms reçus et explique qu'il s'agit de rattachements documentaires, sans promesse d'accès ou de poste disponible."],
+      ["Choisit un métier.", "Réutilise sa fiche en cache compatible ou appelle /metiers/{rome} avec le code ROME V3 associé ; affiche l'état de chargement du seul métier choisi."],
+      ["Consulte ses activités, conditions et perspectives.", "Ouvre la vraie fiche cible avec les autres volets d'Explorer et garde le territoire précédemment choisi sans transférer les statistiques de la certification au métier."],
+      ["Retient ce métier ou revient à la certification.", "Applique les règles communes de Mes pistes et restaure la fiche de certification ainsi que l'intention et les associations parcourues."]
+    ],
+    "alternatives": [
+      "Plusieurs métiers associés et champ rome_code null : afficher toutes les associations des listes, sans choisir automatiquement un métier principal.",
+      "Listes vides : indiquer qu'aucun rattachement n'est publié dans la réponse, sans conclure que la certification n'a aucun débouché réel.",
+      "Un code associé n'ouvre pas de fiche : garder la certification et les autres liens, signaler la fiche indisponible et conserver l'anomalie pour contrôle.",
+      "Désaccord entre codes et libellés parallèles : ne pas associer arbitrairement un nom à un code ; préserver la preuve et résoudre le nom par la fiche ciblée lorsque disponible."
+    ],
+    "rules": [
+      "Toutes les cibles métier sont des ROME V3 reçus ; aucun métier n'est déduit du titre de certification, d'une famille statistique ou d'un texte de bloc.",
+      "Les listes de codes et libellés sont parallèles ; préserver leurs correspondances et leur ordre sans inventer un classement de débouchés.",
+      "Le rattachement ne signifie ni qualification obligatoire, ni habilitation individuelle, ni accès automatique à l'emploi.",
+      "Ne pas appeler chaque fiche pour répéter un libellé déjà reçu ; charger le détail à la sélection et réutiliser les données compatibles en cache.",
+      "Le retour conserve le contexte de certification ; aucune mesure nationale de certification n'est présentée comme un indicateur propre au métier ouvert."
+    ],
+    "acceptance": [
+      ["une certification comporte trois associations et rome_code vaut null", "la rubrique métiers est ouverte", "les trois associations publiées sont proposées par leurs noms et aucun métier n'est perdu à cause du champ singulier"],
+      ["la personne choisit la deuxième association", "la fiche métier est demandée", "le code technique sélectionné pilote le GET et le titre correspond au métier réellement choisi"],
+      ["le nom d'un métier associé est déjà reçu", "la liste est affichée", "aucun GET de détail par carte n'est exigé pour rendre ce nom"],
+      ["une cible est indisponible et les autres sont accessibles", "la personne tente son ouverture puis revient", "l'erreur n'efface ni la certification ni les autres associations et aucun autre métier ne lui est substitué"],
+      ["la fiche métier a été explorée depuis une certification", "la personne revient à la certification", "l'intention de consultation, le territoire et les pistes sont conservés sans duplication"]
+    ],
+    "ux": [
+      "DSFR : liste ou cartes de métiers avec un lien explicite par nom, texte d'explication du rattachement, retour à la certification et action Mes pistes ; chargement ciblé, liste vide et erreur partielle.",
+      "L'ordre de lecture et le parcours clavier suivent les associations ; annoncer le titre de la fiche cible et offrir un retour identifiable sur desktop comme sur mobile."
+    ],
+    "state": "Association documentée et listes observées dans les JSON de certification ; la chaîne HTTP vers plusieurs fiches doit être capturée. La maquette peut restituer les associations observées et les cibles présentes sans démontrer la disponibilité de toutes les fiches."
+  },
+  {
+    "number": 20,
+    "title": "Explorer les certifications associées à un métier",
+    "benefit": "comprendre quelles certifications sont associées à un métier et repérer les voies d'accès ou la validation partielle qui répondent à mon projet",
+    "steps": [
+      ["Depuis une fiche métier, ouvre les diplômes et titres associés.", "Recherche /certifications avec le ROME V3 de cette fiche et affiche les résultats actifs exposés, leurs intitulés, types et niveaux lorsqu'ils sont renseignés."],
+      ["Choisit une voie d'accès ou une possibilité de validation partielle.", "Traduit seulement les choix disponibles en acces et validation_partielle contractuels, avec le filtre repertoire si demandé, et réinitialise la pagination."],
+      ["Parcourt les résultats filtrés et leurs pages.", "Conserve les filtres visibles, charge les pages correspondantes et ne mélange pas les résultats d'anciennes requêtes."],
+      ["Ouvre une certification.", "Utilise son certifinfo_code exact, conserve le métier de départ et propose les deux intentions de consultation de la fiche Certification."],
+      ["Examine les blocs, les résultats ou les sessions publiées.", "Ouvre les volets existants de la certification sans présenter l'association au métier comme une obligation de diplôme ou une admission personnelle."],
+      ["Revient aux certifications du métier ou change de filtre.", "Restaure le bon métier, la liste et les filtres ; les pistes et le territoire restent disponibles."]
+    ],
+    "alternatives": [
+      "Aucun résultat après combinaison de filtres : afficher ce périmètre et permettre d'en retirer un, sans affirmer que le métier est inaccessible.",
+      "Niveau absent, notamment pour certaines certifications RS : conserver la certification et annoncer niveau non renseigné, sans niveau inventé à partir de son titre.",
+      "Une voie ou la validation partielle est inconnue : distinguer l'inconnu du refus, et ne pas construire une décision d'éligibilité.",
+      "Erreur de requête ou de page : conserver le métier et les choix, expliquer l'état et proposer une reprise du seul appel concerné."
+    ],
+    "rules": [
+      "Le rattachement est fourni par /certifications?rome= ; ne pas rechercher des diplômes par ressemblance du nom du métier pour compléter la liste.",
+      "acces utilise les seules voies documentées : formation_initiale, apprentissage, formation_continue, contrat_professionnalisation, candidature_individuelle et vae.",
+      "validation_partielle est un booléen de filtre, distinct du détail des blocs ; repertoire distingue RNCP et RS sans les transformer en niveaux de qualité.",
+      "Une certification associée n'est pas nécessairement obligatoire pour exercer et une voie déclarée ne garantit ni admission, financement ni disponibilité locale.",
+      "Conserver la pagination, les états de données et les identifiants distincts Certif Info/fiche ; les résultats sont présentés par leurs noms plutôt que codes."
+    ],
+    "acceptance": [
+      ["la personne consulte un métier choisi", "elle ouvre les certifications associées", "le GET utilise ce ROME exact et aucun résultat d'un autre métier n'est conservé sous le nouveau titre"],
+      ["la voie VAE et la validation partielle sont choisies", "la recherche est relancée", "les paramètres acces=vae et validation_partielle=true sont transmis avec rome et la pagination repart à un"],
+      ["une certification RS n'a pas de niveau renseigné", "les résultats sont présentés", "son intitulé reste ouvrable sans niveau déduit ni exclusion arbitraire"],
+      ["les filtres combinés ne donnent aucun résultat", "la liste est affichée", "un état explicite propose de modifier les filtres sans déclarer le métier inaccessible"],
+      ["une fiche a été ouverte depuis la liste filtrée", "la personne revient à la liste", "le métier, les filtres et la position utile sont restaurés"],
+      ["un rattachement métier-certification est publié", "le texte d'accompagnement est affiché", "il ne présente ni cette certification comme diplôme obligatoire ni la voie comme éligibilité individuelle"]
+    ],
+    "ux": [
+      "DSFR : filtres nommés, liste de certifications, pagination, liens vers les fiches/blocs/sessions et retour métier ; états chargement, résultats, aucun résultat, liste partielle et erreur.",
+      "Les filtres restent utilisables au clavier et sur mobile ; annoncer le nombre de résultats natif et les modifications sans recharger arbitrairement le focus ; aucun graphique nécessaire pour la liste documentaire."
+    ],
+    "state": "Filtrage par métier et voies documenté ; liste de certifications observée, mais tous les filtres et leurs combinaisons ne sont pas validés par traces HTTP. Les résultats locaux doivent rester rattachés aux requêtes et réponses disponibles, sans supposer une recherche générale opérationnelle."
+  },
+  {
+    "number": 21,
+    "title": "Consulter les sessions de formation publiées à venir",
+    "benefit": "repérer des sessions publiées pour la certification retenue, comprendre leur lieu, leurs dates et leurs modalités avant de poursuivre mon projet",
+    "steps": [
+      ["Depuis une certification choisie, ouvre les sessions à venir.", "Conserve son Certif Info et propose les territoires compatibles avec la route, sans appeler les sessions avec un code de métier ou de fiche RNCP."],
+      ["Choisit une région, un département ou un bassin local pour l'emploi proposé.", "Si le point de départ est une commune, fait choisir explicitement un parent reçu de /territoires ; appelle /sessions_a_venir avec certifinfo, zonage, territoire et le mode onisep."],
+      ["Parcourt les sessions publiées.", "Affiche les villes, organismes, dates, modalités et voies réellement reçus ; distingue le nombre de groupes retournés et nb_sessions sans promettre de places."],
+      ["Ouvre les informations d'une ligne.", "Déplie les informations de l'appel courant, avec présentiel, mixte ou distance et les données manquantes signalées, sans créer de fiche session à identifiant stable fictif."],
+      ["Choisit d'examiner aussi les offres de formation initiale sans session datée.", "Utilise le mode onisep choisi et présente séparément les offres marquées tag_onisep avec leur date conventionnelle expliquée."],
+      ["Change de territoire, passe à la page suivante ou revient à la certification.", "Relance le bon appel, garde les choix et annule les réponses périmées ; permet le passage aux sessions en cours sans perte du contexte."]
+    ],
+    "alternatives": [
+      "Aucune session retournée : indiquer aucun résultat publié pour cet appel et proposer de modifier le territoire ou le mode d'offre, sans conclure qu'aucune formation n'existe.",
+      "Commune ou France sélectionnée dans Explorer : ne pas envoyer ces zonages interdits à la route ; proposer un choix compatible ou expliquer l'absence de parent exploitable.",
+      "Dates ou modalités manquantes : garder les autres informations, montrer ce qui n'est pas renseigné et ne pas fabriquer une date ou une disponibilité.",
+      "Erreur API ou échec d'une page : conserver la certification, le lieu et les résultats déjà lus, afficher l'incomplétude et proposer une reprise ciblée.",
+      "Dates d'une preuve historique devenues anciennes : conserver la date de collecte et signaler le caractère observé des données ; ne pas reclasser cette preuve en disponibilité actuelle démontrée."
+    ],
+    "rules": [
+      "Les paramètres certifinfo, zonage et territoire sont requis ; seuls region, departement, clpe sont admis par l'enum officiel. Le code transmis doit correspondre au zonage choisi.",
+      "Les lignes peuvent être regroupées ; nb_sessions n'est ni un nombre de places ni une garantie d'inscription, et total désigne le nombre d'éléments de la liste paginée.",
+      "Aucun ID stable de session ni Certif Info n'est renvoyé par ligne ; ne pas transformer SIRET, organisme ou dates en preuve d'identité ou de rattachement indépendant.",
+      "onisep=exclure est le défaut documenté ; inclure et seulement existent, avec tag_onisep et dates conventionnelles de rentrée à distinguer des sessions datées.",
+      "La fonctionnalité reste complète dans le périmètre ; Q11 suit la garantie du filtre de certification et du regroupement, à valider par requêtes contrastées et réponse fournisseur sans exiger un nouveau GET."
+    ],
+    "acceptance": [
+      ["la personne part d'une certification et d'une commune", "elle ouvre les sessions à venir", "un choix explicite de territoire parent compatible est proposé et aucun code communal n'est envoyé sous un zonage différent"],
+      ["un territoire compatible est choisi", "la requête est lancée", "certifinfo, zonage, territoire, page et le mode onisep utile appartiennent au contexte courant"],
+      ["une ligne contient nb_sessions supérieur à un", "son détail est consulté", "le nombre publié reste nommé sessions et aucun nombre de places, inscription ouverte ou identifiant stable n'est déduit"],
+      ["presentiel_distantiel vaut zéro, un ou deux", "la modalité est affichée", "la correspondance présentiel, mixte, distanciel est respectée par un libellé compréhensible"],
+      ["le mode Onisep inclure ou seulement est choisi", "les résultats sont affichés", "les offres marquées sont distinguées et leur date conventionnelle n'est pas présentée comme début d'une session réelle"],
+      ["une réponse ne contient pas le Certif Info par ligne", "la recette de rattachement est évaluée", "le test ne prétend pas avoir vérifié isolément chaque ligne et conserve la dépendance Q11 sans retirer la fonctionnalité"],
+      ["une page échoue après une première page lue", "la personne reprend sa consultation", "les lignes acquises restent disponibles et la liste est explicitement incomplète"]
+    ],
+    "ux": [
+      "DSFR : sélection de territoire compatible, choix du type d'offre, onglets temporels, liste ou tableau des dates/lieux/organismes, dépliage local et pagination ; états chargement, publié, vide, partiel et erreur.",
+      "Les dates et modalités sont écrites en toutes lettres ; les lignes sont accessibles au clavier sans clic unique ambigu, avec état déplié annoncé et version mobile lisible ; aucune action d'inscription ou fiche session fictive."
+    ],
+    "state": "JSON R18 observé pour la certification 112561 et l'Occitanie, avec dix lignes ; ce cas ne prouve pas le rattachement indépendant de chaque groupe. La consultation locale est possible avec ces preuves, la production HTTP et la garantie Q11 restent à valider sur certifications/territoires/pages/modes contrastés."
+  },
+  {
+    "number": 22,
+    "title": "Consulter les sessions de formation publiées en cours",
+    "benefit": "comprendre les formations déjà commencées qui sont publiées pour la certification retenue, sans confondre leur existence avec une possibilité d'entrée immédiate",
+    "steps": [
+      ["Depuis la certification ou les sessions à venir, sélectionne les sessions en cours.", "Conserve la certification, le territoire compatible et le mode Onisep, puis interroge /sessions_en_cours avec ces paramètres."],
+      ["Parcourt les résultats datés.", "Présente les informations reçues pour les sessions en cours et la date de référence de la consultation ou de la preuve observée."],
+      ["Consulte une ligne de formation.", "Déplie dates, organisme, ville, voies et modalité, sans proposer une admission au seul motif que la session est en cours."],
+      ["Modifie le territoire ou le mode de formation initiale.", "Relance le GET dans ce même onglet et conserve séparément l'état des offres Onisep à dates conventionnelles."],
+      ["Passe aux sessions à venir ou à la page suivante.", "Utilise la route temporelle choisie et sa pagination, sans déplacer des lignes par calcul de date ni additionner les deux vues comme un total unique."],
+      ["Revient à la certification.", "Restaure le contexte, les choix et les autres actions utiles au projet, sans inventer un lien d'inscription."]
+    ],
+    "alternatives": [
+      "Aucune ligne en cours : proposer l'autre vue temporelle et une modification du lieu sans annoncer qu'aucune formation n'existe.",
+      "Dates incohérentes avec l'instant actuel dans une capture ancienne : indiquer le caractère historique de la preuve et demander un test actualisé, sans la présenter comme temps réel.",
+      "Une même description apparaît dans les deux vues : ne pas dédupliquer ni supposer un ID commun à partir d'organisme, ville et dates.",
+      "Changement de sélection pendant la requête : ignorer la réponse périmée et garder l'état de l'onglet réellement demandé.",
+      "Erreur partielle : garder l'accès aux autres volets et reprendre le GET concerné sans changer la certification ou le lieu."
+    ],
+    "rules": [
+      "Une session en cours n'est pas une session ouverte aux admissions ni une place disponible ; aucune conclusion sur une entrée en formation n'est déduite du statut temporel.",
+      "Réutiliser les paramètres et zonages de la route à venir, avec /sessions_en_cours ; ne pas remplacer ce GET par un filtrage local d'une liste à venir.",
+      "Garder total et nb_sessions distincts et ne pas additionner les deux listes temporelles pour produire un nombre de sessions uniques.",
+      "Les modes Onisep et l'absence d'identifiant stable et de certification par ligne conservent les précautions Q11 ; aucune fiche session stable n'est fabriquée.",
+      "La date de collecte d'une fixture et la date d'un futur appel réel sont deux preuves différentes ; une cohérence de dates sur R19 ne valide pas toutes les règles temporelles du serveur."
+    ],
+    "acceptance": [
+      ["les sessions à venir sont consultées pour une certification et un lieu", "la personne passe à en cours", "le GET change de route tout en gardant les paramètres courants compatibles"],
+      ["la route retourne une session commencée", "la personne ouvre son détail", "les dates et modalités reçues sont affichées sans admission, disponibilité de places ou inscription supposée"],
+      ["des données ont été capturées à une date antérieure", "elles sont rendues dans la maquette locale", "leur statut de preuve observée reste identifiable et aucune actualisation HTTP n'est affirmée"],
+      ["des lignes similaires existent dans les deux vues", "la personne passe d'un onglet à l'autre", "aucun rapprochement d'identité ni décompte unique inter-vues n'est calculé"],
+      ["une session n'a pas de Certif Info par ligne", "la traçabilité est vérifiée", "la recette garde les paramètres de l'appel et la dépendance Q11 plutôt qu'une preuve de rattachement inventée"],
+      ["la nouvelle requête échoue", "l'erreur est présentée", "la personne peut réessayer ou revenir à la certification sans perdre ses choix"]
+    ],
+    "ux": [
+      "DSFR : mêmes filtres, onglets, liste et détail local accessibles que les sessions à venir ; intitulé en cours explicite, dates lisibles et message sur l'absence de garantie d'admission.",
+      "Annoncer le changement d'onglet et le résultat chargé, préserver le focus et les filtres ; états publiés, aucun résultat, preuve historique, liste partielle et erreur distincts sur mobile et desktop."
+    ],
+    "state": "R19 observe huit lignes pour 112561/Occitanie, cohérentes avec en cours à la date du contrôle ; une paire de fixtures R18/R19 ne prouve pas l'intégralité des règles temporelles. Rattachement et regroupement restent soumis à Q11 et aux tests HTTP contrastés."
+  },
+  {
+    "number": 23,
+    "title": "Comprendre les changements de situation professionnelle observés",
+    "benefit": "voir d'où venaient et où sont allées les personnes de la famille de métiers étudiée, pour élargir ma réflexion sans confondre une statistique collective avec mon avenir personnel",
+    "steps": [
+      ["Ouvre la question d'où viennent et où vont les personnes qui exercent ce métier.", "Présente d'abord le nom de la famille professionnelle et la période janvier 2022-janvier 2023, avec une explication du périmètre de l'observation."],
+      ["Choisit la situation un an avant ou un an après.", "Traduit le choix en sens=origines ou sens=destinations et adapte ensemble les titres, libellés de situation et définition de la population."],
+      ["Choisit France ou une région et une tranche d'âge.", "Utilise region lorsqu'une région est choisie et age dans l'enum, encode le plus de 60+ et garde la tranche explicitement sélectionnée sans l'inférer de la personne."],
+      ["Lit le classement des situations observées.", "Sépare les familles, affiche leurs libellés, parts, rangs et éventuel repli, puis distingue même famille, autre famille et situations hors emploi."],
+      ["Ouvre le tableau et l'explication des données manquantes.", "Rend les mêmes parts avec le sens, l'âge, la population et la source ; explique le top quinze et les parts omises sous secret, sans total artificiel."],
+      ["Souhaite découvrir des métiers concrets ou comparer.", "Propose les relations de métiers proches déjà documentées ou la comparaison de métiers explicitement choisis, sans transformer une destination de famille en lien métier déduit."]
+    ],
+    "alternatives": [
+      "Une région se replie sur la France pour une famille : nommer ce repli dans le groupe concerné, sans appliquer la même géographie à toutes les familles.",
+      "Certaines situations ou parts sont absentes : expliquer publication partielle et secret, sans compléter à cent pour cent ni fabriquer une catégorie autres.",
+      "Une situation est chômage, études, apprentissage, retraite ou autre : conserver sa nature et ne pas la présenter comme un métier cible.",
+      "Un filtre n'a pas de réponse observée dans la maquette : conserver le choix et annoncer que cette combinaison n'est pas encore disponible dans les preuves locales, sans afficher les chiffres d'une autre tranche.",
+      "Erreur ou changement rapide de sens et d'âge : ignorer les réponses périmées, maintenir le contexte demandé et permettre la reprise ciblée."
+    ],
+    "rules": [
+      "Pour les origines, la population exerce en janvier 2023 et l'âge est celui de 2023 ; pour les destinations, elle exerce en janvier 2022 et l'âge est celui de 2022. Les deux sens ne sont pas interchangeables.",
+      "Les parts concernent des FAP225, non des flux directs de ROME à ROME ; tag_meme_metier signifie même famille et tag_en_emploi distingue les situations de métier.",
+      "Le fournisseur publie des parts sans effectifs, quinze situations au plus par famille et des omissions liées au secret ; ni renormalisation, volume, probabilité personnelle ou Sankey exhaustif n'est construit.",
+      "Le paramètre est age, le champ lisible tranche_age_libelle ; sens emploie les pluriels origines/destinations et les clés origine_* ou destination_* correspondent au sens demandé.",
+      "maille et repli sont propres aux lignes ; aucune correspondance de destination FAP vers ROME n'est déduite d'un libellé ou d'un code ressemblant."
+    ],
+    "acceptance": [
+      ["la personne choisit les origines pour la tranche 60+", "l'appel est préparé", "la route utilise sens=origines et age=60%2B et l'explication situe l'âge en 2023"],
+      ["la personne passe aux destinations avec le même âge", "les données sont reçues", "les libellés destination et la population de départ 2022 sont affichés ensemble sans reste des origines"],
+      ["plusieurs familles sont liées au métier", "le classement est affiché", "chaque famille dispose de son nom, ses rangs et son éventuelle géographie de repli"],
+      ["les parts restituées totalisent moins de cent", "le graphique et son tableau sont rendus", "les valeurs restent inchangées et la publication partielle est expliquée sans solde calculé"],
+      ["une destination est une famille ou une situation hors emploi", "la personne consulte les actions associées", "aucun lien direct vers un métier individuel n'est inventé"],
+      ["une seule combinaison d'âge et territoire est observée localement", "une autre combinaison est choisie", "ses données ne sont pas remplacées par celles de la combinaison connue et le manque de preuve est explicite"]
+    ],
+    "ux": [
+      "DSFR : choix de sens par questions, sélecteurs d'âge et de région avec libellés, résumé de contexte au-dessus de chaque groupe ; états de chargement, partiel, repli, aucun résultat et erreur.",
+      "DSFR Chart DataBox et barres horizontales des parts publiées avec tableau alternatif ; texte pour les situations hors emploi et le champ de population, sans dépendre de couleurs ni d'une infobulle au survol.",
+      "Annoncer le sens et la tranche après modification, conserver le focus sur le filtre et donner les mêmes renseignements sur téléphone et au clavier ; l'accès aux métiers proches est nommé comme une autre relation."
+    ],
+    "state": "Les filtres sont documentés et des JSON F1610 couvrent les deux sens et les six tranches d'âge au niveau France. Ces observations et les contrôles locaux ne prouvent pas les variantes régionales ou de futurs appels HTTP ; les dépendances de test restent incluses sans retirer les mobilités."
+  },
+  {
+    "number": 24,
+    "title": "Explorer les perspectives d'emploi à 2030",
+    "benefit": "distinguer les créations d'emploi, les renouvellements et les autres composantes des perspectives à 2030, puis examiner les régions et les métiers associés pour éclairer mes choix",
+    "steps": [
+      ["Depuis la fiche métier, ouvre que pourrait-il se passer d'ici 2030.", "Présente le scénario de référence, les familles professionnelles concernées et la période cumulée 2019-2030 ; charge les perspectives régionales de ce métier."],
+      ["Consulte les composantes des perspectives.", "Affiche créations nettes, départs en fin de carrière, postes à pourvoir, jeunes débutants et déséquilibre potentiel, avec les taux publiés et l'emploi 2019 de référence."],
+      ["Compare les régions selon la question choisie.", "Utilise seulement un tri documenté de /prospective/regions, conserve les rangs par famille et la référence France, puis affiche part régionale et spécificité lorsque disponibles."],
+      ["Choisit une région pour découvrir les familles dont les perspectives l'intéressent.", "Appelle /prospective/metiers avec cette région et un tri documenté, distingue les familles et indique la portée métropolitaine et les regroupements particuliers."],
+      ["Choisit un métier parmi les associations d'une famille.", "Utilise les rome_codes reçus pour ouvrir une fiche ROME V3, avec un nom résolu par les données disponibles ou le GET de détail, sans inférence de famille vers métier."],
+      ["Consulte le tableau détaillé ou ajoute une piste.", "Rend toutes les composantes et métadonnées disponibles, permet l'enregistrement local du métier choisi et garde les possibilités de comparaison et de retour à la région."]
+    ],
+    "alternatives": [
+      "Créations nettes ou déséquilibre négatifs : conserver le signe et fournir l'explication, sans écrêter les barres à zéro ni déclarer le métier sans avenir.",
+      "Territoire ultramarin : expliquer l'absence de projection régionale dans l'exercice et proposer les données France réellement reçues par repli, sans les attribuer au territoire.",
+      "Familles regroupées en Corse : afficher le périmètre particulier et ne pas classer l'agrégat comme une famille strictement équivalente des autres régions.",
+      "Une composante est null ou une famille n'a pas de cible métier publiée : garder les autres résultats et leurs limites, sans reconstruire la composante ou les associations.",
+      "Tri ou région non observés localement : conserver la fonctionnalité et son test à réaliser, sans réordonner une autre réponse pour simuler une variante HTTP validée."
+    ],
+    "rules": [
+      "Les données sont des projections du scénario de référence PMQ, cumulées 2019-2030 au grain FAP87 ; ni recrutement certain, ni offres actuelles, ni série annuelle ne sont fabriqués.",
+      "Conserver les cinq composantes et les taux fournis ; les taux de flux prennent l'emploi 2019 pour base, tandis que part régionale et indice de spécificité ont des sens distincts et que l'indice n'est pas un pourcentage.",
+      "Postes à pourvoir et déséquilibre sont lus dans les champs publiés ; ne pas les recalculer, le déséquilibre régional intégrant notamment le solde des mobilités entre régions.",
+      "Les tris sont limités aux enums des deux routes ; jeunes débutants reste affichable sans tri serveur jeunes inventé ; respecter référence France, rangs par famille, métropole et agrégats corses.",
+      "La passerelle vers une fiche utilise les rome_codes explicites de /prospective/metiers ; aucune somme entre familles, avec BMO ou entre horizons n'est produite."
+    ],
+    "acceptance": [
+      ["les cinq composantes et leurs taux sont disponibles", "la personne ouvre les perspectives détaillées", "aucune composante n'est omise et l'emploi 2019, les unités, le scénario et la période cumulée sont visibles"],
+      ["la création nette ou le déséquilibre est négatif", "le graphique est rendu", "le signe et la valeur sont conservés avec une explication sans écrêtage ni jugement automatique sur le projet"],
+      ["un tri documenté des régions est choisi", "la requête est préparée", "le nom exact du tri est utilisé et aucun tri pour les jeunes débutants n'est inventé"],
+      ["une région et une famille publient des rome_codes", "la personne ouvre un métier associé", "le GET de fiche porte sur un code explicitement reçu et le nom de la famille n'est pas utilisé comme correspondance implicite"],
+      ["la fiche concerne un territoire ultramarin", "la projection France est disponible par repli", "le niveau France est explicitement nommé et aucune projection régionale n'est simulée"],
+      ["un agrégat particulier est reçu pour la Corse", "les régions sont comparées", "son périmètre est expliqué et aucun rang comparable à une famille non agrégée n'est fabriqué"],
+      ["le déséquilibre régional ne se reconstitue pas par les seules autres composantes affichées", "la personne consulte son explication", "la valeur fournisseur est conservée et le rôle possible des mobilités interrégionales est précisé sans correction arithmétique"]
+    ],
+    "ux": [
+      "DSFR : navigation par questions croissance ou renouvellement, choix de région et de tri, explication progressive des cinq composantes et tableau complet ; états projection disponible, partielle, couverture nationale et erreur.",
+      "DSFR Chart DataBox et barres de composantes ou de régions avec négatifs lisibles ; cartes officielles uniquement sur un zonage pris en charge ; pas de courbe annuelle reconstruite ni visualisation qui additionne deux composantes qui se recoupent.",
+      "Les explications du signe, de la base 2019 et du caractère projeté restent visibles sans survol ; tableau, navigation vers les fiches et choix de région utilisables au clavier et sur mobile."
+    ],
+    "state": "Scénario, champs et tris documentés, JSON des deux routes observés. Il reste à tracer les variantes de tri, la chaîne région-famille-métiers, les négatifs et les couvertures particulières ; les fixtures et visualisations locales ne démontrent pas ces appels HTTP. Toutes les composantes détaillées restent dans la cible."
+  },
+  {
+    "number": 25,
+    "title": "Comparer les salaires selon le secteur économique",
+    "benefit": "repérer comment les rémunérations de la famille professionnelle varient selon le secteur employeur, en comprenant les populations et les limites de publication",
+    "steps": [
+      ["Depuis les salaires du métier, ouvre dans quels secteurs les rémunérations diffèrent.", "Affiche la ou les familles professionnelles du métier et propose France ou une région compatible."],
+      ["Choisit le territoire de lecture.", "Appelle /salaires/secteurs avec le ROME V3 et region si nécessaire, puis conserve la géographie réelle propre à chaque famille."],
+      ["Parcourt les secteurs classés par le fournisseur.", "Affiche les libellés NAF38, rangs et médianes disponibles, séparés par famille, avec les parts de salariés et la référence tous secteurs."],
+      ["Ouvre le détail d'un secteur.", "Montre les quartiles annuels, la médiane mensuelle fournie, la tranche de rémunération et les effectifs disponibles, avec unités et population."],
+      ["Consulte le tableau et les limites de couverture.", "Expose les mêmes chiffres et précise le seuil de publication, les secteurs absents et le repli éventuel sans normaliser les parts."],
+      ["Poursuit vers le contexte économique du secteur ou la comparaison de métiers.", "Réutilise le code NAF38 effectivement reçu pour le contexte autorisé, tout en expliquant que populations, dates et indicateurs sont distincts."]
+    ],
+    "alternatives": [
+      "Aucun secteur publiable pour une famille régionale : présenter la référence France retournée et son repli sans affecter les autres familles.",
+      "Médiane null avec tranche ouverte : afficher la tranche reçue sans montant inventé ni barre de valeur zéro.",
+      "Des secteurs sont absents ou les parts ne totalisent pas cent : expliquer le seuil d'échantillon, sans secteur résiduel ou part renormalisée.",
+      "Erreur sur une région ou données non observées localement : garder les choix et l'autre contenu métier sans réutiliser les montants d'un autre lieu."
+    ],
+    "rules": [
+      "FAP225 croisée avec NAF38, BTS 2023 observée ; population de salariés à temps complet présents toute l'année et méthode identique à la mesure salaires.",
+      "La part est tx_salaries_secteur pour les salariés de 2023, distincte de tx_actifs_secteur des actifs salariés et non-salariés de 2021 ; aucune substitution entre les deux.",
+      "ensemble[] est une référence tous secteurs par famille ; respecter items[].maille/repli, les rangs publiés et le seuil de trente salariés de l'échantillon par secteur.",
+      "Garder les quartiles annuels et la médiane mensuelle séparés, sans division par douze, min/max inventés, écart salarial calculé ou promesse de gain personnel.",
+      "Les secteurs publiés sont partiels et les observations familiales peuvent être partagées par plusieurs métiers ; ne pas additionner les familles ni présenter les parts comme un marché exhaustif."
+    ],
+    "acceptance": [
+      ["le métier relève de plusieurs familles", "les salaires sectoriels sont affichés", "les secteurs et références tous secteurs sont regroupés sous chaque nom de famille sans moyenne commune"],
+      ["une famille se replie sur la France et l'autre reste régionale", "la personne consulte les montants", "le lieu réel est affiché pour chacune et aucune comparaison n'est nommée régionale pour la famille repliée"],
+      ["la médiane est null avec une tranche ouverte", "le secteur est présenté dans le graphique et le tableau", "la tranche est lisible et aucun montant synthétique ou zéro n'est tracé"],
+      ["les parts des salariés des secteurs publiés totalisent moins de cent", "la personne lit la répartition", "les parts restent inchangées et la couverture partielle est expliquée"],
+      ["les secteurs d'emploi 2021 sont également disponibles", "la personne passe à ce volet", "la part des actifs 2021 et la part des salariés 2023 restent distinctes avec leurs populations et dates"],
+      ["un montant mensuel et des quartiles annuels sont reçus", "le détail de salaire est ouvert", "chaque unité et borne est nommée sans conversion ni présentation des quartiles comme minimum et maximum"]
+    ],
+    "ux": [
+      "DSFR Chart DataBox et barres horizontales de médianes par secteur et famille ; DSFR tableau de quartiles, parts et population, avec référence tous secteurs lisible ; aucune boîte à moustaches personnalisée inventée.",
+      "DSFR : sélection France/région, accès progressif aux détails et au contexte sectoriel ; états disponible, tranche ouverte, secteur absent, repli et erreur différenciés sans couleur seule, sur mobile et au clavier."
+    ],
+    "state": "Contrat et JSON des salaires sectoriels disponibles ; les variantes France/région, seuil, tranche ouverte et repli d'une seule famille restent à tester par GET. La maquette locale ne prouve pas leur disponibilité HTTP générale et ne remplace pas une valeur manquante."
+  },
+  {
+    "number": 26,
+    "title": "Comprendre les secteurs employeurs et l'économie du territoire",
+    "benefit": "distinguer où travaillent les personnes de la famille de métiers et comment évoluent les secteurs économiques du territoire, pour situer les opportunités sans attribuer tous les emplois locaux à mon métier",
+    "steps": [
+      ["Ouvre quels secteurs emploient les personnes de cette famille.", "Lit la mesure emploi_secteurs de /indicateurs pour le métier et le lieu, en regroupant les résultats par famille et en indiquant la région ou la France réellement mesurée."],
+      ["Parcourt les principaux secteurs d'emploi.", "Présente les actifs occupés et leurs parts du recensement 2021, avec les rangs, la couverture partielle et les noms des familles."],
+      ["Ouvre que se passe-t-il dans l'économie du territoire.", "Interroge /secteurs sans filtre métier pour le contexte local et affiche séparément établissements, salariés privés, créations et défaillances selon leurs sources et périodes."],
+      ["Choisit un secteur reçu pour détailler son contexte.", "Utilise son code NAF38 dans le filtre naf autorisé, conserve la maille réelle et distingue la référence ensemble des lignes sectorielles."],
+      ["Demande le détail secteur-métier prévu dans le parcours.", "Exécute l'appel /secteurs avec rome quand l'environnement est connecté ; garde le résultat attendu et signale l'indisponibilité reproduite R17 sans la convertir en absence d'employeur."],
+      ["Compare les lectures et poursuit vers salaire, territoire ou fiche métier.", "Explique les différences de populations et de lieux, réutilise les données compatibles et préserve toutes les actions sans créer de jointure d'effectifs locaux au métier."]
+    ],
+    "alternatives": [
+      "Filtre métier vide comme R17 alors que le contexte et emploi_secteurs sont renseignés : afficher les deux lectures disponibles et l'indisponibilité du détail attendu, sans annoncer aucun employeur.",
+      "Champ SIDE null à la CLPE : expliquer la maille départementale au plus fin du champ ; ne pas fabriquer un chiffre de proximité.",
+      "Plusieurs familles ou secteurs partiels : conserver leurs groupes et parts publiées, sans total métier ou secteur résiduel.",
+      "Données privées URSSAF peu représentatives de l'administration publique : préciser cette population au lieu d'étendre les comptes à tout l'emploi.",
+      "Erreur d'un des appels : garder les lectures déjà disponibles avec leur source et date, afficher un état partiel et reprendre uniquement l'appel en échec."
+    ],
+    "rules": [
+      "emploi_secteurs concerne les actifs salariés et non-salariés des FAP225, au recensement 2021, région ou France ; /secteurs décrit les activités NAF38 d'un territoire via SIDE, URSSAF et BODACC à d'autres dates.",
+      "Ne pas sommer les familles, attribuer les comptes d'un secteur local au seul ROME ou présenter le contexte sans filtre comme l'équivalent du résultat métier attendu.",
+      "Conserver maille_reelle/repli pour le contexte et metier_maille pour les parts métier ; certains champs sont départementaux au plus fin malgré un contexte servi à la CLPE.",
+      "Distinguer unités légales, établissements, établissements employeurs, salariés privés et entreprises défaillantes ; les défaillances pour mille ne sont pas des pourcentages, et aucune fermeture ou liste d'employeurs nominatifs n'est inventée.",
+      "Q14 suit l'anomalie /secteurs avec rome reproduite à deux mailles pour F1610 ; la fonction métier-territoire reste dans le périmètre jusqu'à correction ou explication contractuelle et recette de clôture."
+    ],
+    "acceptance": [
+      ["R16 fournit treize lignes emploi_secteurs et R17 trente-cinq secteurs sans filtre métier", "les deux lectures sont rendues", "leurs populations, dates et lieux restent séparés sans agrégat ROME fabriqué"],
+      ["/secteurs avec F1610 retourne une liste vide et metier_maille null comme R17", "la personne ouvre le détail métier-territoire", "le système annonce une information indisponible et conserve la dépendance fournisseur sans affirmer aucun employeur"],
+      ["un compte sectoriel est publié pour un bassin local", "la personne consulte son explication", "il est décrit comme contexte du secteur et non comme nombre d'emplois du seul métier étudié"],
+      ["un champ SIDE est null à la CLPE", "le tableau est affiché", "son indisponibilité à cette échelle est indiquée sans conversion en zéro"],
+      ["un indicateur BODACC est exprimé pour mille unités légales", "la dynamique économique est ouverte", "l'unité pour mille et les dates effectives sont visibles sans pourcentage ni nombre de fermetures déduit"],
+      ["le fournisseur corrige le filtre métier", "les tests avec et sans ROME sont rejoués", "la clôture repose sur des réponses HTTP tracées et une interprétation cohérente de metier_maille, nb_actifs_metier et tx_actifs_metier"]
+    ],
+    "ux": [
+      "DSFR : deux entrées clairement nommées personnes de la famille et économie du territoire, tableaux par source, messages d'indisponibilité partielle et liens de secteur ; aucun écran ne masque la lecture disponible parce qu'un autre appel échoue.",
+      "DSFR Chart DataBox et barres des parts ou indicateurs à population commune ; carte officielle seulement avec zonage compatible ; les sources, dates, unités et limites sont aussi dans le tableau et accessibles au clavier."
+    ],
+    "state": "R16 démontre la restitution familiale et R17 la liaison territoriale sans métier ; l'appel métier-territoire attendu est affecté par une anomalie fournisseur reproduite, cause inconnue. Les deux lectures locales ne constituent pas un contournement équivalent ; Q14 et la recette HTTP après réponse fournisseur restent ouverts."
+  },
+  {
+    "number": 27,
+    "title": "Conserver et reprendre jusqu'à trois pistes de métiers",
+    "benefit": "garder temporairement les métiers qui m'intéressent, les retrouver pendant mon exploration et préparer une reprise sans compte ni sauvegarde distante inventée",
+    "steps": [
+      ["Depuis un résultat, une fiche ou une relation métier, choisit garder cette piste.", "Ajoute le métier ROME V3 effectivement sélectionné à l'état local s'il n'y est pas déjà, actualise le compteur et annonce l'ajout sans déplacer le focus."],
+      ["Ajoute d'autres pistes puis ouvre Mes pistes.", "Présente jusqu'à trois métiers distincts avec leurs noms, les actions ouvrir, retirer et choisir deux métiers à comparer ; explique la conservation temporaire."],
+      ["Retire une piste depuis sa fiche ou Mes pistes.", "Met à jour partout le même état local, le compteur et l'état des boutons ; garde les autres pistes et annonce le retrait."],
+      ["Navigue, recharge l'onglet puis revient à Mes pistes.", "Restaure la sélection de la session d'onglet lorsque le stockage de session est disponible, sans appel d'écriture API ; explique la limite de conservation."],
+      ["Choisit exporter sa sélection pour la reprendre.", "Produit le format portable prévu pour les identifiants et données locales nécessaires, avec une version de format client explicite, sans le présenter comme une réponse API ou un dossier de projet créé."],
+      ["Importe une sélection sauvegardée.", "Explique que la reprise remplace la sélection locale, valide le format, les types, les identifiants métier, les deux métiers de comparaison, le territoire, l'unicité et la limite de trois avant toute modification ; reprend ensuite le contexte validé."],
+      ["Choisit deux pistes à comparer ou souhaite poursuivre son projet.", "Ouvre le comparateur avec ces deux métiers ; garde la sélection portable pour les futurs parcours sans créer de faux lien ni simuler un transfert vers un produit encore absent."]
+    ],
+    "alternatives": [
+      "Quatrième métier : expliquer la limite de trois et proposer un retrait explicite ; aucune piste existante n'est remplacée silencieusement.",
+      "Métier déjà retenu : conserver une seule occurrence et proposer l'action de retrait avec un état cohérent sur tous les écrans.",
+      "Stockage de session indisponible : conserver l'état en mémoire pour la page courante, expliquer la limite et laisser la reprise portable si elle est disponible.",
+      "Import illisible, format inconnu, identifiants invalides, doublons ou plus de trois pistes : décrire l'erreur sans écraser la sélection présente ni lancer des appels issus d'identifiants invalides.",
+      "Les autres parcours ne sont pas disponibles : garder la préparation de reprise sans lien mort, faux bouton de projet créé ou confirmation de transfert non réalisé."
+    ],
+    "rules": [
+      "Trois pistes au maximum et unicité par ROME V3 ; seuls les métiers explicitement choisis sont retenus, sans présélection, ajout implicite ou classement de préférence calculé.",
+      "La sélection est un état local client ; aucun GET d'écriture, compte utilisateur ou sauvegarde distante n'est inventé dans les 21 GET. Un ajout ne requiert pas de relire une fiche déjà connue.",
+      "La préparation actuelle utilise une session d'onglet et le format client type=macarriere-selection, version=1, referentiel=ROME_V3, metiers[], comparaison[] et territoire ; les fichiers HTML de reprise intègrent ces données JSON, distinctes du contrat fournisseur. Durée, politique de stockage et raccordement en production restent documentés sans rouvrir le plafond validé.",
+      "L'export/import porte un format de sélection client contrôlé, distinct des données fournisseurs ; il ne prouve ni fraîcheur des fiches, ni partage interapplications, ni création d'un projet dans un parcours absent.",
+      "Le retrait est répercuté dans fiches, listes et Mes pistes ; le comparateur ne garde pas une identité silencieusement incohérente si une sélection change, et les décisions explicites de comparaison sont préservées ou redemandées."
+    ],
+    "acceptance": [
+      ["aucune piste n'est enregistrée", "la personne garde le métier ouvert", "ce métier apparaît une seule fois dans Mes pistes avec compteur et bouton actualisés, sans ajout d'un exemple imposé"],
+      ["trois métiers distincts sont retenus", "un quatrième est demandé", "la limite est expliquée et aucun des trois n'est remplacé avant un retrait explicite"],
+      ["un métier est déjà retenu et visible dans plusieurs vues", "il est retiré depuis l'une d'elles", "son état est retiré partout, le compteur est actualisé et les autres pistes sont conservées"],
+      ["la session d'onglet accepte le stockage et contient des pistes", "la personne navigue puis recharge l'onglet", "la sélection est reprise pour cette session sans sauvegarde API prétendue"],
+      ["la personne exporte sa sélection", "le format portable est produit", "il contient une sélection client identifiable et aucun message n'affirme qu'un projet distant ou un transfert vers un autre parcours a été créé"],
+      ["une sélection exportée conforme comporte jusqu'à trois ROME V3 distincts et un contexte de comparaison et de lieu valide", "elle est importée", "le format est validé avant mutation puis remplace la sélection locale selon la règle annoncée, reprend les deux métiers de comparaison et le territoire, sans dépasser trois pistes"],
+      ["un import est invalide ou dépasse le plafond", "la validation échoue", "les pistes présentes restent intactes et une erreur utile est annoncée sans code interprété arbitrairement"],
+      ["les deux autres parcours ne sont pas encore fournis", "la personne souhaite préparer la suite", "la sélection reste consultable et portable sans lien mort ni confirmation d'un raccordement inexistant"]
+    ],
+    "ux": [
+      "DSFR : boutons garder/retirer avec nom du métier, compteur, liste de trois cartes maximum, sélection de deux métiers, actions de reprise et messages de limite ; états vide, partiel, plein, doublon, import invalide et stockage indisponible.",
+      "Annoncer ajout, retrait et erreur sans déplacer le focus ; les boutons gardent une cible tactile suffisante, état perceptible autrement que par couleur et nom accessible stable ; le rechargement ou import ne déclenche pas une navigation surprise.",
+      "Export/import et message de durée sont compréhensibles sans jargon technique ; l'interface explique le remplacement par la sélection reprise avant de modifier une sélection existante et n'invente pas d'écran de futur parcours."
+    ],
+    "state": "Fonction locale et préparation de reprise déjà présentes dans la maquette, avec plafond de trois validé. Le code actuel remplace la sélection, les deux métiers de comparaison et le territoire après validation du format HTML ou JSON ; son explication avant reprise est un critère UX à vérifier. La session et le format portable se testent dans le navigateur ; cela ne démontre aucun stockage serveur ou transfert réel entre parcours. Les modalités de production D08/D10 restent ouvertes sans retirer export/import de la cible."
+  },
+  {
+    "number": 28,
+    "title": "Comparer les différences utiles entre deux métiers choisis",
+    "benefit": "mettre en regard deux métiers qui m'intéressent pour comprendre leurs activités, compétences, conditions, certifications et données d'emploi sans qu'un score décide à ma place",
+    "steps": [
+      ["Choisit un premier puis un second métier depuis résultats, fiches ou Mes pistes.", "Conserve deux identités explicites A et B avec leurs noms ; ne complète pas une sélection manquante par un métier d'exemple et refuse un doublon non pertinent."],
+      ["Ouvre la comparaison et choisit le lieu de lecture.", "Charge ou réutilise les données propres à A et B avec les paramètres territoriaux compatibles de chaque ressource ; conserve la géographie réelle de chaque mesure."],
+      ["Compare ce que l'on fait et dans quelles conditions.", "Présente côte à côte les contenus reçus et recueille les pages complètes de compétences/contextes avant de conclure à des éléments communs ou spécifiques."],
+      ["Choisit examiner ce qui est partagé du métier A vers le métier B.", "Interroge le métier cible B avec depuis=A ; explique les tags et la synthèse comparaison fournis comme relations de référentiels métiers, pas comme acquis de la personne."],
+      ["Ouvre les salaires, recrutements, mobilités, perspectives 2030, secteurs ou certifications.", "Présente les deux côtés par question avec sources, bases, unités, périodes et familles ; rend les détails complets accessibles et avertit des observations partagées ou non comparables."],
+      ["Inverse A et B ou remplace un métier.", "Met à jour les titres et les données de la bonne identité ; réévalue la comparaison directionnelle et annule les requêtes périmées sans simple échange trompeur de tags depuis."],
+      ["Garde ou retire une piste et revient à une fiche ou à la recherche.", "Applique le même état local de pistes et les retours explicites, sans score global, recommandation automatique ou perte du contexte d'exploration."]
+    ],
+    "alternatives": [
+      "Un seul métier choisi : demander explicitement le second et garder le premier sans afficher une comparaison préremplie.",
+      "Pages de compétences manquantes : rendre la liste partielle lisible et suspendre seulement les conclusions de commun/spécifique non démontrables, sans retirer le volet.",
+      "Même famille statistique sur les deux métiers : expliquer qu'il s'agit d'une même observation partagée, sans simuler deux enquêtes ou une différence propre aux métiers.",
+      "Périodes, populations ou géographies incompatibles : garder les données et leurs explications séparées, sans calcul de delta ni classement comparatif abusif.",
+      "Erreur sur un côté ou un indicateur : conserver l'autre côté, le nom du métier en échec et une reprise ciblée ; ne jamais dupliquer ses chiffres pour remplir l'autre colonne."
+    ],
+    "rules": [
+      "A et B restent les métiers effectivement choisis ; identité, appels et résultats sont rattachés au même code, au même contexte de paramètres et à la bonne colonne.",
+      "Les compétences communes/spécifiques sont des relations sur des identifiants reçus et listes complètes ; une page absente ou un champ non renseigné ne prouve pas une compétence manquante.",
+      "depuis est directionnel : cible dans le chemin, départ dans depuis ; tag_acquise et les comptes/taux comparaison sont fournis par l'API et décrivent les références des métiers, jamais une maîtrise, un manque personnel ou un score inventé.",
+      "Chaque statistique garde sa famille FAP225/FAP228/FAP87, sa population, son unité, sa période et son lieu réel ; même famille égale observation commune, autres familles comparables seulement avec les autres dimensions expliquées et compatibles.",
+      "Tous les volets restent accessibles, y compris mobilités, détail 2030, salaires sectoriels, secteurs, certifications et contextes ; aucune synthèse ne calcule un score global, gain personnel, projection annuelle ou substitut d'une valeur absente."
+    ],
+    "acceptance": [
+      ["les métiers A et B sont choisis depuis deux points d'entrée différents", "la comparaison est ouverte", "les titres et requêtes portent sur ces deux métiers et aucun exemple fixe ne remplit un côté"],
+      ["le métier B est comparé depuis A", "les compétences transférables sont demandées", "le GET cible B avec depuis=A et les tags, comptes et taux fournis sont expliqués comme relation entre métiers sans diagnostic personnel"],
+      ["la personne inverse A et B", "la comparaison directionnelle est actualisée", "le sens est inversé dans la requête ou son cache exact et les anciens tags ne sont pas présentés comme résultat du sens inverse"],
+      ["une fiche de compétences est limitée à une première page", "les éléments spécifiques sont consultés", "la liste est annoncée incomplète et aucune absence de compétence n'est affirmée avant collecte des pages nécessaires"],
+      ["les deux métiers partagent une même famille et une même mesure", "les statistiques sont affichées", "le caractère commun de l'observation est expliqué sans différence fabriquée"],
+      ["les deux valeurs ont des périodes ou lieux effectifs différents", "la comparaison de cet indicateur est consultée", "les limites restent visibles et aucune soustraction, variation ou rang global n'est calculé"],
+      ["un volet détaillé mobilité,2030 ou salaire sectoriel est demandé", "la personne ouvre son détail", "les informations natives des deux métiers restent accessibles avec leurs populations et limites, même si elles ne tiennent pas dans la synthèse initiale"],
+      ["une requête du métier B échoue", "la vue est rendue", "A reste lisible, B garde son identité et une erreur ciblée, et aucune donnée de A n'est recopiée sous B"]
+    ],
+    "ux": [
+      "DSFR : sélection explicite A/B, titres persistants, bouton inverser, navigation par questions et tableaux avec en-têtes de métier ; empilement mobile maintenant les labels A/B et les retours, pas une juxtaposition sans contexte.",
+      "DSFR Chart DataBox et barres ou courbes officielles lorsque les dimensions permettent réellement la comparaison ; mêmes alternatives tabulaires, sources et états manquants des deux côtés ; pas de radar de score personnalisé.",
+      "Changer un métier ou un filtre annonce le contexte actualisé ; commandes et détails restent utilisables au clavier, les informations ne dépendent ni de la couleur A/B ni du survol ; erreur et chargement par côté."
+    ],
+    "state": "Comparateur local de métiers choisis et contrôles navigateur disponibles ; la comparaison complète HTTP, les deux listes intégrales et les variantes depuis dans les deux sens restent à valider. La synthèse directionnelle est documentée par le contrat malgré des omissions dans le schéma OpenAPI ; son absence de fixture n'autorise ni son invention ni sa suppression."
+  },
+  {
+    "number": 29,
+    "title": "Explorer les métiers concernés par les transitions",
+    "benefit": "repérer des métiers signalés comme concernés par les transitions écologique, numérique ou démographique, puis comprendre concrètement leur contenu et leurs perspectives",
+    "steps": [
+      ["Depuis la recherche ou un domaine, choisit découvrir les métiers concernés par une transition.", "Présente les trois thèmes disponibles et explique qu'ils reposent sur des marqueurs documentaires du métier, sans prédiction de recrutement."],
+      ["Choisit un thème et éventuellement un domaine professionnel.", "Collecte les pages de /metiers dans ce périmètre et applique localement le marqueur reçu ; n'ajoute aucun paramètre serveur transition."],
+      ["Consulte les résultats pendant puis après la collecte.", "Distingue une liste encore incomplète de la liste complète du périmètre ; conserve les valeurs true, false etnull et annonce le contexte de filtrage."],
+      ["Ouvre un métier du résultat.", "Affiche sa fiche avec le marqueur et ses activités, compétences et données réelles, plutôt qu'un contenu déduit de la seule transition."],
+      ["Examine ses perspectives ou thèmes de formation.", "Propose les volets documentés et conserve leurs populations et limites ; le marqueur ne devient ni un taux de croissance ni une garantie de salaire."],
+      ["Change de transition, retire le filtre ou garde une piste.", "Réutilise le catalogue complet compatible en cache, actualise la lecture locale et préserve les autres sélections."]
+    ],
+    "alternatives": [
+      "Catalogue partiellement chargé : montrer l'incomplétude et la reprise, sans annoncer un nombre exhaustif ou aucun métier concerné.",
+      "Marqueur null : le garder distinct de false et expliquer une information non renseignée, sans affirmer que le métier n'est pas concerné.",
+      "Aucun résultat après collecte complète du périmètre : indiquer aucun marqueur positif publié dans ce périmètre et proposer de changer de thème ou domaine.",
+      "Plusieurs transitions choisies : afficher explicitement la règle de combinaison locale retenue ; ne pas la présenter comme un mode de recherche serveur documenté.",
+      "Erreur de collecte d'une page : préserver les fiches déjà reçues et empêcher les conclusions d'exhaustivité jusqu'à reprise."
+    ],
+    "rules": [
+      "Utiliser les tags métier tag_transition_ecologique, tag_transition_numerique et tag_transition_demographique reçus ; ne pas les confondre avec les tags de certification.",
+      "Le filtrage est local sur toutes les pages du catalogue ou du périmètre de domaine choisi ; aucun paramètre transition, score ou tri de croissance n'existe sur /metiers.",
+      "Un marqueur positif peut venir d'au moins une spécialité consolidée vers le ROME V3 ; il n'affirme pas que toutes les situations de travail du métier ont les mêmes caractéristiques.",
+      "false etnull gardent leur sens distinct ; l'absence de marqueur ne démontre ni absence de contribution réelle à une transition ni absence d'évolution du métier.",
+      "La combinaison éventuelle de thèmes est une interaction locale explicitée et à stabiliser ; les perspectives, salaires et compétences viennent de leurs propres réponses et non du marqueur."
+    ],
+    "acceptance": [
+      ["un thème de transition est choisi", "la recherche de métiers est préparée", "seuls les GET et paramètres autorisés sont utilisés et aucun paramètre transition fictif n'est transmis"],
+      ["le catalogue comporte plusieurs pages", "le filtrage local démarre", "le résultat reste annoncé incomplet jusqu'à collecte de toutes les pages du périmètre"],
+      ["des valeurs true, false etnull existent", "les résultats sont classés par présence du marqueur", "null n'est pas converti en false et l'absence d'information n'est pas une exclusion métier prétendument certaine"],
+      ["un métier possède un marqueur écologique positif", "la personne ouvre sa fiche", "le marqueur est expliqué sans lui attribuer une croissance, une rémunération ou un recrutement garanti"],
+      ["plusieurs thèmes sont sélectionnés", "le filtre local est appliqué", "sa règle explicite de combinaison est visible et ne prétend pas être une fonctionnalité de filtrage serveur"],
+      ["un domaine professionnel limite le périmètre", "la collecte se termine", "l'exhaustivité annoncée concerne ce domaine et non l'ensemble du catalogue national"]
+    ],
+    "ux": [
+      "DSFR : choix de thèmes, filtre de domaine, badges textuels et résultats de métiers ; texte sur le filtrage local et les limites, états collecte, complet, partiel, vide et erreur.",
+      "Pas de graphique de croissance produit à partir des tags ; commandes sélectionnées annoncées, règle de combinaison lisible, focus stable et résultats accessibles par noms au clavier comme sur mobile."
+    ],
+    "state": "Les tags sont documentés et observés sur des fiches ; la collecte de tout le catalogue et les combinaisons locales restent à valider. Un prototype filtré sur quelques JSON ne démontre pas la couverture exhaustive du catalogue HTTP ; les modalités de combinaison locale ne créent aucun filtre API."
+  },
+  {
+    "number": 30,
+    "title": "Passer d'un thème de formation aux certifications puis aux sessions",
+    "benefit": "explorer les thèmes liés à un métier ou une certification et suivre les formations certifiantes publiées jusqu'aux sessions disponibles dans les données",
+    "steps": [
+      ["Depuis un métier ou une certification, ouvre les thèmes de formation associés, ou recherche un thème par son nom.", "Interroge /formacodes avec le code, le métier, le domaine Formacode ou q adaptés à l'entrée et affiche les libellés reçus."],
+      ["Choisit un thème et consulte son contexte.", "Présente son sous-domaine, son domaine et ses marqueurs documentés, avec les nombres de certifications reçus lorsqu'ils sont renseignés."],
+      ["Demande les certifications de ce thème.", "Appelle /certifications avec le formacode_code sélectionné, affiche les résultats paginés et ne remplace pas les résultats par une certification d'exemple."],
+      ["Choisit une certification.", "Ouvre son détail par certifinfo_code, conserve le thème de départ et les actions de retour, puis expose voies, blocs et résultats disponibles."],
+      ["Souhaite voir les sessions publiées pour cette certification et choisit un lieu compatible.", "Utilise le Certif Info choisi avec /sessions_a_venir ou /sessions_en_cours, les paramètres de zonage compatibles et la gestion Onisep documentée."],
+      ["Revient au thème ou explore une autre certification.", "Restaure les choix et pages utiles, garde les pistes métier et distingue toujours thème, certification et ligne de session."]
+    ],
+    "alternatives": [
+      "Thème sans certification retournée : conserver son information et expliquer qu'aucune certification n'est publiée dans ce résultat, sans créer une session directement depuis le thème.",
+      "Recherche de thème ambiguë : afficher sous-domaines et domaines nommés pour choisir explicitement, sans fusion de codes homonymes.",
+      "Certification sans session pour le lieu retenu : garder la fiche et permettre de modifier le territoire ou la vue, sans remplacer le thème par une offre externe.",
+      "Données de rattachement ou nombres absents : afficher ce qui est reçu sans déduire un total depuis une page partielle.",
+      "Erreur d'un maillon : conserver les étapes déjà choisies et reprendre ce GET, sans sauter vers une fiche ou une session supposée correspondante."
+    ],
+    "rules": [
+      "Le Formacode est un thème de formation ; son domaine n'est ni un domaine professionnel ROME ni un domaine de compétences, malgré le paramètre domaine homonyme.",
+      "Utiliser uniquement les associations et codes renvoyés : Formacode vers /certifications?formacode=, puis Certif Info vers fiche et sessions ; aucune relation thème-session directe n'est inventée.",
+      "Les nombres nb_certifications et nb_certifications_formacode_principal sont documentés et distincts ; ne pas déduire un nombre complet de certifications depuis une première page.",
+      "Les thèmes non certifiants peuvent être mentionnés dans le référentiel, mais les 21 GET n'exposent pas de recherche de sessions non certifiantes par Formacode ; conserver et expliquer ce besoin non couvert.",
+      "Les sessions conservent leurs précautions de regroupement, lieu, temporalité, Onisep et Q11 ; un thème n'atteste ni admission, ni financement, ni compétence personnelle."
+    ],
+    "acceptance": [
+      ["un thème est choisi depuis un métier", "les certifications sont demandées", "le formacode_code réellement reçu est transmis au filtre formacode et non un code de domaine métier"],
+      ["un thème et un domaine ont des noms voisins", "les résultats sont affichés", "les libellés et hiérarchies permettent un choix explicite sans correspondance supposée entre les référentiels"],
+      ["la liste des certifications est paginée", "la personne poursuit la consultation", "les pages restent rattachées au thème choisi et aucun total n'est calculé depuis la seule page reçue"],
+      ["un thème n'a pas de certification retournée", "la personne recherche des sessions", "le besoin non couvert est expliqué et aucune requête sessions par Formacode ou offre fictive n'est créée"],
+      ["une certification du thème est choisie", "la personne ouvre ses sessions", "le Certif Info de cette certification et un territoire compatible pilotent la route existante avec la dépendance Q11 conservée"],
+      ["la personne revient depuis une certification à son thème", "le retour est activé", "le thème, la recherche et les filtres utiles sont restaurés sans perdre les pistes"]
+    ],
+    "ux": [
+      "DSFR : recherche de thème, résultats nommés et hiérarchie lisible, liens de certifications, pagination et retours contextuels ; états thème connu, sans certification, sans session, partiel et erreur.",
+      "Pas de graphique obligatoire pour une chaîne documentaire ; parcours clavier et mobile sans code imposé, annonce du contexte à chaque changement et aide expliquant les trois objets thème, certification, session."
+    ],
+    "state": "Contrat, référentiel Formacode et JSON observés ; la chaîne complète thème-certifications-détail-sessions reste à capturer avec des GET tracés. Le besoin de sessions non certifiantes par thème est réellement non couvert par les 21 GET et n'est pas comblé par une autre source."
+  },
+  {
+    "number": 31,
+    "title": "Comprendre les chiffres, leurs sources et leurs limites",
+    "benefit": "retrouver une définition simple des indicateurs et savoir qui est compté, où et quand, pour interpréter les résultats sans être spécialiste des données",
+    "steps": [
+      ["Depuis un chiffre ou une visualisation, choisit comprendre ce chiffre.", "Ouvre l'aide de la mesure réellement reçue et relie son code à l'entrée correspondante du catalogue /mesures lorsque la relation est documentée."],
+      ["Consulte la définition en langage courant.", "Présente le libellé et la définition en conservant le sens du champ, l'unité, la population et les limites, sans ajouter de score ou de taux pour vulgariser."],
+      ["Demande qui est compté et sur quel lieu.", "Utilise les métadonnées du résultat pour montrer le grain effectif, le nom de la famille si nécessaire, le nombre de métiers partageant l'observation et le territoire réel avec son repli."],
+      ["Consulte la source et la période.", "Distingue la source du résultat des métadonnées du catalogue, affiche la date ou le millésime reçu et explique ce qui ne permet pas une datation plus précise."],
+      ["Ouvre le tableau ou les limites de comparaison.", "Présente les mêmes données et états que le graphique, avec avertissements sur secret, null, zéro, publication partielle et dimensions incompatibles."],
+      ["Parcourt les autres mesures disponibles ou retourne à son exploration.", "Affiche le catalogue documenté sans présumer sa disponibilité locale, indique les mesures réellement reçues et restaure la section ainsi que le focus d'origine."]
+    ],
+    "alternatives": [
+      "Catalogue indisponible mais résultat présent : garder le résultat et ses propres métadonnées, signaler l'aide manquante sans inventer une définition ou bloquer toute la fiche.",
+      "Nouvelle entrée de catalogue ou code inconnu du rendu : conserver la donnée et le code dans la traçabilité technique, demander son adaptation et ne pas fabriquer une visualisation ou une unité.",
+      "Mesure cataloguée sans valeur pour le métier ou le lieu : indiquer la disponibilité effective de cet appel, sans attribuer automatiquement la couverture globale du catalogue à ce cas.",
+      "Écart de source, période ou famille entre deux valeurs : expliquer les différences dans le contexte de comparaison et ne pas les masquer derrière un libellé commun.",
+      "Champ absent après projection ou variante de réponse : distinguer ce cas d'un null documenté et tracer un écart éventuel avant d'en tirer une conclusion métier."
+    ],
+    "rules": [
+      "Le catalogue observé comporte vingt-neuf mesures sur plusieurs ressources ; seules quatorze relèvent de /indicateurs dans la définition observée. Une entrée de catalogue ne garantit pas une valeur locale.",
+      "La relation est items[].code du catalogue vers items[].mesure des résultats d'indicateurs ; code de mesure n'est pas un paramètre de recherche mesure ou code inventé sur /indicateurs.",
+      "source dans le catalogue et source_libelle des résultats ont des fonctions distinctes ; les unités viennent des champs et définitions, sans champ unite universel supposé.",
+      "La méthode explique le caractère familial, la population, la période, le repli et les états ; deux métiers d'une famille partagent une observation, et aucun calcul ne révèle une valeur secret_stat.",
+      "Le langage citoyen emploie noms et explications plutôt que codes ou sigles imposés, tout en conservant les sources et la précision ; les trois niveaux statique, JSON observé et HTTP testé restent distincts dans la preuve technique."
+    ],
+    "acceptance": [
+      ["la personne ouvre l'aide d'une mesure reçue", "la définition est présentée", "elle correspond à cette mesure et aux unités réellement utilisées dans le résultat, sans score ajouté"],
+      ["le catalogue contient vingt-neuf entrées", "les indicateurs du métier sont consultés", "aucune règle ne suppose vingt-neuf valeurs sous /indicateurs ni une valeur disponible pour chaque entrée"],
+      ["le résultat s'est replié sur une maille parent", "la personne demande d'où vient ce chiffre", "le lieu effectif est nommé distinctement du lieu choisi et le repli est expliqué"],
+      ["une mesure est familiale et nb_rome_famille est supérieur à un", "la définition du chiffre est ouverte", "la population partagée est expliquée par son nom sans présenter l'observation comme exclusive du métier"],
+      ["le tableau et le graphique montrent une valeur protégée, manquante ou nulle", "la personne change de présentation", "le même sens de donnée est conservé et aucune cellule alternative ne révèle ou ne calcule la valeur absente"],
+      ["un nouveau code de mesure est reçu", "le rendu ne connaît pas encore sa structure", "la réponse n'est pas perdue, l'adaptation est tracée et aucun graphique, unité ou disponibilité n'est inventé"],
+      ["la consultation utilise des JSON observés", "les preuves de recette sont publiées", "elles ne sont pas présentées comme nouveaux tests HTTP réels ou comme certification RGAA"]
+    ],
+    "ux": [
+      "DSFR : lien comprendre ce chiffre proche de la valeur, aide progressive et tableaux de méthode, sources et limites ; retour au focus d'origine ; textes courts puis détail accessible pour tous les niveaux de familiarité avec les données.",
+      "DSFR Chart DataBox : source, période, explication et alternative tabulaire associées aux visualisations ; mêmes états dans le tableau et le graphique, sans dépendre du survol ou d'une couleur.",
+      "États aide disponible, catalogue en chargement, source partielle, nouvelle mesure et erreur sans blocage général ; conserver une lecture claire sur mobile et au clavier sans exposer de notes internes au citoyen."
+    ],
+    "state": "Catalogue de vingt-neuf entrées observé et contrat disponibles ; la liaison documentaire et les restitutions locales ne prouvent pas une valeur pour chaque métier ou territoire. Les variantes de catalogue, la disponibilité HTTP et les règles de secret Q06 restent à tester ou clarifier ; aucune nouvelle entrée n'est assimilée automatiquement à un indicateur opérationnel."
+  }
+]

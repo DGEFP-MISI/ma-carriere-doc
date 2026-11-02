@@ -1,0 +1,12 @@
+{
+  "resultat": "OK",
+  "us": 35,
+  "fonctionnalites": 31,
+  "mesures": 29,
+  "visualisations": 25,
+  "GET": 21,
+  "criteres": 324,
+  "references_intactes": 155,
+  "liens_rompus": 0,
+  "application_ou_HTTP_testes": false
+}

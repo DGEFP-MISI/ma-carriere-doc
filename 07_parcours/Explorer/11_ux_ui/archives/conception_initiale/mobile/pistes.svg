@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1970" viewBox="0 0 390 1970" role="img" aria-labelledby="title desc"><title id="title">Mes pistes, pour poursuivre l'exploration</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="1970" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Mes pistes, pour</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">poursuivre</text>
+<text x="24" y="372" font-size="30" font-weight="700" fill="#161616">l'exploration</text>
+<text x="24" y="415" font-size="16" font-weight="400" fill="#666">Une sélection temporaire sans</text>
+<text x="24" y="439" font-size="16" font-weight="400" fill="#666">compte. Deux métiers peuvent être</text>
+<text x="24" y="463" font-size="16" font-weight="400" fill="#666">comparés ; le plafond proposé est de</text>
+<text x="24" y="487" font-size="16" font-weight="400" fill="#666">trois pistes.</text>
+<text x="24" y="559" font-size="24" font-weight="700" fill="#161616">Vos pistes sélectionnées</text>
+<rect x="24" y="591" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="623" font-size="12" font-weight="700" fill="#666">Métier</text>
+<text x="44" y="645" font-size="16" font-weight="700" fill="#161616">Pose et restauration de</text>
+<text x="44" y="669" font-size="16" font-weight="700" fill="#161616">couvertures</text>
+<text x="44" y="701" font-size="12" font-weight="700" fill="#666">Référentiel</text>
+<text x="44" y="723" font-size="16" font-weight="400" fill="#161616">ROME V3 F1610</text>
+<text x="44" y="755" font-size="12" font-weight="700" fill="#666">Actions</text>
+<text x="44" y="777" font-size="16" font-weight="400" fill="#161616">Ouvrir · retirer</text>
+<rect x="24" y="821" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="853" font-size="12" font-weight="700" fill="#666">Métier</text>
+<text x="44" y="875" font-size="16" font-weight="700" fill="#161616">Travaux d'étanchéité et</text>
+<text x="44" y="899" font-size="16" font-weight="700" fill="#161616">d'isolation</text>
+<text x="44" y="931" font-size="12" font-weight="700" fill="#666">Référentiel</text>
+<text x="44" y="953" font-size="16" font-weight="400" fill="#161616">ROME V3 F1613</text>
+<text x="44" y="985" font-size="12" font-weight="700" fill="#666">Actions</text>
+<text x="44" y="1007" font-size="16" font-weight="400" fill="#161616">Ouvrir · retirer</text>
+<rect x="24" y="1051" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Comparer ces deux métiers">
+<text x="40" y="1079" font-size="16" font-weight="700" fill="#fff">Comparer ces deux métiers</text>
+</a>
+<rect x="24" y="1111" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="essentiel.svg" aria-label="Consulter F1610">
+<text x="40" y="1139" font-size="16" font-weight="700" fill="#000091">Consulter F1610</text>
+</a>
+<rect x="24" y="1171" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Continuer à explorer">
+<text x="40" y="1199" font-size="16" font-weight="700" fill="#000091">Continuer à explorer</text>
+</a>
+<rect x="24" y="1231" width="342" height="216" fill="#ececfe" stroke="none"/>
+<text x="44" y="1267" font-size="16" font-weight="700" fill="#161616">Votre sélection reste</text>
+<text x="44" y="1291" font-size="16" font-weight="700" fill="#161616">temporaire</text>
+<text x="44" y="1323" font-size="16" font-weight="400" fill="#161616">La durée de conservation exacte</text>
+<text x="44" y="1347" font-size="16" font-weight="400" fill="#161616">doit être confirmée avant</text>
+<text x="44" y="1371" font-size="16" font-weight="400" fill="#161616">réalisation. Aucun</text>
+<text x="44" y="1395" font-size="16" font-weight="400" fill="#161616">enregistrement de favoris sur</text>
+<text x="44" y="1419" font-size="16" font-weight="400" fill="#161616">l'API n'est supposé.</text>
+<text x="24" y="1511" font-size="24" font-weight="700" fill="#161616">À regarder ensuite</text>
+<text x="24" y="1547" font-size="16" font-weight="400" fill="#666">Comparer les contenus du travail,</text>
+<text x="24" y="1571" font-size="16" font-weight="400" fill="#666">vérifier les conditions réelles,</text>
+<text x="24" y="1595" font-size="16" font-weight="400" fill="#666">puis examiner certifications,</text>
+<text x="24" y="1619" font-size="16" font-weight="400" fill="#666">données et territoires utiles à</text>
+<text x="24" y="1643" font-size="16" font-weight="400" fill="#666">votre projet.</text>
+<text x="24" y="1685" font-size="14" font-weight="400" fill="#666">Deux pistes sont illustrées avec des</text>
+<text x="24" y="1706" font-size="14" font-weight="400" fill="#666">codes et intitulés observés. Cette</text>
+<text x="24" y="1727" font-size="14" font-weight="400" fill="#666">sélection est un état de maquette, pas un</text>
+<text x="24" y="1748" font-size="14" font-weight="400" fill="#666">profil utilisateur réel.</text>
+<rect x="24" y="1779" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="1807" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="1877" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="1896" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="1914" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="1932" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

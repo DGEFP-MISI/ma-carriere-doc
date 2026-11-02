@@ -1,0 +1,8 @@
+# Conserver les octets des documents, JSON et preuves dont les SHA-256 font foi.
+# Aucun changement automatique CRLF/LF à l'ajout ou au checkout.
+* -text
+
+# Les fichiers construits restent disponibles et sont identifiés comme tels.
+07_parcours/commun_datavisualisation/dist/** linguist-generated=true
+07_parcours/Explorer/12_maquette_html/index.html linguist-generated=true
+07_parcours/Explorer/12_maquette_html/controles/controle-*.html linguist-generated=true

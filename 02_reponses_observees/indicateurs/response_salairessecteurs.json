@@ -1,0 +1,88 @@
+{
+  "rome_code": "F1610",
+  "region": null,
+  "region_libelle": null,
+  "source_libelle": "INSEE - Base Tous salariés 2023, fichier salariés open data ; calculs RCO",
+  "grain": "fap_225",
+  "millesime": "2023",
+  "ensemble": [
+    {
+      "maille": "nat",
+      "fap_225_code": "B0Z21",
+      "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+      "nb_salaries_temps_complet": 43608,
+      "salaire_net_annuel_median": 21000,
+      "salaire_net_annuel_q1": 18200,
+      "salaire_net_annuel_q3": 24400,
+      "salaire_net_mensuel_median": 1750,
+      "tranche_salaire_median_libelle": "20 000 à 21 999 euros",
+      "nb_rome_famille": 8
+    },
+    {
+      "maille": "nat",
+      "fap_225_code": "B2Z44",
+      "fap_225_libelle": "Couvreurs",
+      "nb_salaries_temps_complet": 19584,
+      "salaire_net_annuel_median": 25000,
+      "salaire_net_annuel_q1": 21800,
+      "salaire_net_annuel_q3": 28500,
+      "salaire_net_mensuel_median": 2080,
+      "tranche_salaire_median_libelle": "24 000 à 25 999 euros",
+      "nb_rome_famille": 1
+    }
+  ],
+  "items": [
+    {
+      "rang": 1,
+      "maille": "nat",
+      "repli": false,
+      "fap_225_code": "B0Z21",
+      "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+      "nb_salaries_temps_complet": 41580,
+      "salaire_net_annuel_median": 21000,
+      "salaire_net_annuel_q1": 18200,
+      "salaire_net_annuel_q3": 24400,
+      "salaire_net_mensuel_median": 1750,
+      "secteur_naf38_code": "FZ",
+      "secteur_naf38_libelle": "Construction",
+      "tranche_salaire_median_libelle": "20 000 à 21 999 euros",
+      "tx_salaries_secteur": 95.3,
+      "nb_rome_famille": 8
+    },
+    {
+      "rang": 2,
+      "maille": "nat",
+      "repli": false,
+      "fap_225_code": "B0Z21",
+      "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+      "nb_salaries_temps_complet": 552,
+      "salaire_net_annuel_median": 19400,
+      "salaire_net_annuel_q1": 17700,
+      "salaire_net_annuel_q3": 21200,
+      "salaire_net_mensuel_median": 1620,
+      "secteur_naf38_code": "NZ",
+      "secteur_naf38_libelle": "Activités de services administratifs et de soutien",
+      "tranche_salaire_median_libelle": "18 000 à 19 999 euros",
+      "tx_salaries_secteur": 1.3,
+      "nb_rome_famille": 8
+    },
+    {
+      "rang": 1,
+      "maille": "nat",
+      "repli": false,
+      "fap_225_code": "B2Z44",
+      "fap_225_libelle": "Couvreurs",
+      "nb_salaries_temps_complet": 19176,
+      "salaire_net_annuel_median": 25000,
+      "salaire_net_annuel_q1": 21800,
+      "salaire_net_annuel_q3": 28600,
+      "salaire_net_mensuel_median": 2090,
+      "secteur_naf38_code": "FZ",
+      "secteur_naf38_libelle": "Construction",
+      "tranche_salaire_median_libelle": "24 000 à 25 999 euros",
+      "tx_salaries_secteur": 97.9,
+      "nb_rome_famille": 1
+    }
+  ],
+  "total": 3
+}

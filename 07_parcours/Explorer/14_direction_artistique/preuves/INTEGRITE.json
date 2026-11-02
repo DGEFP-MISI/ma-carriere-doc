@@ -1,0 +1,11 @@
+{
+  "resultat": "OK",
+  "references_API_UML_JSON_intactes": 155,
+  "US_intactes": 35,
+  "table_et_backlog_intacts": true,
+  "donnees_embarquees_identiques": true,
+  "handlers_et_fonctions_metier_identiques": true,
+  "adaptateurs_et_graphiques_officiels_identiques": true,
+  "SVG_valides": 3,
+  "nouvelle_requete_HTTP_metier": false
+}

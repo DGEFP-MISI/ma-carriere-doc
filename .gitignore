@@ -1,0 +1,17 @@
+# Dépendances installées et caches locaux
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+/debug.log
+
+# Configuration locale et identifiants : conserver les modèles éventuels
+/.env
+/.env.*
+!/.env.example
+/.aws/
+/.codex/
+
+# Les outils Node portables et le cache npm sont exclus aussi par le
+# .gitignore du dossier commun. Les vendor/*.tgz, archives et preuves restent suivis.

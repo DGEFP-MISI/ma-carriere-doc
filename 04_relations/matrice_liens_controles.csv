@@ -1,0 +1,25 @@
+﻿id;endpoint_source;champ_sortie;endpoint_cible;parametre_entree;nature;parametre_present_dans_docs;preuve_anterieure;limite
+R01;/metiers/{rome};rome_code;/metiers/{rome}/competences;{rome};APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;Comparaison avec depuis non testée
+R02;/metiers/{rome};rome_code;/certifications;rome;APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;Une certification peut avoir plusieurs codes ROME
+R03;/metiers/{rome};rome_code;/formacodes;rome;APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;La liste peut être filtrée
+R04;/metiers/{rome};rome_code;/prospective/regions;rome;APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;Deux FAP87 pour F1610 dans cet exemple : ne pas confondre avec métier unique
+R05;/metiers/{rome};rome_code;/recrutements;rome;APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;Plusieurs familles FAP possibles
+R06;/metiers/{rome};rome_code;/salaires;rome;APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;Donnée FAP, non salaire individuel du ROME
+R07;/metiers/{rome};rome_code;/mobilites;rome;APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;Age/sens modifient les résultats
+R08;/metiers/{rome};rome_code;/indicateurs;rome;APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;"Une mesure peut avoir valeurs vides ; grain dépend de la mesure"
+R09;/metiers/{rome};rome_code;/secteurs;rome;APPEL_AVEC_IDENTIFIANT;oui;Réponse reçue, résultat métier non vérifié;Faire préciser rôle du filtre rome et metier_maille
+R10;/certifications;certifinfo_code;/certifications/{certifinfo};{certifinfo};APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;Code Certif Info = identifiant de la fiche retournée
+R11;/certifications;certifinfo_code;/certifications/blocs;certifinfo;APPEL_AVEC_IDENTIFIANT;oui;Correspondance vérifiée, requête non tracée;On ne sait pas quel filtre exact a servi à exporter le JSON
+R12;/certifications;fiche_code;/certifications/blocs;fiche;APPEL_AVEC_IDENTIFIANT;oui;Correspondance vérifiée, requête non tracée;Un code RNCP peut correspondre à plusieurs Certif Info
+R13;/certifications;bloc_competences_codes[];/certifications/blocs;bloc_code dans réponse;CORRESPONDANCE_DANS_REPONSES;SANS_PARAMETRE_A_APPELER;Correspondance des sorties vérifiée;Pas de filtre bloc_code déclaré : requête par fiche ou certifinfo
+R14;/certifications;formacode_codes[];/formacodes;code;APPEL_AVEC_IDENTIFIANT;oui;Correspondance vérifiée, requête non tracée;Le filtre code est documenté mais non prouvé par les seules sorties
+R15;/metiers/{rome};formacode_codes[];/formacodes;code;APPEL_AVEC_IDENTIFIANT;oui;Correspondance vérifiée, requête non tracée;Ne pas confondre association métier et offre de formation
+R16;/territoires;zonage + territoire_code;/indicateurs;zonage + territoire;APPEL_PLUSIEURS_PARAMETRES;oui;Documentée, appel local non vérifié;Comparer maille_demandee / maille_reelle / repli
+R17;/territoires;zonage + territoire_code;/secteurs;zonage + territoire;APPEL_PLUSIEURS_PARAMETRES;oui;Correspondance de format observée;Items vides sur cet exemple
+R18;/certifications + /territoires;certifinfo_code + zonage + territoire_code;/sessions_a_venir;certifinfo + zonage + territoire;APPEL_PLUSIEURS_PARAMETRES;oui;A TESTER;Les réponses n’incluent pas certifinfo ni id_session: impossible de prouver la jointure dans la réponse
+R19;/certifications + /territoires;certifinfo_code + zonage + territoire_code;/sessions_en_cours;certifinfo + zonage + territoire;APPEL_PLUSIEURS_PARAMETRES;oui;A TESTER;Les réponses n’incluent pas certifinfo ni id_session
+R20;/indicateurs;items[].mesure;/mesures;items[].code (correspondance de sortie);CORRESPONDANCE_DANS_REPONSES;SANS_PARAMETRE_A_APPELER;Vérifiée sur exemple;/mesures ne prend pas de paramètre code, correspondance locale
+R21;/metiers/{rome};fap228_codes[];/indicateurs;items[].valeurs[].fap_228_code;CORRESPONDANCE_DANS_REPONSES;SANS_PARAMETRE_A_APPELER;Vérifiée sur exemple;"Lien par codes FAP 228 entre réponses. Pas de filtre fap_228_code dans /indicateurs ; la présence du même code ne garantit pas l unicité par ROME."
+R22;/prospective/metiers;items[].rome_codes[];/metiers/{rome};{rome};APPEL_AVEC_IDENTIFIANT;oui;Vérifiée sur exemple;"Association plurielle; non PK/FK"
+R23;/metiers/{rome}/competences;items[].competence_code;/metiers;competence;APPEL_AVEC_IDENTIFIANT;oui;Documentée, appel non vérifié;Comparer mode_competence=toutes/au_moins_une
+R24;/metiers/{rome};contexte_travail_codes[];/metiers;contexte ou sans_contexte;APPEL_AVEC_CHOIX_DE_FILTRE;oui;Documentée, appel non vérifié;Sémantique exclusion à confirmer par test

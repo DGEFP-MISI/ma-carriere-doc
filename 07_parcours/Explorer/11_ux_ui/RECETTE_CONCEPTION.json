@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02",
+  "kind": "Contrôles hors ligne de conception, pas HTTP ni audit RGAA",
+  "protectedFiles": 175,
+  "changedProtectedFiles": 0,
+  "changedPaths": [
+    null
+  ],
+  "featureIds": 31,
+  "featureCoverageErrors": 0,
+  "catalogMeasures": 29,
+  "catalogFieldOccurrences": 241.0,
+  "matrixErrors": [],
+  "svgFiles": 24,
+  "svgXmlErrors": [],
+  "svgInternalLinksChecked": 150,
+  "svgMissingLinks": [],
+  "svgRasterNodes": 0,
+  "localStructuredScreens": 21,
+  "figmaMobileFrames": 0,
+  "prototypeReactionsApplied": false,
+  "remainingFigmaBlocker": "Collab MCP seat call quota",
+  "browserAccessibilityTestsPerformed": false,
+  "newHttpTestsPerformed": false
+}

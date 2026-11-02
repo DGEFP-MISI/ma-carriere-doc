@@ -1,0 +1,22 @@
+﻿methode;endpoint;groupe;operation_id;parametres_obligatoires_openapi;parametres_facultatifs_openapi;schema_reponse_200_present;description
+GET;/certifications;Certifications;get_api_certifications_list;;q,rome,repertoire,formacode,acces,validation_partielle,fields,page;oui;Lister les certifications actives (RNCP / RS)
+GET;/certifications/blocs;Certifications;get_api_certifications_blocs_list;;q,certifinfo,fiche,rome,fields,page;oui;Lister les blocs de compétences des certifications RNCP
+GET;/certifications/{certifinfo};Certifications;get_api_certifications_get;certifinfo;fields;oui;Fiche d'une certification par code Certif Info
+GET;/competences;Métiers;get_api_competences_list;;q,categorie,rome,domaine,enjeu,macro_competence,code,fields,page;oui;Rechercher une compétence ou un contexte de travail
+GET;/formacodes;Certifications;get_api_formacodes_list;;q,rome,domaine,code,fields,page;oui;Rechercher un thème de formation (Formacode)
+GET;/indicateurs;Indicateurs;get_api_indicateurs_get;;rome,zonage,territoire,fields,onisep;non;Indicateurs d'un métier sur un territoire
+GET;/mesures;Indicateurs;get_api_mesures_list;;fields;non;Catalogue des mesures
+GET;/metiers;Métiers;get_api_metiers_list;;grand_domaine,domaine,competence,contexte,sans_contexte,mode_competence,q,fields,page;oui;Rechercher un métier (ROME V3)
+GET;/metiers/{rome};Métiers;get_api_metiers_get;rome;fields;oui;Fiche d'un métier ROME V3
+GET;/metiers/{rome}/competences;Métiers;get_api_metiers_competences;rome;categorie,coeur_metier,depuis,fields,page;oui;Compétences et contextes de travail d'un métier
+GET;/domaines;Métiers;get_api_domaines_list;;grand_domaine;non;Domaines professionnels ROME V3
+GET;/mobilites;Indicateurs;get_api_mobilites_list;;rome,sens,region,age,fields;non;D'où viennent et où vont les personnes qui exercent un métier
+GET;/prospective/metiers;Indicateurs;get_api_prospective_metiers_list;;region,tri,fields;non;Classer les métiers selon leurs perspectives à 2030
+GET;/prospective/regions;Indicateurs;get_api_prospective_regions_list;;rome,tri,fields;non;Classer les régions selon la place et les perspectives à 2030 d'un métier
+GET;/recrutements;Indicateurs;get_api_recrutements_list;;rome,zonage,region,departement,tri,fields;non;Classer les territoires selon les projets de recrutement d'un métier
+GET;/salaires;Indicateurs;get_api_salaires_list;;rome,zonage,region,fields;non;Classer les territoires selon le salaire d'un métier
+GET;/salaires/secteurs;Indicateurs;get_api_salaires_secteurs_list;;rome,region,fields;non;Comparer les salaires d'un métier selon le secteur d'activité
+GET;/secteurs;Indicateurs;get_api_secteurs_list;;zonage,territoire,naf,rome,fields;non;Dynamique des secteurs d'activité d'un territoire, et secteurs qui emploient un métier
+GET;/sessions_a_venir;Sessions à venir;get_api_ressources_get_sessions;zonage,territoire,certifinfo;onisep,page,fields;oui;
+GET;/sessions_en_cours;Sessions en cours;get_api_ressources_get_sessions_current;zonage,territoire,certifinfo;onisep,page,fields;oui;
+GET;/territoires;Territoires;get_api_territoires_list;;q,zonage,region,departement,clpe,code,fields,page;oui;Rechercher un territoire (région, département, CLPE, commune)

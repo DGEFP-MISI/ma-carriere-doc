@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="2021" viewBox="0 0 390 2021" role="img" aria-labelledby="title desc"><title id="title">Explorer votre avenir professionnel</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="2021" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Explorer votre</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">avenir</text>
+<text x="24" y="372" font-size="30" font-weight="700" fill="#161616">professionnel</text>
+<text x="24" y="415" font-size="16" font-weight="400" fill="#666">Partez d'un métier, d'une</text>
+<text x="24" y="439" font-size="16" font-weight="400" fill="#666">certification ou d'un domaine.</text>
+<text x="24" y="463" font-size="16" font-weight="400" fill="#666">Gardez vos pistes et examinez ce qui</text>
+<text x="24" y="487" font-size="16" font-weight="400" fill="#666">compte pour vous.</text>
+<text x="24" y="559" font-size="24" font-weight="700" fill="#161616">Que connaissez-vous déjà</text>
+<text x="24" y="595" font-size="24" font-weight="700" fill="#161616">?</text>
+<text x="24" y="639" font-size="12" font-weight="700" fill="#666">Vues disponibles</text>
+<rect x="24" y="653" width="4" height="32" fill="#000091" stroke="none"/>
+<text x="40" y="669" font-size="16" font-weight="700" fill="#000091">● Métier</text>
+<rect x="24" y="689" width="4" height="32" fill="#ddd" stroke="none"/>
+<text x="40" y="705" font-size="16" font-weight="400" fill="#000091">○ Diplôme ou certification</text>
+<rect x="24" y="725" width="4" height="32" fill="#ddd" stroke="none"/>
+<text x="40" y="741" font-size="16" font-weight="400" fill="#000091">○ Domaine professionnel</text>
+<text x="24" y="793" font-size="16" font-weight="700" fill="#161616">Un métier ou une appellation</text>
+<text x="24" y="815" font-size="14" font-weight="400" fill="#666">Saisissez au moins deux caractères puis</text>
+<text x="24" y="836" font-size="14" font-weight="400" fill="#666">choisissez un résultat identifié.</text>
+<rect x="24" y="851" width="342" height="48" fill="#eee" stroke="none"/>
+<text x="36" y="879" font-size="16" font-weight="400" fill="#161616">Couvreur</text>
+<path d="M24 899H366" stroke="#161616" stroke-width="2"/>
+<rect x="24" y="923" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="resultats.svg" aria-label="Rechercher">
+<text x="40" y="951" font-size="16" font-weight="700" fill="#fff">Rechercher</text>
+</a>
+<rect x="24" y="983" width="342" height="168" fill="#ececfe" stroke="none"/>
+<text x="44" y="1019" font-size="16" font-weight="700" fill="#161616">Vous explorez à votre rythme</text>
+<text x="44" y="1051" font-size="16" font-weight="400" fill="#161616">Consultez les contenus d'un</text>
+<text x="44" y="1075" font-size="16" font-weight="400" fill="#161616">métier, les données du marché</text>
+<text x="44" y="1099" font-size="16" font-weight="400" fill="#161616">et les formations. Aucune note</text>
+<text x="44" y="1123" font-size="16" font-weight="400" fill="#161616">ne décide à votre place.</text>
+<text x="24" y="1215" font-size="24" font-weight="700" fill="#161616">Vous connaissez surtout</text>
+<text x="24" y="1251" font-size="24" font-weight="700" fill="#161616">vos compétences ?</text>
+<text x="24" y="1287" font-size="16" font-weight="400" fill="#666">Après un premier métier, partez de</text>
+<text x="24" y="1311" font-size="16" font-weight="400" fill="#666">compétences et de conditions de</text>
+<text x="24" y="1335" font-size="16" font-weight="400" fill="#666">travail référencées.</text>
+<rect x="24" y="1363" width="342" height="72" fill="#fff" stroke="#000091"/>
+<a href="guide.svg" aria-label="Explorer par compétences et contextes">
+<text x="40" y="1391" font-size="16" font-weight="700" fill="#000091">Explorer par compétences et</text>
+<text x="40" y="1415" font-size="16" font-weight="700" fill="#000091">contextes</text>
+</a>
+<text x="24" y="1487" font-size="24" font-weight="700" fill="#161616">Conserver et comparer</text>
+<text x="24" y="1523" font-size="16" font-weight="400" fill="#666">Mes pistes reste temporaire, sans</text>
+<text x="24" y="1547" font-size="16" font-weight="400" fill="#666">compte. Le comparateur met deux</text>
+<text x="24" y="1571" font-size="16" font-weight="400" fill="#666">métiers côte à côte avec les sources</text>
+<text x="24" y="1595" font-size="16" font-weight="400" fill="#666">et les limites de chaque donnée.</text>
+<rect x="24" y="1623" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Voir Mes pistes">
+<text x="40" y="1651" font-size="16" font-weight="700" fill="#000091">Voir Mes pistes</text>
+</a>
+<rect x="24" y="1683" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Ouvrir le comparateur">
+<text x="40" y="1711" font-size="16" font-weight="700" fill="#000091">Ouvrir le comparateur</text>
+</a>
+<text x="24" y="1757" font-size="14" font-weight="400" fill="#666">Sources : France Travail, Certif Info et</text>
+<text x="24" y="1778" font-size="14" font-weight="400" fill="#666">RCO. Chaque donnée est présentée avec son</text>
+<text x="24" y="1799" font-size="14" font-weight="400" fill="#666">périmètre et sa période.</text>
+<rect x="24" y="1830" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="1858" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="1928" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="1947" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="1965" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="1983" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

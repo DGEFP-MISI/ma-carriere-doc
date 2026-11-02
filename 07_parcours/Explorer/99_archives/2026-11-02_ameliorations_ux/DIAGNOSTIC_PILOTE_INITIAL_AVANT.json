@@ -1,0 +1,755 @@
+{
+  "date": "2026-11-02",
+  "phase": "avant",
+  "page": "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\AVANT.html",
+  "outil": "Edge headless via Chrome DevTools Protocol ; WebSocket Node natif",
+  "methode": "Souris et clavier CDP ; options des sélecteurs via événements DOM, comme selectOption ; fautes/latence injectées uniquement dans le fournisseur local.",
+  "httpMetier": false,
+  "suites": [
+    {
+      "width": 1280,
+      "height": 1000,
+      "scenarios": [
+        {
+          "id": "001",
+          "label": "Sans métier cible : savoir-faire, sélection et résultats",
+          "checks": [
+            {
+              "name": "Accès au guide sans métier cible",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Deux critères explicitement choisis et annoncés",
+              "status": "ÉCHEC"
+            },
+            {
+              "name": "Résultats ou absence expliquée",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "002",
+          "label": "Couvreur : comparer avec l’étanchéité et revenir",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : résultats de recherche"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "003",
+          "label": "Descriptions et conditions du couvreur",
+          "checks": [
+            {
+              "name": "Conditions identifiables, données et limites distinctes",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Données source du métier conservées",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "004",
+          "label": "Métiers proches, fiche liée et historique",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Contrôle invisible : main a[href=\"#alternatives\"]"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "005",
+          "label": "Salaire, source et piste retrouvée",
+          "checks": [
+            {
+              "name": "Unité, lieu, année et source visibles",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Piste sauvegardée et lien fiche",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "006",
+          "label": "Recrutements présents et projections futures",
+          "checks": [
+            {
+              "name": "Recrutements actuels contextualisés",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Perspectives distinctes et non garanties",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "007",
+          "label": "Changer Métier vers Domaine sans résultat périmé",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : résultats de recherche"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "008",
+          "label": "Territoire explicite et absence de transposition",
+          "checks": [
+            {
+              "name": "Lieu choisi conservé et chiffres absents expliqués",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retour possible aux informations publiées",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "009",
+          "label": "Savoir-faire communs sans maîtrise individuelle inventée",
+          "checks": [
+            {
+              "name": "Comparaison stable et information absente explicite",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Aucun simulateur de maîtrise",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "010",
+          "label": "Mobilités observées et trois filtres",
+          "checks": [
+            {
+              "name": "Sens, âge et famille réellement appliqués",
+              "status": "ÉCHEC"
+            },
+            {
+              "name": "Population, période et provenance maintenues",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Focus conservé après filtre",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "TRANS-VIDE",
+          "label": "Recherche vide, chargement et erreur locale contrôlée",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : résultats de recherche"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "TRANS-PISTES",
+          "label": "Limite de trois, rechargement et retrait",
+          "checks": [
+            {
+              "name": "Quatrième piste refusée et limite annoncée",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Trois pistes réellement reprises au rechargement",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retrait opérationnel",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retrait conservé après un second rechargement",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Format de passage existant, sans fausse navigation projet",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "TRANS-NULL",
+          "label": "Valeur null réellement observée",
+          "checks": [
+            {
+              "name": "Null conservé et non transformé en zéro",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "TRANS-CLAVIER",
+          "label": "Actions essentielles au clavier réel CDP",
+          "checks": [
+            {
+              "name": "Lien d’évitement activé au clavier",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Changement de mode par flèche et focus sur le champ",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : condition"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "TRANS-RESPONSIVE",
+          "label": "Reflow, actions, labels et mouvement réduit",
+          "checks": [
+            {
+              "name": "Pas de débordement de page : recherche",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : recherche",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de débordement de page : essentiel",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : essentiel",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de débordement de page : guide",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : guide",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de débordement de page : comparateur",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : comparateur",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de débordement de page : mobilites",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : mobilites",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de faux lien #",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Contrôles du formulaire étiquetés",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Taille des boutons du guide mesurée",
+              "status": "RÉUSSI",
+              "detail": [
+                {
+                  "nom": "×",
+                  "largeur": 32,
+                  "hauteur": 40.390625
+                },
+                {
+                  "nom": "×",
+                  "largeur": 32,
+                  "hauteur": 40.390625
+                },
+                {
+                  "nom": "Découvrir les métiers associés",
+                  "largeur": 268.0625,
+                  "hauteur": 44
+                }
+              ]
+            },
+            {
+              "name": "Mouvement réduit et contenu toujours visible",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Styles de mouvement réduit enregistrés",
+              "status": "RÉUSSI",
+              "detail": {
+                "transition": "0s",
+                "animation": "0s",
+                "transform": "none"
+              }
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "TRANS-DONNEES",
+          "label": "Fidélité des réponses et absence de requête API",
+          "checks": [
+            {
+              "name": "Données JSON embarquées inchangées pendant la session",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de ressource métier distante",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "TRANS-ZOOM",
+          "label": "Grossissement visuel CDP et reflow équivalent",
+          "checks": [
+            {
+              "name": "Grossissement visuel 200 % appliqué",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Grossissement visuel 400 % appliqué",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Reflow à 640 px sans débordement",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Reflow à 320 px sans débordement",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Alternative sans JavaScript présente",
+          "status": "RÉUSSI"
+        }
+      ],
+      "captures": [
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-1280-recherche.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-1280-essentiel.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-1280-guide.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-1280-comparateur.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-1280-mobilites.png"
+      ],
+      "nonTestes": [
+        {
+          "name": "Zoom navigateur réel par raccourcis Ctrl + / Ctrl − à 200 et 400 %",
+          "status": "NON TESTÉ",
+          "raison": "CDP applique un grossissement visuel et des largeurs de reflow ; cela ne reproduit pas le zoom de l’interface du navigateur."
+        },
+        {
+          "name": "Audit RGAA complet et lecteurs d’écran",
+          "status": "NON TESTÉ",
+          "raison": "La recette couvre les comportements essentiels dans Edge, pas une certification ni des utilisateurs réels."
+        }
+      ],
+      "passed": 44,
+      "failed": 7
+    },
+    {
+      "width": 375,
+      "height": 1000,
+      "scenarios": [
+        {
+          "id": "001",
+          "label": "Sans métier cible : savoir-faire, sélection et résultats",
+          "checks": [
+            {
+              "name": "Accès au guide sans métier cible",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Deux critères explicitement choisis et annoncés",
+              "status": "ÉCHEC"
+            },
+            {
+              "name": "Résultats ou absence expliquée",
+              "status": "ÉCHEC"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "002",
+          "label": "Couvreur : comparer avec l’étanchéité et revenir",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : résultats de recherche"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "003",
+          "label": "Descriptions et conditions du couvreur",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Contrôle invisible : a[href=\"#competences\"]"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "004",
+          "label": "Métiers proches, fiche liée et historique",
+          "checks": [
+            {
+              "name": "Fiche liée réellement ouverte",
+              "status": "ÉCHEC"
+            },
+            {
+              "name": "Arrière conserve les alternatives",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : condition"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "005",
+          "label": "Salaire, source et piste retrouvée",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Contrôle invisible : a[href=\"#salaires\"]"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "006",
+          "label": "Recrutements présents et projections futures",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Contrôle invisible : a[href=\"#recrutements\"]"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "007",
+          "label": "Changer Métier vers Domaine sans résultat périmé",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : résultats de recherche"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "008",
+          "label": "Territoire explicite et absence de transposition",
+          "checks": [
+            {
+              "name": "Lieu choisi conservé et chiffres absents expliqués",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retour possible aux informations publiées",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "009",
+          "label": "Savoir-faire communs sans maîtrise individuelle inventée",
+          "checks": [
+            {
+              "name": "Comparaison stable et information absente explicite",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Aucun simulateur de maîtrise",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "010",
+          "label": "Mobilités observées et trois filtres",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Contrôle invisible : a[href=\"#mobilites\"]"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "TRANS-VIDE",
+          "label": "Recherche vide, chargement et erreur locale contrôlée",
+          "checks": [
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : résultats de recherche"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "TRANS-PISTES",
+          "label": "Limite de trois, rechargement et retrait",
+          "checks": [
+            {
+              "name": "Quatrième piste refusée et limite annoncée",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Trois pistes réellement reprises au rechargement",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retrait opérationnel",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Retrait conservé après un second rechargement",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Format de passage existant, sans fausse navigation projet",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "TRANS-NULL",
+          "label": "Valeur null réellement observée",
+          "checks": [
+            {
+              "name": "Null conservé et non transformé en zéro",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "TRANS-CLAVIER",
+          "label": "Actions essentielles au clavier réel CDP",
+          "checks": [
+            {
+              "name": "Lien d’évitement activé au clavier",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Changement de mode par flèche et focus sur le champ",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Exécution de la mission",
+              "status": "ÉCHEC",
+              "detail": "Délai : condition"
+            }
+          ],
+          "status": "ÉCHEC"
+        },
+        {
+          "id": "TRANS-RESPONSIVE",
+          "label": "Reflow, actions, labels et mouvement réduit",
+          "checks": [
+            {
+              "name": "Pas de débordement de page : recherche",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : recherche",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de débordement de page : essentiel",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : essentiel",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de débordement de page : guide",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : guide",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de débordement de page : comparateur",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : comparateur",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de débordement de page : mobilites",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Un titre de page : mobilites",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de faux lien #",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Contrôles du formulaire étiquetés",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Taille des boutons du guide mesurée",
+              "status": "RÉUSSI",
+              "detail": [
+                {
+                  "nom": "×",
+                  "largeur": 32,
+                  "hauteur": 40.390625
+                },
+                {
+                  "nom": "×",
+                  "largeur": 32,
+                  "hauteur": 40.390625
+                },
+                {
+                  "nom": "Découvrir les métiers associés",
+                  "largeur": 268.0625,
+                  "hauteur": 44
+                }
+              ]
+            },
+            {
+              "name": "Mouvement réduit et contenu toujours visible",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Styles de mouvement réduit enregistrés",
+              "status": "RÉUSSI",
+              "detail": {
+                "transition": "0s",
+                "animation": "0s",
+                "transform": "none"
+              }
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "TRANS-DONNEES",
+          "label": "Fidélité des réponses et absence de requête API",
+          "checks": [
+            {
+              "name": "Données JSON embarquées inchangées pendant la session",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Pas de ressource métier distante",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        },
+        {
+          "id": "TRANS-ZOOM",
+          "label": "Grossissement visuel CDP et reflow équivalent",
+          "checks": [
+            {
+              "name": "Grossissement visuel 200 % appliqué",
+              "status": "RÉUSSI"
+            },
+            {
+              "name": "Grossissement visuel 400 % appliqué",
+              "status": "RÉUSSI"
+            }
+          ],
+          "status": "RÉUSSI"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Alternative sans JavaScript présente",
+          "status": "RÉUSSI"
+        }
+      ],
+      "captures": [
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-375-recherche.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-375-essentiel.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-375-guide.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-375-comparateur.png",
+        "C:\\Users\\Laetitia.Kouadria\\Downloads\\API_DGEFP_RCO_REFERENCE_V3\\07_parcours\\Explorer\\99_archives\\2026-11-02_ameliorations_ux\\captures\\ux-avant-375-mobilites.png"
+      ],
+      "nonTestes": [
+        {
+          "name": "Zoom navigateur réel par raccourcis Ctrl + / Ctrl − à 200 et 400 %",
+          "status": "NON TESTÉ",
+          "raison": "CDP applique un grossissement visuel et des largeurs de reflow ; cela ne reproduit pas le zoom de l’interface du navigateur."
+        },
+        {
+          "name": "Audit RGAA complet et lecteurs d’écran",
+          "status": "NON TESTÉ",
+          "raison": "La recette couvre les comportements essentiels dans Edge, pas une certification ni des utilisateurs réels."
+        }
+      ],
+      "passed": 34,
+      "failed": 12
+    }
+  ],
+  "runtimeErrors": [],
+  "passed": 78,
+  "failed": 19
+}

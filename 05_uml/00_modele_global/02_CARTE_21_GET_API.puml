@@ -1,0 +1,73 @@
+@startuml
+!pragma layout smetana
+left to right direction
+skinparam componentStyle rectangle
+skinparam linetype ortho
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam packageStyle rectangle
+title DGEFP / RCO — Les 21 endpoints GET accessibles
+caption Flèches = passage de paramètres d'API ; jamais des jointures SQL ni des accès directs à une base.
+package "ROME V3 / Compétences" #EAF2FC {
+  component "GET /domaines" as d
+  component "GET /metiers" as m
+  component "GET /metiers/{rome}" as f
+  component "GET /metiers/{rome}/competences" as c
+  component "GET /competences" as k
+}
+package "Certifications / Formacodes" #F6F0FC {
+  component "GET /certifications" as cr
+  component "GET /certifications/{certifinfo}" as cf
+  component "GET /certifications/blocs" as bl
+  component "GET /formacodes" as fc
+}
+package "Territoires / Formation" #EAF8F2 {
+  component "GET /territoires" as t
+  component "GET /sessions_a_venir" as av
+  component "GET /sessions_en_cours" as ec
+}
+package "Observations emploi-formation" #FFF5E7 {
+  component "GET /mesures" as meas
+  component "GET /indicateurs" as indic
+  component "GET /secteurs" as sec
+  component "GET /salaires" as sal
+  component "GET /salaires/secteurs" as sal_s
+  component "GET /recrutements" as rec
+  component "GET /mobilites" as mob
+  component "GET /prospective/metiers" as pro_m
+  component "GET /prospective/regions" as pro_r
+}
+d ..> m : domaine
+m ..> f : rome_code
+f ..> c : rome_code
+k ..> m : competence_code
+f ..> m : contexte / sans_contexte
+f ..> cr : rome
+cr ..> cf : certifinfo_code
+cr ..> bl : certifinfo / fiche
+f ..> fc : rome
+cr ..> fc : formacode
+cf ..> av : certifinfo
+cf ..> ec : certifinfo
+t ..> indic : zonage / territoire
+t ..> sec : zonage / territoire
+t ..> av : zonage / territoire
+t ..> ec : zonage / territoire
+f ..> indic : rome
+f ..> sal : rome
+f ..> sal_s : rome
+f ..> rec : rome
+f ..> mob : rome
+f ..> pro_r : rome
+f ..> sec : rome [R17 OUVERT]
+meas ..> indic : définition de mesure
+note right of sec
+  R17 : secteur avec métier
+  doit être confirmé par RCO.
+end note
+legend bottom
+  21 routes GET exactement (Swagger /docs.json fourni).
+  Les paramètres sont des entrées de requête, pas des identifiants de jointure SQL.
+  Pas de route ROME V4 ni de connexion directe à l'entrepôt.
+endlegend
+@enduml

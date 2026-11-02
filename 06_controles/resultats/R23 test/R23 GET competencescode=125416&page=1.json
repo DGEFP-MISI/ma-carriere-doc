@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "categorie_competence_code": "savoir_faire",
+      "categorie_competence_libelle": "Savoir-faire",
+      "competence_code": "125416",
+      "competence_libelle": "Réaliser un raccordement d'étanchéité",
+      "domaine_competence_code": "3",
+      "domaine_competence_libelle": "Production, Construction, Qualité, Logistique",
+      "enjeu_competence_code": "3D",
+      "enjeu_competence_libelle": "Construction",
+      "macro_competence_code": "300220",
+      "macro_competence_libelle": "Raccorder, gérer un réseau technique",
+      "nb_metiers": 2,
+      "rome_codes": [
+        "F1610",
+        "F1705"
+      ],
+      "rome_coeur_metier_codes": [
+        "F1610"
+      ],
+      "rome_libelles": [
+        "Pose et restauration de couvertures",
+        "Pose de canalisations"
+      ],
+      "source_libelle": "France Travail - ROME 4.0 (compétences et contextes de travail, codes OGR) rattaché au ROME V3"
+    }
+  ],
+  "total": 1,
+  "page_size": 100,
+  "page": 1,
+  "last_page": 1
+}

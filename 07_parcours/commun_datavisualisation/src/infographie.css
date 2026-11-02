@@ -1,0 +1,59 @@
+/* Composition MaCarrière : les contrôles DSFR gardent leurs couleurs et états. */
+.ma-explorer{--blue:var(--text-action-high-blue-france,#000091);--ink:var(--text-default-grey,#161616);--muted:var(--text-mention-grey,#666);--line:var(--border-default-grey,#ddd);--wash:var(--background-alt-grey,#f6f6f6);--soft:var(--background-action-low-blue-france,#ececfe);color:var(--ink);background:var(--background-default-grey,#fff)}
+.ma-explorer .header,.ma-explorer .search-container{background:var(--background-default-grey,#fff)}
+.ma-explorer .header{border-bottom:1px solid var(--line)}
+.ma-explorer .brandbar{padding-top:1.5rem;padding-bottom:1.5rem}.ma-explorer .brand{background-image:none}.ma-explorer .brand-sub{max-width:34ch}
+.ma-explorer .search-container{border-bottom:1px solid var(--line)}.ma-explorer .search-modes .choice{background:var(--background-default-grey,#fff)}.ma-explorer .search-modes .choice:has(input:checked){background:var(--soft)}
+.ma-explorer .container{max-width:1480px}.ma-explorer .layout{gap:2.5rem;grid-template-columns:224px minmax(0,1fr)}.ma-explorer .layout.wide{grid-template-columns:minmax(0,1fr);max-width:1160px}
+.ma-explorer #main h1{font-size:clamp(2rem,3.1vw,3rem);line-height:1.16;letter-spacing:-.025em;max-width:28ch}.ma-explorer .lead{color:var(--text-default-grey,#3a3a3a);max-width:72ch;font-size:1.125rem;line-height:1.65}
+.ma-explorer .hero-bottom{border:0;padding-bottom:0;margin-bottom:2rem}.ma-explorer .territory-strip{background:var(--background-alt-grey,#f6f6f6);border:1px solid var(--border-default-grey,#ddd);padding:.875rem 1rem;margin:1.5rem 0 0}
+.ma-explorer .eyebrow{font-size:.75rem;letter-spacing:.065em;color:var(--text-mention-grey,#666)}
+.ma-icon{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;vertical-align:middle}.ma-icon::before{--icon-size:1.5rem}
+.ma-explorer .decision-grid{gap:1.25rem;margin:2rem 0 2.5rem;align-items:stretch}
+.ma-explorer .ma-question{padding:1.5rem;min-height:0;gap:0;box-shadow:none;background:var(--background-default-grey,#fff);color:var(--ink);border:1px solid var(--line);background-image:none;transition:border-color .12s ease}
+.ma-explorer .ma-question::after{content:none}.ma-explorer .ma-question:hover{background:var(--background-alt-grey-hover,#ededed);border-color:var(--border-action-high-blue-france,#000091);box-shadow:none}.ma-explorer .ma-question:focus-visible{outline:3px solid #0a76f6;outline-offset:4px}
+.ma-explorer .ma-question-icon{display:flex;align-items:center;justify-content:center;width:3rem;height:3rem;background:var(--background-alt-green-emeraude,#e3fdeb);color:var(--text-label-green-emeraude,#297254);margin-bottom:1.25rem}
+.ma-explorer .ma-question-icon .ma-icon{color:var(--text-label-green-emeraude,#297254)}
+.ma-explorer .ma-question[data-question="opportunites"] .ma-question-icon .ma-icon{color:var(--text-label-yellow-moutarde,#695240)}
+.ma-explorer .ma-question[data-question="gagner"] .ma-question-icon .ma-icon{color:var(--text-label-purple-glycine,#6e445a)}
+.ma-explorer .ma-question[data-question="pistes"] .ma-question-icon .ma-icon{color:var(--text-default-grey,#161616)}
+.ma-icon::before{background-color:currentColor}
+.ma-explorer .ma-question[data-question="opportunites"] .ma-question-icon{background:var(--background-alt-yellow-moutarde,#fef5e8);color:var(--text-label-yellow-moutarde,#695240)}
+.ma-explorer .ma-question[data-question="gagner"] .ma-question-icon{background:var(--background-alt-purple-glycine,#fef3fd);color:var(--text-label-purple-glycine,#6e445a)}
+.ma-explorer .ma-question[data-question="pistes"] .ma-question-icon{background:var(--background-alt-grey,#f6f6f6);color:var(--text-default-grey,#161616)}
+.ma-explorer .ma-question .ma-question-title{font-size:1.375rem;line-height:1.35;color:var(--text-default-grey,#161616);margin-bottom:.5rem;letter-spacing:-.01em}
+.ma-explorer .ma-question .ma-question-description{font-size:.9375rem;line-height:1.55;color:var(--text-mention-grey,#666)}
+.ma-explorer .ma-question-preview{margin:1.5rem 0;flex:1;min-width:0}.ma-explorer .ma-question-preview>*:last-child{margin-bottom:0}
+.ma-explorer .ma-question .ma-question-action{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.875rem;font-weight:700;color:var(--text-action-high-blue-france,#000091)}
+.ma-explorer .ma-repere{display:flex;flex-direction:column;gap:.25rem;margin-bottom:1rem;min-width:0}.ma-explorer .ma-repere+.ma-repere{padding-top:.875rem;border-top:1px solid var(--line)}
+.ma-explorer .ma-question .ma-value{font-size:2.25rem;line-height:1.12;letter-spacing:-.035em;font-weight:700;color:var(--text-default-grey,#161616);overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.ma-explorer .ma-question[data-question="gagner"] .ma-value{font-size:clamp(2.5rem,3.7vw,3.5rem)}
+.ma-explorer .ma-question .ma-value:not(.ma-value--nombre){font-size:1.125rem;line-height:1.5;letter-spacing:normal}
+.ma-explorer .ma-question .ma-unit{font-size:1rem;margin-left:.4rem;letter-spacing:normal;color:var(--text-default-grey,#161616)}
+.ma-explorer .ma-question .ma-repere-label{font-size:.9375rem;line-height:1.45;color:var(--text-default-grey,#161616)}
+.ma-explorer .ma-question .ma-repere-context,.ma-explorer .ma-question .ma-provenance{font-size:.875rem;line-height:1.55;color:var(--text-mention-grey,#666);display:block}
+.ma-explorer .ma-question .ma-provenance{padding-top:.5rem}.ma-explorer .ma-question .ma-family-note{font-size:.875rem;line-height:1.55;display:block;color:var(--text-default-grey,#161616);margin-top:.75rem}
+.ma-context-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.625rem}.ma-context-list li{margin:0;padding:.5rem .75rem;background:var(--background-alt-grey,#f6f6f6);font-size:1rem;line-height:1.5;color:var(--text-default-grey,#161616)}
+.ma-explorer .ma-nearby-name{font-size:1.125rem;line-height:1.5;font-weight:700;color:var(--text-default-grey,#161616);display:block;margin:.5rem 0}
+.ma-explorer .ma-passages{padding:1.5rem 0;border-top:1px solid var(--line);margin-top:2rem}.ma-explorer .ma-passages h2{margin-top:0!important}.ma-explorer .ma-passages .actions{margin-bottom:0}
+.ma-explorer .info{background:var(--background-alt-grey,#f6f6f6);border-color:var(--border-default-grey,#ddd);padding:1.25rem 1.5rem}.ma-explorer .info.warning{background:var(--background-contrast-warning,#fff4f3);border-color:var(--border-plain-warning,#b34000)}
+.ma-explorer .metric{background:var(--background-alt-grey,#f6f6f6);border:0;box-shadow:none}.ma-explorer .metric::before{content:none}.ma-explorer .metric .value{font-size:clamp(2rem,3.3vw,3rem);line-height:1.2;font-variant-numeric:tabular-nums}.ma-explorer .metric h3{font-weight:700}
+.ma-explorer .result-card{box-shadow:none;border:1px solid var(--line);background:var(--background-default-grey,#fff);padding:1.5rem}.ma-explorer .result-card:hover{box-shadow:none;background:var(--background-alt-grey,#f6f6f6)}
+.ma-result-icon{display:flex;color:var(--text-mention-grey,#666);margin-bottom:1rem}.ma-explorer .result-card h2{font-size:1.5rem;line-height:1.4;margin-top:0!important;max-width:45ch}
+.ma-explorer .compare-identity{background:var(--background-alt-grey,#f6f6f6);border:1px solid var(--border-default-grey,#ddd);padding:1.5rem}.ma-explorer .compare-identity strong{font-size:1.125rem;line-height:1.5}.ma-explorer .compare-select{gap:1.5rem}
+.ma-explorer .ma-dataviz{padding:1.5rem;margin:1.5rem 0;border:1px solid var(--line);background:var(--background-default-grey,#fff)}.ma-explorer .ma-dataviz>h3{font-size:1.25rem;line-height:1.5}.ma-explorer .ma-dataviz>p{max-width:75ch;font-size:.9375rem;line-height:1.6}
+.ma-explorer .ma-dataviz summary{min-height:44px;padding:.75rem 2rem .75rem 0}.ma-explorer .ma-dataviz details+details{margin-top:.75rem}
+.ma-explorer details,.ma-explorer .table-wrap{border-color:var(--line)}.ma-explorer .section-tabs button,.ma-explorer .section-tabs a,.ma-explorer .btn{background-color:var(--background-default-grey,#fff)}.ma-explorer .btn.primary{background-color:var(--background-action-high-blue-france,#000091);color:var(--text-inverted-blue-france,#fff)}
+.ma-explorer .btn.primary:hover{background-color:var(--background-action-high-blue-france-hover,#1212b2)}.ma-explorer .btn:disabled{background:var(--background-disabled-grey,#eee);color:var(--text-disabled-grey,#929292)}
+.ma-explorer .section-tabs button[aria-pressed="true"],.ma-explorer .side a[aria-current="page"]{background:var(--background-action-low-blue-france,#ececfe)}
+.ma-explorer .side a[aria-current="page"],.ma-explorer .four-questions a[aria-current="page"]{color:var(--text-action-high-blue-france,#000091)}
+.ma-explorer .tag{background:var(--background-alt-grey,#f6f6f6);color:var(--text-default-grey,#161616)}.ma-explorer .tag.green{background:var(--background-contrast-green-emeraude,#c3fad5);color:var(--text-label-green-emeraude,#297254)}
+.ma-explorer .mobility-context{background:var(--background-alt-grey,#f6f6f6);border-color:var(--border-default-grey,#ddd)}
+.ma-explorer thead th,.ma-explorer tbody tr:nth-child(even){background:var(--background-alt-grey,#f6f6f6)}.ma-explorer th,.ma-explorer td{border-color:var(--border-default-grey,#ddd)}.ma-explorer .caption,.ma-explorer .field-help{font-size:.875rem;color:var(--text-mention-grey,#666)}
+.ma-explorer input[type="search"],.ma-explorer input[type="text"],.ma-explorer select{background:var(--background-contrast-grey,#eee);color:var(--text-default-grey,#161616)}
+.ma-explorer dialog{background:var(--background-default-grey,#fff);color:var(--text-default-grey,#161616)}.ma-explorer .empty{background:var(--background-alt-grey,#f6f6f6)}
+.ma-explorer .footer{border-top:1px solid var(--border-default-grey,#ddd)}
+@media(max-width:1000px){.ma-explorer .layout{grid-template-columns:190px minmax(0,1fr);gap:1.5rem}.ma-explorer .ma-question{padding:1.25rem}.ma-explorer .ma-question .ma-question-title{font-size:1.25rem}}
+@media(max-width:760px){.ma-explorer .container{padding-left:1.25rem;padding-right:1.25rem}.ma-explorer .layout{display:block}.ma-explorer .decision-grid{grid-template-columns:1fr;gap:1rem}.ma-explorer .ma-question{padding:1.25rem}.ma-explorer .ma-question-preview{margin:1.25rem 0}.ma-explorer .ma-question .ma-value{font-size:2rem}.ma-explorer .ma-question[data-question="gagner"] .ma-value{font-size:2.75rem}.ma-explorer .ma-question .ma-value:not(.ma-value--nombre){font-size:1.125rem}.ma-explorer .ma-dataviz{padding:1rem}.ma-explorer tbody tr{background:var(--background-alt-grey,#f6f6f6)!important}.ma-explorer .compare-identities{grid-template-columns:1fr}.ma-explorer .mobile-summary{background:var(--background-alt-grey,#f6f6f6)}.ma-explorer #main h1{font-size:2rem}.ma-explorer .ma-passages .btn{width:100%;justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){.ma-explorer *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{.ma-explorer .ma-question{break-inside:avoid}.ma-explorer .ma-question-action{display:none}}

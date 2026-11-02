@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="3323" viewBox="0 0 390 3323" role="img" aria-labelledby="title desc"><title id="title">Se former, se certifier et découvrir d'autres pistes</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="3323" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Se former, se</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">certifier et</text>
+<text x="24" y="372" font-size="30" font-weight="700" fill="#161616">découvrir d'autres</text>
+<text x="24" y="417" font-size="30" font-weight="700" fill="#161616">pistes</text>
+<text x="24" y="460" font-size="16" font-weight="400" fill="#666">Des associations de référentiels</text>
+<text x="24" y="484" font-size="16" font-weight="400" fill="#666">pour orienter l'exploration, sans</text>
+<text x="24" y="508" font-size="16" font-weight="400" fill="#666">garantie d'admission ni d'emploi.</text>
+<rect x="24" y="540" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Garder cette piste">
+<text x="40" y="568" font-size="16" font-weight="700" fill="#fff">Garder cette piste</text>
+</a>
+<rect x="24" y="600" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Comparer">
+<text x="40" y="628" font-size="16" font-weight="700" fill="#000091">Comparer</text>
+</a>
+<rect x="24" y="660" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="menu.svg" aria-label="Sommaire de la fiche">
+<text x="40" y="688" font-size="16" font-weight="700" fill="#000091">Sommaire de la fiche</text>
+</a>
+<text x="24" y="772" font-size="24" font-weight="700" fill="#161616">Quelles certifications</text>
+<text x="24" y="808" font-size="24" font-weight="700" fill="#161616">sont associées ?</text>
+<text x="24" y="844" font-size="16" font-weight="400" fill="#666">Certifications actives avec leur</text>
+<text x="24" y="868" font-size="16" font-weight="400" fill="#666">type réel et un accès à leur fiche.</text>
+<rect x="24" y="896" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="928" font-size="12" font-weight="700" fill="#666">Certification</text>
+<text x="44" y="950" font-size="16" font-weight="700" fill="#161616">Titre professionnel</text>
+<text x="44" y="974" font-size="16" font-weight="700" fill="#161616">couvreur-zingueur</text>
+<text x="44" y="1006" font-size="12" font-weight="700" fill="#666">Référence</text>
+<text x="44" y="1028" font-size="16" font-weight="400" fill="#161616">RNCP36101</text>
+<text x="44" y="1060" font-size="12" font-weight="700" fill="#666">Consulter</text>
+<text x="44" y="1082" font-size="16" font-weight="400" fill="#161616">Fiche certification</text>
+<rect x="24" y="1126" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1158" font-size="12" font-weight="700" fill="#666">Certification</text>
+<text x="44" y="1180" font-size="16" font-weight="700" fill="#161616">DSP installateur de systèmes de</text>
+<text x="44" y="1204" font-size="16" font-weight="700" fill="#161616">production photovoltaïque</text>
+<text x="44" y="1236" font-size="12" font-weight="700" fill="#666">Référence</text>
+<text x="44" y="1258" font-size="16" font-weight="400" fill="#161616">RNCP37218</text>
+<text x="44" y="1290" font-size="12" font-weight="700" fill="#666">Consulter</text>
+<text x="44" y="1312" font-size="16" font-weight="400" fill="#161616">Fiche certification</text>
+<rect x="24" y="1356" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1388" font-size="12" font-weight="700" fill="#666">Certification</text>
+<text x="44" y="1410" font-size="16" font-weight="700" fill="#161616">Ouvrier professionnel en</text>
+<text x="44" y="1434" font-size="16" font-weight="700" fill="#161616">restauration du patrimoine</text>
+<text x="44" y="1466" font-size="12" font-weight="700" fill="#666">Référence</text>
+<text x="44" y="1488" font-size="16" font-weight="400" fill="#161616">RNCP37516</text>
+<text x="44" y="1520" font-size="12" font-weight="700" fill="#666">Consulter</text>
+<text x="44" y="1542" font-size="16" font-weight="400" fill="#161616">Fiche certification</text>
+<rect x="24" y="1586" width="342" height="72" fill="#000091" stroke="#000091"/>
+<a href="certification.svg" aria-label="Titre professionnel couvreur-zingueur">
+<text x="40" y="1614" font-size="16" font-weight="700" fill="#fff">Titre professionnel</text>
+<text x="40" y="1638" font-size="16" font-weight="700" fill="#fff">couvreur-zingueur</text>
+</a>
+<text x="24" y="1710" font-size="24" font-weight="700" fill="#161616">Quelles sessions sont</text>
+<text x="24" y="1746" font-size="24" font-weight="700" fill="#161616">publiées ?</text>
+<text x="24" y="1782" font-size="16" font-weight="400" fill="#666">Depuis la certification, choisir une</text>
+<text x="24" y="1806" font-size="16" font-weight="400" fill="#666">région, un département ou un bassin</text>
+<text x="24" y="1830" font-size="16" font-weight="400" fill="#666">; à venir et en cours.</text>
+<rect x="24" y="1858" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="certification.svg" aria-label="Consulter les sessions">
+<text x="40" y="1886" font-size="16" font-weight="700" fill="#000091">Consulter les sessions</text>
+</a>
+<rect x="24" y="1918" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="formacodes.svg" aria-label="Thèmes de formation">
+<text x="40" y="1946" font-size="16" font-weight="700" fill="#000091">Thèmes de formation</text>
+</a>
+<text x="24" y="2018" font-size="24" font-weight="700" fill="#161616">Quelles autres pistes</text>
+<text x="24" y="2054" font-size="24" font-weight="700" fill="#161616">explorer ?</text>
+<text x="24" y="2090" font-size="16" font-weight="400" fill="#666">Métiers proches dans l'ordre reçu :</text>
+<text x="24" y="2114" font-size="16" font-weight="400" fill="#666">pas des flux de mobilité observés.</text>
+<rect x="24" y="2142" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2174" font-size="12" font-weight="700" fill="#666">Métier proche</text>
+<text x="44" y="2196" font-size="16" font-weight="700" fill="#161616">Montage de réseaux électriques</text>
+<text x="44" y="2220" font-size="16" font-weight="700" fill="#161616">et télécoms</text>
+<text x="44" y="2252" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="2274" font-size="16" font-weight="400" fill="#161616">F1605</text>
+<text x="44" y="2306" font-size="12" font-weight="700" fill="#666">Action</text>
+<text x="44" y="2328" font-size="16" font-weight="400" fill="#161616">Ouvrir ou comparer</text>
+<rect x="24" y="2372" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2404" font-size="12" font-weight="700" fill="#666">Métier proche</text>
+<text x="44" y="2426" font-size="16" font-weight="700" fill="#161616">Travaux d'étanchéité et</text>
+<text x="44" y="2450" font-size="16" font-weight="700" fill="#161616">d'isolation</text>
+<text x="44" y="2482" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="2504" font-size="16" font-weight="400" fill="#161616">F1613</text>
+<text x="44" y="2536" font-size="12" font-weight="700" fill="#666">Action</text>
+<text x="44" y="2558" font-size="16" font-weight="400" fill="#161616">Ouvrir ou comparer</text>
+<rect x="24" y="2602" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2634" font-size="12" font-weight="700" fill="#666">Métier proche</text>
+<text x="44" y="2656" font-size="16" font-weight="700" fill="#161616">Ingénierie et études du BTP</text>
+<text x="44" y="2688" font-size="12" font-weight="700" fill="#666">ROME V3</text>
+<text x="44" y="2710" font-size="16" font-weight="400" fill="#161616">F1106</text>
+<text x="44" y="2742" font-size="12" font-weight="700" fill="#666">Action</text>
+<text x="44" y="2764" font-size="16" font-weight="400" fill="#161616">Ouvrir ou comparer</text>
+<rect x="24" y="2808" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Comparer F1610 et F1613">
+<text x="40" y="2836" font-size="16" font-weight="700" fill="#fff">Comparer F1610 et F1613</text>
+</a>
+<rect x="24" y="2868" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="guide.svg" aria-label="Explorer par compétences">
+<text x="40" y="2896" font-size="16" font-weight="700" fill="#000091">Explorer par compétences</text>
+</a>
+<rect x="24" y="2928" width="342" height="80" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="2960" font-size="16" font-weight="700" fill="#000091">+ Thèmes associés : couverture,</text>
+<text x="40" y="2984" font-size="16" font-weight="700" fill="#000091">zinguerie, énergie solaire</text>
+<text x="24" y="3038" font-size="14" font-weight="400" fill="#666">Certif Info / France compétences et</text>
+<text x="24" y="3059" font-size="14" font-weight="400" fill="#666">référentiel métier. Les sessions publiées</text>
+<text x="24" y="3080" font-size="14" font-weight="400" fill="#666">ne prouvent ni places disponibles ni</text>
+<text x="24" y="3101" font-size="14" font-weight="400" fill="#666">possibilité d'inscription.</text>
+<rect x="24" y="3132" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="3160" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="3230" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="3249" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="3267" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="3285" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

@@ -1,0 +1,24 @@
+@startuml
+hide footbox
+title Echanges techniques - Certifications, blocs, Formacodes
+actor "Client API" as Client
+participant "GET /certifications" as C
+participant "GET /certifications/{certifinfo}" as F
+participant "GET /certifications/blocs" as B
+participant "GET /formacodes" as Fo
+Client -> C : GET /certifications?rome={rome_code}
+C --> Client : items[].certifinfo_code, fiche_code, formacode_codes[]
+opt Obtenir une fiche par Certif Info
+  Client -> F : GET /certifications/{certifinfo_code}
+  F --> Client : fiche_code, rome_codes[], bloc_competences_codes[]
+end
+opt Obtenir les blocs d une fiche RNCP
+  Client -> B : GET /certifications/blocs?fiche={fiche_code}
+  B --> Client : items[].bloc_code, items[].certifinfo_codes[]
+  note over Client,B : Correspondance documentee ; exactitude des filtres a verifier sur echantillons de requete.
+end
+opt Resoudre un Formacode
+  Client -> Fo : GET /formacodes?code={formacode_code}
+  Fo --> Client : items[].formacode_code
+end
+@enduml

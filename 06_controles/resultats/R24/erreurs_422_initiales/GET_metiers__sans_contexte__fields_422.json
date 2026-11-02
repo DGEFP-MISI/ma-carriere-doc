@@ -1,0 +1,10 @@
+{
+  "message": "Paramètres de requête invalides.",
+  "code": 422,
+  "violations": [
+    {
+      "propertyPath": "fields",
+      "message": "Champ(s) inconnu(s) : contexte_travail_code. Champs disponibles : rome_code, rome_libelle, domaine_code, domaine_libelle, grand_domaine_code, grand_domaine_libelle, appellations, definitions, tag_transition_ecologique, tag_transition_numerique, tag_transition_demographique, tag_emploi_reglemente, tag_emploi_cadre, metiers_proches_codes, metiers_proches_libelles, savoir_etre_libelles, contexte_travail_codes, contexte_travail_libelles, fap228_codes, formacode_codes, formacode_libelles, source_libelle."
+    }
+  ]
+}

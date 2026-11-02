@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="3207" viewBox="0 0 390 3207" role="img" aria-labelledby="title desc"><title id="title">Pose et restauration de couvertures</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="3207" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Pose et</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">restauration de</text>
+<text x="24" y="372" font-size="30" font-weight="700" fill="#161616">couvertures</text>
+<text x="24" y="415" font-size="16" font-weight="400" fill="#666">ROME V3 F1610 · Second œuvre ·</text>
+<text x="24" y="439" font-size="16" font-weight="400" fill="#666">Construction, bâtiment et travaux</text>
+<text x="24" y="463" font-size="16" font-weight="400" fill="#666">publics</text>
+<rect x="24" y="495" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Garder cette piste">
+<text x="40" y="523" font-size="16" font-weight="700" fill="#fff">Garder cette piste</text>
+</a>
+<rect x="24" y="555" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Comparer">
+<text x="40" y="583" font-size="16" font-weight="700" fill="#000091">Comparer</text>
+</a>
+<rect x="24" y="615" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="menu.svg" aria-label="Sommaire de la fiche">
+<text x="40" y="643" font-size="16" font-weight="700" fill="#000091">Sommaire de la fiche</text>
+</a>
+<rect x="24" y="687" width="342" height="240" fill="#ececfe" stroke="none"/>
+<text x="44" y="723" font-size="16" font-weight="700" fill="#161616">Un métier, plusieurs</text>
+<text x="44" y="747" font-size="16" font-weight="700" fill="#161616">spécialités</text>
+<text x="44" y="779" font-size="16" font-weight="400" fill="#161616">Cette fiche réunit notamment</text>
+<text x="44" y="803" font-size="16" font-weight="400" fill="#161616">couverture-zinguerie et</text>
+<text x="44" y="827" font-size="16" font-weight="400" fill="#161616">installation de systèmes</text>
+<text x="44" y="851" font-size="16" font-weight="400" fill="#161616">solaires. Les compétences et</text>
+<text x="44" y="875" font-size="16" font-weight="400" fill="#161616">les chiffres peuvent concerner</text>
+<text x="44" y="899" font-size="16" font-weight="400" fill="#161616">des périmètres différents.</text>
+<text x="24" y="991" font-size="24" font-weight="700" fill="#161616">Que fait-on dans ce</text>
+<text x="24" y="1027" font-size="24" font-weight="700" fill="#161616">métier ?</text>
+<text x="24" y="1063" font-size="16" font-weight="400" fill="#666">Comprendre les activités à travers</text>
+<text x="24" y="1087" font-size="16" font-weight="400" fill="#666">les définitions du référentiel.</text>
+<text x="24" y="1131" font-size="16" font-weight="400" fill="#161616">Couvreur / Couvreuse : Le couvreur</text>
+<text x="24" y="1155" font-size="16" font-weight="400" fill="#161616">est un artisan spécialisé dans la</text>
+<text x="24" y="1179" font-size="16" font-weight="400" fill="#161616">pose, la réparation et la rénovation</text>
+<text x="24" y="1203" font-size="16" font-weight="400" fill="#161616">des toitures sur des chantiers de</text>
+<text x="24" y="1227" font-size="16" font-weight="400" fill="#161616">construction neuve ou de rénovation</text>
+<text x="24" y="1251" font-size="16" font-weight="400" fill="#161616">de bâtiments résidentiels,</text>
+<text x="24" y="1275" font-size="16" font-weight="400" fill="#161616">commerciaux ou industriels.</text>
+<rect x="24" y="1307" width="342" height="104" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="1339" font-size="16" font-weight="700" fill="#000091">+ Autre spécialité :</text>
+<text x="40" y="1363" font-size="16" font-weight="700" fill="#000091">installation et maintenance de</text>
+<text x="40" y="1387" font-size="16" font-weight="700" fill="#000091">systèmes solaires</text>
+<text x="24" y="1441" font-size="14" font-weight="400" fill="#666">Appellations : Couvreur / Couvreuse ·</text>
+<text x="24" y="1462" font-size="14" font-weight="400" fill="#666">Couvreur zingueur / Couvreuse zingueuse ·</text>
+<text x="24" y="1483" font-size="14" font-weight="400" fill="#666">Monteur / Monteuse de panneaux</text>
+<text x="24" y="1504" font-size="14" font-weight="400" fill="#666">photovoltaïques</text>
+<text x="24" y="1575" font-size="24" font-weight="700" fill="#161616">Que souhaitez-vous</text>
+<text x="24" y="1611" font-size="24" font-weight="700" fill="#161616">explorer ?</text>
+<text x="24" y="1647" font-size="16" font-weight="400" fill="#666">Une synthèse pour vous repérer, puis</text>
+<text x="24" y="1671" font-size="16" font-weight="400" fill="#666">des données détaillées par question.</text>
+<rect x="24" y="1699" width="342" height="176" fill="#fff" stroke="#ddd"/>
+<text x="48" y="1739" font-size="16" font-weight="700" fill="#161616">Projets de recrutement</text>
+<text x="48" y="1783" font-size="28" font-weight="700" fill="#161616">26</text>
+<text x="48" y="1823" font-size="14" font-weight="400" fill="#666">Couvreurs · bassin de Montpellier ·</text>
+<text x="48" y="1844" font-size="14" font-weight="400" fill="#666">BMO 2026</text>
+<rect x="24" y="1891" width="342" height="176" fill="#fff" stroke="#ddd"/>
+<text x="48" y="1931" font-size="16" font-weight="700" fill="#161616">Tension sur le marché</text>
+<text x="48" y="1975" font-size="28" font-weight="700" fill="#161616">Tension extrême</text>
+<text x="48" y="2015" font-size="14" font-weight="400" fill="#666">Couvreurs · Hérault · DARES /</text>
+<text x="48" y="2036" font-size="14" font-weight="400" fill="#666">France Travail 2024</text>
+<rect x="24" y="2083" width="342" height="197" fill="#fff" stroke="#ddd"/>
+<text x="48" y="2123" font-size="16" font-weight="700" fill="#161616">Salaire mensuel net médian</text>
+<text x="48" y="2167" font-size="28" font-weight="700" fill="#161616">1 690 €</text>
+<text x="48" y="2207" font-size="14" font-weight="400" fill="#666">Famille B0Z21 : ouvriers non</text>
+<text x="48" y="2228" font-size="14" font-weight="400" fill="#666">qualifiés du gros œuvre · 8 métiers</text>
+<text x="48" y="2249" font-size="14" font-weight="400" fill="#666">· Hérault · 2023</text>
+<rect x="24" y="2296" width="342" height="197" fill="#fff" stroke="#ddd"/>
+<text x="48" y="2336" font-size="16" font-weight="700" fill="#161616">Transition écologique</text>
+<text x="48" y="2380" font-size="28" font-weight="700" fill="#161616">Métier concerné</text>
+<text x="48" y="2420" font-size="14" font-weight="400" fill="#666">Au moins une spécialité rattachée ;</text>
+<text x="48" y="2441" font-size="14" font-weight="400" fill="#666">ce tag ne prédit pas une croissance</text>
+<text x="48" y="2462" font-size="14" font-weight="400" fill="#666">des emplois.</text>
+<rect x="24" y="2509" width="342" height="216" fill="#ececfe" stroke="none"/>
+<text x="44" y="2545" font-size="16" font-weight="700" fill="#161616">Montpellier choisi ; chaque</text>
+<text x="44" y="2569" font-size="16" font-weight="700" fill="#161616">donnée a son lieu réel</text>
+<text x="44" y="2601" font-size="16" font-weight="400" fill="#161616">Projets : bassin d'emploi de</text>
+<text x="44" y="2625" font-size="16" font-weight="400" fill="#161616">Montpellier. Tension et salaire</text>
+<text x="44" y="2649" font-size="16" font-weight="400" fill="#161616">: Hérault. Prospective :</text>
+<text x="44" y="2673" font-size="16" font-weight="400" fill="#161616">Occitanie. Mobilités : France</text>
+<text x="44" y="2697" font-size="16" font-weight="400" fill="#161616">dans le jeu observé.</text>
+<rect x="24" y="2749" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="competences.svg" aria-label="Compétences et conditions">
+<text x="40" y="2777" font-size="16" font-weight="700" fill="#fff">Compétences et conditions</text>
+</a>
+<rect x="24" y="2809" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="salaires.svg" aria-label="Voir les salaires">
+<text x="40" y="2837" font-size="16" font-weight="700" fill="#000091">Voir les salaires</text>
+</a>
+<rect x="24" y="2869" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="formations.svg" aria-label="Autres pistes">
+<text x="40" y="2897" font-size="16" font-weight="700" fill="#000091">Autres pistes</text>
+</a>
+<text x="24" y="2943" font-size="14" font-weight="400" fill="#666">Extraits des JSON de référence ·</text>
+<text x="24" y="2964" font-size="14" font-weight="400" fill="#666">observation au 01/11/2026. Valeurs</text>
+<text x="24" y="2985" font-size="14" font-weight="400" fill="#666">reçues, sans agrégation entre familles.</text>
+<rect x="24" y="3016" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="3044" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="3114" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="3133" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="3151" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="3169" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

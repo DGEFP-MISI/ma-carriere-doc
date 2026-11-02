@@ -1,0 +1,571 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "grain": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "maille_demandee": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "maille_reelle": {
+            "type": "string",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "mesure": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "millesime": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "repli": {
+            "type": "boolean",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "source_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "territoire_code": {
+            "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "territoire_libelle": {
+            "type": "string",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "valeurs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "competence_code": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "competence_libelle": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "competence_type_libelles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "x-niveau-preuve": "reponse_JSON_observee"
+                  },
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "fap_225_code": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "fap_225_libelle": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "fap_228_code": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "fap_228_libelle": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "fap_87_code": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "fap_87_libelle": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "indice_affelnet_pression": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "indice_specificite_region_2019": {
+                  "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+                  "nullable": true,
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_actifs_aides_familiaux": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_actifs_emploi": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_actifs_employeurs": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_actifs_independants": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_actifs_salaries": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_affelnet_places": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_affelnet_voeux_1": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_certifications": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_creations_nettes_emplois_2030": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_de_acces_emploi_6m": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_de_sortants": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_departs_fin_carriere_2030": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_desequilibre_potentiel_2030": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_emplois_2019": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_entrees_formation_de": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_ij_apprentissage_annee_terminale": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_ij_apprentissage_emploi_12m": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_ij_apprentissage_poursuite_etudes": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_ij_apprentissage_sortants": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_ij_scolaire_annee_terminale": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_ij_scolaire_emploi_12m": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_ij_scolaire_poursuite_etudes": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_ij_scolaire_sortants": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_inscrits_apprentissage": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_inscrits_enseignement_sup": {
+                  "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+                  "nullable": true,
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_inscrits_sanitaire_social": {
+                  "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+                  "nullable": true,
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_inscrits_voie_scolaire": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_jeunes_debutants_2030": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_offres_avec_competences": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_offres_competence": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_offres_emploi_base": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_offres_emploi_mois": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_offres_niveau_formation_renseigne": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_parcoursup_candidatures": {
+                  "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+                  "nullable": true,
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_parcoursup_places": {
+                  "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+                  "nullable": true,
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_postes_a_pourvoir_2030": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_postes_offres_emploi_mois": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_projets_recrutement": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_projets_recrutement_difficiles": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_projets_recrutement_saisonniers": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_rome_famille": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_salaries_temps_complet": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "nb_sessions_a_venir": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "periode_code": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "periode_libelle": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "rang_competence": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "rang_secteur": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "salaire_net_annuel_median": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "salaire_net_annuel_q1": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "salaire_net_annuel_q3": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "salaire_net_mensuel_median": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "secteur_naf38_code": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "secteur_naf38_libelle": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_conditions_travail_contraignantes": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_globale": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_inadequation_geographique": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_intensite_embauche": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_lien_formation_emploi": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_manque_main_oeuvre": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_niveau_2019": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_non_attractivite_salariale": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tension_non_durabilite_emploi": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tranche_salaire_median_libelle": {
+                  "type": "string",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_actifs_aides_familiaux": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_actifs_employeurs": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_actifs_independants": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_actifs_salaries": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_actifs_secteur": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_creations_nettes_emplois_2030": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_de_acces_emploi_6m": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_departs_fin_carriere_2030": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_desequilibre_potentiel_2030": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_ij_apprentissage_emploi_12m": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_ij_apprentissage_poursuite_etudes": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_ij_scolaire_emploi_12m": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_ij_scolaire_poursuite_etudes": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_jeunes_debutants_2030": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_niveau_formation_bac": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_niveau_formation_bac2": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_niveau_formation_bac3_4": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_niveau_formation_bac5": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_niveau_formation_infra_bac": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_alternance": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_cadre": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_cdd": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_cdi": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_competence": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_debutant_accepte": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_emploi_durable": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_employe_non_qualifie": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_employe_qualifie": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_interim": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_non_salarie": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_ouvrier_non_qualifie": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_ouvrier_qualifie": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_saisonnier": {
+                  "type": "integer",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_offres_technicien_agent_maitrise": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_part_emploi_region_2019": {
+                  "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+                  "nullable": true,
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_postes_a_pourvoir_2030": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_projets_recrutement_difficiles": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                },
+                "tx_projets_recrutement_saisonniers": {
+                  "type": "number",
+                  "x-niveau-preuve": "reponse_JSON_observee"
+                }
+              },
+              "additionalProperties": true,
+              "x-niveau-preuve": "reponse_JSON_observee",
+              "description": "Structure VARIABLE suivant items[].mesure. Voir modele_valeurs_par_mesure.csv ; ne pas interpréter cette union comme un objet de valeur unique.",
+              "x-dynamique-par-mesure": true
+            },
+            "x-niveau-preuve": "reponse_JSON_observee"
+          }
+        },
+        "additionalProperties": true,
+        "x-niveau-preuve": "reponse_JSON_observee"
+      },
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "rome_code": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "territoire": {
+      "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+      "nullable": true,
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "territoires": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "maille": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          }
+        },
+        "additionalProperties": true,
+        "x-niveau-preuve": "reponse_JSON_observee"
+      },
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "zonage": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    }
+  },
+  "additionalProperties": true,
+  "x-niveau-preuve": "JSON_OBSERVE_et_contrat",
+  "x-nombre-echantillons": 1,
+  "description": "Modèle complémentaire de travail, NON OFFICIEL. Inféré des JSON collectés et lu avec le contrat du 19/10/2026. Ne garantit pas les variantes non testées."
+}

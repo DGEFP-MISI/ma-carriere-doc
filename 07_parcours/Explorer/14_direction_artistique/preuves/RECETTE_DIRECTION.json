@@ -1,0 +1,525 @@
+{
+  "date": "2026-11-02",
+  "applicationSha256": "3d53c0dd0dc0e6266aea9d4fc4aa86bb7d15a0dc6b9f02aaeb93d5e058133abe",
+  "checks": [
+    {
+      "name": "Entrée et recherche préservées",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : quatre portes, même ordre et mêmes routes",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : aucun lien imbriqué",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : deux familles BMO conservées sans somme",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : salaire natif et bonne population",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : conditions natives sans score",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : icônes officielles réellement chargées",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : aucune étiquette prédictive ajoutée",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : titre et quatre questions au clavier",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : thèmes profonds accessibles",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow recherche",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow essentiel",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow salaires",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow recrutements",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow competences",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow certification",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow comparateur",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow pistes",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow mobilites",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow prospective",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : reflow domaine",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : comparateur intact",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : colonne statistique absente non remplacée",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : aperçus non transposés à un autre lieu",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : thème sombre applique les tokens",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "1440px : contraste des textes de repère en sombre",
+      "status": "RÉUSSI",
+      "values": [
+        {
+          "selector": ".ma-question-title",
+          "ratio": 11.498963226441338
+        },
+        {
+          "selector": ".ma-repere-context",
+          "ratio": 5.815619933427531
+        },
+        {
+          "selector": ".ma-provenance",
+          "ratio": 5.815619933427531
+        },
+        {
+          "selector": ".ma-question-action",
+          "ratio": 5.758977108280972
+        },
+        {
+          "selector": ".four-questions a[aria-current]",
+          "ratio": 4.554182096645008
+        },
+        {
+          "selector": ".ma-question-icon .ma-icon",
+          "ratio": 7.920129188523536
+        }
+      ]
+    },
+    {
+      "name": "375px : quatre portes, même ordre et mêmes routes",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : aucun lien imbriqué",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : deux familles BMO conservées sans somme",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : salaire natif et bonne population",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : conditions natives sans score",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : icônes officielles réellement chargées",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : aucune étiquette prédictive ajoutée",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : titre et quatre questions au clavier",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : thèmes profonds accessibles",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow recherche",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow essentiel",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow salaires",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow recrutements",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow competences",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow certification",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow comparateur",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow pistes",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow mobilites",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow prospective",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : reflow domaine",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : comparateur intact",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : colonne statistique absente non remplacée",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : aperçus non transposés à un autre lieu",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : thème sombre applique les tokens",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "375px : contraste des textes de repère en sombre",
+      "status": "RÉUSSI",
+      "values": [
+        {
+          "selector": ".ma-question-title",
+          "ratio": 11.498963226441338
+        },
+        {
+          "selector": ".ma-repere-context",
+          "ratio": 5.815619933427531
+        },
+        {
+          "selector": ".ma-provenance",
+          "ratio": 5.815619933427531
+        },
+        {
+          "selector": ".ma-question-action",
+          "ratio": 5.758977108280972
+        },
+        {
+          "selector": ".four-questions a[aria-current]",
+          "ratio": 4.554182096645008
+        },
+        {
+          "selector": ".ma-question-icon .ma-icon",
+          "ratio": 7.920129188523536
+        }
+      ]
+    },
+    {
+      "name": "320px : quatre portes, même ordre et mêmes routes",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : aucun lien imbriqué",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : deux familles BMO conservées sans somme",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : salaire natif et bonne population",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : conditions natives sans score",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : icônes officielles réellement chargées",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : aucune étiquette prédictive ajoutée",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : titre et quatre questions au clavier",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : thèmes profonds accessibles",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow recherche",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow essentiel",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow salaires",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow recrutements",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow competences",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow certification",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow comparateur",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow pistes",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow mobilites",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow prospective",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : reflow domaine",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : comparateur intact",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : colonne statistique absente non remplacée",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : aperçus non transposés à un autre lieu",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : thème sombre applique les tokens",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "320px : contraste des textes de repère en sombre",
+      "status": "RÉUSSI",
+      "values": [
+        {
+          "selector": ".ma-question-title",
+          "ratio": 11.498963226441338
+        },
+        {
+          "selector": ".ma-repere-context",
+          "ratio": 5.815619933427531
+        },
+        {
+          "selector": ".ma-provenance",
+          "ratio": 5.815619933427531
+        },
+        {
+          "selector": ".ma-question-action",
+          "ratio": 5.758977108280972
+        },
+        {
+          "selector": ".four-questions a[aria-current]",
+          "ratio": 4.554182096645008
+        },
+        {
+          "selector": ".ma-question-icon .ma-icon",
+          "ratio": 7.920129188523536
+        }
+      ]
+    },
+    {
+      "name": "DataBox rapprochées, charge à la demande conservée",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "Quartiles natifs et tableau accessibles",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "Zéro, null, absence et secret inchangés dans les nouveaux repères",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "Quatre portes atteintes par la touche Tab, focus visible",
+      "status": "RÉUSSI",
+      "values": [
+        {
+          "question": "comprendre",
+          "outline": "solid"
+        },
+        {
+          "question": "opportunites",
+          "outline": "solid"
+        },
+        {
+          "question": "gagner",
+          "outline": "solid"
+        },
+        {
+          "question": "pistes",
+          "outline": "solid"
+        }
+      ]
+    },
+    {
+      "name": "Réduction du mouvement respectée",
+      "status": "RÉUSSI",
+      "value": true
+    },
+    {
+      "name": "Aucun accès API métier ajouté",
+      "status": "RÉUSSI",
+      "value": true
+    }
+  ],
+  "passed": 82,
+  "failed": 0,
+  "errors": [],
+  "captures": [
+    "RECHERCHE_DESKTOP.png",
+    "FICHE_DESKTOP.png",
+    "COMPARATEUR_DESKTOP.png",
+    "FICHE_SOMBRE_DESKTOP.png",
+    "FICHE_MOBILE_375.png",
+    "FICHE_MOBILE_320.png",
+    "SALAIRES_DESKTOP.png",
+    "01_FICHE_METIER_DESKTOP_MAQUETTE.png",
+    "01_FICHE_METIER_MOBILE_MAQUETTE.png",
+    "02_COMPARATEUR_DESKTOP_MAQUETTE.png"
+  ],
+  "HTTP_metier": false,
+  "RGAA_complet": false
+}

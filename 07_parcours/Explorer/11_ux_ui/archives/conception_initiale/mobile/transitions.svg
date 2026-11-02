@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1913" viewBox="0 0 390 1913" role="img" aria-labelledby="title desc"><title id="title">Quelles transitions concernent ce métier ?</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="1913" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Quelles transitions</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">concernent ce</text>
+<text x="24" y="372" font-size="30" font-weight="700" fill="#161616">métier ?</text>
+<text x="24" y="415" font-size="16" font-weight="400" fill="#666">F1610 · des repères du référentiel,</text>
+<text x="24" y="439" font-size="16" font-weight="400" fill="#666">sans prévision individuelle.</text>
+<rect x="24" y="471" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Garder cette piste">
+<text x="40" y="499" font-size="16" font-weight="700" fill="#fff">Garder cette piste</text>
+</a>
+<rect x="24" y="531" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Comparer">
+<text x="40" y="559" font-size="16" font-weight="700" fill="#000091">Comparer</text>
+</a>
+<rect x="24" y="591" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="menu.svg" aria-label="Sommaire de la fiche">
+<text x="40" y="619" font-size="16" font-weight="700" fill="#000091">Sommaire de la fiche</text>
+</a>
+<rect x="24" y="663" width="342" height="155" fill="#fff" stroke="#ddd"/>
+<text x="48" y="703" font-size="16" font-weight="700" fill="#161616">Transition écologique</text>
+<text x="48" y="747" font-size="28" font-weight="700" fill="#161616">Concerné</text>
+<text x="48" y="787" font-size="14" font-weight="400" fill="#666">Tag vrai dans la fiche F1610.</text>
+<rect x="24" y="834" width="342" height="176" fill="#fff" stroke="#ddd"/>
+<text x="48" y="874" font-size="16" font-weight="700" fill="#161616">Transition numérique</text>
+<text x="48" y="918" font-size="28" font-weight="700" fill="#161616">Non signalé</text>
+<text x="48" y="958" font-size="14" font-weight="400" fill="#666">Tag faux ; aucune conclusion sur</text>
+<text x="48" y="979" font-size="14" font-weight="400" fill="#666">chaque tâche ou employeur.</text>
+<rect x="24" y="1026" width="342" height="155" fill="#fff" stroke="#ddd"/>
+<text x="48" y="1066" font-size="16" font-weight="700" fill="#161616">Transition démographique</text>
+<text x="48" y="1110" font-size="28" font-weight="700" fill="#161616">Non signalé</text>
+<text x="48" y="1150" font-size="14" font-weight="400" fill="#666">Tag faux dans le jeu reçu.</text>
+<rect x="24" y="1197" width="342" height="192" fill="#ececfe" stroke="none"/>
+<text x="44" y="1233" font-size="16" font-weight="700" fill="#161616">Comprendre avant de filtrer</text>
+<text x="44" y="1265" font-size="16" font-weight="400" fill="#161616">Les tags sont des repères</text>
+<text x="44" y="1289" font-size="16" font-weight="400" fill="#161616">métier. Les mobilités observées</text>
+<text x="44" y="1313" font-size="16" font-weight="400" fill="#161616">et la prospective 2030</text>
+<text x="44" y="1337" font-size="16" font-weight="400" fill="#161616">répondent à des questions</text>
+<text x="44" y="1361" font-size="16" font-weight="400" fill="#161616">distinctes.</text>
+<rect x="24" y="1413" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="prospective.svg" aria-label="Perspectives à 2030">
+<text x="40" y="1441" font-size="16" font-weight="700" fill="#fff">Perspectives à 2030</text>
+</a>
+<rect x="24" y="1473" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="mobilites.svg" aria-label="Mobilités observées">
+<text x="40" y="1501" font-size="16" font-weight="700" fill="#000091">Mobilités observées</text>
+</a>
+<rect x="24" y="1533" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="guide.svg" aria-label="Choisir des compétences">
+<text x="40" y="1561" font-size="16" font-weight="700" fill="#000091">Choisir des compétences</text>
+</a>
+<text x="24" y="1607" font-size="14" font-weight="400" fill="#666">Pas de paramètre serveur de transition</text>
+<text x="24" y="1628" font-size="14" font-weight="400" fill="#666">inventé. Le filtrage local ne porte que</text>
+<text x="24" y="1649" font-size="14" font-weight="400" fill="#666">sur les fiches déjà chargées et ne promet</text>
+<text x="24" y="1670" font-size="14" font-weight="400" fill="#666">pas l'exhaustivité de l'ensemble des</text>
+<text x="24" y="1691" font-size="14" font-weight="400" fill="#666">métiers.</text>
+<rect x="24" y="1722" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="1750" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="1820" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="1839" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="1857" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="1875" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

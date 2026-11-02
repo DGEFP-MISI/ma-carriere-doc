@@ -1,0 +1,95 @@
+@startuml
+!pragma layout smetana
+skinparam backgroundColor #FFFFFF
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+hide methods
+top to bottom direction
+title API DGEFP-RCO — Contrats de données / 05 Territoires Sessions
+skinparam class {
+ BackgroundColor<<Swagger>> #F0F6FF
+ BorderColor<<Swagger>> #3965A0
+ BackgroundColor<<Observe>> #FFF7E9
+ BorderColor<<Observe>> #B67C2B
+ BackgroundColor<<NonDocumente>> #F4F4F4
+ BorderColor<<NonDocumente>> #999999
+}
+class "GET /territoires\nRéponse" as P1 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/territoires\nitems[]" as P1_Item <<Swagger>> {
+  zonage : string?
+  territoire_code : string?
+  territoire_libelle : string?
+  region_code : string?
+  region_libelle : string?
+  departement_code : string?
+  departement_libelle : string?
+  clpe_code : string?
+  clpe_libelle : string?
+  commune_codes : string[]
+  nb_communes : integer?
+  zone_emploi_code : string?
+  zone_emploi_libelle : string?
+  epci_code : string?
+  epci_libelle : string?
+  densite_libelle : string?
+}
+P1 *-- "0..*" P1_Item : items[]
+
+class "GET /sessions_a_venir\nRéponse" as P2 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/sessions_a_venir\nitems[]" as P2_Item <<Swagger>> {
+  code_insee : string
+  date_debut : string
+  date_fin : string
+  formation_apprentissage : boolean
+  formation_continue_conventionnee : boolean
+  formation_contrat_pro : boolean
+  formation_initiale : boolean
+  nb_sessions : integer
+  presentiel_distantiel : integer
+  raison_sociale : string
+  siret_formateur : string
+  ville : string
+}
+P2 *-- "0..*" P2_Item : items[]
+
+class "GET /sessions_en_cours\nRéponse" as P3 <<Swagger>> {
+  total : integer
+  page_size : integer
+  page : integer
+  last_page : integer
+}
+class "/sessions_en_cours\nitems[]" as P3_Item <<Swagger>> {
+  code_insee : string
+  date_debut : string
+  date_fin : string
+  formation_apprentissage : boolean
+  formation_continue_conventionnee : boolean
+  formation_contrat_pro : boolean
+  formation_initiale : boolean
+  nb_sessions : integer
+  presentiel_distantiel : integer
+  raison_sociale : string
+  siret_formateur : string
+  ville : string
+}
+P3 *-- "0..*" P3_Item : items[]
+
+legend bottom
+  Bleu : schema de reponse 200 du Swagger (contrat).
+  Orange : structure constatee dans les JSON (ne constitue pas un schema 200 OpenAPI).
+  Gris : structure non decrite / sans exemple dans les sources disponibles.
+  Les cardinalites 0..* expriment uniquement les tableaux JSON; 0..1 les objets facultatifs/observes.
+  Aucun lien n implique une contrainte de cle etrangere dans Octopilot.
+endlegend
+@enduml

@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: zéro publié conserve sa valeur
+ok 1 - zéro publié conserve sa valeur
+  ---
+  duration_ms: 67.5066
+  type: 'test'
+  ...
+# Subtest: absence, null et secret statistique restent distincts
+ok 2 - absence, null et secret statistique restent distincts
+  ---
+  duration_ms: 3.7281
+  type: 'test'
+  ...
+# Subtest: aucune coercition des nombres sous forme de chaînes
+ok 3 - aucune coercition des nombres sous forme de chaînes
+  ---
+  duration_ms: 0.3093
+  type: 'test'
+  ...
+# Subtest: NaN et infinis ne dessinent pas de barres
+ok 4 - NaN et infinis ne dessinent pas de barres
+  ---
+  duration_ms: 0.2683
+  type: 'test'
+  ...
+# Subtest: pourcentage incohérent signalé sans écrêtage
+ok 5 - pourcentage incohérent signalé sans écrêtage
+  ---
+  duration_ms: 0.6629
+  type: 'test'
+  ...
+# Subtest: aucun zéro substitué au secret statistique
+ok 6 - aucun zéro substitué au secret statistique
+  ---
+  duration_ms: 0.1412
+  type: 'test'
+  ...
+# Subtest: projections négatives réellement publiées préservées
+ok 7 - projections négatives réellement publiées préservées
+  ---
+  duration_ms: 0.3105
+  type: 'test'
+  ...
+# Subtest: FAP225 et FAP228 ne sont pas rapprochées
+ok 8 - FAP225 et FAP228 ne sont pas rapprochées
+  ---
+  duration_ms: 0.178
+  type: 'test'
+  ...
+# Subtest: familles salariales séparées
+ok 9 - familles salariales séparées
+  ---
+  duration_ms: 0.1786
+  type: 'test'
+  ...
+# Subtest: carte région : code Chart et montant JSON identiques
+ok 10 - carte région : code Chart et montant JSON identiques
+  ---
+  duration_ms: 0.907
+  type: 'test'
+  ...
+# Subtest: Corse et outre-mer gardent les codes Chart
+ok 11 - Corse et outre-mer gardent les codes Chart
+  ---
+  duration_ms: 0.1407
+  type: 'test'
+  ...
+# Subtest: CLPE ne devient pas une carte départementale
+ok 12 - CLPE ne devient pas une carte départementale
+  ---
+  duration_ms: 0.1154
+  type: 'test'
+  ...
+# Subtest: un repli ne colorie pas la région demandée
+ok 13 - un repli ne colorie pas la région demandée
+  ---
+  duration_ms: 0.2792
+  type: 'test'
+  ...
+# Subtest: maille incompatible exclue de la carte
+ok 14 - maille incompatible exclue de la carte
+  ---
+  duration_ms: 0.188
+  type: 'test'
+  ...
+# Subtest: secret et null ne deviennent pas une zone à zéro
+ok 15 - secret et null ne deviennent pas une zone à zéro
+  ---
+  duration_ms: 0.1005
+  type: 'test'
+  ...
+# Subtest: zéro géographique conservé et codes départementaux textuels
+ok 16 - zéro géographique conservé et codes départementaux textuels
+  ---
+  duration_ms: 0.2283
+  type: 'test'
+  ...
+# Subtest: pas de courbe temporelle avec un mois manquant
+ok 17 - pas de courbe temporelle avec un mois manquant
+  ---
+  duration_ms: 0.317
+  type: 'test'
+  ...
+# Subtest: les vrais mois observés sont consécutifs
+ok 18 - les vrais mois observés sont consécutifs
+  ---
+  duration_ms: 14.6752
+  type: 'test'
+  ...
+# Subtest: les salaires ne sont pas divisés par douze
+ok 19 - les salaires ne sont pas divisés par douze
+  ---
+  duration_ms: 0.4061
+  type: 'test'
+  ...
+# Subtest: aucune modification des réponses lors de l’adaptation
+ok 20 - aucune modification des réponses lors de l’adaptation
+  ---
+  duration_ms: 2.173
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 141.2992

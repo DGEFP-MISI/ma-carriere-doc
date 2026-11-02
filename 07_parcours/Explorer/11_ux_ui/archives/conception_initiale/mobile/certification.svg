@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="4570" viewBox="0 0 390 4570" role="img" aria-labelledby="title desc"><title id="title">Titre professionnel couvreur-zingueur</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="4570" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Titre professionnel</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">couvreur-zingueur</text>
+<text x="24" y="370" font-size="16" font-weight="400" fill="#666">Certif Info 112561 · RNCP36101 ·</text>
+<text x="24" y="394" font-size="16" font-weight="400" fill="#666">Niveau 3 · fiche publiée dans les</text>
+<text x="24" y="418" font-size="16" font-weight="400" fill="#666">données observées.</text>
+<text x="24" y="462" font-size="12" font-weight="700" fill="#666">Vues disponibles</text>
+<rect x="24" y="476" width="4" height="32" fill="#000091" stroke="none"/>
+<text x="40" y="492" font-size="16" font-weight="700" fill="#000091">● Je souhaite l'obtenir</text>
+<rect x="24" y="512" width="4" height="32" fill="#ddd" stroke="none"/>
+<text x="40" y="528" font-size="16" font-weight="400" fill="#000091">○ Je possède ce diplôme</text>
+<text x="24" y="604" font-size="24" font-weight="700" fill="#161616">Ce que la certification</text>
+<text x="24" y="640" font-size="24" font-weight="700" fill="#161616">permet d'explorer</text>
+<text x="24" y="676" font-size="16" font-weight="400" fill="#666">Certificateur : Ministère du travail</text>
+<text x="24" y="700" font-size="16" font-weight="400" fill="#666">et des solidarités · fin</text>
+<text x="24" y="724" font-size="16" font-weight="400" fill="#666">d'enregistrement reçue : 06/03/2027.</text>
+<rect x="24" y="752" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="784" font-size="12" font-weight="700" fill="#666">Voie d'accès déclarée</text>
+<text x="44" y="806" font-size="16" font-weight="700" fill="#161616">Apprentissage</text>
+<text x="44" y="838" font-size="12" font-weight="700" fill="#666">Réponse reçue</text>
+<text x="44" y="860" font-size="16" font-weight="400" fill="#161616">Oui</text>
+<text x="44" y="892" font-size="12" font-weight="700" fill="#666">Lecture</text>
+<text x="44" y="914" font-size="16" font-weight="400" fill="#161616">Voie décrite, pas admission</text>
+<text x="44" y="938" font-size="16" font-weight="400" fill="#161616">personnelle</text>
+<rect x="24" y="982" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1014" font-size="12" font-weight="700" fill="#666">Voie d'accès déclarée</text>
+<text x="44" y="1036" font-size="16" font-weight="700" fill="#161616">Formation continue</text>
+<text x="44" y="1068" font-size="12" font-weight="700" fill="#666">Réponse reçue</text>
+<text x="44" y="1090" font-size="16" font-weight="400" fill="#161616">Oui</text>
+<text x="44" y="1122" font-size="12" font-weight="700" fill="#666">Lecture</text>
+<text x="44" y="1144" font-size="16" font-weight="400" fill="#161616">Vérifier les conditions du</text>
+<text x="44" y="1168" font-size="16" font-weight="400" fill="#161616">parcours</text>
+<rect x="24" y="1212" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1244" font-size="12" font-weight="700" fill="#666">Voie d'accès déclarée</text>
+<text x="44" y="1266" font-size="16" font-weight="700" fill="#161616">Contrat de professionnalisation</text>
+<text x="44" y="1298" font-size="12" font-weight="700" fill="#666">Réponse reçue</text>
+<text x="44" y="1320" font-size="16" font-weight="400" fill="#161616">Oui</text>
+<text x="44" y="1352" font-size="12" font-weight="700" fill="#666">Lecture</text>
+<text x="44" y="1374" font-size="16" font-weight="400" fill="#161616">Voie décrite</text>
+<rect x="24" y="1418" width="342" height="214" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1450" font-size="12" font-weight="700" fill="#666">Voie d'accès déclarée</text>
+<text x="44" y="1472" font-size="16" font-weight="700" fill="#161616">VAE</text>
+<text x="44" y="1504" font-size="12" font-weight="700" fill="#666">Réponse reçue</text>
+<text x="44" y="1526" font-size="16" font-weight="400" fill="#161616">Oui</text>
+<text x="44" y="1558" font-size="12" font-weight="700" fill="#666">Lecture</text>
+<text x="44" y="1580" font-size="16" font-weight="400" fill="#161616">Pas de garantie d'éligibilité</text>
+<text x="44" y="1604" font-size="16" font-weight="400" fill="#161616">individuelle</text>
+<text x="24" y="1688" font-size="24" font-weight="700" fill="#161616">Quatre blocs de</text>
+<text x="24" y="1724" font-size="24" font-weight="700" fill="#161616">compétences RNCP</text>
+<text x="24" y="1760" font-size="16" font-weight="400" fill="#666">Textes certifiants, sans équivalence</text>
+<text x="24" y="1784" font-size="16" font-weight="400" fill="#666">automatique avec les codes OGR du</text>
+<text x="24" y="1808" font-size="16" font-weight="400" fill="#666">métier.</text>
+<rect x="24" y="1836" width="342" height="104" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="1868" font-size="16" font-weight="700" fill="#000091">+ Réaliser la couverture de</text>
+<text x="40" y="1892" font-size="16" font-weight="700" fill="#000091">combles à deux versants en</text>
+<text x="40" y="1916" font-size="16" font-weight="700" fill="#000091">petits éléments</text>
+<rect x="24" y="1956" width="342" height="104" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="1988" font-size="16" font-weight="700" fill="#000091">+ Réaliser la couverture de</text>
+<text x="40" y="2012" font-size="16" font-weight="700" fill="#000091">combles de formes diverses en</text>
+<text x="40" y="2036" font-size="16" font-weight="700" fill="#000091">petits éléments</text>
+<rect x="24" y="2076" width="342" height="80" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="2108" font-size="16" font-weight="700" fill="#000091">+ Réaliser la couverture de</text>
+<text x="40" y="2132" font-size="16" font-weight="700" fill="#000091">combles à deux versants en zinc</text>
+<rect x="24" y="2172" width="342" height="104" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="2204" font-size="16" font-weight="700" fill="#000091">+ Réaliser et mettre en œuvre</text>
+<text x="40" y="2228" font-size="16" font-weight="700" fill="#000091">les abergements et l'évacuation</text>
+<text x="40" y="2252" font-size="16" font-weight="700" fill="#000091">des eaux pluviales</text>
+<text x="24" y="2332" font-size="24" font-weight="700" fill="#161616">Quels résultats selon</text>
+<text x="24" y="2368" font-size="24" font-weight="700" fill="#161616">les populations ?</text>
+<text x="24" y="2404" font-size="16" font-weight="400" fill="#666">Ne pas comparer directement des</text>
+<text x="24" y="2428" font-size="16" font-weight="400" fill="#666">populations et horizons différents.</text>
+<rect x="24" y="2456" width="342" height="197" fill="#fff" stroke="#ddd"/>
+<text x="48" y="2496" font-size="16" font-weight="700" fill="#161616">En emploi salarié à 12 mois</text>
+<text x="48" y="2540" font-size="28" font-weight="700" fill="#161616">68,5 %</text>
+<text x="48" y="2580" font-size="14" font-weight="400" fill="#666">Apprentissage · 314 sortants ·</text>
+<text x="48" y="2601" font-size="14" font-weight="400" fill="#666">InserJeunes, cumul 2023–2024 ·</text>
+<text x="48" y="2622" font-size="14" font-weight="400" fill="#666">national</text>
+<rect x="24" y="2669" width="342" height="197" fill="#fff" stroke="#ddd"/>
+<text x="48" y="2709" font-size="16" font-weight="700" fill="#161616">Accès à l'emploi à 6 mois</text>
+<text x="48" y="2753" font-size="28" font-weight="700" fill="#161616">51,4 %</text>
+<text x="48" y="2793" font-size="14" font-weight="400" fill="#666">Demandeurs d'emploi formés · 105</text>
+<text x="48" y="2814" font-size="14" font-weight="400" fill="#666">sortants · France Travail 2024 ·</text>
+<text x="48" y="2835" font-size="14" font-weight="400" fill="#666">national</text>
+<rect x="24" y="2882" width="342" height="240" fill="#ececfe" stroke="none"/>
+<text x="44" y="2918" font-size="16" font-weight="700" fill="#161616">Une donnée absente n'est pas un</text>
+<text x="44" y="2942" font-size="16" font-weight="700" fill="#161616">résultat nul</text>
+<text x="44" y="2974" font-size="16" font-weight="400" fill="#161616">Les résultats de la voie</text>
+<text x="44" y="2998" font-size="16" font-weight="400" fill="#161616">scolaire et d'InserSup sont non</text>
+<text x="44" y="3022" font-size="16" font-weight="400" fill="#161616">renseignés pour cette fiche.</text>
+<text x="44" y="3046" font-size="16" font-weight="400" fill="#161616">Les autres populations et</text>
+<text x="44" y="3070" font-size="16" font-weight="400" fill="#161616">promotions restent consultables</text>
+<text x="44" y="3094" font-size="16" font-weight="400" fill="#161616">lorsqu'elles sont publiées.</text>
+<rect x="24" y="3146" width="342" height="104" fill="#f6f6f6" stroke="none"/>
+<text x="40" y="3178" font-size="16" font-weight="700" fill="#000091">+ Inscrits, poursuite d'études,</text>
+<text x="40" y="3202" font-size="16" font-weight="700" fill="#000091">examens, salaires InserSup et</text>
+<text x="40" y="3226" font-size="16" font-weight="700" fill="#000091">capacité/demande</text>
+<text x="24" y="3306" font-size="24" font-weight="700" fill="#161616">Quelles sessions sont</text>
+<text x="24" y="3342" font-size="24" font-weight="700" fill="#161616">publiées ?</text>
+<text x="24" y="3378" font-size="16" font-weight="400" fill="#666">Occitanie · sessions à venir et en</text>
+<text x="24" y="3402" font-size="16" font-weight="400" fill="#666">cours, sans indication de places</text>
+<text x="24" y="3426" font-size="16" font-weight="400" fill="#666">disponibles.</text>
+<text x="24" y="3466" font-size="12" font-weight="700" fill="#666">Vues disponibles</text>
+<rect x="24" y="3480" width="4" height="32" fill="#000091" stroke="none"/>
+<text x="40" y="3496" font-size="16" font-weight="700" fill="#000091">● À venir</text>
+<rect x="24" y="3516" width="4" height="32" fill="#ddd" stroke="none"/>
+<text x="40" y="3532" font-size="16" font-weight="400" fill="#000091">○ En cours</text>
+<rect x="24" y="3568" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="3600" font-size="12" font-weight="700" fill="#666">Lieu / organisme</text>
+<text x="44" y="3622" font-size="16" font-weight="700" fill="#161616">Tarbes · CENTRE DE TARBES</text>
+<text x="44" y="3654" font-size="12" font-weight="700" fill="#666">Dates reçues</text>
+<text x="44" y="3676" font-size="16" font-weight="400" fill="#161616">2026-11-23 → 2027-02-17</text>
+<text x="44" y="3708" font-size="12" font-weight="700" fill="#666">Modalité</text>
+<text x="44" y="3730" font-size="16" font-weight="400" fill="#161616">Présentiel</text>
+<rect x="24" y="3774" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="3806" font-size="12" font-weight="700" fill="#666">Lieu / organisme</text>
+<text x="44" y="3828" font-size="16" font-weight="700" fill="#161616">Tarbes · CENTRE DE TARBES</text>
+<text x="44" y="3860" font-size="12" font-weight="700" fill="#666">Dates reçues</text>
+<text x="44" y="3882" font-size="16" font-weight="400" fill="#161616">2026-11-23 → 2027-01-26</text>
+<text x="44" y="3914" font-size="12" font-weight="700" fill="#666">Modalité</text>
+<text x="44" y="3936" font-size="16" font-weight="400" fill="#161616">Présentiel</text>
+<text x="24" y="3994" font-size="14" font-weight="400" fill="#666">Les listes fournies ont des filtres</text>
+<text x="24" y="4015" font-size="14" font-weight="400" fill="#666">cohérents ; la traçabilité individuelle</text>
+<text x="24" y="4036" font-size="14" font-weight="400" fill="#666">vers la certification reste à confirmer</text>
+<text x="24" y="4057" font-size="14" font-weight="400" fill="#666">avec le fournisseur. Dates de</text>
+<text x="24" y="4078" font-size="14" font-weight="400" fill="#666">l'échantillon, pas disponibilité</text>
+<text x="24" y="4099" font-size="14" font-weight="400" fill="#666">actuelle.</text>
+<rect x="24" y="4130" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="essentiel.svg" aria-label="Voir le métier F1610">
+<text x="40" y="4158" font-size="16" font-weight="700" fill="#fff">Voir le métier F1610</text>
+</a>
+<rect x="24" y="4190" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="formacodes.svg" aria-label="Explorer les thèmes de formation">
+<text x="40" y="4218" font-size="16" font-weight="700" fill="#000091">Explorer les thèmes de formation</text>
+</a>
+<text x="24" y="4264" font-size="14" font-weight="400" fill="#666">Sources : Certif Info / France</text>
+<text x="24" y="4285" font-size="14" font-weight="400" fill="#666">compétences, InserJeunes et France</text>
+<text x="24" y="4306" font-size="14" font-weight="400" fill="#666">Travail ; données nationales par</text>
+<text x="24" y="4327" font-size="14" font-weight="400" fill="#666">population. Les certifications anciennes</text>
+<text x="24" y="4348" font-size="14" font-weight="400" fill="#666">peuvent être absentes du catalogue actif.</text>
+<rect x="24" y="4379" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="4407" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="4477" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="4496" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="4514" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="4532" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

@@ -1,0 +1,26 @@
+@startuml
+hide footbox
+title Echanges techniques - Granularites des donnees statistiques
+actor "Client API" as Client
+participant "GET /recrutements" as R
+participant "GET /salaires" as S
+participant "GET /prospective/regions" as P
+participant "GET /mobilites" as M
+opt Projets BMO
+  Client -> R : GET /recrutements?rome={rome_code}&zonage={zonage}
+  R --> Client : grain=fap_228, items[].fap_228_code
+end
+opt Salaires
+  Client -> S : GET /salaires?rome={rome_code}&zonage={zonage}
+  S --> Client : grain=fap_225, items[].fap_225_code
+end
+opt Prospective 2030
+  Client -> P : GET /prospective/regions?rome={rome_code}
+  P --> Client : grain=fap_87, items[].fap_87_code
+end
+opt Mobilites
+  Client -> M : GET /mobilites?rome={rome_code}&sens=origines
+  M --> Client : grain=fap_225, origine_code, tx_personnes
+end
+note over Client,M : Un filtre rome ne change pas le grain FAP de la mesure.
+@enduml

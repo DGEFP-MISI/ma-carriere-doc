@@ -1,0 +1,26 @@
+@startuml
+hide footbox
+title Echanges techniques - Codes ROME V3 et OGR
+actor "Client API" as Client
+participant "GET /metiers" as M
+participant "GET /metiers/{rome}" as F
+participant "GET /metiers/{rome}/competences" as C
+participant "GET /competences" as O
+Client -> M : GET /metiers?q={texte}
+M --> Client : items[].rome_code
+opt Consulter une fiche identifiee
+  Client -> F : GET /metiers/{rome_code}
+  F --> Client : rome_code, contexte_travail_codes[], ...
+end
+opt Obtenir les competences associees
+  Client -> C : GET /metiers/{rome_code}/competences?page=1
+  C --> Client : items[].competence_code, total, last_page
+  note over Client,C : Si last_page > 1, les pages supplementaires restent a interroger.
+end
+opt Utiliser un code OGR pour rechercher des metiers
+  Client -> O : GET /competences?code={competence_code}
+  O --> Client : items[].rome_codes[]
+  Client -> M : GET /metiers?competence={competence_code}
+  M --> Client : items[].rome_code
+end
+@enduml

@@ -1,0 +1,161 @@
+{
+  "type": "object",
+  "properties": {
+    "ensemble": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fap_225_code": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "fap_225_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "maille": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_rome_famille": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_salaries_temps_complet": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "salaire_net_annuel_median": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "salaire_net_annuel_q1": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "salaire_net_annuel_q3": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "salaire_net_mensuel_median": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tranche_salaire_median_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          }
+        },
+        "additionalProperties": true,
+        "x-niveau-preuve": "reponse_JSON_observee"
+      },
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "grain": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fap_225_code": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "fap_225_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "maille": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_rome_famille": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_salaries_temps_complet": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "rang": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "repli": {
+            "type": "boolean",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "salaire_net_annuel_median": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "salaire_net_annuel_q1": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "salaire_net_annuel_q3": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "salaire_net_mensuel_median": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "secteur_naf38_code": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "secteur_naf38_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tranche_salaire_median_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_salaries_secteur": {
+            "type": "number",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          }
+        },
+        "additionalProperties": true,
+        "x-niveau-preuve": "reponse_JSON_observee"
+      },
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "millesime": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "region": {
+      "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+      "nullable": true,
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "region_libelle": {
+      "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+      "nullable": true,
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "rome_code": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "source_libelle": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "total": {
+      "type": "integer",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    }
+  },
+  "additionalProperties": true,
+  "x-niveau-preuve": "JSON_OBSERVE_et_contrat",
+  "x-nombre-echantillons": 1,
+  "description": "Modèle complémentaire de travail, NON OFFICIEL. Inféré des JSON collectés et lu avec le contrat du 19/10/2026. Ne garantit pas les variantes non testées."
+}

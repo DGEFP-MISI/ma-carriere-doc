@@ -1,0 +1,47 @@
+{
+  "zonage": "region",
+  "territoire": "76",
+  "territoires": [
+    {
+      "maille": "reg",
+      "code": "76",
+      "libelle": "OCCITANIE"
+    },
+    {
+      "maille": "nat",
+      "code": null,
+      "libelle": "France"
+    }
+  ],
+  "maille_demandee": "reg",
+  "maille_reelle": "reg",
+  "territoire_code": "76",
+  "territoire_libelle": "OCCITANIE",
+  "repli": false,
+  "rome_code": "F1610",
+  "metier_maille": null,
+  "source_libelle": "INSEE - SIDE ; URSSAF - établissements employeurs et effectifs salariés ; BODACC ; calculs RCO",
+  "grain": "secteur_naf38",
+  "millesime": "SIDE 2024-2025, URSSAF 2025, BODACC 2026",
+  "ensemble": {
+    "date_debut_defaillances": "2026-01-01",
+    "date_fin_defaillances": "2026-09-30",
+    "nb_creations_etablissements": 122094,
+    "nb_creations_etablissements_n1": 119733,
+    "nb_defaillances": 3075,
+    "nb_etablissements": 646420,
+    "nb_etablissements_employeurs": 168101,
+    "nb_etablissements_n5": 516028,
+    "nb_salaries_prives": 1536269,
+    "nb_salaries_prives_n5": 1417056,
+    "nb_unites_legales": 585580,
+    "secteur_naf38_code": "ENS",
+    "secteur_naf38_libelle": "Ensemble des secteurs",
+    "tx_defaillances_1000_unites_legales": 5.3,
+    "tx_evolution_creations_1an": 2,
+    "tx_evolution_etablissements_5ans": 25.3,
+    "tx_evolution_salaries_5ans": 8.4
+  },
+  "items": [],
+  "total": 0
+}

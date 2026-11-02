@@ -1,0 +1,2 @@
+[26016:31128:1102/031332.677:ERROR:chrome\browser\task_manager\providers\fallback_task_provider.cc:126] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/40528867.
+38176 bytes written to file C:\Users\Laetitia.Kouadria\Downloads\API_DGEFP_RCO_REFERENCE_V3\07_parcours\Explorer\12_maquette_html\apercus\dsfr-salaires-mobile.png

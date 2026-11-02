@@ -1,0 +1,4 @@
+node_modules/
+outils/node-*/
+outils/*.zip
+outils/npm-cache/

@@ -1,0 +1,860 @@
+{
+  "rome_code": "F1610",
+  "zonage": "france",
+  "territoire": null,
+  "territoires": [
+    {
+      "maille": "nat",
+      "code": null,
+      "libelle": "France"
+    }
+  ],
+  "items": [
+    {
+      "mesure": "tension",
+      "libelle": "Tension sur le marché du travail",
+      "grain": "fap_228",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "DARES & France travail - Métiers en tension 2024",
+      "millesime": "2024",
+      "valeurs": [
+        {
+          "fap_228_code": "B1X34",
+          "fap_228_libelle": "Couvreurs",
+          "tension_conditions_travail_contraignantes": "Tension forte",
+          "tension_globale": "Tension extrême",
+          "tension_inadequation_geographique": "Tension moyenne",
+          "tension_intensite_embauche": "Tension très forte",
+          "tension_lien_formation_emploi": "Tension forte",
+          "tension_manque_main_oeuvre": "Tension forte",
+          "tension_non_attractivite_salariale": "Tension très faible",
+          "tension_non_durabilite_emploi": "Tension forte",
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_228_code": "B6X73",
+          "fap_228_libelle": "Techniciens et agents de maîtrise de chantiers du BTP ",
+          "tension_conditions_travail_contraignantes": "Tension moyenne",
+          "tension_globale": "Tension extrême",
+          "tension_inadequation_geographique": "Tension forte",
+          "tension_intensite_embauche": "Tension très forte",
+          "tension_lien_formation_emploi": "Tension forte",
+          "tension_manque_main_oeuvre": "Tension forte",
+          "tension_non_attractivite_salariale": "Tension faible",
+          "tension_non_durabilite_emploi": "Tension faible",
+          "nb_rome_famille": 26
+        }
+      ]
+    },
+    {
+      "mesure": "demandeurs_emploi",
+      "libelle": "Demandeurs d'emploi",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": null,
+      "territoire_code": null,
+      "territoire_libelle": null,
+      "repli": false,
+      "source_libelle": "France Travail, demandeurs d'emploi catégories ABC",
+      "millesime": "2026T1",
+      "valeurs": []
+    },
+    {
+      "mesure": "offres_emploi_diffusees",
+      "libelle": "Offres d'emploi diffusées",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": null,
+      "territoire_code": null,
+      "territoire_libelle": null,
+      "repli": false,
+      "source_libelle": "France Travail, API Offres d'emploi",
+      "millesime": "3 derniers mois",
+      "valeurs": []
+    },
+    {
+      "mesure": "offres_emploi_collectees",
+      "libelle": "Offres d'emploi collectées",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": null,
+      "territoire_code": null,
+      "territoire_libelle": null,
+      "repli": false,
+      "source_libelle": "France Travail, API Offres d'emploi",
+      "millesime": "3 derniers mois",
+      "valeurs": []
+    },
+    {
+      "mesure": "salaires",
+      "libelle": "Salaires nets annuels",
+      "grain": "fap_225",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "INSEE - Base Tous salariés 2023, fichier salariés open data ; calculs RCO",
+      "millesime": "2023",
+      "valeurs": [
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_salaries_temps_complet": 43608,
+          "salaire_net_annuel_median": 21000,
+          "salaire_net_annuel_q1": 18200,
+          "salaire_net_annuel_q3": 24400,
+          "salaire_net_mensuel_median": 1750,
+          "tranche_salaire_median_libelle": "20 000 à 21 999 euros",
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_salaries_temps_complet": 19584,
+          "salaire_net_annuel_median": 25000,
+          "salaire_net_annuel_q1": 21800,
+          "salaire_net_annuel_q3": 28500,
+          "salaire_net_mensuel_median": 2080,
+          "tranche_salaire_median_libelle": "24 000 à 25 999 euros",
+          "nb_rome_famille": 1
+        }
+      ]
+    },
+    {
+      "mesure": "projets_recrutement",
+      "libelle": "Projets de recrutement (BMO)",
+      "grain": "fap_228",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "France Travail, enquête Besoins en main-d'œuvre 2026",
+      "millesime": "2026",
+      "valeurs": [
+        {
+          "fap_228_code": "B1X34",
+          "fap_228_libelle": "Couvreurs",
+          "nb_projets_recrutement": 9017,
+          "nb_projets_recrutement_difficiles": 7151,
+          "nb_projets_recrutement_saisonniers": 460,
+          "tx_projets_recrutement_difficiles": 79.3,
+          "tx_projets_recrutement_saisonniers": 5.1,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_228_code": "B6X73",
+          "fap_228_libelle": "Techniciens et agents de maîtrise de chantiers du BTP ",
+          "nb_projets_recrutement": 5032,
+          "nb_projets_recrutement_difficiles": 2746,
+          "nb_projets_recrutement_saisonniers": 468,
+          "tx_projets_recrutement_difficiles": 54.6,
+          "tx_projets_recrutement_saisonniers": 9.3,
+          "nb_rome_famille": 26
+        }
+      ]
+    },
+    {
+      "mesure": "metiers_2030",
+      "libelle": "Les métiers en 2030 (prospective)",
+      "grain": "fap_87",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "DARES - France Stratégie, Les métiers en 2030 (PMQ)",
+      "millesime": "2019-2030",
+      "valeurs": [
+        {
+          "fap_87_code": "B0Z",
+          "fap_87_libelle": "Ouvriers non qualifiés du gros œuvre du bâtiment, des travaux publics, du béton et de l'extraction",
+          "indice_specificite_region_2019": null,
+          "nb_creations_nettes_emplois_2030": -9489,
+          "nb_departs_fin_carriere_2030": 38219,
+          "nb_desequilibre_potentiel_2030": -32145,
+          "nb_emplois_2019": 177096,
+          "nb_jeunes_debutants_2030": 60874,
+          "nb_postes_a_pourvoir_2030": 28730,
+          "tension_niveau_2019": "5",
+          "tx_creations_nettes_emplois_2030": -5.4,
+          "tx_departs_fin_carriere_2030": 21.6,
+          "tx_desequilibre_potentiel_2030": -18.2,
+          "tx_jeunes_debutants_2030": 34.4,
+          "tx_part_emploi_region_2019": null,
+          "tx_postes_a_pourvoir_2030": 16.2,
+          "nb_rome_famille": 15
+        },
+        {
+          "fap_87_code": "B2Z",
+          "fap_87_libelle": "Ouvriers qualifiés du gros œuvre du bâtiment",
+          "indice_specificite_region_2019": null,
+          "nb_creations_nettes_emplois_2030": 10455,
+          "nb_departs_fin_carriere_2030": 100842,
+          "nb_desequilibre_potentiel_2030": 64088,
+          "nb_emplois_2019": 339031,
+          "nb_jeunes_debutants_2030": 47209,
+          "nb_postes_a_pourvoir_2030": 111297,
+          "tension_niveau_2019": "5",
+          "tx_creations_nettes_emplois_2030": 3.1,
+          "tx_departs_fin_carriere_2030": 29.7,
+          "tx_desequilibre_potentiel_2030": 18.9,
+          "tx_jeunes_debutants_2030": 13.9,
+          "tx_part_emploi_region_2019": null,
+          "tx_postes_a_pourvoir_2030": 32.8,
+          "nb_rome_famille": 9
+        }
+      ]
+    },
+    {
+      "mesure": "offres_emploi_caracteristiques",
+      "libelle": "Caractéristiques des offres d'emploi",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "France Travail, API Offres d'emploi (offres collectées)",
+      "millesime": "12 derniers mois",
+      "valeurs": [
+        {
+          "nb_offres_emploi_base": 11928,
+          "nb_offres_niveau_formation_renseigne": 2556,
+          "periode_libelle": "10/2025-09/2026",
+          "tx_niveau_formation_bac": 13.2,
+          "tx_niveau_formation_bac2": 1.4,
+          "tx_niveau_formation_bac3_4": 0.1,
+          "tx_niveau_formation_bac5": 0.1,
+          "tx_niveau_formation_infra_bac": 85.2,
+          "tx_offres_alternance": 2.7,
+          "tx_offres_cadre": 0.1,
+          "tx_offres_cdd": 10.3,
+          "tx_offres_cdi": 38.1,
+          "tx_offres_debutant_accepte": 24.3,
+          "tx_offres_emploi_durable": 62.3,
+          "tx_offres_employe_non_qualifie": 5.5,
+          "tx_offres_employe_qualifie": 21,
+          "tx_offres_interim": 51.6,
+          "tx_offres_non_salarie": 0,
+          "tx_offres_ouvrier_non_qualifie": 27.3,
+          "tx_offres_ouvrier_qualifie": 43.2,
+          "tx_offres_saisonnier": 0,
+          "tx_offres_technicien_agent_maitrise": 2.9
+        }
+      ]
+    },
+    {
+      "mesure": "offres_emploi_mensuelles",
+      "libelle": "Offres d'emploi par mois",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "France Travail, API Offres d'emploi (offres collectées)",
+      "millesime": "12 derniers mois",
+      "valeurs": [
+        {
+          "nb_offres_emploi_mois": 1086,
+          "nb_postes_offres_emploi_mois": 1120,
+          "periode_code": "2025-10"
+        },
+        {
+          "nb_offres_emploi_mois": 843,
+          "nb_postes_offres_emploi_mois": 854,
+          "periode_code": "2025-11"
+        },
+        {
+          "nb_offres_emploi_mois": 842,
+          "nb_postes_offres_emploi_mois": 891,
+          "periode_code": "2025-12"
+        },
+        {
+          "nb_offres_emploi_mois": 1104,
+          "nb_postes_offres_emploi_mois": 1138,
+          "periode_code": "2026-01"
+        },
+        {
+          "nb_offres_emploi_mois": 984,
+          "nb_postes_offres_emploi_mois": 1010,
+          "periode_code": "2026-02"
+        },
+        {
+          "nb_offres_emploi_mois": 1198,
+          "nb_postes_offres_emploi_mois": 1217,
+          "periode_code": "2026-03"
+        },
+        {
+          "nb_offres_emploi_mois": 1077,
+          "nb_postes_offres_emploi_mois": 1112,
+          "periode_code": "2026-04"
+        },
+        {
+          "nb_offres_emploi_mois": 904,
+          "nb_postes_offres_emploi_mois": 923,
+          "periode_code": "2026-05"
+        },
+        {
+          "nb_offres_emploi_mois": 1096,
+          "nb_postes_offres_emploi_mois": 1111,
+          "periode_code": "2026-06"
+        },
+        {
+          "nb_offres_emploi_mois": 962,
+          "nb_postes_offres_emploi_mois": 981,
+          "periode_code": "2026-07"
+        },
+        {
+          "nb_offres_emploi_mois": 747,
+          "nb_postes_offres_emploi_mois": 767,
+          "periode_code": "2026-08"
+        },
+        {
+          "nb_offres_emploi_mois": 1085,
+          "nb_postes_offres_emploi_mois": 1120,
+          "periode_code": "2026-09"
+        }
+      ]
+    },
+    {
+      "mesure": "competences_offres",
+      "libelle": "Compétences demandées dans les offres d'emploi",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "France Travail, offres d'emploi enregistrées (OEFM) 2024",
+      "millesime": "2024",
+      "valeurs": [
+        {
+          "competence_code": "300228",
+          "competence_libelle": "Fixer, poser, installer des éléments, des ouvrages",
+          "competence_type_libelles": [
+            "Compétence détaillée",
+            "Savoir-faire"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 2922,
+          "rang_competence": 1,
+          "tx_offres_competence": 96.5
+        },
+        {
+          "competence_code": "300156",
+          "competence_libelle": "Démonter un équipement, une installation",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 2547,
+          "rang_competence": 2,
+          "tx_offres_competence": 84.1
+        },
+        {
+          "competence_code": "300181",
+          "competence_libelle": "Entretenir un équipement, une machine, une installation",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 1791,
+          "rang_competence": 3,
+          "tx_offres_competence": 59.2
+        },
+        {
+          "competence_code": "300225",
+          "competence_libelle": "Réaliser des ouvrages d'isolation",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 135,
+          "rang_competence": 4,
+          "tx_offres_competence": 4.5
+        },
+        {
+          "competence_code": "300149",
+          "competence_libelle": "Évaluer, prévenir, et gérer les risques et la sécurité",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 124,
+          "rang_competence": 5,
+          "tx_offres_competence": 4.1
+        },
+        {
+          "competence_code": "300232",
+          "competence_libelle": "Fabriquer, façonner des produits",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 108,
+          "rang_competence": 6,
+          "tx_offres_competence": 3.6
+        },
+        {
+          "competence_code": "300220",
+          "competence_libelle": "Raccorder, gérer un réseau technique",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 90,
+          "rang_competence": 7,
+          "tx_offres_competence": 3
+        },
+        {
+          "competence_code": "300282",
+          "competence_libelle": "Entretenir, nettoyer un espace, un lieu, un local",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 87,
+          "rang_competence": 8,
+          "tx_offres_competence": 2.9
+        },
+        {
+          "competence_code": "300448",
+          "competence_libelle": "Respecter des règles, des consignes, normes et procédures opérationnelles",
+          "competence_type_libelles": [
+            "Savoir-faire"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 78,
+          "rang_competence": 9,
+          "tx_offres_competence": 2.6
+        },
+        {
+          "competence_code": "300221",
+          "competence_libelle": "Réaliser des ouvrages de maçonnerie",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 77,
+          "rang_competence": 10,
+          "tx_offres_competence": 2.5
+        },
+        {
+          "competence_code": "300257",
+          "competence_libelle": "Contrôler la qualité et la conformité d'un bâtiment, d'une infrastructure",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 72,
+          "rang_competence": 11,
+          "tx_offres_competence": 2.4
+        },
+        {
+          "competence_code": "300440",
+          "competence_libelle": "Animer, coordonner une équipe",
+          "competence_type_libelles": [
+            "Savoir-faire"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 54,
+          "rang_competence": 12,
+          "tx_offres_competence": 1.8
+        },
+        {
+          "competence_code": "300021",
+          "competence_libelle": "Transmettre une technique, un savoir-faire",
+          "competence_type_libelles": [
+            "Savoir-faire"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 38,
+          "rang_competence": 13,
+          "tx_offres_competence": 1.3
+        },
+        {
+          "competence_code": "300147",
+          "competence_libelle": "Adapter et optimiser sa pratique au contexte et aux risques professionnels (gestes, postures, ergonomie)",
+          "competence_type_libelles": [
+            "Savoir-faire"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 38,
+          "rang_competence": 14,
+          "tx_offres_competence": 1.3
+        },
+        {
+          "competence_code": "300138",
+          "competence_libelle": "Réaliser des opérations de montage, d'assemblage et démontage",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 35,
+          "rang_competence": 15,
+          "tx_offres_competence": 1.2
+        },
+        {
+          "competence_code": "300263",
+          "competence_libelle": "Réceptionner des produits, des matières premières, vérifier la conformité d'une livraison",
+          "competence_type_libelles": [
+            "Savoir-faire"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 32,
+          "rang_competence": 16,
+          "tx_offres_competence": 1.1
+        },
+        {
+          "competence_code": "300233",
+          "competence_libelle": "Réaliser les travaux de montage, d'assemblage",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 31,
+          "rang_competence": 17,
+          "tx_offres_competence": 1
+        },
+        {
+          "competence_code": "300474",
+          "competence_libelle": "Alerter, demander un appui ou un arbitrage",
+          "competence_type_libelles": [
+            "Savoir-faire"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 30,
+          "rang_competence": 18,
+          "tx_offres_competence": 1
+        },
+        {
+          "competence_code": "300205",
+          "competence_libelle": "Sélectionner les matières premières à mobiliser",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 24,
+          "rang_competence": 19,
+          "tx_offres_competence": 0.8
+        },
+        {
+          "competence_code": "300185",
+          "competence_libelle": "Réaliser un diagnostic technique",
+          "competence_type_libelles": [
+            "Compétence détaillée"
+          ],
+          "nb_offres_avec_competences": 3027,
+          "nb_offres_competence": 23,
+          "rang_competence": 20,
+          "tx_offres_competence": 0.8
+        }
+      ]
+    },
+    {
+      "mesure": "emploi_secteurs",
+      "libelle": "Secteurs d'activité qui emploient le métier",
+      "grain": "fap_225",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "INSEE - Recensement de la population 2021, actifs en emploi par métier et secteur ; calculs RCO",
+      "millesime": "2021",
+      "valeurs": [
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 120034,
+          "rang_secteur": 1,
+          "secteur_naf38_code": "FZ",
+          "secteur_naf38_libelle": "Construction",
+          "tx_actifs_secteur": 78.4,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 15908,
+          "rang_secteur": 2,
+          "secteur_naf38_code": "NZ",
+          "secteur_naf38_libelle": "Activités de services administratifs et de soutien",
+          "tx_actifs_secteur": 10.4,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 2028,
+          "rang_secteur": 3,
+          "secteur_naf38_code": "OZ",
+          "secteur_naf38_libelle": "Administration publique",
+          "tx_actifs_secteur": 1.3,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 2018,
+          "rang_secteur": 4,
+          "secteur_naf38_code": "GZ",
+          "secteur_naf38_libelle": "Commerce ; réparation d'automobiles et de motocycles",
+          "tx_actifs_secteur": 1.3,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 1587,
+          "rang_secteur": 5,
+          "secteur_naf38_code": "PZ",
+          "secteur_naf38_libelle": "Enseignement",
+          "tx_actifs_secteur": 1,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 1449,
+          "rang_secteur": 6,
+          "secteur_naf38_code": "IZ",
+          "secteur_naf38_libelle": "Hébergement et restauration",
+          "tx_actifs_secteur": 0.9,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 1415,
+          "rang_secteur": 7,
+          "secteur_naf38_code": "QB",
+          "secteur_naf38_libelle": "Hébergement médico-social et social et action sociale sans hébergement",
+          "tx_actifs_secteur": 0.9,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 907,
+          "rang_secteur": 8,
+          "secteur_naf38_code": "MA",
+          "secteur_naf38_libelle": "Activités juridiques, comptables, de gestion, d'architecture, d'ingénierie, de contrôle et d'analyses techniques",
+          "tx_actifs_secteur": 0.6,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 832,
+          "rang_secteur": 9,
+          "secteur_naf38_code": "SZ",
+          "secteur_naf38_libelle": "Autres activités de services",
+          "tx_actifs_secteur": 0.5,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B0Z21",
+          "fap_225_libelle": "Ouvriers non qualifiés du gros oeuvre du bâtiment",
+          "nb_actifs_emploi": 830,
+          "rang_secteur": 10,
+          "secteur_naf38_code": "CC",
+          "secteur_naf38_libelle": "Travail du bois, industries du papier et imprimerie",
+          "tx_actifs_secteur": 0.5,
+          "nb_rome_famille": 8
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 39982,
+          "rang_secteur": 1,
+          "secteur_naf38_code": "FZ",
+          "secteur_naf38_libelle": "Construction",
+          "tx_actifs_secteur": 91.1,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 1302,
+          "rang_secteur": 2,
+          "secteur_naf38_code": "NZ",
+          "secteur_naf38_libelle": "Activités de services administratifs et de soutien",
+          "tx_actifs_secteur": 3,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 394,
+          "rang_secteur": 3,
+          "secteur_naf38_code": "GZ",
+          "secteur_naf38_libelle": "Commerce ; réparation d'automobiles et de motocycles",
+          "tx_actifs_secteur": 0.9,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 294,
+          "rang_secteur": 4,
+          "secteur_naf38_code": "CC",
+          "secteur_naf38_libelle": "Travail du bois, industries du papier et imprimerie",
+          "tx_actifs_secteur": 0.7,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 271,
+          "rang_secteur": 5,
+          "secteur_naf38_code": "OZ",
+          "secteur_naf38_libelle": "Administration publique",
+          "tx_actifs_secteur": 0.6,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 201,
+          "rang_secteur": 6,
+          "secteur_naf38_code": "MA",
+          "secteur_naf38_libelle": "Activités juridiques, comptables, de gestion, d'architecture, d'ingénierie, de contrôle et d'analyses techniques",
+          "tx_actifs_secteur": 0.5,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 193,
+          "rang_secteur": 7,
+          "secteur_naf38_code": "CH",
+          "secteur_naf38_libelle": "Métallurgie et fabrication de produits métalliques à l'exception des machines et des équipements",
+          "tx_actifs_secteur": 0.4,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 135,
+          "rang_secteur": 8,
+          "secteur_naf38_code": "PZ",
+          "secteur_naf38_libelle": "Enseignement",
+          "tx_actifs_secteur": 0.3,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 124,
+          "rang_secteur": 9,
+          "secteur_naf38_code": "AZ",
+          "secteur_naf38_libelle": "Agriculture, sylviculture et pêche",
+          "tx_actifs_secteur": 0.3,
+          "nb_rome_famille": 1
+        },
+        {
+          "fap_225_code": "B2Z44",
+          "fap_225_libelle": "Couvreurs",
+          "nb_actifs_emploi": 122,
+          "rang_secteur": 10,
+          "secteur_naf38_code": "QB",
+          "secteur_naf38_libelle": "Hébergement médico-social et social et action sociale sans hébergement",
+          "tx_actifs_secteur": 0.3,
+          "nb_rome_famille": 1
+        }
+      ]
+    },
+    {
+      "mesure": "statut_emploi",
+      "libelle": "Statut d'emploi : salarié ou indépendant",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "INSEE - Recensement de la population 2021, fichier détail individus ; calculs RCO",
+      "millesime": "2021",
+      "valeurs": [
+        {
+          "nb_actifs_aides_familiaux": 24,
+          "nb_actifs_emploi": 196986,
+          "nb_actifs_employeurs": 8792,
+          "nb_actifs_independants": 9213,
+          "nb_actifs_salaries": 178957,
+          "tx_actifs_aides_familiaux": 0,
+          "tx_actifs_employeurs": 4.5,
+          "tx_actifs_independants": 4.7,
+          "tx_actifs_salaries": 90.8
+        }
+      ]
+    },
+    {
+      "mesure": "formations_metier",
+      "libelle": "Formations préparant au métier sur le territoire",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "DEPP ; SIES ; DREES ; France Travail ; DGESCO, Affelnet ; MESR, Parcoursup ; RCO, Offre info ; calculs RCO",
+      "millesime": "Rentrée 2023 (DEPP), 2024 (SIES, DREES), 2025 (Affelnet, Parcoursup, entrées DE), sortants DE 2024",
+      "valeurs": [
+        {
+          "indice_affelnet_pression": 0.82,
+          "nb_affelnet_places": 459,
+          "nb_affelnet_voeux_1": 375,
+          "nb_certifications": 12,
+          "nb_de_acces_emploi_6m": 114,
+          "nb_de_sortants": 204,
+          "nb_entrees_formation_de": 203,
+          "nb_inscrits_apprentissage": 5618,
+          "nb_inscrits_enseignement_sup": null,
+          "nb_inscrits_sanitaire_social": null,
+          "nb_inscrits_voie_scolaire": 526,
+          "nb_parcoursup_candidatures": null,
+          "nb_parcoursup_places": null,
+          "nb_sessions_a_venir": 362,
+          "tx_de_acces_emploi_6m": 55.9
+        }
+      ]
+    },
+    {
+      "mesure": "insertion_formations_metier",
+      "libelle": "Insertion des sortants des formations au métier (InserJeunes)",
+      "grain": "rome",
+      "maille_demandee": "nat",
+      "maille_reelle": "nat",
+      "territoire_code": null,
+      "territoire_libelle": "France",
+      "repli": false,
+      "source_libelle": "DEPP - DARES, InserJeunes ; calculs RCO",
+      "millesime": "Cumul 2023-2024",
+      "valeurs": [
+        {
+          "nb_ij_apprentissage_annee_terminale": 6142,
+          "nb_ij_apprentissage_emploi_12m": 2638,
+          "nb_ij_apprentissage_poursuite_etudes": 2662,
+          "nb_ij_apprentissage_sortants": 3480,
+          "nb_ij_scolaire_annee_terminale": 358,
+          "nb_ij_scolaire_emploi_12m": 91,
+          "nb_ij_scolaire_poursuite_etudes": 164,
+          "nb_ij_scolaire_sortants": 194,
+          "tx_ij_apprentissage_emploi_12m": 75.8,
+          "tx_ij_apprentissage_poursuite_etudes": 43.3,
+          "tx_ij_scolaire_emploi_12m": 46.9,
+          "tx_ij_scolaire_poursuite_etudes": 45.8
+        }
+      ]
+    }
+  ]
+}

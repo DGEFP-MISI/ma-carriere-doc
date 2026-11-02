@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-02",
+  "dsfr": "1.15.4",
+  "dsfrChart": "2.1.1",
+  "runtimeSha256": "e7490df118ae6a123babf74f542f88a0393d8c3ecd1c125421e6b79bf9bab171",
+  "octets": {
+    "runtime": 762012,
+    "styles": 2938678
+  },
+  "reseauRequis": false
+}

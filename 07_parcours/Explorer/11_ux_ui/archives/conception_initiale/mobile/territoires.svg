@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="3394" viewBox="0 0 390 3394" role="img" aria-labelledby="title desc"><title id="title">Où explorer les opportunités ?</title><desc id="desc">Maquette mobile éditable, colonne de 390 pixels. Les liens de navigation mènent aux autres SVG ; les formulaires sont représentés visuellement.</desc><rect width="390" height="3394" fill="#fff"/><g font-family="Marianne, Arial, sans-serif"><rect x="0" y="0" width="390" height="96" fill="#fff" stroke="none"/>
+<path d="M0 95H390" stroke="#ddd"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#161616">MaCarrière</text>
+<text x="24" y="64" font-size="14" font-weight="400" fill="#666">Explorer · maquette mobile</text>
+<rect x="24" y="120" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="recherche.svg" aria-label="Explorer">
+<text x="40" y="148" font-size="16" font-weight="700" fill="#000091">Explorer</text>
+</a>
+<rect x="24" y="180" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Mes pistes">
+<text x="40" y="208" font-size="16" font-weight="700" fill="#000091">Mes pistes</text>
+</a>
+<text x="24" y="282" font-size="30" font-weight="700" fill="#161616">Où explorer les</text>
+<text x="24" y="327" font-size="30" font-weight="700" fill="#161616">opportunités ?</text>
+<text x="24" y="370" font-size="16" font-weight="400" fill="#666">Choisir un périmètre de comparaison,</text>
+<text x="24" y="394" font-size="16" font-weight="400" fill="#666">sans mélanger les familles ni les</text>
+<text x="24" y="418" font-size="16" font-weight="400" fill="#666">périodes.</text>
+<rect x="24" y="450" width="342" height="48" fill="#000091" stroke="#000091"/>
+<a href="pistes.svg" aria-label="Garder cette piste">
+<text x="40" y="478" font-size="16" font-weight="700" fill="#fff">Garder cette piste</text>
+</a>
+<rect x="24" y="510" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="comparateur.svg" aria-label="Comparer">
+<text x="40" y="538" font-size="16" font-weight="700" fill="#000091">Comparer</text>
+</a>
+<rect x="24" y="570" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="menu.svg" aria-label="Sommaire de la fiche">
+<text x="40" y="598" font-size="16" font-weight="700" fill="#000091">Sommaire de la fiche</text>
+</a>
+<text x="24" y="658" font-size="16" font-weight="700" fill="#161616">Territoire de consultation</text>
+<text x="24" y="680" font-size="14" font-weight="400" fill="#666">Le bassin, le département et la région</text>
+<text x="24" y="701" font-size="14" font-weight="400" fill="#666">portent des mesures différentes.</text>
+<rect x="24" y="716" width="342" height="48" fill="#eee" stroke="none"/>
+<text x="36" y="744" font-size="16" font-weight="400" fill="#161616">Montpellier — commune — Hérault</text>
+<path d="M24 764H366" stroke="#161616" stroke-width="2"/>
+<rect x="24" y="788" width="342" height="216" fill="#ececfe" stroke="none"/>
+<text x="44" y="824" font-size="16" font-weight="700" fill="#161616">Les classements ne sont pas des</text>
+<text x="44" y="848" font-size="16" font-weight="700" fill="#161616">données communales</text>
+<text x="44" y="880" font-size="16" font-weight="400" fill="#161616">Projets : régions, départements</text>
+<text x="44" y="904" font-size="16" font-weight="400" fill="#161616">ou bassins. Salaires : régions</text>
+<text x="44" y="928" font-size="16" font-weight="400" fill="#161616">ou départements. Chaque</text>
+<text x="44" y="952" font-size="16" font-weight="400" fill="#161616">changement de périmètre est</text>
+<text x="44" y="976" font-size="16" font-weight="400" fill="#161616">annoncé.</text>
+<text x="24" y="1040" font-size="12" font-weight="700" fill="#666">Vues disponibles</text>
+<rect x="24" y="1054" width="4" height="32" fill="#000091" stroke="none"/>
+<text x="40" y="1070" font-size="16" font-weight="700" fill="#000091">● Projets de recrutement</text>
+<rect x="24" y="1090" width="4" height="32" fill="#ddd" stroke="none"/>
+<text x="40" y="1106" font-size="16" font-weight="400" fill="#000091">○ Salaires médians</text>
+<text x="24" y="1182" font-size="24" font-weight="700" fill="#161616">Projets BMO par région</text>
+<text x="24" y="1218" font-size="16" font-weight="400" fill="#666">Couvreurs · B1X34 · 1 métier ·</text>
+<text x="24" y="1242" font-size="16" font-weight="400" fill="#666">France Travail 2026.</text>
+<rect x="24" y="1270" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1302" font-size="12" font-weight="700" fill="#666">Région</text>
+<text x="44" y="1324" font-size="16" font-weight="700" fill="#161616">1. NOUVELLE-AQUITAINE</text>
+<text x="44" y="1356" font-size="12" font-weight="700" fill="#666">Projets</text>
+<text x="44" y="1378" font-size="16" font-weight="400" fill="#161616">1 310</text>
+<text x="44" y="1410" font-size="12" font-weight="700" fill="#666">Difficultés déclarées</text>
+<text x="44" y="1432" font-size="16" font-weight="400" fill="#161616">84,4 %</text>
+<rect x="24" y="1476" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1508" font-size="12" font-weight="700" fill="#666">Région</text>
+<text x="44" y="1530" font-size="16" font-weight="700" fill="#161616">2. AUVERGNE-RHONE-ALPES</text>
+<text x="44" y="1562" font-size="12" font-weight="700" fill="#666">Projets</text>
+<text x="44" y="1584" font-size="16" font-weight="400" fill="#161616">1 185</text>
+<text x="44" y="1616" font-size="12" font-weight="700" fill="#666">Difficultés déclarées</text>
+<text x="44" y="1638" font-size="16" font-weight="400" fill="#161616">88,4 %</text>
+<rect x="24" y="1682" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1714" font-size="12" font-weight="700" fill="#666">Région</text>
+<text x="44" y="1736" font-size="16" font-weight="700" fill="#161616">3. ILE-DE-FRANCE</text>
+<text x="44" y="1768" font-size="12" font-weight="700" fill="#666">Projets</text>
+<text x="44" y="1790" font-size="16" font-weight="400" fill="#161616">945</text>
+<text x="44" y="1822" font-size="12" font-weight="700" fill="#666">Difficultés déclarées</text>
+<text x="44" y="1844" font-size="16" font-weight="400" fill="#161616">55,1 %</text>
+<rect x="24" y="1888" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="1920" font-size="12" font-weight="700" fill="#666">Région</text>
+<text x="44" y="1942" font-size="16" font-weight="700" fill="#161616">4. BRETAGNE</text>
+<text x="44" y="1974" font-size="12" font-weight="700" fill="#666">Projets</text>
+<text x="44" y="1996" font-size="16" font-weight="400" fill="#161616">921</text>
+<text x="44" y="2028" font-size="12" font-weight="700" fill="#666">Difficultés déclarées</text>
+<text x="44" y="2050" font-size="16" font-weight="400" fill="#161616">89,8 %</text>
+<text x="24" y="2108" font-size="14" font-weight="400" fill="#666">Extrait du classement reçu. Les rangs</text>
+<text x="24" y="2129" font-size="14" font-weight="400" fill="#666">sont propres à la famille ; B6X73 a son</text>
+<text x="24" y="2150" font-size="14" font-weight="400" fill="#666">propre classement.</text>
+<text x="24" y="2221" font-size="24" font-weight="700" fill="#161616">Salaires de la famille :</text>
+<text x="24" y="2257" font-size="24" font-weight="700" fill="#161616">autre lecture</text>
+<text x="24" y="2293" font-size="16" font-weight="400" fill="#666">B0Z21 · INSEE 2023 · lecture</text>
+<text x="24" y="2317" font-size="16" font-weight="400" fill="#666">indépendante de BMO.</text>
+<rect x="24" y="2345" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2377" font-size="12" font-weight="700" fill="#666">Région</text>
+<text x="44" y="2399" font-size="16" font-weight="700" fill="#161616">BRETAGNE</text>
+<text x="44" y="2431" font-size="12" font-weight="700" fill="#666">Médiane mensuelle</text>
+<text x="44" y="2453" font-size="16" font-weight="400" fill="#161616">1 900 €</text>
+<text x="44" y="2485" font-size="12" font-weight="700" fill="#666">Périmètre</text>
+<text x="44" y="2507" font-size="16" font-weight="400" fill="#161616">8 métiers · B0Z21</text>
+<rect x="24" y="2551" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2583" font-size="12" font-weight="700" fill="#666">Région</text>
+<text x="44" y="2605" font-size="16" font-weight="700" fill="#161616">BOURGOGNE-FRANCHE-COMTE</text>
+<text x="44" y="2637" font-size="12" font-weight="700" fill="#666">Médiane mensuelle</text>
+<text x="44" y="2659" font-size="16" font-weight="400" fill="#161616">1 860 €</text>
+<text x="44" y="2691" font-size="12" font-weight="700" fill="#666">Périmètre</text>
+<text x="44" y="2713" font-size="16" font-weight="400" fill="#161616">8 métiers · B0Z21</text>
+<rect x="24" y="2757" width="342" height="190" fill="#f6f6f6" stroke="none"/>
+<text x="44" y="2789" font-size="12" font-weight="700" fill="#666">Région</text>
+<text x="44" y="2811" font-size="16" font-weight="700" fill="#161616">NORMANDIE</text>
+<text x="44" y="2843" font-size="12" font-weight="700" fill="#666">Médiane mensuelle</text>
+<text x="44" y="2865" font-size="16" font-weight="400" fill="#161616">1 820 €</text>
+<text x="44" y="2897" font-size="12" font-weight="700" fill="#666">Périmètre</text>
+<text x="44" y="2919" font-size="16" font-weight="400" fill="#161616">8 métiers · B0Z21</text>
+<rect x="24" y="2963" width="342" height="216" fill="#ececfe" stroke="none"/>
+<text x="44" y="2999" font-size="16" font-weight="700" fill="#161616">Aucun « meilleur territoire »</text>
+<text x="44" y="3023" font-size="16" font-weight="700" fill="#161616">calculé</text>
+<text x="44" y="3055" font-size="16" font-weight="400" fill="#161616">Les projets, les salaires et</text>
+<text x="44" y="3079" font-size="16" font-weight="400" fill="#161616">vos contraintes sont des</text>
+<text x="44" y="3103" font-size="16" font-weight="400" fill="#161616">informations à examiner</text>
+<text x="44" y="3127" font-size="16" font-weight="400" fill="#161616">séparément. Aucun score</text>
+<text x="44" y="3151" font-size="16" font-weight="400" fill="#161616">d'attractivité ne les combine.</text>
+<rect x="24" y="3203" width="342" height="48" fill="#fff" stroke="#000091"/>
+<a href="sources.svg" aria-label="Sources et méthode">
+<text x="40" y="3231" font-size="16" font-weight="700" fill="#000091">Sources et méthode</text>
+</a>
+<text x="24" y="3301" font-size="14" font-weight="700" fill="#161616">Données fournies par RCO</text>
+<text x="24" y="3320" font-size="12" font-weight="400" fill="#666">Maquette de conception · observation 01/11/2026</text>
+<text x="24" y="3338" font-size="12" font-weight="400" fill="#666">Contrôles visuels et tests utilisateurs restent</text>
+<text x="24" y="3356" font-size="12" font-weight="400" fill="#666">nécessaires.</text></g></svg>
+

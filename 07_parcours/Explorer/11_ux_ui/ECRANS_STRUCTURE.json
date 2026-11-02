@@ -1,0 +1,2016 @@
+{
+  "visualOverrides": {
+    "guide": "archives/conception_initiale/mobile/guide.svg — puces sélectionnées et radios contextuelles, remplaçant les tableaux de sélection initiaux"
+  },
+  "version": "conception-2026-11-02",
+  "observation": "2026-11-01",
+  "viewport": {
+    "width": 390,
+    "referenceHeight": 844,
+    "scroll": "vertical"
+  },
+  "font": "Marianne, Arial fallback pour aperçu local",
+  "screens": [
+    {
+      "slug": "essentiel",
+      "title": "Pose et restauration de couvertures",
+      "subtitle": "ROME V3 F1610 · Second œuvre · Construction, bâtiment et travaux publics",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "note",
+          "t": "Un métier, plusieurs spécialités",
+          "s": "Cette fiche réunit notamment couverture-zinguerie et installation de systèmes solaires. Les compétences et les chiffres peuvent concerner des périmètres différents."
+        },
+        {
+          "type": "h",
+          "t": "Que fait-on dans ce métier ?",
+          "s": "Comprendre les activités à travers les définitions du référentiel."
+        },
+        {
+          "type": "p",
+          "t": "Couvreur / Couvreuse : Le couvreur est un artisan spécialisé dans la pose, la réparation et la rénovation des toitures sur des chantiers de construction neuve ou de rénovation de bâtiments résidentiels, commerciaux ou industriels.",
+          "small": false
+        },
+        {
+          "type": "accordion",
+          "t": "Autre spécialité : installation et maintenance de systèmes solaires",
+          "to": "competences"
+        },
+        {
+          "type": "p",
+          "t": "Appellations : Couvreur / Couvreuse · Couvreur zingueur / Couvreuse zingueuse · Monteur / Monteuse de panneaux photovoltaïques",
+          "small": true
+        },
+        {
+          "type": "h",
+          "t": "Que souhaitez-vous explorer ?",
+          "s": "Une synthèse pour vous repérer, puis des données détaillées par question."
+        },
+        {
+          "type": "metrics",
+          "v": [
+            [
+              "Projets de recrutement",
+              "26",
+              "Couvreurs · bassin de Montpellier · BMO 2026"
+            ],
+            [
+              "Tension sur le marché",
+              "Tension extrême",
+              "Couvreurs · Hérault · DARES / France Travail 2024"
+            ]
+          ]
+        },
+        {
+          "type": "metrics",
+          "v": [
+            [
+              "Salaire mensuel net médian",
+              "1 690 €",
+              "Famille B0Z21 : ouvriers non qualifiés du gros œuvre · 8 métiers · Hérault · 2023"
+            ],
+            [
+              "Transition écologique",
+              "Métier concerné",
+              "Au moins une spécialité rattachée ; ce tag ne prédit pas une croissance des emplois."
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Montpellier choisi ; chaque donnée a son lieu réel",
+          "s": "Projets : bassin d'emploi de Montpellier. Tension et salaire : Hérault. Prospective : Occitanie. Mobilités : France dans le jeu observé."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Compétences et conditions",
+              "competences",
+              true
+            ],
+            [
+              "Voir les salaires",
+              "salaires"
+            ],
+            [
+              "Autres pistes",
+              "formations"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Extraits des JSON de référence · observation au 01/11/2026. Valeurs reçues, sans agrégation entre familles.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "competences",
+      "title": "Quelles compétences et conditions de travail ?",
+      "subtitle": "F1610 · Compétences référencées et maîtrise personnelle sont deux choses différentes.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "tabs",
+          "v": [
+            "Compétences",
+            "Conditions de travail",
+            "Savoir-être"
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Le métier regroupe plusieurs spécialités",
+          "s": "La part des spécialités indique où une compétence est portée dans le métier. Elle ne mesure pas votre niveau."
+        },
+        {
+          "type": "h",
+          "t": "Compétences référencées",
+          "s": "Choisissez des codes OGR pour découvrir d'autres métiers qui les portent."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Compétence",
+            "Spécialités",
+            "Repère"
+          ],
+          "r": [
+            [
+              "Poser des panneaux solaires",
+              "100 %",
+              "Cœur : non renseigné"
+            ],
+            [
+              "Réaliser un raccordement d'étanchéité",
+              "100 %",
+              "Cœur de métier"
+            ],
+            [
+              "Transmettre une technique, un savoir-faire",
+              "100 %",
+              "Cœur : non renseigné"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Choisir des compétences",
+              "guide",
+              true
+            ],
+            [
+              "Métiers associés",
+              "resultats"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "100 compétences reçues sur 144 annoncées : liste incomplète dans le jeu de référence.",
+          "small": true
+        },
+        {
+          "type": "accordion",
+          "t": "Voir la suite et les catégories complètes"
+        },
+        {
+          "type": "h",
+          "t": "Dans quelles conditions ?",
+          "s": "Un contexte est référencé pour au moins une spécialité ; il ne décrit pas tous les emplois."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Contexte référencé",
+            "Choix proposé",
+            "Action"
+          ],
+          "r": [
+            [
+              "En grande hauteur",
+              "Rechercher / éviter",
+              "Filtrer les pistes"
+            ],
+            [
+              "En extérieur",
+              "Rechercher / éviter",
+              "Filtrer les pistes"
+            ],
+            [
+              "Port de charges lourdes ou encombrantes",
+              "Rechercher / éviter",
+              "Filtrer les pistes"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Un contexte non référencé n'est pas une garantie",
+          "s": "« Sans ce contexte » exclut les métiers qui le portent dans le référentiel. Vérifiez ensuite les conditions de l'emploi envisagé."
+        },
+        {
+          "type": "accordion",
+          "t": "Savoir-être : esprit d'équipe, rigueur et précision, autonomie"
+        },
+        {
+          "type": "p",
+          "t": "France Travail · codes OGR rattachés aux métiers ROME V3 ; pagination et catégories conservées.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "recrutements",
+      "title": "Quels recrutements, quelles tensions ?",
+      "subtitle": "Projets, offres et tensions répondent à des questions différentes.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "h",
+          "t": "Des projets dans le bassin de Montpellier",
+          "s": "BMO 2026 · familles FAP228 séparées."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Famille professionnelle",
+            "Projets",
+            "Difficultés déclarées"
+          ],
+          "r": [
+            [
+              "Couvreurs · B1X34",
+              "26",
+              "42,3 % · 1 métier(s)"
+            ],
+            [
+              "Techniciens et agents de maîtrise de chantiers du BTP  · B6X73",
+              "81",
+              "2,1 % · 26 métier(s)"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Projets, pas offres ni embauches. Valeurs d'enquête arrondies ; taux reçus non recalculés.",
+          "small": true
+        },
+        {
+          "type": "h",
+          "t": "Tension : regarder chaque famille",
+          "s": "Hérault · DARES / France Travail 2024."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Famille",
+            "Tension globale",
+            "Périmètre"
+          ],
+          "r": [
+            [
+              "Couvreurs",
+              "Tension extrême",
+              "1 métier(s)"
+            ],
+            [
+              "Techniciens et agents de maîtrise de chantiers du BTP ",
+              "Tension faible",
+              "26 métier(s)"
+            ]
+          ]
+        },
+        {
+          "type": "accordion",
+          "t": "Comprendre les sept composantes de la tension"
+        },
+        {
+          "type": "bars",
+          "t": "Quels contrats apparaissent dans les offres ?",
+          "r": [
+            [
+              "Intérim",
+              69.9
+            ],
+            [
+              "CDI",
+              23.1
+            ],
+            [
+              "CDD",
+              7
+            ]
+          ],
+          "max": 100,
+          "unit": "%"
+        },
+        {
+          "type": "p",
+          "t": "Hérault · 412 offres collectées de 10/2025 à 09/2026. Ces trois catégories ne sont pas des projets BMO.",
+          "small": true
+        },
+        {
+          "type": "accordion",
+          "t": "Débutants, qualifications, niveaux de formation et autres contrats"
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Comparer les territoires de recrutement",
+              "territoires",
+              true
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Source : France Travail, BMO 2026 et offres collectées ; DARES / France Travail, tension 2024. Les périodes ne sont pas additionnées.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "salaires",
+      "title": "Combien gagne-t-on, selon la famille et le secteur ?",
+      "subtitle": "Un salaire de famille professionnelle, pas une promesse pour un poste précis.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "note",
+          "t": "Une donnée familiale pour votre territoire",
+          "s": "La valeur locale reçue concerne B0Z21, ouvriers non qualifiés du gros œuvre, commune à 8 métiers. Le lieu mesuré est l'Hérault, pas la commune."
+        },
+        {
+          "type": "metrics",
+          "v": [
+            [
+              "Médiane mensuelle nette",
+              "1 690 €",
+              "Famille B0Z21 · Hérault · salariés à temps complet · INSEE BTS 2023"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Situer les salaires annuels",
+          "s": "Les quartiles sont annuels : ils ne sont pas présentés comme mensuels."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Salaire net annuel",
+            "Montant reçu",
+            "Lecture"
+          ],
+          "r": [
+            [
+              "Premier quartile (Q1)",
+              "17 400 €",
+              "Un quart des salaires sous cette valeur"
+            ],
+            [
+              "Médiane",
+              "20 300 €",
+              "La moitié des salaires sous cette valeur"
+            ],
+            [
+              "Troisième quartile (Q3)",
+              "22 000 €",
+              "Trois quarts des salaires sous cette valeur"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Quels salaires selon le secteur économique ?",
+          "s": "France · INSEE BTS 2023 · FAP225 × NAF38 ; familles séparées."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Famille et secteur",
+            "Médiane mensuelle",
+            "Part des salariés"
+          ],
+          "r": [
+            [
+              "B0Z21 · Construction",
+              "1 750 €",
+              "95,3 % · France"
+            ],
+            [
+              "B0Z21 · Activités de services administratifs et de soutien",
+              "1 620 €",
+              "1,3 % · France"
+            ],
+            [
+              "B2Z44 · Construction",
+              "2 090 €",
+              "97,9 % · France"
+            ]
+          ]
+        },
+        {
+          "type": "accordion",
+          "t": "Quartiles annuels et référence tous secteurs"
+        },
+        {
+          "type": "note",
+          "t": "Une sélection de secteurs publiée",
+          "s": "Seuls les secteurs au seuil figurent. Les parts ne sont pas renormalisées. Une médiane non chiffrable en tranche ouverte est présentée comme tranche annuelle."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Comparer les territoires sur les salaires",
+              "territoires",
+              true
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "INSEE · Base Tous salariés 2023, calculs RCO. Population et méthode détaillées dans Sources.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "territoires",
+      "title": "Où explorer les opportunités ?",
+      "subtitle": "Choisir un périmètre de comparaison, sans mélanger les familles ni les périodes.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "input",
+          "label": "Territoire de consultation",
+          "value": "Montpellier — commune — Hérault",
+          "hint": "Le bassin, le département et la région portent des mesures différentes."
+        },
+        {
+          "type": "note",
+          "t": "Les classements ne sont pas des données communales",
+          "s": "Projets : régions, départements ou bassins. Salaires : régions ou départements. Chaque changement de périmètre est annoncé."
+        },
+        {
+          "type": "tabs",
+          "v": [
+            "Projets de recrutement",
+            "Salaires médians"
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Projets BMO par région",
+          "s": "Couvreurs · B1X34 · 1 métier · France Travail 2026."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Région",
+            "Projets",
+            "Difficultés déclarées"
+          ],
+          "r": [
+            [
+              "1. NOUVELLE-AQUITAINE",
+              "1 310",
+              "84,4 %"
+            ],
+            [
+              "2. AUVERGNE-RHONE-ALPES",
+              "1 185",
+              "88,4 %"
+            ],
+            [
+              "3. ILE-DE-FRANCE",
+              "945",
+              "55,1 %"
+            ],
+            [
+              "4. BRETAGNE",
+              "921",
+              "89,8 %"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Extrait du classement reçu. Les rangs sont propres à la famille ; B6X73 a son propre classement.",
+          "small": true
+        },
+        {
+          "type": "h",
+          "t": "Salaires de la famille : autre lecture",
+          "s": "B0Z21 · INSEE 2023 · lecture indépendante de BMO."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Région",
+            "Médiane mensuelle",
+            "Périmètre"
+          ],
+          "r": [
+            [
+              "BRETAGNE",
+              "1 900 €",
+              "8 métiers · B0Z21"
+            ],
+            [
+              "BOURGOGNE-FRANCHE-COMTE",
+              "1 860 €",
+              "8 métiers · B0Z21"
+            ],
+            [
+              "NORMANDIE",
+              "1 820 €",
+              "8 métiers · B0Z21"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Aucun « meilleur territoire » calculé",
+          "s": "Les projets, les salaires et vos contraintes sont des informations à examiner séparément. Aucun score d'attractivité ne les combine."
+        }
+      ]
+    },
+    {
+      "slug": "mobilites",
+      "title": "D'où viennent et où vont les personnes ?",
+      "subtitle": "Mobilités observées entre janvier 2022 et janvier 2023, pas une probabilité pour votre parcours.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "tabs",
+          "v": [
+            "Où vont-elles ?",
+            "D'où viennent-elles ?"
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "France · Modifier",
+              null
+            ],
+            [
+              "Tous âges · Modifier",
+              null
+            ],
+            [
+              "Famille B0Z21",
+              null
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Des situations de famille professionnelle",
+          "s": "B0Z21 : ouvriers non qualifiés du gros œuvre · 8 métiers. Même famille ne signifie pas nécessairement même poste."
+        },
+        {
+          "type": "bars",
+          "t": "Situation un an après — France",
+          "r": [
+            [
+              "Même famille professionnelle",
+              55.3
+            ],
+            [
+              "Demandeurs d'emploi",
+              11
+            ],
+            [
+              "Autres situations",
+              10.3
+            ],
+            [
+              "Maçons",
+              3.7
+            ],
+            [
+              "Ouvriers qualifiés des travaux publics, du béton et de l'extraction",
+              1.6
+            ]
+          ],
+          "max": 100,
+          "unit": "%"
+        },
+        {
+          "type": "table",
+          "h": [
+            "Situation un an avant",
+            "Part reçue",
+            "Population"
+          ],
+          "r": [
+            [
+              "Même famille",
+              "54 %",
+              "France · tous âges · B0Z21"
+            ],
+            [
+              "Autres situations",
+              "15 %",
+              "France · tous âges · B0Z21"
+            ],
+            [
+              "Demandeurs d'emploi",
+              "8,4 %",
+              "France · tous âges · B0Z21"
+            ]
+          ]
+        },
+        {
+          "type": "accordion",
+          "t": "Autre famille rattachée : Couvreurs (B2Z44)"
+        },
+        {
+          "type": "p",
+          "t": "Les situations les plus fréquentes sont publiées, au plus 15 par famille. Des parts sont omises pour secret statistique : la somme affichée peut être inférieure à 100 %.",
+          "small": true
+        },
+        {
+          "type": "p",
+          "t": "DARES · ForCE et DSN-Sismmo · 2022–2023. Âge en début de période pour les destinations, en fin pour les origines. Les FAP ne sont pas des codes ROME ouvrables automatiquement.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "prospective",
+      "title": "Quelles perspectives d'ici 2030 ?",
+      "subtitle": "Des projections de familles sur 2019–2030, distinctes des projets de recrutement BMO.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "tabs",
+          "v": [
+            "Les composantes",
+            "Comparer les régions",
+            "Explorer une région"
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Occitanie : deux familles, deux perspectives",
+          "s": "Les valeurs FAP87 B0Z et B2Z restent séparées. Les composantes sont reçues de l'API et ne sont pas recalculées."
+        },
+        {
+          "type": "h",
+          "t": "Ouvriers peu qualifiés du gros œuvre du bâtiment, des travaux publics, du béton et de l'extraction",
+          "s": "B0Z · 15 métiers · Occitanie"
+        },
+        {
+          "type": "table",
+          "h": [
+            "Composante 2019–2030",
+            "Effectif reçu",
+            "Taux sur emploi 2019"
+          ],
+          "r": [
+            [
+              "Créations nettes",
+              "-1 035",
+              "-6,1 %"
+            ],
+            [
+              "Départs en fin de carrière",
+              "3 520",
+              "20,6 %"
+            ],
+            [
+              "Postes à pourvoir",
+              "2 485",
+              "14,6 %"
+            ],
+            [
+              "Jeunes débutants",
+              "5 859",
+              "34,3 %"
+            ],
+            [
+              "Déséquilibre potentiel",
+              "-3 411",
+              "-20 %"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Ouvriers qualifiés du gros œuvre du bâtiment",
+          "s": "B2Z · 9 métiers · Occitanie"
+        },
+        {
+          "type": "table",
+          "h": [
+            "Composante 2019–2030",
+            "Effectif reçu",
+            "Taux sur emploi 2019"
+          ],
+          "r": [
+            [
+              "Créations nettes",
+              "301",
+              "0,8 %"
+            ],
+            [
+              "Départs en fin de carrière",
+              "11 480",
+              "31,7 %"
+            ],
+            [
+              "Postes à pourvoir",
+              "11 781",
+              "32,6 %"
+            ],
+            [
+              "Jeunes débutants",
+              "3 969",
+              "11 %"
+            ],
+            [
+              "Déséquilibre potentiel",
+              "7 891",
+              "21,8 %"
+            ]
+          ]
+        },
+        {
+          "type": "accordion",
+          "t": "Emploi 2019, part régionale, spécificité et tension de départ"
+        },
+        {
+          "type": "note",
+          "t": "Un déséquilibre ne prédit pas votre accès à l'emploi",
+          "s": "Son signe décrit le solde de l'exercice de projection. La couverture métropolitaine et les regroupements de familles sont expliqués."
+        },
+        {
+          "type": "p",
+          "t": "DARES – France Stratégie · Les métiers en 2030 · scénario de référence. Comparaisons de régions avec référence France et navigation vers les métiers ROME associés.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "secteurs",
+      "title": "Dans quels secteurs travaille-t-on ?",
+      "subtitle": "Distinguer les secteurs d'emploi de la famille et la dynamique économique du territoire.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "h",
+          "t": "Secteurs de la famille B0Z21",
+          "s": "Occitanie · actifs occupés salariés et non salariés · 8 métiers · INSEE RP 2021."
+        },
+        {
+          "type": "bars",
+          "t": "Parts d'actifs par secteur",
+          "r": [
+            [
+              "Construction",
+              77.9
+            ],
+            [
+              "Activités de services administratifs et de soutien",
+              12.1
+            ],
+            [
+              "Administration publique",
+              1.3
+            ]
+          ],
+          "max": 100,
+          "unit": "%"
+        },
+        {
+          "type": "h",
+          "t": "Et le contexte économique local ?",
+          "s": "Construction · bassin de Montpellier · tous les salariés privés du secteur, pas les seuls couvreurs."
+        },
+        {
+          "type": "metrics",
+          "v": [
+            [
+              "Établissements employeurs",
+              "2 613",
+              "Construction · bassin de Montpellier · URSSAF 2025"
+            ],
+            [
+              "Salariés privés",
+              "16 440",
+              "Construction · même territoire et secteur · URSSAF 2025"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "h": [
+            "Dynamique du secteur",
+            "Valeur reçue",
+            "Période"
+          ],
+          "r": [
+            [
+              "Créations d'établissements",
+              "1 469",
+              "2025 · évolution annuelle −9 %"
+            ],
+            [
+              "Évolution des salariés privés",
+              "−2 %",
+              "2020–2025"
+            ],
+            [
+              "Défaillances",
+              "98",
+              "01/01/2026–30/09/2026"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Le détail métier-territoire est indisponible sur ce cas",
+          "s": "Le filtre F1610 ne restitue pas le résultat attendu. Les données familiales et le contexte territorial restent consultables ; aucun compte local n'est attribué au métier."
+        },
+        {
+          "type": "p",
+          "t": "Parts d'emploi : INSEE RP 2021. Contexte : SIDE / URSSAF / BODACC, périodes distinctes. Les lectures accessibles ne clôturent pas l'anomalie R17.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "formations",
+      "title": "Se former, se certifier et découvrir d'autres pistes",
+      "subtitle": "Des associations de référentiels pour orienter l'exploration, sans garantie d'admission ni d'emploi.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "h",
+          "t": "Quelles certifications sont associées ?",
+          "s": "Certifications actives avec leur type réel et un accès à leur fiche."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Certification",
+            "Référence",
+            "Consulter"
+          ],
+          "r": [
+            [
+              "Titre professionnel couvreur-zingueur",
+              "RNCP36101",
+              "Fiche certification"
+            ],
+            [
+              "DSP installateur de systèmes de production photovoltaïque",
+              "RNCP37218",
+              "Fiche certification"
+            ],
+            [
+              "Ouvrier professionnel en restauration du patrimoine",
+              "RNCP37516",
+              "Fiche certification"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Titre professionnel couvreur-zingueur",
+              "certification",
+              true
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Quelles sessions sont publiées ?",
+          "s": "Depuis la certification, choisir une région, un département ou un bassin ; à venir et en cours."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Consulter les sessions",
+              "certification"
+            ],
+            [
+              "Thèmes de formation",
+              "formacodes",
+              null
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Quelles autres pistes explorer ?",
+          "s": "Métiers proches dans l'ordre reçu : pas des flux de mobilité observés."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Métier proche",
+            "ROME V3",
+            "Action"
+          ],
+          "r": [
+            [
+              "Montage de réseaux électriques et télécoms",
+              "F1605",
+              "Ouvrir ou comparer"
+            ],
+            [
+              "Travaux d'étanchéité et d'isolation",
+              "F1613",
+              "Ouvrir ou comparer"
+            ],
+            [
+              "Ingénierie et études du BTP",
+              "F1106",
+              "Ouvrir ou comparer"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Comparer F1610 et F1613",
+              "comparateur",
+              true
+            ],
+            [
+              "Explorer par compétences",
+              "guide"
+            ]
+          ]
+        },
+        {
+          "type": "accordion",
+          "t": "Thèmes associés : couverture, zinguerie, énergie solaire"
+        },
+        {
+          "type": "p",
+          "t": "Certif Info / France compétences et référentiel métier. Les sessions publiées ne prouvent ni places disponibles ni possibilité d'inscription.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "recherche",
+      "title": "Explorer votre avenir professionnel",
+      "subtitle": "Partez d'un métier, d'une certification ou d'un domaine. Gardez vos pistes et examinez ce qui compte pour vous.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "h",
+          "t": "Que connaissez-vous déjà ?"
+        },
+        {
+          "type": "tabs",
+          "v": [
+            "Métier",
+            "Diplôme ou certification",
+            "Domaine professionnel"
+          ]
+        },
+        {
+          "type": "input",
+          "label": "Un métier ou une appellation",
+          "value": "Couvreur",
+          "hint": "Saisissez au moins deux caractères puis choisissez un résultat identifié."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Rechercher",
+              "resultats",
+              true
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Vous explorez à votre rythme",
+          "s": "Consultez les contenus d'un métier, les données du marché et les formations. Aucune note ne décide à votre place."
+        },
+        {
+          "type": "h",
+          "t": "Vous connaissez surtout vos compétences ?",
+          "s": "Après un premier métier, partez de compétences et de conditions de travail référencées."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Explorer par compétences et contextes",
+              "guide"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Conserver et comparer",
+          "s": "Mes pistes reste temporaire, sans compte. Le comparateur met deux métiers côte à côte avec les sources et les limites de chaque donnée."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Voir Mes pistes",
+              "pistes"
+            ],
+            [
+              "Ouvrir le comparateur",
+              "comparateur"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Sources : France Travail, Certif Info et RCO. Chaque donnée est présentée avec son périmètre et sa période.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "resultats",
+      "title": "Choisissez un métier identifié",
+      "subtitle": "Exemple de consultation autour de « couvreur » : ouvrez la fiche correspondant à votre recherche.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "input",
+          "label": "Métier ou appellation",
+          "value": "Couvreur",
+          "hint": "La recherche s'appuie sur les intitulés, appellations et définitions du référentiel."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Rechercher",
+              "resultats",
+              true
+            ],
+            [
+              "Changer de mode",
+              "recherche"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Métier à consulter",
+          "s": "Le nom et le code permettent d'éviter les ambiguïtés."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Métier",
+            "Référentiel",
+            "Domaine"
+          ],
+          "r": [
+            [
+              "Pose et restauration de couvertures",
+              "ROME V3 · F1610",
+              "Second oeuvre"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Consulter la fiche F1610",
+              "essentiel",
+              true
+            ],
+            [
+              "Ajouter à Mes pistes",
+              "pistes"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Autres pistes du domaine",
+          "s": "Ces associations de domaine sont distinctes des résultats d'une recherche plein texte."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Métier",
+            "ROME V3",
+            "Action"
+          ],
+          "r": [
+            [
+              "Travaux d'étanchéité et d'isolation",
+              "F1613",
+              "Consulter ou comparer"
+            ],
+            [
+              "Montage de réseaux électriques et télécoms",
+              "F1605",
+              "Consulter ou comparer"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Explorer le domaine Second œuvre",
+              "domaine"
+            ],
+            [
+              "Chercher avec des compétences",
+              "guide"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Vous ne trouvez pas le bon intitulé ?",
+          "s": "Essayez une appellation ou explorez un domaine. Aucun résultat ne signifie pas que le métier ou l'emploi n'existe pas."
+        },
+        {
+          "type": "p",
+          "t": "Ouvrez une fiche identifiée pour vérifier qu'elle correspond à votre recherche.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "certification",
+      "title": "Titre professionnel couvreur-zingueur",
+      "subtitle": "Certif Info 112561 · RNCP36101 · Niveau 3 · fiche publiée dans les données observées.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "tabs",
+          "v": [
+            "Je souhaite l'obtenir",
+            "Je possède ce diplôme"
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Ce que la certification permet d'explorer",
+          "s": "Certificateur : Ministère du travail et des solidarités · fin d'enregistrement reçue : 06/03/2027."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Voie d'accès déclarée",
+            "Réponse reçue",
+            "Lecture"
+          ],
+          "r": [
+            [
+              "Apprentissage",
+              "Oui",
+              "Voie décrite, pas admission personnelle"
+            ],
+            [
+              "Formation continue",
+              "Oui",
+              "Vérifier les conditions du parcours"
+            ],
+            [
+              "Contrat de professionnalisation",
+              "Oui",
+              "Voie décrite"
+            ],
+            [
+              "VAE",
+              "Oui",
+              "Pas de garantie d'éligibilité individuelle"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Quatre blocs de compétences RNCP",
+          "s": "Textes certifiants, sans équivalence automatique avec les codes OGR du métier."
+        },
+        {
+          "type": "accordion",
+          "t": "Réaliser la couverture de combles à deux versants en petits éléments"
+        },
+        {
+          "type": "accordion",
+          "t": "Réaliser la couverture de combles de formes diverses en petits éléments"
+        },
+        {
+          "type": "accordion",
+          "t": "Réaliser la couverture de combles à deux versants en zinc"
+        },
+        {
+          "type": "accordion",
+          "t": "Réaliser et mettre en œuvre les abergements et l'évacuation des eaux pluviales"
+        },
+        {
+          "type": "h",
+          "t": "Quels résultats selon les populations ?",
+          "s": "Ne pas comparer directement des populations et horizons différents."
+        },
+        {
+          "type": "metrics",
+          "v": [
+            [
+              "En emploi salarié à 12 mois",
+              "68,5 %",
+              "Apprentissage · 314 sortants · InserJeunes, cumul 2023–2024 · national"
+            ],
+            [
+              "Accès à l'emploi à 6 mois",
+              "51,4 %",
+              "Demandeurs d'emploi formés · 105 sortants · France Travail 2024 · national"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Une donnée absente n'est pas un résultat nul",
+          "s": "Les résultats de la voie scolaire et d'InserSup sont non renseignés pour cette fiche. Les autres populations et promotions restent consultables lorsqu'elles sont publiées."
+        },
+        {
+          "type": "accordion",
+          "t": "Inscrits, poursuite d'études, examens, salaires InserSup et capacité/demande"
+        },
+        {
+          "type": "h",
+          "t": "Quelles sessions sont publiées ?",
+          "s": "Occitanie · sessions à venir et en cours, sans indication de places disponibles."
+        },
+        {
+          "type": "tabs",
+          "v": [
+            "À venir",
+            "En cours"
+          ]
+        },
+        {
+          "type": "table",
+          "h": [
+            "Lieu / organisme",
+            "Dates reçues",
+            "Modalité"
+          ],
+          "r": [
+            [
+              "Tarbes · CENTRE DE TARBES",
+              "2026-11-23 → 2027-02-17",
+              "Présentiel"
+            ],
+            [
+              "Tarbes · CENTRE DE TARBES",
+              "2026-11-23 → 2027-01-26",
+              "Présentiel"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Les listes fournies ont des filtres cohérents ; la traçabilité individuelle vers la certification reste à confirmer avec le fournisseur. Dates de l'échantillon, pas disponibilité actuelle.",
+          "small": true
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Voir le métier F1610",
+              "essentiel",
+              true
+            ],
+            [
+              "Explorer les thèmes de formation",
+              "formacodes",
+              null
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Sources : Certif Info / France compétences, InserJeunes et France Travail ; données nationales par population. Les certifications anciennes peuvent être absentes du catalogue actif.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "domaine",
+      "title": "Explorer le Second œuvre",
+      "subtitle": "Domaine professionnel ROME F16 · Construction, bâtiment et travaux publics. À distinguer d'un secteur économique NAF.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "input",
+          "label": "Rechercher dans les domaines chargés",
+          "value": "Second œuvre",
+          "hint": "Filtre local des libellés de l'arbre ; pas de recherche q sur /domaines."
+        },
+        {
+          "type": "h",
+          "t": "Des métiers à découvrir",
+          "s": "Sélectionnez un métier, puis explorez ses compétences, données et certifications."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Métier",
+            "ROME V3",
+            "Piste"
+          ],
+          "r": [
+            [
+              "Pose et restauration de couvertures",
+              "F1610",
+              "Couverture"
+            ],
+            [
+              "Travaux d'étanchéité et d'isolation",
+              "F1613",
+              "Étanchéité et isolation"
+            ],
+            [
+              "Montage de réseaux électriques et télécoms",
+              "F1605",
+              "Réseaux électriques et télécoms"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Fiche métier F1610",
+              "essentiel",
+              true
+            ],
+            [
+              "Explorer par conditions de travail",
+              "guide"
+            ]
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Affiner sans connaître le nom d'un métier",
+          "s": "Compétences référencées, contextes à rechercher ou éviter, transitions décrites par les tags."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Choisir des compétences",
+              "guide"
+            ],
+            [
+              "Explorer les transitions",
+              "transitions",
+              null
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Les statistiques sont consultées au niveau des métiers et familles",
+          "s": "Aucun salaire moyen, total de projets ou score n'est fabriqué pour le domaine."
+        },
+        {
+          "type": "p",
+          "t": "Référentiel ROME : métiers et domaines professionnels. Les statistiques se consultent pour chaque métier et ses familles.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "guide",
+      "title": "Explorer avec des compétences et des conditions",
+      "subtitle": "Choisissez des éléments du référentiel. Vous ne passez pas un test de personnalité ou de niveau.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "tabs",
+          "v": [
+            "1 · Choisir",
+            "2 · Affiner",
+            "3 · Voir les pistes"
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Quelles compétences souhaitez-vous explorer ?"
+        },
+        {
+          "type": "input",
+          "label": "Chercher une compétence",
+          "value": "Poser des panneaux solaires",
+          "hint": "Choisissez un libellé identifié dans le référentiel OGR."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Compétence choisie",
+            "Code OGR",
+            "Action"
+          ],
+          "r": [
+            [
+              "Poser des panneaux solaires",
+              "103659",
+              "Retirer"
+            ],
+            [
+              "Réaliser un raccordement d'étanchéité",
+              "125416",
+              "Retirer"
+            ]
+          ]
+        },
+        {
+          "type": "tabs",
+          "v": [
+            "Au moins une compétence",
+            "Toutes les compétences"
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Quelles conditions souhaitez-vous rechercher ou éviter ?"
+        },
+        {
+          "type": "table",
+          "h": [
+            "Contexte identifié",
+            "Code OGR",
+            "Choix"
+          ],
+          "r": [
+            [
+              "En grande hauteur",
+              "300782",
+              "Avec / sans ce contexte"
+            ],
+            [
+              "En extérieur",
+              "300783",
+              "Avec / sans ce contexte"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Ces filtres portent sur le référentiel métier",
+          "s": "Une compétence portée par un métier ne prouve pas que vous la maîtrisez. Un contexte non référencé ne garantit pas son absence sur le terrain."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Voir les métiers associés",
+              "resultats-ogr",
+              true
+            ],
+            [
+              "Revenir à la fiche",
+              "essentiel"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Exemple multicode : 125416 et 103659. Les filtres de contexte peuvent se combiner selon le contrat ; aucune quantité de résultats d'une combinaison non testée n'est affichée.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "resultats-ogr",
+      "title": "Des métiers portent les compétences choisies",
+      "subtitle": "Mode « au moins une » · 125416 et 103659 · résultats observés dans la campagne R23.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "table",
+          "h": [
+            "Métier",
+            "ROME V3",
+            "Compétences trouvées"
+          ],
+          "r": [
+            [
+              "Pose et restauration de couvertures",
+              "F1610",
+              "125416 · 103659"
+            ],
+            [
+              "Pose de canalisations",
+              "F1705",
+              "125416"
+            ],
+            [
+              "Mécanique automobile et entretien de véhicules",
+              "I1604",
+              "103659"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Un rattachement référentiel n'est pas une recommandation personnelle",
+          "s": "Les correspondances reçues sont montrées sans correction sémantique inventée, sans score et sans conclusion sur votre aptitude."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Ouvrir F1610",
+              "essentiel",
+              true
+            ],
+            [
+              "Affiner mes choix",
+              "guide"
+            ],
+            [
+              "Ajouter une piste",
+              "pistes"
+            ]
+          ]
+        },
+        {
+          "type": "accordion",
+          "t": "Comprendre l'ordre : macro-compétences puis compétences trouvées"
+        },
+        {
+          "type": "p",
+          "t": "R23 : trois métiers en mode au moins une ; F1610 seul sur le même jeu en mode toutes. Ces nombres sont des résultats d'échantillon, pas une promesse de volume futur.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "comparateur",
+      "title": "Comparer deux métiers, point par point",
+      "subtitle": "Descriptions, compétences, certifications et données du marché, sans note globale ni classement personnel.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "table",
+          "h": [
+            "Repère",
+            "Premier métier",
+            "Second métier"
+          ],
+          "r": [
+            [
+              "Métier",
+              "Pose et restauration de couvertures",
+              "Travaux d'étanchéité et d'isolation"
+            ],
+            [
+              "Code ROME V3",
+              "F1610",
+              "F1613"
+            ],
+            [
+              "Domaine",
+              "Second œuvre",
+              "Second œuvre"
+            ]
+          ]
+        },
+        {
+          "type": "tabs",
+          "v": [
+            "Comprendre les métiers",
+            "Compétences",
+            "Marché et territoires",
+            "Se former"
+          ]
+        },
+        {
+          "type": "h",
+          "t": "Compétences et conditions",
+          "s": "Les deux listes doivent être complètes avant de conclure qu'une compétence est commune ou spécifique."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Élément",
+            "F1610",
+            "F1613"
+          ],
+          "r": [
+            [
+              "Poser des panneaux solaires",
+              "Référencé",
+              "Compétences à charger"
+            ],
+            [
+              "Raccordement d'étanchéité",
+              "Référencé",
+              "Compétences à charger"
+            ],
+            [
+              "En grande hauteur",
+              "Référencé",
+              "Non référencé dans le JSON fourni"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Comparer les métiers, pas présumer vos acquis",
+          "s": "Le rapprochement directionnel prévu par l'API reste une relation entre référentiels. Son résultat n'est pas rempli avec des chiffres d'exemple."
+        },
+        {
+          "type": "h",
+          "t": "Marché et territoires",
+          "s": "Chaque colonne conserve famille, territoire réel, source et période."
+        },
+        {
+          "type": "table",
+          "h": [
+            "Mesure / périmètre",
+            "F1610",
+            "F1613"
+          ],
+          "r": [
+            [
+              "Projets · Couvreurs · Montpellier · 2026",
+              "26",
+              "Données non chargées"
+            ],
+            [
+              "Salaire · B0Z21 · Hérault · 2023",
+              "1 690 € / mois",
+              "Données non chargées"
+            ],
+            [
+              "Tension · Couvreurs · Hérault · 2024",
+              "Tension extrême",
+              "Données non chargées"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Si deux métiers partagent la même FAP, une seule observation familiale est signalée comme partagée. L'absence de chargement ne vaut ni zéro ni absence de compétence.",
+          "small": true
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Retour à F1610",
+              "essentiel",
+              true
+            ],
+            [
+              "Modifier les métiers",
+              "pistes"
+            ]
+          ]
+        },
+        {
+          "type": "accordion",
+          "t": "Certifications associées, mobilités, perspectives2030 et salaires sectoriels"
+        }
+      ]
+    },
+    {
+      "slug": "pistes",
+      "title": "Mes pistes, pour poursuivre l'exploration",
+      "subtitle": "Une sélection temporaire sans compte. Deux métiers peuvent être comparés ; le plafond proposé est de trois pistes.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "h",
+          "t": "Vos pistes sélectionnées"
+        },
+        {
+          "type": "table",
+          "h": [
+            "Métier",
+            "Référentiel",
+            "Actions"
+          ],
+          "r": [
+            [
+              "Pose et restauration de couvertures",
+              "ROME V3 F1610",
+              "Ouvrir · retirer"
+            ],
+            [
+              "Travaux d'étanchéité et d'isolation",
+              "ROME V3 F1613",
+              "Ouvrir · retirer"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Comparer ces deux métiers",
+              "comparateur",
+              true
+            ],
+            [
+              "Consulter F1610",
+              "essentiel"
+            ],
+            [
+              "Continuer à explorer",
+              "recherche"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Votre sélection reste temporaire",
+          "s": "La durée de conservation exacte doit être confirmée avant réalisation. Aucun enregistrement de favoris sur l'API n'est supposé."
+        },
+        {
+          "type": "h",
+          "t": "À regarder ensuite",
+          "s": "Comparer les contenus du travail, vérifier les conditions réelles, puis examiner certifications, données et territoires utiles à votre projet."
+        },
+        {
+          "type": "p",
+          "t": "Deux pistes sont illustrées avec des codes et intitulés observés. Cette sélection est un état de maquette, pas un profil utilisateur réel.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "formacodes",
+      "title": "Explorer les thèmes de formation",
+      "subtitle": "Depuis F1610 · des thèmes Formacode vers les certifications associées.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "h",
+          "t": "Choisir un thème associé"
+        },
+        {
+          "type": "table",
+          "h": [
+            "Code Formacode observé",
+            "Action"
+          ],
+          "r": [
+            [
+              "22411",
+              "Rechercher les certifications"
+            ],
+            [
+              "22429",
+              "Rechercher les certifications"
+            ],
+            [
+              "24118",
+              "Rechercher les certifications"
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Un thème n'est pas un domaine ROME",
+          "s": "Les libellés seront ceux de /formacodes. Aucun intitulé n'est inventé ici ; les codes sont issus de la fiche métier."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Voir une certification associée",
+              "certification",
+              true
+            ],
+            [
+              "Retour au métier",
+              "formations"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Maquette de navigation. Le filtre formacode et la chaîne complète sont à tester ; la certification affichée ne constitue pas une preuve de résultat de ce filtre.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "transitions",
+      "title": "Quelles transitions concernent ce métier ?",
+      "subtitle": "F1610 · des repères du référentiel, sans prévision individuelle.",
+      "kind": "metier",
+      "blocks": [
+        {
+          "type": "metrics",
+          "v": [
+            [
+              "Transition écologique",
+              "Concerné",
+              "Tag vrai dans la fiche F1610."
+            ],
+            [
+              "Transition numérique",
+              "Non signalé",
+              "Tag faux ; aucune conclusion sur chaque tâche ou employeur."
+            ],
+            [
+              "Transition démographique",
+              "Non signalé",
+              "Tag faux dans le jeu reçu."
+            ]
+          ]
+        },
+        {
+          "type": "note",
+          "t": "Comprendre avant de filtrer",
+          "s": "Les tags sont des repères métier. Les mobilités observées et la prospective 2030 répondent à des questions distinctes."
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Perspectives à 2030",
+              "prospective",
+              true
+            ],
+            [
+              "Mobilités observées",
+              "mobilites"
+            ],
+            [
+              "Choisir des compétences",
+              "guide"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Pas de paramètre serveur de transition inventé. Le filtrage local ne porte que sur les fiches déjà chargées et ne promet pas l'exhaustivité de l'ensemble des métiers.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "sources",
+      "title": "Comprendre les données",
+      "subtitle": "Une source, une population et une période pour chaque indicateur.",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "note",
+          "t": "Le lieu demandé et le lieu mesuré",
+          "s": "Montpellier peut conduire au bassin de Montpellier, à l'Hérault, à l'Occitanie ou à la France selon la mesure. Le lieu réel reste visible."
+        },
+        {
+          "type": "h",
+          "t": "Ce que signifient les valeurs"
+        },
+        {
+          "type": "table",
+          "h": [
+            "État",
+            "Présentation"
+          ],
+          "r": [
+            [
+              "Nombre nul",
+              "0, quand la source publie zéro"
+            ],
+            [
+              "Valeur null ou absente",
+              "Non renseigné, sans calcul de remplacement"
+            ],
+            [
+              "secret_stat",
+              "Non diffusé — secret statistique"
+            ],
+            [
+              "Famille professionnelle",
+              "Libellé, code et nombre de métiers si reçu"
+            ],
+            [
+              "Tranche ouverte",
+              "Libellé annuel reçu, sans milieu calculé"
+            ],
+            [
+              "Page incomplète",
+              "Suite à charger, sans conclusion d'absence"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Retour au métier",
+              "essentiel",
+              true
+            ],
+            [
+              "Comparer les métiers",
+              "comparateur"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "t": "Catalogue détaillé : MATRICE_VISUALISATIONS.csv et fiches visuelles de chaque mesure. Ce catalogue n'est pas une validation HTTP.",
+          "small": true
+        }
+      ]
+    },
+    {
+      "slug": "menu",
+      "title": "Explorer ce métier",
+      "subtitle": "F1610 · Pose et restauration de couvertures",
+      "kind": "explorer",
+      "blocks": [
+        {
+          "type": "actions",
+          "a": [
+            [
+              "L’essentiel",
+              "essentiel"
+            ],
+            [
+              "Compétences et conditions",
+              "competences"
+            ],
+            [
+              "Recrutements et tensions",
+              "recrutements"
+            ],
+            [
+              "Salaires et secteurs",
+              "salaires"
+            ],
+            [
+              "Opportunités territoriales",
+              "territoires"
+            ],
+            [
+              "Mobilités observées",
+              "mobilites"
+            ],
+            [
+              "Perspectives à 2030",
+              "prospective"
+            ],
+            [
+              "Secteurs et dynamique",
+              "secteurs"
+            ],
+            [
+              "Se former et autres pistes",
+              "formations"
+            ]
+          ]
+        },
+        {
+          "type": "actions",
+          "a": [
+            [
+              "Transitions",
+              "transitions"
+            ],
+            [
+              "Thèmes de formation",
+              "formacodes"
+            ],
+            [
+              "Comprendre les données",
+              "sources"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

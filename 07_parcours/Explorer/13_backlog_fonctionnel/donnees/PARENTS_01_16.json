@@ -1,0 +1,1054 @@
+[
+  {
+    "number": 1,
+    "title": "Rechercher un métier par son nom",
+    "benefit": "identifier une fiche fiable avant de l’explorer",
+    "steps": [
+      [
+        "Choisit Métier et saisit un intitulé ou une appellation",
+        "Affiche le mode actif et contrôle q de 2 à 100 caractères."
+      ],
+      [
+        "Lance la recherche",
+        "Annonce l’attente et demande /metiers avec q et la page voulue."
+      ],
+      [
+        "Parcourt les résultats et demande la suite",
+        "Présente les noms reçus, leur domaine et la pagination réelle, sans ouvrir automatiquement un métier."
+      ],
+      [
+        "Sélectionne un résultat",
+        "Utilise son rome_code reçu pour ouvrir la bonne fiche."
+      ],
+      [
+        "Change sa recherche depuis la fiche ou revient aux résultats",
+        "Conserve la saisie dans le même mode et les pistes ; rend le focus utile."
+      ]
+    ],
+    "alternatives": [
+      "Aucun résultat : expliquer l’absence et proposer de modifier les mots.",
+      "Plusieurs intitulés proches : laisser choisir une référence, sans correspondance implicite ni score.",
+      "Nouvelle recherche avant la première réponse : ignorer la réponse périmée."
+    ],
+    "rules": [
+      "Ne jamais transformer le texte saisi en code métier.",
+      "Respecter les règles contractuelles de préfixes, accents et pertinence ; leur fonctionnement serveur ne découle pas du filtre local.",
+      "Noms publics, identifiant ROME V3 interne."
+    ],
+    "acceptance": [
+      [
+        "plusieurs métiers retournés",
+        "je sélectionne un résultat",
+        "la fiche ouverte porte exactement son nom et son identité"
+      ],
+      [
+        "une réponse sans résultat",
+        "la recherche aboutit",
+        "un message et Modifier ma recherche remplacent la liste, sans métier inventé"
+      ],
+      [
+        "deux recherches dont la première répond en dernier",
+        "les réponses arrivent",
+        "seule la dernière recherche détermine l’affichage"
+      ],
+      [
+        "une liste paginée",
+        "je demande la suite",
+        "la pagination réelle et la fin de liste sont respectées, sans doublon de code"
+      ]
+    ],
+    "ux": [
+      "DSFR : radios, recherche étiquetée, bouton, cartes et pagination.",
+      "Attente annoncée ; focus sur le titre puis contexte restauré au retour."
+    ],
+    "state": "Recherche locale testée ; pertinence, variantes et pagination du GET réel à valider."
+  },
+  {
+    "number": 2,
+    "title": "Rechercher un diplôme ou un titre",
+    "benefit": "choisir la certification qui correspond à mon point de départ",
+    "steps": [
+      [
+        "Choisit Diplôme ou titre",
+        "Annonce le mode et la remise à zéro de la saisie précédente."
+      ],
+      [
+        "Saisit au moins deux caractères et recherche",
+        "Demande /certifications avec q et page."
+      ],
+      [
+        "Compare les résultats",
+        "Distingue noms, types et niveaux reçus sans équivalence inférée."
+      ],
+      [
+        "Sélectionne une certification",
+        "Ouvre le détail avec certifinfo_code, et non fiche_code."
+      ],
+      [
+        "Choisit Je possède ce titre ou Je souhaite l’obtenir",
+        "Garde l’objet sélectionné et organise la lecture selon cette intention."
+      ]
+    ],
+    "alternatives": [
+      "Titre ancien ou inactif introuvable : ne pas promettre archive ni équivalence.",
+      "Certification RS : conserver son type et ne pas inventer de blocs RNCP.",
+      "Erreur : garder le contexte et une nouvelle action de recherche."
+    ],
+    "rules": [
+      "Intitulé, type et niveau reçus guident le citoyen ; les codes de jointure restent internes.",
+      "Certif Info, fiche RNCP/RS et métier sont des identifiants différents.",
+      "Absence d’un diplôme dans une réponse ne signifie pas inexistence."
+    ],
+    "acceptance": [
+      [
+        "des titres voisins",
+        "je lis les résultats",
+        "chaque carte garde son type et son identité"
+      ],
+      [
+        "un titre sélectionné",
+        "j’ouvre la fiche",
+        "le chemin utilise son certifinfo_code reçu"
+      ],
+      [
+        "un diplôme ancien introuvable",
+        "la recherche aboutit",
+        "aucune archive ou équivalence non exposée n’est proposée"
+      ],
+      [
+        "un changement de mode",
+        "je choisis Diplôme ou titre",
+        "l’ancien résultat disparaît et le champ reçoit le focus"
+      ]
+    ],
+    "ux": [
+      "DSFR : recherche persistante, cartes nom/type/niveau, lien de fiche et choix d’intention.",
+      "Aucun graphique de classement des diplômes ni score d’adéquation."
+    ],
+    "state": "Recherche et fiches locales testées sur les titres disponibles ; cas RS/inactifs et recherche HTTP à compléter."
+  },
+  {
+    "number": 3,
+    "title": "Découvrir un domaine professionnel",
+    "benefit": "commencer sans connaître le nom d’un métier",
+    "steps": [
+      [
+        "Choisit Domaine professionnel",
+        "Explique le regroupement de métiers, distinct d’un secteur économique."
+      ],
+      [
+        "Parcourt les grands domaines ou saisit des mots",
+        "Charge /domaines et, si recherché, filtre localement ses libellés."
+      ],
+      [
+        "Sélectionne un grand domaine",
+        "Affiche ses domaines et les nombres de métiers fournis."
+      ],
+      [
+        "Ouvre un domaine",
+        "Conserve domaine_code et propose ses métiers."
+      ],
+      [
+        "Poursuit vers un métier ou revient",
+        "Ouvre la référence choisie et préserve les retours."
+      ]
+    ],
+    "alternatives": [
+      "Arbre non collecté localement : identifier les domaines issus des seules fiches disponibles, sans fausse réponse /domaines.",
+      "Aucun libellé filtré : proposer de parcourir l’arbre ou retirer le filtre.",
+      "Nombre absent : ne pas le calculer sur une liste partielle."
+    ],
+    "rules": [
+      "/domaines accepte grand_domaine, sans q, page ni fields.",
+      "total compte les grands domaines retournés, pas les métiers ou emplois.",
+      "Le mode public est Domaine professionnel ; secteur économique NAF est une autre notion."
+    ],
+    "acceptance": [
+      [
+        "un arbre reçu",
+        "je choisis un grand domaine",
+        "seuls ses sous-domaines sont proposés"
+      ],
+      [
+        "des mots saisis",
+        "je filtre les domaines",
+        "le filtre est local et aucun q n’est envoyé à /domaines"
+      ],
+      [
+        "nb_metiers absent",
+        "je lis la fiche",
+        "aucun total local ne le remplace"
+      ],
+      [
+        "un domaine choisi",
+        "je poursuis",
+        "son code reçu est utilisé par E04"
+      ]
+    ],
+    "ux": [
+      "DSFR : arbre/listes hiérarchisées, recherche locale, cartes et fil d’Ariane.",
+      "Sélection clavier ; aucun graphique d’emploi agrégé au Domaine."
+    ],
+    "state": "Fiche Domaine locale testée à partir des métiers ; réponse réelle /domaines encore à collecter."
+  },
+  {
+    "number": 4,
+    "title": "Explorer les métiers d’un domaine",
+    "benefit": "découvrir des métiers dans un périmètre explicite",
+    "steps": [
+      [
+        "Ouvre le domaine choisi",
+        "Montre son nom et conserve domaine_code reçu."
+      ],
+      [
+        "Consulte ses métiers",
+        "Demande /metiers?domaine=… et ses pages réelles."
+      ],
+      [
+        "Affine par mots, compétences ou contextes",
+        "Transmet les filtres contractuels et annonce les critères actifs."
+      ],
+      [
+        "Ouvre une fiche ou une page suivante",
+        "Respecte l’identité et les critères de la liste."
+      ],
+      [
+        "Revient au domaine ou change ses filtres",
+        "Restaure le contexte et distingue attente, absence et nouvelle recherche."
+      ]
+    ],
+    "alternatives": [
+      "Combinaison non représentée localement : indisponibilité expliquée, pas zéro serveur.",
+      "Filtre sans résultat : conserver les critères et proposer leur retrait.",
+      "Page en erreur : conserver les pages reçues comme liste partielle."
+    ],
+    "rules": [
+      "Chaque métier respecte le domaine_code demandé.",
+      "Ne pas additionner salaires ou projets pour produire une statistique du domaine.",
+      "Compétences et contextes restent des filtres documentaires, pas une adéquation personnelle."
+    ],
+    "acceptance": [
+      [
+        "le domaine F16 des preuves",
+        "la liste aboutit",
+        "chaque résultat conserve le domaine demandé"
+      ],
+      [
+        "un filtre actif",
+        "je le retire",
+        "la liste et l’état du filtre sont actualisés"
+      ],
+      [
+        "une page manquante",
+        "je lis les résultats",
+        "la liste n’est pas déclarée exhaustive"
+      ],
+      [
+        "une fiche ouverte depuis le domaine",
+        "je reviens",
+        "domaine et critères restent accessibles"
+      ]
+    ],
+    "ux": [
+      "DSFR : cartes, filtres simultanés, chips, pagination et retour Domaine.",
+      "Pas de métier cible obligatoire ni de score ; changements utiles annoncés."
+    ],
+    "state": "Liste locale et navigation testées ; combinaisons et pagination HTTP à tracer."
+  },
+  {
+    "number": 5,
+    "title": "Comprendre une fiche métier",
+    "benefit": "comprendre le travail avant d’examiner mes possibilités",
+    "steps": [
+      [
+        "Ouvre un métier depuis une recherche ou un lien",
+        "Valide le code et charge ou réutilise /metiers/{rome}."
+      ],
+      [
+        "Lit la présentation",
+        "Affiche définitions, appellations et repères reçus avec leur source."
+      ],
+      [
+        "Choisit une question sur travail, emploi, salaire ou autres pistes",
+        "Ouvre le volet sans imposer de tunnel ni supprimer les approfondissements."
+      ],
+      [
+        "Garde, compare ou consulte les conditions",
+        "Utilise l’identité de cette fiche et montre l’état de l’action."
+      ],
+      [
+        "Revient à la recherche ou à une autre fiche",
+        "Conserve mode, saisie pertinente, territoire et pistes."
+      ]
+    ],
+    "alternatives": [
+      "Identifiant inconnu ou 404 : message et retour à la recherche.",
+      "Champ absent : ne pas rédiger une activité ou reprendre un autre métier.",
+      "Fiche partielle : garder ses informations disponibles avec leurs limites."
+    ],
+    "rules": [
+      "Nom métier public, ROME V3 interne ; aucun code métier ROME 4.0 restitué.",
+      "Exploiter definitions[] ; ne pas inventer de champ activites.",
+      "Un tag réglementé, cadre ou transition ne garantit ni accès ni emploi."
+    ],
+    "acceptance": [
+      [
+        "un métier choisi",
+        "la fiche s’ouvre",
+        "nom, contenu et actions concernent le même identifiant"
+      ],
+      [
+        "une définition absente",
+        "je lis la fiche",
+        "aucun texte métier inventé ne la remplace"
+      ],
+      [
+        "une action Garder ou Comparer",
+        "je l’active",
+        "le métier courant est utilisé, pas un métier fixé en dur"
+      ],
+      [
+        "les quatre questions principales",
+        "j’en ouvre une",
+        "mobilités, prospective, certifications et autres volets restent accessibles"
+      ]
+    ],
+    "ux": [
+      "DSFR : titre, cartes de questions, détails, tags justifiés et actions hiérarchisées.",
+      "Un seul bouton principal dans le groupe ; état gardé, retrait et retour explicites."
+    ],
+    "state": "F1610 et fiches connues consultables ; contenus supplémentaires et 404 HTTP à tester."
+  },
+  {
+    "number": 6,
+    "title": "Consulter les compétences et conditions du métier",
+    "benefit": "comprendre les exigences sans les confondre avec mon niveau",
+    "steps": [
+      [
+        "Ouvre Savoir-faire et conditions",
+        "Montre catégories et couverture de la liste."
+      ],
+      [
+        "Choisit catégorie ou cœur de métier",
+        "Demande /metiers/{rome}/competences avec les filtres admis."
+      ],
+      [
+        "Parcourt la hiérarchie",
+        "Affiche les noms, macro-compétences, enjeux et domaines reçus."
+      ],
+      [
+        "Demande les pages suivantes",
+        "Suit page et last_page et distingue liste partielle et complète."
+      ],
+      [
+        "Explore ou compare à partir d’un élément",
+        "Transmet son code documenté sans maîtrise personnelle déduite."
+      ]
+    ],
+    "alternatives": [
+      "Page manquante : liste incomplète, jamais compétence absente.",
+      "tag_coeur_metier null : non renseigné, pas faux.",
+      "Hiérarchie manquante : liste simple sans parent inventé."
+    ],
+    "rules": [
+      "Les quatre catégories restent distinctes : savoir_faire, savoir, savoir_etre, contexte_travail.",
+      "coeur_metier est utilisé seulement dans son périmètre contractuel.",
+      "tx_fiches_rome4 décrit les spécialités consolidées au V3, pas la maîtrise.",
+      "Aucune compétence spécifique ou absente conclue sur une page partielle."
+    ],
+    "acceptance": [
+      [
+        "F1610 page 1, 100 sur 144 éléments",
+        "je consulte la liste",
+        "l’incomplétude est affichée jusqu’aux pages nécessaires"
+      ],
+      [
+        "un tag cœur null",
+        "je le lis",
+        "il n’est ni true ni false"
+      ],
+      [
+        "une compétence du métier",
+        "je la consulte",
+        "elle n’est pas attribuée à la personne comme acquise"
+      ],
+      [
+        "une nouvelle catégorie",
+        "je la sélectionne",
+        "requête et éléments suivent la catégorie choisie"
+      ]
+    ],
+    "ux": [
+      "DSFR : filtres, listes/accordéons, tags factuels et pagination.",
+      "Pas de jauge personnelle ; hiérarchie et textes utilisables au clavier."
+    ],
+    "state": "Page 1 observée et lecture locale testée ; page 2, catégories et seconde fiche complète à collecter."
+  },
+  {
+    "number": 7,
+    "title": "Découvrir des métiers proches",
+    "benefit": "examiner des alternatives sans promesse de transition",
+    "steps": [
+      [
+        "Ouvre les autres pistes depuis une fiche",
+        "Réutilise les codes et noms de métiers proches reçus."
+      ],
+      [
+        "Parcourt les métiers signalés",
+        "Garde l’ordre et l’identité de la relation source."
+      ],
+      [
+        "Choisit une cible",
+        "Ouvre sa fiche avec le code reçu, sans conversion d’un nom en code."
+      ],
+      [
+        "Examine la cible ou garde une piste",
+        "Affiche seulement ses informations propres."
+      ],
+      [
+        "Revient au métier source ou compare",
+        "Préserve le contexte et les deux choix."
+      ]
+    ],
+    "alternatives": [
+      "Aucune relation : proposer recherche/savoir-faire sans autre proximité inventée.",
+      "Fiche locale manquante : indiquer la limite sans créer son contenu.",
+      "Cible 404 : garder le retour au métier source."
+    ],
+    "rules": [
+      "Proximité documentaire, compétence commune et flux observé sont distincts.",
+      "Aucun score ajouté ; ordre reçu préservé.",
+      "Un nom déjà fourni ne nécessite pas un GET supplémentaire par carte."
+    ],
+    "acceptance": [
+      [
+        "des métiers proches reçus",
+        "je consulte la liste",
+        "les liens utilisent les codes natifs correspondants"
+      ],
+      [
+        "une cible choisie",
+        "j’ouvre sa fiche",
+        "aucune donnée du métier initial ne la remplit"
+      ],
+      [
+        "un retour arrière puis avant",
+        "je navigue",
+        "les fiches et le contexte sont retrouvés"
+      ],
+      [
+        "aucune relation",
+        "j’ouvre les alternatives",
+        "aucune proximité supplémentaire n’est inventée"
+      ]
+    ],
+    "ux": [
+      "DSFR : cartes, liens de fiche, Garder, Comparer et retour source.",
+      "Nom de la cible dans le lien ; pas de graphe de compatibilité."
+    ],
+    "state": "Navigation locale et historique testés ; ouverture HTTP des cibles à confirmer."
+  },
+  {
+    "number": 8,
+    "title": "Lire tous les repères d’emploi et de formation du métier",
+    "benefit": "situer les chiffres au lieu et au groupe réellement observés",
+    "steps": [
+      [
+        "Choisit un métier et un lieu",
+        "Conserve les identifiants reconnus et le périmètre demandé."
+      ],
+      [
+        "Ouvre les repères d’emploi et de formation",
+        "Charge /indicateurs et les définitions utiles de /mesures."
+      ],
+      [
+        "Choisit une question ou une mesure",
+        "Affiche groupe, unité, population, période et maille réelle de cette mesure."
+      ],
+      [
+        "Lit le détail ou son tableau",
+        "Montre les valeurs et états sans perdre les différences de bases."
+      ],
+      [
+        "Change de lieu ou approfondit un volet",
+        "Actualise les données dépendantes et garde les comparaisons valides."
+      ]
+    ],
+    "alternatives": [
+      "Mesure absente : non disponible pour ce périmètre, pas zéro.",
+      "Replis différents : territoire réel séparé pour chaque mesure.",
+      "Erreur partielle ou cas local non couvert : garder les autres rubriques sans substitution.",
+      "Secret, mois absents et populations hétérogènes : règles propres à chaque mesure."
+    ],
+    "rules": [
+      "Les 14 mesures figurent dans la cible ; JSON présent ne signifie pas restitution entièrement développée.",
+      "Résultat familial non attribué au seul métier ; noms des familles et nb_rome_famille explicités.",
+      "Ne pas additionner offres diffusées, collectées, postes annoncés et projets BMO.",
+      "Interpréter maille_demandee, maille_reelle et repli mesure par mesure.",
+      "Les sous-scénarios de toutes les mesures ci-dessous sont obligatoires, y compris statuts, offres et formations."
+    ],
+    "acceptance": [
+      [
+        "les 14 mesures R16",
+        "je consulte les rubriques",
+        "aucune mesure ne disparaît faute de test ou de restitution actuelle"
+      ],
+      [
+        "salaire départemental et BMO de bassin",
+        "je consulte le même métier",
+        "chacun montre son propre territoire réel"
+      ],
+      [
+        "un zéro publié et un null",
+        "je lis les chiffres",
+        "zéro reste un nombre et null une donnée indisponible"
+      ],
+      [
+        "des mois réellement publiés",
+        "je lis la tendance",
+        "aucun mois, taux ou point intermédiaire n’est reconstitué"
+      ]
+    ],
+    "ux": [
+      "DSFR : questions, filtres et tableaux ; DataBox avec chiffres clés, barres ou courbes appropriées.",
+      "Alternative tabulaire indépendante ; catégories expliquées en texte sans numérisation arbitraire."
+    ],
+    "state": "14 mesures observées dans R16 ; restitutions locales partielles selon les rubriques ; variantes HTTP à tester."
+  },
+  {
+    "number": 9,
+    "title": "Choisir le lieu de mon exploration",
+    "benefit": "comprendre où les chiffres sont réellement disponibles",
+    "steps": [
+      [
+        "Active Changer de lieu",
+        "Ouvre un dialogue nommé avec le lieu courant."
+      ],
+      [
+        "Recherche un nom et un type",
+        "Interroge /territoires avec les filtres admis et propose des lieux identifiés."
+      ],
+      [
+        "Sélectionne le lieu",
+        "Conserve zonage, code et parents documentés."
+      ],
+      [
+        "Valide",
+        "Actualise les vues dépendantes ; chaque mesure montre sa maille réelle."
+      ],
+      [
+        "Change encore ou revient au périmètre disponible",
+        "Conserve métier et pistes, annonce le changement et restitue le focus."
+      ]
+    ],
+    "alternatives": [
+      "Homonymes : demander une sélection identifiée, pas une chaîne libre.",
+      "Aucun lieu ou choix vide : message associé au champ.",
+      "Chiffre non disponible : garder le choix, expliquer l’absence ou le repli réel."
+    ],
+    "rules": [
+      "Pas de géolocalisation automatique requise.",
+      "Les parents d’une commune sont reçus de /territoires, jamais inventés.",
+      "Choisir une commune ne rend pas toutes les statistiques communales.",
+      "Codes des cartes explicitement adaptés ; aucune carte CLPE/communes fabriquée."
+    ],
+    "acceptance": [
+      [
+        "des lieux homonymes",
+        "je choisis un résultat",
+        "son identité géographique exacte est conservée"
+      ],
+      [
+        "un lieu sans chiffres correspondants",
+        "je valide",
+        "aucun chiffre d’un autre lieu ne lui est attribué"
+      ],
+      [
+        "une sélection invalide",
+        "je valide",
+        "un message associé et le focus permettent de corriger"
+      ],
+      [
+        "un repli publié",
+        "je lis la mesure",
+        "lieu demandé et lieu réel restent distincts"
+      ]
+    ],
+    "ux": [
+      "DSFR : dialogue, champ, type, liste, validation et erreur associée.",
+      "Libellés nom/type lisibles ; focus d’entrée, validation et fermeture utiles."
+    ],
+    "state": "Sélection locale et absence de transposition testées ; filtres, parents et pagination HTTP à compléter."
+  },
+  {
+    "number": 10,
+    "title": "Comparer les intentions de recrutement selon les lieux",
+    "benefit": "examiner les projets sans les prendre pour des embauches",
+    "steps": [
+      [
+        "Ouvre les recrutements du métier",
+        "Montre les familles et géographies disponibles."
+      ],
+      [
+        "Choisit région, département ou bassin et un tri",
+        "Demande /recrutements avec les paramètres contractuels."
+      ],
+      [
+        "Consulte une famille",
+        "Affiche projets, difficultés, saisonnalité, nombres et taux reçus."
+      ],
+      [
+        "Compare des lieux et la France",
+        "Garde groupes, rangs, source et millésime sans les agréger."
+      ],
+      [
+        "Approfondit un lieu ou compare des métiers",
+        "Utilise des identifiants et relations réellement documentés."
+      ]
+    ],
+    "alternatives": [
+      "Petit volume/secret : ne pas recalculer un taux pour réconcilier les valeurs.",
+      "Résultat absent : ne pas conclure à aucune offre ou embauche.",
+      "Tri/périmètre non capturé localement : garder un statut explicite."
+    ],
+    "rules": [
+      "BMO/FAP228 ; utiliser le millésime reçu, pas une année figée dans la logique.",
+      "Conserver les cinq tris : projets, projets_difficiles, tx_difficiles, projets_saisonniers, tx_saisonniers.",
+      "Le couple observé 0 saisonnier / 1,7 % reste inchangé, avec Q07 ouvert.",
+      "Difficultés et saisonnalité se recoupent : ni somme des barres ni faux total à 100 %."
+    ],
+    "acceptance": [
+      [
+        "plusieurs familles pour un métier",
+        "je lis le classement",
+        "chaque série garde sa famille nommée"
+      ],
+      [
+        "le couple 0 / 1,7 % observé",
+        "je le lis",
+        "aucune correction arithmétique locale n’est appliquée"
+      ],
+      [
+        "un tri sélectionné",
+        "je l’applique",
+        "paramètre exact et rangs reçus déterminent la lecture"
+      ],
+      [
+        "deux régions",
+        "je compare les projets",
+        "le salaire éventuel reste présenté séparément"
+      ]
+    ],
+    "ux": [
+      "DataBox : chiffres clés, barres, cartes région/département et tableau ; sélecteurs DSFR.",
+      "Pour CLPE, classement accessible sans contour cartographique inventé."
+    ],
+    "state": "Classements/cartes locaux disponibles ; tris, CLPE et autres périmètres HTTP à tester ; Q07 ouvert."
+  },
+  {
+    "number": 11,
+    "title": "Situer les salaires et leur dispersion",
+    "benefit": "examiner des rémunérations sans les prendre pour un salaire promis",
+    "steps": [
+      [
+        "Ouvre les salaires d’un métier",
+        "Présente la famille et la population salariée couverte."
+      ],
+      [
+        "Choisit régions/départements et un parent éventuel",
+        "Demande /salaires sans tri serveur inventé."
+      ],
+      [
+        "Lit la médiane mensuelle puis les repères annuels",
+        "Sépare mois/année et Q1/médiane/Q3 avec les montants reçus."
+      ],
+      [
+        "Compare des lieux et la référence France",
+        "Conserve groupes, rangs et valeurs manquantes."
+      ],
+      [
+        "Approfondit un secteur ou compare des métiers",
+        "Réutilise chaque valeur dans son contexte réel."
+      ]
+    ],
+    "alternatives": [
+      "Médiane null avec tranche ouverte : libellé exact, pas montant représentatif fabriqué.",
+      "Publication sous seuil ou géographie hors couverture : donnée indisponible, pas zéro.",
+      "Plusieurs familles : lecture séparée sans moyenne artificielle."
+    ],
+    "rules": [
+      "Q1/Q3 annuels ne sont ni minimum ni maximum.",
+      "La médiane mensuelle est reçue ; ne pas diviser l’annuelle par douze.",
+      "Population à temps complet, emploi ordinaire toute l’année, poste principal et lieu de travail ; couverture et seuil du contrat.",
+      "Un rang fournisseur peut être reçu malgré une médiane null avec tranche ouverte."
+    ],
+    "acceptance": [
+      [
+        "quartiles annuels et médiane mensuelle",
+        "je les lis",
+        "les unités restent séparées et les montants inchangés"
+      ],
+      [
+        "une tranche ouverte sans médiane",
+        "j’affiche le repère",
+        "la tranche reçue est conservée sans médiane inventée"
+      ],
+      [
+        "des groupes distincts",
+        "je compare les lieux",
+        "chaque série garde son groupe et sa population"
+      ],
+      [
+        "un lieu non couvert",
+        "je le choisis",
+        "aucun salaire d’un autre lieu ne le remplace"
+      ]
+    ],
+    "ux": [
+      "DataBox : chiffre mensuel, repères annuels en barres/tableau, classement et carte officielle.",
+      "Pas de boîte à moustaches avec faux min/max ; unité et population lisibles sans infobulle."
+    ],
+    "state": "Salaires et cartes sur JSON testés ; tranches ouvertes, replis et variations HTTP à collecter."
+  },
+  {
+    "number": 12,
+    "title": "Comprendre si des chiffres peuvent être comparés",
+    "benefit": "éviter une décision fondée sur des populations différentes",
+    "steps": [
+      [
+        "Consulte deux valeurs",
+        "Rassemble définition, unité, groupe, population, période et lieu réel."
+      ],
+      [
+        "Ouvre Comprendre ces chiffres",
+        "Affiche les définitions de /mesures et les métadonnées des réponses."
+      ],
+      [
+        "Examine les différences",
+        "Signale familles partagées, replis et unités distinctes."
+      ],
+      [
+        "Choisit graphique ou tableau",
+        "Présente les dimensions séparées sans normalisation ni score commun."
+      ],
+      [
+        "Demande le tableau ou exporte les données de la visualisation.",
+        "Fournit les mêmes lignes, valeurs, libellés, unités, sources, périodes et protections que la vue consultée ; annonce clairement une action encore indisponible."
+      ],
+      [
+        "Revient à son choix",
+        "Garde critères et explications à portée."
+      ]
+    ],
+    "alternatives": [
+      "Métadonnée manquante : ne pas affirmer une comparabilité démontrée.",
+      "Deux métiers d’une famille partagent une observation familiale, pas un salaire individuel identique.",
+      "Deux familles différentes peuvent être comparées si les autres dimensions sont compatibles et les noms explicites."
+    ],
+    "rules": [
+      "Aucun score composite, delta ou taux recomposé.",
+      "Pas de radar mélangeant euros, pourcentages et nombres.",
+      "DataBox et tableau gardent les mêmes valeurs ; une zone sans donnée n’est pas un zéro.",
+      "Les taux d’insertion de populations/horizons différents ne constituent pas un classement unique.",
+      "L’export CSV est une cible de réalisation incluse : conserver les valeurs et états publiés sans dévoiler secret_stat ni convertir null en zéro, et joindre libellés, unités, population, géographie réelle, source et période.",
+      "Échapper les séparateurs, guillemets et retours à la ligne du CSV ; neutraliser les formules de tableur dans les libellés textuels sans altérer les valeurs numériques natives. Le tableau accessible reste disponible indépendamment de l’export.",
+      "Les actions CSV, capture et plein écran désactivées dans l’intégration actuelle ne sont pas déclarées opérationnelles. L’export des données reste inclus ; capture et plein écran sont des options de bibliothèque à décider selon le besoin."
+    ],
+    "acceptance": [
+      [
+        "deux valeurs de périodes ou grains distincts",
+        "je les rapproche",
+        "les différences sont indiquées et aucun chiffre synthétique n’est calculé"
+      ],
+      [
+        "deux métiers d’une famille",
+        "je compare les salaires",
+        "l’observation partagée est expliquée sans attribution individuelle"
+      ],
+      [
+        "une valeur absente",
+        "je lis graphique et tableau",
+        "aucune barre à zéro ne remplace son état"
+      ],
+      [
+        "un graphique utile",
+        "je passe au tableau",
+        "valeurs, unités et contexte restent équivalents"
+      ],
+      [
+        "un tableau contenant des nombres, zéro, null, secret_stat et des libellés avec séparateurs ou guillemets",
+        "je demande son export",
+        "le fichier reprend exactement les lignes et états visibles, leur contexte et la protection statistique, reste lisible par un tableur et ne transforme pas un libellé en formule"
+      ],
+      [
+        "un bouton d’export non encore branché",
+        "je consulte les actions de la DataBox",
+        "l’indisponibilité est compréhensible et aucun fichier vide ou trompeur n’est proposé ; le tableau accessible demeure consultable"
+      ]
+    ],
+    "ux": [
+      "DSFR : notices, tableaux et messages ; DataBox associe graphique, date et source.",
+      "Lecture sans infobulle obligatoire et sans information seulement colorée."
+    ],
+    "state": "Règles et alternatives locales contrôlées sur les cas disponibles ; variantes et comparabilité générale à compléter. Export des données encore à développer : les actions de bibliothèque actuellement désactivées ne constituent pas une livraison."
+  },
+  {
+    "number": 13,
+    "title": "Choisir des compétences à retrouver dans un métier",
+    "benefit": "partir d’activités ou de savoirs sans attester mon niveau",
+    "steps": [
+      [
+        "Entre sans métier cible",
+        "Présente les critères disponibles sans présélection."
+      ],
+      [
+        "Recherche ou parcourt le catalogue",
+        "Demande /competences et montre ses libellés natifs."
+      ],
+      [
+        "Sélectionne ou désélectionne",
+        "Actualise critères, chips et compteur sans perte du focus."
+      ],
+      [
+        "Choisit Toutes ou Au moins une",
+        "Conserve les codes et prépare E14."
+      ],
+      [
+        "Lance Découvrir les métiers associés",
+        "Utilise les réponses/associations disponibles et annonce la couverture locale."
+      ]
+    ],
+    "alternatives": [
+      "Deux seuls savoir-faire disponibles localement : le dire sans compléter artificiellement.",
+      "Aucun critère : instruction associée et focus sur le choix.",
+      "Catalogue partiel ou association absente : ne pas conclure à aucun métier."
+    ],
+    "rules": [
+      "Libellés reçus, codes OGR internes, métiers associés ROME V3.",
+      "Domaine de compétence 1–6 distinct du Domaine ROME et du thème Formacode.",
+      "Les choix sont des critères/intérêts, pas un niveau certifié.",
+      "rome_codes[] est une association observée, pas la validation d’un GET /metiers non exécuté."
+    ],
+    "acceptance": [
+      [
+        "une arrivée sans choix",
+        "j’ouvre le guide",
+        "aucun critère n’est coché pour moi"
+      ],
+      [
+        "deux compétences",
+        "j’en retire une",
+        "case, chip et compteur se mettent à jour ensemble"
+      ],
+      [
+        "un libellé reçu",
+        "je le lis",
+        "aucune activité inventée ni code public ne le remplace"
+      ],
+      [
+        "un savoir-faire disponible",
+        "je découvre les métiers",
+        "les associations reçues sont utilisées sans score personnel"
+      ]
+    ],
+    "ux": [
+      "DSFR : cases, catalogue, chips, compteur live et bouton de découverte.",
+      "Retraits accessibles ; Tab/Espace/Entrée ; aucun slider de niveau."
+    ],
+    "state": "Deux savoir-faire natifs, sélection et associations locales opérationnels ; catalogue complet et filtres HTTP à compléter."
+  },
+  {
+    "number": 14,
+    "title": "Trouver les métiers liés à plusieurs compétences",
+    "benefit": "examiner tout ou partie de mes critères",
+    "steps": [
+      [
+        "Vérifie ses compétences choisies",
+        "Conserve les codes reçus et les contraintes de nombre."
+      ],
+      [
+        "Choisit Toutes ou Au moins une",
+        "Explique le mode, sans score de maîtrise."
+      ],
+      [
+        "Lance",
+        "Demande /metiers avec competence et mode_competence explicites."
+      ],
+      [
+        "Parcourt les résultats",
+        "Montre noms et critères trouvés lorsqu’ils sont fournis ; suit les pages."
+      ],
+      [
+        "Ouvre une fiche ou modifie ses choix",
+        "Garde les critères et un retour vers le guide."
+      ]
+    ],
+    "alternatives": [
+      "Jeu local non capturé : indisponibilité, pas faux zéro.",
+      "Vraie réponse vide : modifier les critères sans métier fictif.",
+      "Compteurs absents dans toutes : ne pas les reconstruire ni déclarer abusivement une erreur."
+    ],
+    "rules": [
+      "R23 donne 3 en au_moins_une et 1 en toutes pour ses deux codes seulement.",
+      "Les champs de rapprochement sont conditionnels, notamment selon le mode.",
+      "Reconnaître le jeu exact de codes, pas seulement leur nombre.",
+      "Ne pas transformer des critères trouvés en pourcentage d’adéquation personnelle."
+    ],
+    "acceptance": [
+      [
+        "les deux critères R23 en au_moins_une",
+        "je lis leur réponse",
+        "ses trois métiers, et eux seuls, sont proposés"
+      ],
+      [
+        "le même jeu en toutes",
+        "je lis la réponse",
+        "son seul métier est proposé"
+      ],
+      [
+        "les compteurs absents en toutes",
+        "j’affiche les résultats",
+        "aucun compteur fictif ni zéro par défaut n’est ajouté"
+      ],
+      [
+        "un changement de critère ou mode",
+        "je relance",
+        "la réponse correspond aux nouveaux paramètres exacts"
+      ]
+    ],
+    "ux": [
+      "DSFR : radios, critères actifs, cartes et pagination.",
+      "Choix conservés après vide/erreur ; pas de classement de compatibilité."
+    ],
+    "state": "Cas R23 et navigation locale testés ; autres combinaisons et pagination HTTP à tester."
+  },
+  {
+    "number": 15,
+    "title": "Choisir des conditions de travail",
+    "benefit": "exprimer les contextes à examiner ou à éviter",
+    "steps": [
+      [
+        "Ouvre les conditions du guide",
+        "Explique références et absence de garantie poste par poste."
+      ],
+      [
+        "Recherche ou parcourt les contextes",
+        "Demande /competences?categorie=contexte_travail."
+      ],
+      [
+        "Choisit une condition",
+        "Conserve son nom et son identifiant reçus."
+      ],
+      [
+        "Choisit Je recherche, Je préfère éviter ou Pas de préférence",
+        "Actualise le critère distinct d’une compétence."
+      ],
+      [
+        "Lance la recherche",
+        "Prépare contexte et sans_contexte pour E16."
+      ]
+    ],
+    "alternatives": [
+      "Référence absente : pas de garantie d’absence de la condition.",
+      "Pas de préférence : aucun filtre pour cette condition.",
+      "Contexte non disponible : ne pas en inventer un."
+    ],
+    "rules": [
+      "contexte_travail n’est pas envoyé en filtre competence.",
+      "Une condition ne peut être simultanément incluse et exclue dans l’interface.",
+      "Aucune adéquation personnelle ou garantie de poste n’est déduite."
+    ],
+    "acceptance": [
+      [
+        "une condition choisie",
+        "je préfère l’éviter",
+        "elle alimente sans_contexte et non competence"
+      ],
+      [
+        "une condition active",
+        "je choisis Pas de préférence",
+        "elle ne filtre plus"
+      ],
+      [
+        "une référence absente d’une fiche",
+        "je lis la condition",
+        "aucune absence terrain garantie n’est annoncée"
+      ],
+      [
+        "le catalogue reçu",
+        "je choisis",
+        "code et libellé correspondent à la même entrée"
+      ]
+    ],
+    "ux": [
+      "DSFR : recherche/listes, radios par condition, critères et aide.",
+      "Groupes nommés ; modifications annoncées sans reconstruire le formulaire entier."
+    ],
+    "state": "Choix locaux et R24 disponibles ; catalogue et combinaisons HTTP à compléter."
+  },
+  {
+    "number": 16,
+    "title": "Chercher avec ou sans les conditions choisies",
+    "benefit": "examiner des références documentées selon mes préférences",
+    "steps": [
+      [
+        "Vérifie les conditions actives",
+        "Montre inclusions/exclusions et détecte les contradictions."
+      ],
+      [
+        "Choisit éventuellement domaine ou compétences",
+        "Conserve la distinction entre filtres et codes."
+      ],
+      [
+        "Lance",
+        "Demande /metiers avec contexte/sans_contexte et autres paramètres admis."
+      ],
+      [
+        "Parcourt les métiers",
+        "Présente un filtrage documentaire, pas une garantie des postes."
+      ],
+      [
+        "Ouvre une fiche ou modifie les critères",
+        "Conserve les choix et les conditions à vérifier."
+      ]
+    ],
+    "alternatives": [
+      "Même code des deux côtés : correction avant appel.",
+      "Combinaison non capturée : indisponibilité expliquée, sans faux zéro.",
+      "Erreur de projection : tracer la requête conforme exacte avant attribution fournisseur."
+    ],
+    "rules": [
+      "R24 : domaine F16 avec ou sans 300782 donne 10 ou 3 sur ces seules captures.",
+      "contexte impose chacun des codes ; sans_contexte exclut dès qu’un code est porté.",
+      "Non référencé ne garantit pas l’absence de la condition sur tous les postes.",
+      "Q05 reste conditionnelle à une reproduction conforme, avec les champs pluriels exacts."
+    ],
+    "acceptance": [
+      [
+        "le cas R24 avec contexte",
+        "je lis la réponse",
+        "ses dix métiers sont conservés"
+      ],
+      [
+        "le cas R24 sans contexte",
+        "je lis la réponse",
+        "ses trois métiers sont conservés sans garantie terrain"
+      ],
+      [
+        "une combinaison non capturée",
+        "je l’essaie localement",
+        "aucun résultat n’est fabriqué"
+      ],
+      [
+        "des critères contradictoires",
+        "je lance",
+        "un message associé permet la correction"
+      ]
+    ],
+    "ux": [
+      "DSFR : critères simultanés, message associé, cartes et retour aux filtres.",
+      "Aucune jauge ; focus préservé à la modification."
+    ],
+    "state": "Deux cas R24 ciblés ; combinaison générale à réaliser avec les GET existants, pas déclarée opérationnelle localement."
+  }
+]

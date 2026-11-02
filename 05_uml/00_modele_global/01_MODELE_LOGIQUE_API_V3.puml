@@ -1,0 +1,164 @@
+@startuml
+' MODÈLE CONTRACTUEL EXCLUSIVEMENT EXPOSE VIA LES 21 GET
+' Sources : /docs.json + contrat d'interface, vérification JSON R16-R19, R23-R24
+!pragma layout smetana
+left to right direction
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+hide methods
+skinparam class {
+  BackgroundColor #EAF2FC
+  BorderColor #5B6D87
+}
+title DGEFP / RCO — UML logique de l'API — exclusivement ROME V3
+caption Classes = objets/champs des JSON accessibles par les endpoints. Aucun objet SQL, aucune source interne exposée.
+
+package "Référentiels exposés" {
+  class "Métier" as Metier {
+    rome_code : string <<ROME V3>>
+    rome_libelle : string
+    domaine_code : string
+    grand_domaine_code : string
+    appellations : string[]
+    definitions : string[]
+    metiers_proches_codes : string[] <<ROME V3>>
+    contexte_travail_codes : string[] <<OGR>>
+    formacode_codes : string[]
+    fap228_codes : string[]
+  }
+  class "Domaine" as Domaine {
+    domaine_code : string
+    domaine_libelle : string
+    grand_domaine_code : string
+  }
+  class "Compétence" as Comp {
+    competence_code : string <<OGR>>
+    competence_libelle : string
+    categorie_competence_code : string
+    macro_competence_code : string
+    rome_codes : string[] <<ROME V3>>
+    rome_coeur_metier_codes : string[]
+  }
+  class "Compétence du métier" as MC {
+    competence_code : string <<OGR>>
+    tag_coeur_metier : boolean?
+    nb_fiches_rome4 : int?
+    nb_fiches_rome4_metier : int?
+    tx_fiches_rome4 : number?
+    tag_acquise : boolean? <<depuis>>
+  }
+  class "Formacode" as F {
+    formacode_code : string
+    formacode_libelle : string
+    rome_codes : string[] <<ROME V3>>
+  }
+  class "Certification" as Cert {
+    certifinfo_code : string
+    certifinfo_libelle : string
+    repertoire_code : string? <<RNCP/RS>>
+    fiche_code : string?
+    rome_codes : string[] <<ROME V3>>
+    formacode_codes : string[]
+    bloc_competences_codes : string[]
+  }
+  class "Bloc RNCP" as Bloc {
+    bloc_code : string
+    fiche_code : string
+    certifinfo_codes : string[]
+    rome_codes : string[] <<ROME V3>>
+  }
+  class "Territoire" as Terr {
+    zonage : string
+    territoire_code : string
+    region_code : string?
+    departement_code : string?
+    clpe_code : string?
+    commune_codes : string[]
+  }
+}
+
+package "Mesures et résultats accessibles" {
+  class "Catalogue des mesures" as Mes {
+    code : string
+    grain : string
+    champs : string[]
+    source / millésime : selon réponse
+  }
+  class "Indicateurs d'un métier" as Ind {
+    sélection : rome (ROME V3)
+    sélection : zonage + territoire
+    items : MesureTerritoriale[]
+  }
+  class "Mesure territoriale" as MesTerr {
+    mesure : string
+    grain : string
+    maille_reelle : string?
+    repli : boolean
+    valeurs : object[] <<selon mesure>>
+  }
+  class "Résultat statistique" as Stats {
+    routes : salaires, recrutements, mobilites,
+    prospective/metiers, prospective/regions,
+    salaires/secteurs, secteurs
+    grain / maille : selon route
+    valeurs : structure propre à la route
+  }
+  class "Session de formation" as Sess {
+    code_insee : string
+    date_debut : date
+    date_fin : date
+    siret_formateur : string
+    nb_sessions : int
+    tag_onisep : boolean
+  }
+}
+
+Domaine ..> Metier : /metiers?domaine=...
+Metier ..> Metier : metiers_proches_codes[] <<ROME V3>>
+Metier ..> MC : GET /metiers/{rome}/competences
+MC ..> Comp : competence_code
+Comp ..> Metier : rome_codes[] / filtre competence= [R23]
+Metier ..> Metier : contexte / sans_contexte [R24]
+Metier ..> Cert : filtre rome= /certifications
+Cert ..> Bloc : blocs par fiche / certifinfo
+Metier ..> F : formacode_codes[]
+Cert ..> F : formacode_codes[]
+Terr ..> Ind : filtres zonage + territoire [R16]
+Metier ..> Ind : filtre rome= [ROME V3]
+Ind *-- MesTerr : items[]
+MesTerr ..> Mes : mesure = code
+Metier ..> Stats : filtre rome= selon route
+Terr ..> Stats : filtres territoriaux selon route
+Cert ..> Sess : certifinfo [FILTRE seulement]
+Terr ..> Sess : zonage + territoire [FILTRES]
+
+note right of Comp
+  Les compétences et contextes portent des codes OGR.
+  Cela ne signifie PAS exposition de codes métier ROME V4.
+  Tous les rome_codes sont en ROME V3.
+end note
+note bottom of MC
+  Les statistiques nb_fiches_rome4 et tx_fiches_rome4
+  sont DES CHAMPS D'API, pas des fiches ni des codes V4 exposés.
+end note
+note bottom of Sess
+  R18/R19 : filtres certifinfo et territoire testés.
+  Aucun identifiant de session ni code certifinfo
+  renvoyé dans les JSON de test.
+end note
+note bottom of Stats
+  Attention R17 : /secteurs avec rome=F1610
+  renvoie items=[] pour les territoires testés.
+  Ne pas considérer ce comportement comme validé.
+end note
+legend bottom
+  Seuls les champs, clés et liens atteignables par l'API sont représentés.
+  Les flèches sont des PARCOURS D'APPELS ou comparaisons de codes, jamais des FK SQL.
+  Pas de table d'entrepôt, pas d'accès à une source non exposée.
+  ROME = V3. Les compétences sont codées en OGR et ramenées à leur ROME V3 parent.
+  Les multiplicités SQL sont volontairement absentes : non contractuelles.
+endlegend
+@enduml

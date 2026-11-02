@@ -1,0 +1,1098 @@
+[
+  {
+    "path": ".vscode/extensions.json",
+    "sha256": "09b45753f051829d859a350f1c1869cde8de2eca6f3f2fba43ed36e4c7897496"
+  },
+  {
+    "path": ".vscode/settings.json",
+    "sha256": "6f04b1c087b4582ec7b5129741e9a9c456e51047a877783e157e8aa41b967991"
+  },
+  {
+    "path": ".vscode/tasks.json",
+    "sha256": "6a6b2a02bcfb0254d372630f4dc075398a3ef0da367c8e2e3db5b43a848111e8"
+  },
+  {
+    "path": "01_sources/contrat_interface_2026-10-19.md",
+    "sha256": "80fcef7079d5ff7bba882009045aab761d7376aca96a40bea4c6779dbad589ee"
+  },
+  {
+    "path": "01_sources/openapi/docs_json_interface.json",
+    "sha256": "d5b2c4b396a1d961d3b1a916bb58e47ecb2eaf2db7590142a55a067631784bfd"
+  },
+  {
+    "path": "01_sources/openapi/swagger_precedent.json",
+    "sha256": "08daafb877b0eddc46e606b64dc5ac477beda5154accea311cfe186ad77d7652"
+  },
+  {
+    "path": "02_reponses_observees/A_LIRE.md",
+    "sha256": "0182d2c06d6268ba2c78f6eb3e5b1bc9fafea97134ff0102e9feef387b0f55f9"
+  },
+  {
+    "path": "02_reponses_observees/certifications/response_certifications-certifinfo.json",
+    "sha256": "5af0a2f807543b5994b7b944b5f5f41499709b97515cbbcb2eb40d7ef9330067"
+  },
+  {
+    "path": "02_reponses_observees/certifications/response_certifications.json",
+    "sha256": "fffe9f1b2444e237ea948036be9e65945f5f0f6b9c8019bf5158fe91936cecad"
+  },
+  {
+    "path": "02_reponses_observees/certifications/response_certificationsblocs.json",
+    "sha256": "3a1c533fa0f87a66b4d9feaee562de927e07840e3d4382c6e257270d5f477296"
+  },
+  {
+    "path": "02_reponses_observees/certifications/response_formacode.json",
+    "sha256": "a5c6fa65d3aba6b3c61e054fb4348224997c1d6bbe1631bf90c0e6a3e018bf07"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_destination 15-29 ans.json",
+    "sha256": "ef77bfce95645d6a82779cf98c170a2f4cecafcdca92f58234a2a74bd755234c"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_destination 30-39 ans.json",
+    "sha256": "e3fefc358516751c6027e862a0f675a44e24634962700a032eec624da2a66dee"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_destination 40-49 ans.json",
+    "sha256": "9c23fafadb2da6c5a33abef59acfa4e40b23846fa3347865e1f510821d83159f"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_destination 50-59 ans.json",
+    "sha256": "1679646450f8c923e21b0cce3288795f32e4bed0a41453265254a13f635e998c"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_destination 60 ans ou plus.json",
+    "sha256": "51a3d5c491b01028b19930f0030370e05f0eace0d8ef98a2d6220e6258f06108"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_destination.json",
+    "sha256": "41f608efe7b15213218e2475ce12e22f91be9b0fffd406a7218d93346ee5468e"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_origine 15-29 ans.json",
+    "sha256": "afd6066d9f9b940305b2f0906e21163512d72ae8a57f164f5de6cd1184d4c2ed"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_origine 30-39 ans.json",
+    "sha256": "b85351b7fb6e9e050b9ea0c1d905272ff7e95f2a29e1febeb9d7b5162f755d78"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_origine 40-49 ans.json",
+    "sha256": "d34030bf59274ab1fbabb9bb1fd31e2a99444cd547dfe1abb110cf940e7a2779"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_origine 50-59 ans.json",
+    "sha256": "10a642fdcf3dfd40b9c86de0c9c7e7d6744b4fc6d2881e82f15a46c9a82ba602"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_origine 60 ans ou plus.json",
+    "sha256": "b1aafb03f90e98dfc9a9335573baa8a6861c7a35b6b8e7da46b4147b1bd60db2"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/mobilites/response_origine.json",
+    "sha256": "f7677676a32ee3d1afe9c5165da0d372101b90194637bcb3584be913cff55f3f"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospective_regions/response_1793525580226.json",
+    "sha256": "0fc70f93c0ec0903f026717e5ead958528e77ae4c0f8ecb8119bd42bd9898f75"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_creations_nettes_emplois.json",
+    "sha256": "c782ac385c151b68864e53defa0bb53c6391c5a982f9efd09f027f502930247e"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_departs_fin_carriere.json",
+    "sha256": "373c947be3e55de103d3c3cf9da071bde91bd61578aa70a3ac585a874404de20"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_desequilibre_potentiel.json",
+    "sha256": "4fa743c330d3613dd873c5b1c5d4e9855d301130f1edcc867a6ebfb61bc57d17"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_emplois_2019.json",
+    "sha256": "9fcbbd1ea845515c1207c3b1ffb4fc4a7a50b9169119915d26e02df85e1ff96c"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_prospectivemetiers_poste a  pourvoir.json",
+    "sha256": "bc4a6df8cdb606e5a323d879240fa93f3fa632f3638cef1430eff4f67fe5c808"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_tx_creations_nettes_emplois.json",
+    "sha256": "93e1773cef4d37cf2aa0f14c591312c530a69fb294a077ad7d2a6b52c28bd88a"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_tx_departs_fin_carriere.json",
+    "sha256": "8cdb803de6209cdcc6cd49a2ecf12bdac88aa33e722b13f71c7ae9690cb0b010"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_tx_desequilibre_potentiel.json",
+    "sha256": "a361776e30c7ab5cd0ee195d12285300d3fca76e235e18030f32a6d9e836f217"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_Tx_postes_a_pourvoir.json",
+    "sha256": "e7005fbd5015be5d5701d00f96e42713d7a90a17a1295cf0ad17c45cbde61c89"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_creations_nettes_emplois.json",
+    "sha256": "4be583c89c59e57d33ce75d79841ae7e45ba843f7a23fb0651612457c36f30a0"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_departs_fin_carriere.json",
+    "sha256": "bcdc9b9df19d745d1c3d8afd51a0a0f901b75931f7c6ed0e4a95da60f84327bf"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_desequilibre_potentiel.json",
+    "sha256": "a65bd03a7e2d35f33da86386ff35e5d381f24b50df5562e1e808c5f5f43278b5"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_emplois_2019.json",
+    "sha256": "741da801e6768558d4c39d79276f9bcf3b17df08d00f7b2296c12df3f5028067"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_part_emploi.json",
+    "sha256": "a4365a134877c4693fa8fe7fb1ca408c58c32d19ef6f1c770f188c966d715ca0"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_postes_a_pourvoir.json",
+    "sha256": "d995bc360864fbb07cb50e826909dc014d0fa96ecd7f97f8c0ec33a6a4a020db"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_specificite.json",
+    "sha256": "0fc70f93c0ec0903f026717e5ead958528e77ae4c0f8ecb8119bd42bd9898f75"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_tx_creations_nettes_emplois.json",
+    "sha256": "2bdc8c10169ea475a9391d8883229659a69de77941ceab8510b910f844ac45a8"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_tx_departs_fin_carriere.json",
+    "sha256": "7bb21ce6e8fabf2649eefb6d96efaae8936125fc27d3f528c2ac7c604097fa33"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_tx_postes_a_pourvoir.json",
+    "sha256": "df8bafaea59bb18957a98c360eed97b79966611da031501032dfa05ff2ae3f73"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/prospectiveregions/response_x_desequilibre_potentiel.json",
+    "sha256": "4ae4e2e10cf058997a3698cb7e4fae9246c7487753729edaf8a6db3fb4773bad"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Recrutementregions/response_indicateurs.json",
+    "sha256": "33a37acbf88a4947d189d4f3d55f8b9ecdd3643edd6a5fccfcf4845cc9294829"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Recrutementregions/response_mesures.json",
+    "sha256": "bc899f875cfcb7327e4f996423ebdf54a54373e3d74171f488d14b4c737f6526"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Recrutementregions/response_Recrutement France CLPE projet.json",
+    "sha256": "083725860bf44ade8e486acf6bdbc7a7a7d8874bb6a8e657473a85d474ed5cc2"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Recrutementregions/response_Recrutement France departement projet.json",
+    "sha256": "7090d51be52a244b2ef0fc208e390b3219e3a95e020d3ceeac95bc71884d52c4"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Recrutementregions/response_Recrutement france region Projet.json",
+    "sha256": "1fe8084321f8e58bb0c7e80332cf9804c764c736bc16c26da14432d1faeef966"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/response_salairessecteurs.json",
+    "sha256": "b7ea5d811161e4ba688ed82f5f1bd58686331f5580e0fc1e878d7a0d2e551517"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/salaires/response_departement.json",
+    "sha256": "429b946ff9ec540a2b2f3d2768a3df798ecbdb55cec8b0103e75c616e49a6b62"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/salaires/response_regions.json",
+    "sha256": "2a1ea83eeb09f49f38b326c9c89499385a8ef90e014e6e279521ddf6fa97000c"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Secteurs/response_clpe.json",
+    "sha256": "5040369c12a99eb6a5397c0528ba35949b8622d8cd1b7c95c1b068c0005923f0"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Secteurs/response_Departement.json",
+    "sha256": "482602e4beb1f8be154e1f6b9fc3d8a998216f5e4341c532ff1ba5f57422c780"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Secteurs/response_FRANCE.json",
+    "sha256": "c9d5ea7496dc333cd865f4d2a48a497c2aea0d12384cabfcd5e5a66ac396cdbe"
+  },
+  {
+    "path": "02_reponses_observees/indicateurs/Secteurs/response_secteurnaf.json",
+    "sha256": "c9d5ea7496dc333cd865f4d2a48a497c2aea0d12384cabfcd5e5a66ac396cdbe"
+  },
+  {
+    "path": "02_reponses_observees/inventaire_echantillons.csv",
+    "sha256": "b812f82ddf88524dc823491a64fc9a59994b3de9e8b0f63b0e734ae5436e68f0"
+  },
+  {
+    "path": "02_reponses_observees/metiers/response_metiers-rome.json",
+    "sha256": "afefb1e1066c30cc2aae128b54914ad68dd58a3304d32198222c11dcd86facc2"
+  },
+  {
+    "path": "02_reponses_observees/metiers/response_metiers{rome}competences.json",
+    "sha256": "da39701e7040cf14e7cf31c77e7b05528ca14b7740fecc241805f1d9c4c26b68"
+  },
+  {
+    "path": "02_reponses_observees/sessions/response_sessions_a_venir.json",
+    "sha256": "8a5d87ca60b91095be4b882e9b2ec02aad3ac6b211ff39acfaddb65379ad81ca"
+  },
+  {
+    "path": "02_reponses_observees/sessions/response_sessions_en_cours.json",
+    "sha256": "9ee1e1406386f32711a09a7d53d14a2ece7a6d7a701b269180994bb630f2caaa"
+  },
+  {
+    "path": "02_reponses_observees/territoires/response_clpe.json",
+    "sha256": "eee55877186d7c1478ed40526d56809897a2db842f257ea854bd491403cf0108"
+  },
+  {
+    "path": "02_reponses_observees/territoires/response_Commune.json",
+    "sha256": "619dfa10dda55a5f49206c96b72617a18b12c74a644103c746cf0a78dcffb3aa"
+  },
+  {
+    "path": "02_reponses_observees/territoires/response_departement.json",
+    "sha256": "6a203849e47cd60bfb0c9944c0edd38d653d752523c37dcd367eaebe42fc3ca8"
+  },
+  {
+    "path": "02_reponses_observees/territoires/response_regions.json",
+    "sha256": "622a3bee1343e0d701f6c56ffea798cf43d1687d2c313c4532ffd9fb1356925e"
+  },
+  {
+    "path": "03_catalogue/A_LIRE_COMPLEMENTS.md",
+    "sha256": "cab3555d1691d50085b826b9072f23664b3aed701c37d71f7c59b2079a7d3247"
+  },
+  {
+    "path": "03_catalogue/champs_observes_tous_endpoints.csv",
+    "sha256": "bd04e61ad1bdf5a90e8160c691341a6f39e5a0d03413d943b6171483aad3c8f4"
+  },
+  {
+    "path": "03_catalogue/dictionnaire_initial.csv",
+    "sha256": "7c386e3e046857a465bbef1f42c8afb1e5b249bded94c04e15281b21e4f68d99"
+  },
+  {
+    "path": "03_catalogue/docs_json_ENRICHI_NON_OFFICIEL.json",
+    "sha256": "995ae67136125586b5e551e23c1bd1c1caeab2664de82d64148606bede4dfc05"
+  },
+  {
+    "path": "03_catalogue/modele_valeurs_par_mesure.csv",
+    "sha256": "2ee9ea699acaf76c3b94f90db0f3b166f179498af12688bd06cf0591c4920b51"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/domaines.schema.json",
+    "sha256": "c1d362f16f251bb7c0730a0150000a46ca6041a84319be9007be9f66c9107b54"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/indicateurs.schema.json",
+    "sha256": "69f76fbbfa77bedfd2b7b226e9fd73c8d2678eae0c42f3eeecf81125640a95af"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/mesures.schema.json",
+    "sha256": "fb0b209b8ff27deb68d2a6db332f94e293cf34175b4fb52a772bdf7f11246451"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/mobilites.schema.json",
+    "sha256": "92dd97e4f9a5af5404cff0bff5bcf62baea620580c60626bcc944ef5e4de0856"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/prospective_metiers.schema.json",
+    "sha256": "91ba00967de8e36449f9bcc4f59516c2b2d395156fe63a6027e2486f4b8e8e33"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/prospective_regions.schema.json",
+    "sha256": "2b11021e8ff32a397a742e37fcd5c0fd993e92c469ce607b8d44b420e9372c6f"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/recrutements.schema.json",
+    "sha256": "e5fbfec2b0274af341704732798d74d1d167560b2e52c4f64ec247703749ba8a"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/salaires.schema.json",
+    "sha256": "dec4391769178f8fc9fc6f2971b610a0bfd5981d39ca40cf580e906347eb74a2"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/salaires_secteurs.schema.json",
+    "sha256": "8b5a34b391d480125fdc15c3157ff3c9f3e79abe704418a0b785bc1cc650da95"
+  },
+  {
+    "path": "03_catalogue/modeles_reponses/secteurs.schema.json",
+    "sha256": "9f34a4a3c7681abd8cde1e4972bb632399788e9950c5ca70a6725517ebe44b7d"
+  },
+  {
+    "path": "03_catalogue/routes_openapi.csv",
+    "sha256": "86fc0d025a062dc37be9e6a430d66cdf3e94aec66d1e790ba9a32830daf6b2ac"
+  },
+  {
+    "path": "04_relations/A_LIRE_CONTROLE_AUTOMATIQUE.md",
+    "sha256": "43a24bd84615f14bc436644011e58534732590bf9cc32ce4f54753e09a20af0c"
+  },
+  {
+    "path": "04_relations/audit_precedent/01_Audit_21_endpoints.csv",
+    "sha256": "ffc2902529c9766a6ede2fb66a19fb72bf99259f9066da0e806af3ee5de82f14"
+  },
+  {
+    "path": "04_relations/audit_precedent/02_4_ecarts_de_champs.csv",
+    "sha256": "a2b30c83da625a42c101993421b5fca45e20fa8b7fc3af6b28c1383ab1a23e66"
+  },
+  {
+    "path": "04_relations/audit_precedent/03_Matrice_relations_appels_API.csv",
+    "sha256": "e0661c14c34a91e9008363942a3bcc4d77fe310e454a3d487b57ad16e27e065b"
+  },
+  {
+    "path": "04_relations/audit_precedent/04_Points_a_valider_dev.csv",
+    "sha256": "2295aaa20b7dc737f43a072485561b2ce49db3a426334b355ee68ac634ba9ea2"
+  },
+  {
+    "path": "04_relations/audit_precedent/README_Audit.md",
+    "sha256": "0e98cc0e2d5971286be965934d19fe2ec73e276c334a0fd29d49ed4936d0989e"
+  },
+  {
+    "path": "04_relations/CHAINES_APPELS_API.md",
+    "sha256": "700bd5a6d75c776b03f38d19dc3f9cb8198c8fd2cd43e3bee219ca5a83f6b915"
+  },
+  {
+    "path": "04_relations/matrice_liens_controles.csv",
+    "sha256": "bbc535d5e2e5e0fa3a2a21fdf55ee374651791a276ffbe94139038272ef53bad"
+  },
+  {
+    "path": "04_relations/matrice_statuts_apres_tests.csv",
+    "sha256": "f36d52fa1b092dc9b81066154ccfc36c15b9ab7fda54fadfc5d1cf373b9f1d46"
+  },
+  {
+    "path": "04_relations/METHODE_VERIFICATION.md",
+    "sha256": "9d7e4d890ac5709577771351eb67af8e5446e26eb14291bb6235bae3c5a938e3"
+  },
+  {
+    "path": "04_relations/PREUVES_ET_LIMITES.md",
+    "sha256": "1a5a0fd348de965a166ca1fd3869862a3bb124ad0e1e4d2749de000360293212"
+  },
+  {
+    "path": "04_relations/STATUTS_EN_COURS.md",
+    "sha256": "a23d61a8d4ede795014ac1375ff4b18dc786dd3185039445d48f338157e8d58e"
+  },
+  {
+    "path": "05_uml/00_modele_global/00_LIRE_EN_PREMIER.md",
+    "sha256": "3295c61a508f078b36de4c881a27685d0a92a01a58c0c2368851e7390db46377"
+  },
+  {
+    "path": "05_uml/00_modele_global/01_MODELE_LOGIQUE_API_V3.puml",
+    "sha256": "a575f4845a59a68a5a800cd9d6484e866ef9f5b78e72a13723048b0944139394"
+  },
+  {
+    "path": "05_uml/00_modele_global/01_MODELE_LOGIQUE_API_V3.svg",
+    "sha256": "9ae583eabc44cd3ae9c1ca3d69d63ea8096ac1e7ab246866b2184f628372af30"
+  },
+  {
+    "path": "05_uml/00_modele_global/02_CARTE_21_GET_API.puml",
+    "sha256": "447b938e6d4afc06999a8e3c866f930bab486b4307a9b9911f0b563e9b96bd73"
+  },
+  {
+    "path": "05_uml/00_modele_global/03_EXEMPLES_CHAINAGES_GET.puml",
+    "sha256": "a0c8859b1af2bbfc3cbcfa25999cc6dfc9144285b24d4a60c77a5245ab6fe291"
+  },
+  {
+    "path": "05_uml/00_modele_global/04_INVENTAIRE_EXACT_21_GET.md",
+    "sha256": "1bc60a791b4756407ee10950adf0745e0f86a2ddfbb405bfe406524051cc6115"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/00_LIRE_AVANT_UTILISATION.md",
+    "sha256": "d596f0616e1166365580f895c0d8000254b08b0ed42425e2843523f96118c218"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/01_MODELE_LOGIQUE_GLOBAL.puml",
+    "sha256": "f944dbe331dca28450515659daf2d6af24a20a60032f01472d6297d5f05757b1"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/02_CARTE_DES_21_ENDPOINTS.puml",
+    "sha256": "038a35d908651ce1e5c51ccfa0e54b061856f94de9640bee8ca98bfaaecb4e21"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/03_STRUCTURE_DES_REPONSES_JSON.puml",
+    "sha256": "960f7e8aa7d6af5965ddfd2055db5344a258fdfcdaf8ed4153115b2e4580b0b8"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/APER#U251c#U00e7U_CARTE_GLOBALE.dot",
+    "sha256": "93defc8289e290988acaef82e067ab32d6859d19c3e31e1a6de2ea91565a45a0"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/APER#U251c#U00e7U_CARTE_GLOBALE.svg",
+    "sha256": "b33167b92b6bd0455fd7c2c60d8fc15437a6f09c7415f477bffefb2aef10a646"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/API_RCO_UML_00_Associations.puml",
+    "sha256": "756cf698af2a0547acef69f6275468eff5e69a0a47b4d6a2c9c1a913e0636b6f"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/API_RCO_UML_01_Certifications.puml",
+    "sha256": "a1d93d046f1b4c3b61f9861efecfb3cd9bcb692eecf70e4c83ee79b6977d555b"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/API_RCO_UML_02_Metiers_Competences.puml",
+    "sha256": "3484af6d97090d48d9ccc3b1e3fbf41cc87a2a25549ee424d0af6bd8db9e4edb"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/API_RCO_UML_03_Indicateurs_Mesures.puml",
+    "sha256": "951b3cdd0cdd15e2bb27d4bcb527171806bfe6d7116b3d62899592c71277ed51"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/API_RCO_UML_04_Emploi_Prospective.puml",
+    "sha256": "42b9aca1aab0587a9bcc318d1f8065313bd6e4307b00875aa72a3fa4b72c2025"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/API_RCO_UML_05_Territoires_Sessions.puml",
+    "sha256": "d4f29df955690d4b768787bd01c69e49926f960f9a8d1e5cbf720e67bcbed601"
+  },
+  {
+    "path": "05_uml/_archives_non_reference/NOTICE_MODELES_ANTERIEURS.md",
+    "sha256": "65d57ed2f3f95352c3f08229a99f8075773924d30cc11dc6fdbda89f7bcf3a8b"
+  },
+  {
+    "path": "05_uml/A_LIRE.md",
+    "sha256": "058f694af326e5178f8a5558253dcd671dab04ae862868e2c762a14bd4f3dbca"
+  },
+  {
+    "path": "05_uml/A_LIRE_MODELE_GLOBAL.md",
+    "sha256": "491f62452b7b8d64d2316d1deeade776ec13697eb15d48474a530cc4471901b0"
+  },
+  {
+    "path": "05_uml/sequences_api/01_codes_rome_ogr.puml",
+    "sha256": "2b4e0159b9cbb0e14523add10a984bf23e1256ac163477b1bbb33bc8099c92a0"
+  },
+  {
+    "path": "05_uml/sequences_api/02_certifications_blocs_formacodes.puml",
+    "sha256": "ce986c5e8ed863cb07d20c90d106bb8d582a71262a2f6f9389df92a90c15321d"
+  },
+  {
+    "path": "05_uml/sequences_api/03_territoires_mesures.puml",
+    "sha256": "5a3640d4ad9e3b5ea527731ad3e7b5fc8a804ffdc4258e5f995f405ac921bdd2"
+  },
+  {
+    "path": "05_uml/sequences_api/04_granularites_et_limites.puml",
+    "sha256": "dea084ad08daece9b0ce11f08acce783ffc0a2aff5cf3df06b2d4a9d409ea864"
+  },
+  {
+    "path": "06_controles/_archives_non_reference/R17_ancien_compte_rendu_partiel.md",
+    "sha256": "db90463c38604b8577643b669e760da2a00a255e1458e704f8de311733052210"
+  },
+  {
+    "path": "06_controles/A_LIRE.md",
+    "sha256": "46e461f8535fc8568b59d02ac6be5f2ee34bcf5a2e0585e76625d297bf216f60"
+  },
+  {
+    "path": "06_controles/CONTROLE_R24_ERREUR_422_A_RETESTER.md",
+    "sha256": "12debc8deb37e88fc7af222b75066333f6871216bc2bd138bbfc3008033debd9"
+  },
+  {
+    "path": "06_controles/RAPPORT_VERIFICATION_FINALE.md",
+    "sha256": "a610a38a679d5330d9f488d4a3445565933c5928166def2c822a94956aff0849"
+  },
+  {
+    "path": "06_controles/resultats/comparaison_echantillons.csv",
+    "sha256": "5c0e2c5281db4ec25d8739ca0bb574bdf81372c150da2931b05fdf5cc7123741"
+  },
+  {
+    "path": "06_controles/resultats/comparaison_openapi.csv",
+    "sha256": "524e49aa6118ca29b1c859aec612277665879b0a637e7e154ebc5070aa2617d5"
+  },
+  {
+    "path": "06_controles/resultats/comparaison_schemas_complementaires.csv",
+    "sha256": "45294ad14c39b279a470095ce90d8b03a150f00a63e1ddf187bf648c969f74e1"
+  },
+  {
+    "path": "06_controles/resultats/controle_relations_api.csv",
+    "sha256": "b5087119020fd250d6313f905d3c7caab694375ead3dfb9e8d89847a6da24f59"
+  },
+  {
+    "path": "06_controles/resultats/preuves_correspondances_json.csv",
+    "sha256": "da0449f588306d95bbe832ceccf4fa88613be62d8f1aef41ac2e95bbe4c730c4"
+  },
+  {
+    "path": "06_controles/resultats/R16 test/GET_indicateurs__rome_F1610__zonage_commune__territoire_34172.json",
+    "sha256": "6ce89feffaca4d9ef56c113e8a04e69a78e894f4a82a32319760c5fb655b5042"
+  },
+  {
+    "path": "06_controles/resultats/R16 test/GET_territoires__zonage_commune__code_34172.json",
+    "sha256": "246dd80c8479cf9b03977bb6480b5cc9dca8490c95bb31f72b29ead6280c5ff7"
+  },
+  {
+    "path": "06_controles/resultats/R17 test/R17 verif GET secteursrome=F1610&zonage=region&territoire=76.json",
+    "sha256": "7553b5c8bfa56789cac7ddfa151c7e1e6f6e508371aae0252eaa1af69decfa9b"
+  },
+  {
+    "path": "06_controles/resultats/R17 test/R17 verif GET secteurszonage=commune&territoire=34172.json",
+    "sha256": "9cb81a64be6ddecc2fae9872fcf2e201d20ffdc5fb6886494905451a9c1a319d"
+  },
+  {
+    "path": "06_controles/resultats/R17 test/R17GET secteurs.json",
+    "sha256": "97741c37487c5ac438f72969a183549f234b56192b50cc6bdd63f4ec2cc1b28c"
+  },
+  {
+    "path": "06_controles/resultats/R18 test/R18 GET sessions_a_venircertifinfo=112561&zonage=region&territoire=76&onisep=exclure&page=1.json",
+    "sha256": "8a5d87ca60b91095be4b882e9b2ec02aad3ac6b211ff39acfaddb65379ad81ca"
+  },
+  {
+    "path": "06_controles/resultats/R19/R19 GET sessions_en_courscertifinfo=112561&zonage=region&territoire=76&onisep=exclure&page=1.json",
+    "sha256": "9ee1e1406386f32711a09a7d53d14a2ece7a6d7a701b269180994bb630f2caaa"
+  },
+  {
+    "path": "06_controles/resultats/R23 test/GET_competences__code_103659__page_1.json",
+    "sha256": "d376918fe4b118d78a85badd1a79be2d179e097dd220256cb4a75af043349dd6"
+  },
+  {
+    "path": "06_controles/resultats/R23 test/R23 GET competencescode=125416&page=1.json",
+    "sha256": "042ddb2d0f9149fe0cff924dde6ff2efe16e35478ec58f6c5b28fe6f0db7f7bd"
+  },
+  {
+    "path": "06_controles/resultats/R23 test/R23 GET metierscompetence=125416&mode_competence=toutes&page=1.json",
+    "sha256": "6f0d39095e6946ec9acccb10ad16617c2f2dc1ee54535da1c11a13d3bd8e6588"
+  },
+  {
+    "path": "06_controles/resultats/R23 test/R23 GET metierscompetence=125416,103659&mode_competence=au_moins_une&page=1.json",
+    "sha256": "cedbf1a1624d9f66b8be9c2ac43bb760e4848feed694dc874b18fb4525c0e450"
+  },
+  {
+    "path": "06_controles/resultats/R23 test/R23 GET metierscompetence=125416,103659&mode_competence=toutes&page=1.json",
+    "sha256": "b2b26f2e5caa8a6091d684fda481b623303cc17b971c5d1483c82feddc2ff981"
+  },
+  {
+    "path": "06_controles/resultats/R24/erreurs_422_initiales/GET_metiers__contexte__fields_422.json",
+    "sha256": "c1ae64372afe9813c329d7e321fd3d8950b3e28b5b2f45c7dcea47d8b8eea872"
+  },
+  {
+    "path": "06_controles/resultats/R24/erreurs_422_initiales/GET_metiers__sans_contexte__fields_422.json",
+    "sha256": "c1ae64372afe9813c329d7e321fd3d8950b3e28b5b2f45c7dcea47d8b8eea872"
+  },
+  {
+    "path": "06_controles/resultats/R24/R24 GET metiersdomaine=F16&contexte=300782&page=1.json",
+    "sha256": "7312bc1a9eb5abf93e25ca87a99acebf46aa0f93434c4363aa4a1ce5311200df"
+  },
+  {
+    "path": "06_controles/resultats/R24/R24 GET metiersdomaine=F16&sans_contexte=300782&page=1.json",
+    "sha256": "39fc8acf3552ba8438af5e4d6b62451b5d009bdcd32e78700a6e83cad6549bc3"
+  },
+  {
+    "path": "06_controles/VALIDATION_R16_territoires_indicateurs.md",
+    "sha256": "510bfdcebbe1272fdc6b55aa36d3eabd7ac0d55797b4ad41ce3eb4cf9ad92476"
+  },
+  {
+    "path": "06_controles/VALIDATION_R17_territoires_secteurs_V2.md",
+    "sha256": "f73527c6f0aed64331a4eaa1aff37a492151f3ae789988f95d72f9a67a9235f8"
+  },
+  {
+    "path": "06_controles/VALIDATION_R18_certifications_sessions_a_venir.md",
+    "sha256": "86db5b30aebb63f7917a9f280edc7788d77fdfbe76c9a890edb7a043ac6c7212"
+  },
+  {
+    "path": "06_controles/VALIDATION_R19_certifications_sessions_en_cours.md",
+    "sha256": "c24a97cd2ba30f235d1d8e4aa8e80102b641fa4adb68012fc169608b18be2743"
+  },
+  {
+    "path": "06_controles/VALIDATION_R23_competences_metiers.md",
+    "sha256": "28407d3bdfcf1436416919e00a8863935456575362763750b326c926632cb51f"
+  },
+  {
+    "path": "06_controles/VALIDATION_R23_recherche_multicompetences.md",
+    "sha256": "911d127ea0633178948af3d26c8a1d9aaa391fc4de869b1c0912656d1e00f181"
+  },
+  {
+    "path": "06_controles/VALIDATION_R24_contextes_metiers.md",
+    "sha256": "65143bbd929ad46aa79c2a0b8ed75f62bf515f54af66e5513d02afc91e665101"
+  },
+  {
+    "path": "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/01_ANALYSE_DSFR_CHART.md",
+    "sha256": "c7336d66972809cb3071a6a5399bcb75c06cc6ab14b4738aa7295edbe9bb54e8"
+  },
+  {
+    "path": "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/02_CATALOGUE_INDICATEURS_API.md",
+    "sha256": "db66f2c5c9d5b8cf38971a13131c0b52a476e726b221e2f9d658d1dbeb4c4734"
+  },
+  {
+    "path": "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/03_MATRICE_API_GRAPHIQUES.csv",
+    "sha256": "ad7d6f9eb7d7f8fcdf96af165bb9365b50a99c2cd371c26e8430cd040e757b86"
+  },
+  {
+    "path": "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/04_CONCEPTION_UX_VISUALISATIONS.md",
+    "sha256": "597abe8b7bf2df95761dcad4a67479cbc4a1e3b88abec6b6ca3a95196cdbbcef"
+  },
+  {
+    "path": "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/05_COMPOSANTS_MUTUALISABLES.md",
+    "sha256": "ce65fd885dc45de3f1af8a445f13d8a36e2eb136d5e878d1385601513a297722"
+  },
+  {
+    "path": "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/06_REGLES_STATISTIQUES_RGAA.md",
+    "sha256": "9f1a695e59f2206c2a67e8a989cf9c5540dfc4b1b11f58ccb0d75595a1b82ca7"
+  },
+  {
+    "path": "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/07_INTEGRATION_DANS_LES_PARCOURS.md",
+    "sha256": "3fa01d918cebf7bc496f9c73450dfe89490a4dc36c91710e21f79e2e97d156ad"
+  },
+  {
+    "path": "07_parcours/00_REFERENTIEL_COMMUN_DATAVISUALISATION/08_PROMPT_CODEX_INTEGRATION.md",
+    "sha256": "64bb1f7826bf5225c1b3372c80179c353e4a1629d8e49d601490f751d4ce5141"
+  },
+  {
+    "path": "07_parcours/Explorer/01_EXPLORER_V2_FONCTIONNEL.md",
+    "sha256": "40c661e23b19b3f87f0630c17b369db65cc95807d09274e01afc2fa942d3f4dd"
+  },
+  {
+    "path": "07_parcours/Explorer/02_SPECIFICATIONS_API.md",
+    "sha256": "6dc8244dffef5292f2bdb4cece32797a68fd8e35362d92871cbc32e38ecabcc7"
+  },
+  {
+    "path": "07_parcours/Explorer/03_TABLE_CONCEPTION.csv",
+    "sha256": "10c66817574e4481561aefece343aca4fb57611163e2fd75f152c24f297e06b1"
+  },
+  {
+    "path": "07_parcours/Explorer/04_BACKLOG_USER_STORIES.md",
+    "sha256": "9aa3b08e4cd95bd7e5bdd0853ca452084e0ae4c2f6ecf145450ad9de7d5d7718"
+  },
+  {
+    "path": "07_parcours/Explorer/05_PARCOURS_DIAGRAMMES.md",
+    "sha256": "9ba8f02c055327fc2b9a048703fe56b41a362c64368e260ef3c91bcd23f0cb5a"
+  },
+  {
+    "path": "07_parcours/Explorer/06_DECISIONS_ET_POINTS_A_VALIDER.md",
+    "sha256": "303211c4ab0b33b1f2fcde6e0102b39adb4e76b156af64e66c6653d356dfd056"
+  },
+  {
+    "path": "07_parcours/Explorer/07_PROMPT_CODEX.md",
+    "sha256": "e72552078cc8524149e51f2971a81ba7b9918a009f354f4882ffa87c4206af6b"
+  },
+  {
+    "path": "07_parcours/Explorer/08_AUDIT_TECHNIQUE_CODEX.md",
+    "sha256": "67645842c2125cb983f6ded7b07a2c4a74b4b12be74f33b7b6213c1c34d83293"
+  },
+  {
+    "path": "07_parcours/Explorer/09_PLAN_DE_REALISATION.md",
+    "sha256": "e63f2bcda50eb64ca543c8b8af9a721502f7b7c88b48580b4eb3e3086a91e8ac"
+  },
+  {
+    "path": "07_parcours/Explorer/10_DECISIONS_A_ARBITRER.md",
+    "sha256": "1dc45bc54a3a91698be95a842374bbf912cfa65bb5026b574ef4d47ae1bcc873"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/apercus_controle/ARCHITECTURE_EXPERIENCE.png",
+    "sha256": "cfa84e2c692bea68cbe2c4bff87582fe12e2164231929caeffc732ea29d2e3f2"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/apercus_controle/comparateur.png",
+    "sha256": "6899e4b7933c5adecef61953074ee05012e43a926e1d0e60fa84bc0e91a633d0"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/apercus_controle/essentiel.png",
+    "sha256": "9e150351a6e13b92200ad310065d160e9e725df7a6a72d124d470e086f20d7c6"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/apercus_controle/guide.png",
+    "sha256": "39a1453a1008d0ba1ef462e98759edd6b4c13e4fd131515ddb3fdbb0fb2526c7"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/apercus_controle/PLANCHE_VISUALISATIONS.png",
+    "sha256": "1b640ce698785623c641ff9e60e7047f4d441691cefdb0748c341f1ddf680161"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/ARCHITECTURE_EXPERIENCE.svg",
+    "sha256": "2744632e15c287bb6162a30d9824e29a5d3dfea10b7560fd6a8cadb9f02dd06e"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/controle_apercus.ps1",
+    "sha256": "7dafaf9378f43bca3f25c5832453c6f55efcb3a367de050dd781d33d351cdb5e"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/ETATS_ET_ERREURS.svg",
+    "sha256": "0f8972d682f85afb259335d7b28cc8d8d37a43e29bf0868a2d0e02da5d4ffeaf"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/certification.svg",
+    "sha256": "b158bc4e1a0937ad20586b72a73e3e430b235b7082e2bd61b4b98f277cf27166"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/comparateur.svg",
+    "sha256": "e9ca1bb89776d32bd4ac59d21697a7fac27ca4eec25b67aaf3b3513adcf2f80b"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/competences.svg",
+    "sha256": "3cfe3b37a31b4aab2d3491946b0ec0503e8561f95ab9616b68c12bc9cbbb958b"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/domaine.svg",
+    "sha256": "ffa3a2a765738d112b88e6dc8cd229c1bc84cb0a6a6d7cc361259a5dfb9fc84c"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/essentiel.svg",
+    "sha256": "0769b13656a157c9873791a1edbfd61cda9445f3e7ac757ac85800e99bfa8877"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/formacodes.svg",
+    "sha256": "f19eb973f16ef3d3cd9df93e7af46714ad1c4b70ea4d36ff0ab38afd5ff383e2"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/formations.svg",
+    "sha256": "e442c907150bef3153e6483a130116271357de9d49ab05d9fa8ff6c1462a9e70"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/guide.svg",
+    "sha256": "2edbe90f321e145745da41093439b85ac887989fa08983396440b98742576a1b"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/menu.svg",
+    "sha256": "a862c1aea7d1d419112146cf5d405e8f3341bbda7cd0f249c08320309ac52dee"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/mobilites.svg",
+    "sha256": "03f25700ec549e387c415b565353a2a1718b4038a8c03a49de61ff4d6d5d494e"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/pistes.svg",
+    "sha256": "e1c02bc8a10c6b93b43f47bdabe27092226b0a58698c280722d8c546d3501d93"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/prospective.svg",
+    "sha256": "375f20d27d336c0e1d43e3f53b52cd714023c64fa43385cd20ee66232d1c21c6"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/recherche.svg",
+    "sha256": "7bcb5d1b951da633b50351aa3209e454fb953ed0a54f9efdb4b84fe6a3c46729"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/recrutements.svg",
+    "sha256": "f7f419cc3c6f6b1543bf5336e257a5d9b040c6bb3afb483cefea0c2ee358813d"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/resultats-ogr.svg",
+    "sha256": "12a66c655bf6efbc7b1117e40fe5d01412f77e3d825f200fdbbf1a7b948e57b2"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/resultats.svg",
+    "sha256": "60b883786b08810c7e81751c1c52a2546e0491e01e9129693a16f0124520d22e"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/salaires.svg",
+    "sha256": "736d9ab85613512b0cd32617c44b5e8e1339457d6c8c92b7fb81a04b92737397"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/secteurs.svg",
+    "sha256": "14911fa58d666addc3b043d06578c1fdda6ee98a6cce43f3b5c0b086ee828055"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/sources.svg",
+    "sha256": "f80e422eca2b5cdc0e0c0c9b13a29093cbaec3f2de8eda15a805538f48e78793"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/territoires.svg",
+    "sha256": "ea92410cb4c66cb1f78d5709eafa27b8bad71a04a77ace69f2a08f3571bc9dd0"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/mobile/transitions.svg",
+    "sha256": "90b34ab17475217fa22788392ce7fa52c9dfb94f225fd0cb8b9b1b7557e47481"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/PLANCHE_VISUALISATIONS.svg",
+    "sha256": "3173915a47aef7cbc28f2dcdd93e56edfa825dfe0cd29a623b773fce4f0726e9"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/archives/conception_initiale/README.md",
+    "sha256": "46e1d4dda8ed59e9438c790e762af62269e46922465c739b511eba584ce4800a"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/CONCEPTION_UX_UI.md",
+    "sha256": "00402986b4ab51b3d776d4b588d80e4a0d336ba30d1d60203d30dd2a1e528f83"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/ECRANS_STRUCTURE.json",
+    "sha256": "e87e46793eb82e86f5dc859985bd71b47c7938719eced1c74aa8e1b9ccf168c4"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/EMPREINTES_AVANT_UX.json",
+    "sha256": "4849548d6a46d05016857b300c05e3cfef6c2f49ed872debc10b8e06d582b6b1"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/ETAT_FIGMA.json",
+    "sha256": "c1ce2d013192f17f9f134fca42a9fe564c151a8667f35416116cdf5463564c9c"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/LIVRAISON_ET_RECETTE.md",
+    "sha256": "a5f060d536000db901a46b22babfecfeafdc02f4c7819f8396f4ab07b0dac5c9"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/MATRICE_VISUALISATIONS.csv",
+    "sha256": "ce71206f6c6c695b8d20187ca21e9819476253d7edb56ca84519c5e03e3fecc1"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/README.md",
+    "sha256": "809867c31f57b21cf300013cda3bffa599b9854c64eb3566a46fd195d7086c53"
+  },
+  {
+    "path": "07_parcours/Explorer/11_ux_ui/RECETTE_CONCEPTION.json",
+    "sha256": "affcee057021ff39ab4ed2583961b849a0d400dd24a493a69d8171fc57039698"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/apercus/apercu-desktop.png",
+    "sha256": "2ca8d455945bb587f738f896d6bfd4cde36f03790de8df1560d4584c6fe7069c"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/apercus/apercu-mobile.png",
+    "sha256": "93b078f4decc3c756d36080c02d2c349807ba11dccd908d8cca052cb4c61d4dd"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/archives/2026-11-02_avant_rangement/AFFICHAGE_GRAND_PUBLIC.md",
+    "sha256": "10cf43368a57de9b79070f6f23e62542324fcfb45094ecdf47806d8045ef0920"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/archives/2026-11-02_avant_rangement/libelles_publics.js",
+    "sha256": "8fdf0ab6052050c6bfa3b3f3a7e602e6f1cb824689ba14dd194a0ceaf8089e3d"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/archives/2026-11-02_avant_rangement/LIRE_MOI.md",
+    "sha256": "809adfbd964cd74d3ce78409d0b821adf69c41e6a58bf7aaec25c18ba35a741d"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/archives/2026-11-02_avant_rangement/modele_avec_script_initial.html",
+    "sha256": "2c73448cbf15ccceff38df0c5dcccdf3673d36170e05da6886d3d25304ddacba"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/archives/README.md",
+    "sha256": "ab015355ba134e6d321ee1902c21ff67dde025106a8639d776743d247bd41825"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/controle-mobile.html",
+    "sha256": "bb423cff66c95e01a98e4d8ef9895e944f0d51cdbd3719a71b324a69892146af"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/resultats/ASSEMBLAGE.json",
+    "sha256": "f8e5a8705398180bd1ed32773f30bfbf4ec24b807922e6662fdc4088534fc39f"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/resultats/CONTROLE_DESKTOP.json",
+    "sha256": "cb476c39da71077622b1fae8ced9166c2181800ac9e99646e074fed6e1314a84"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/resultats/CONTROLE_MOBILE.json",
+    "sha256": "ccabf9580947d6c176d5e80f4163cb6f0aa37567dc98b0f62265772ba20813bf"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/scripts/extraire_controle.py",
+    "sha256": "f1eab4a2efcdd9fb491dd5d6c057bfa04c6e05472084525ab9ff67f22929e05b"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/scripts/lancer_controles.ps1",
+    "sha256": "cb3fa39fd385ad791bf1dd48fac9d83cbec99f838d831820ebba3df4d8f573b1"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/scripts/verifier_exploration.js",
+    "sha256": "fa83ff6c9c893bfa037790c080c93cefe5ae49113b2a5169352d381fb194ac47"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/scripts/verifier_navigateur.js",
+    "sha256": "f6ee56bdca70bf738bc5abb4b06c14967062d3b8334652b8023c35695b4015ed"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/traces/controle-desktop.dom.html",
+    "sha256": "aa8f68138ad70f84e6a87d2a813a335863eefd4f76b05acbea0f8084a7e5e483"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/traces/controle-mobile.dom.html",
+    "sha256": "5ff29961bfad8e3021f90336d6f7d1f60b5f0a6fa59abba71659a01eeb1b76e7"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/traces/edge-desktop.log",
+    "sha256": "ffa832eb0ab2a4c282d02469f48b6b906a74c818027653299ff7208dd2386bbf"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/controles/traces/edge-mobile.log",
+    "sha256": "9b09524407f4f3ccbd8167b558fd6bbb0beaa52b6b38134117c0f8740224075d"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/documentation/EVOLUTION_STRUCTURE_UX.md",
+    "sha256": "8164a6facce0e92cb5b13402e76b9d5079851bfd275110e80ff440e6f0556c2e"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/documentation/REDACTION_CITOYENNE.md",
+    "sha256": "19f20a038af5819ff8bd0a1c298d9ff05cc26fdf05860f0cd2264d177ff93c05"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/documentation/RETOUR_UX_UTILISATEUR.md",
+    "sha256": "b1c60953311d36e8f0356d44e2c120e61e2dd1a0a25ff7e5dad535cb086e2fa5"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/index.html",
+    "sha256": "9288eb23cf8a5d195c21f6029af27168f0576d7f987322cdb49f2241f3ec5727"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/preuves/PREUVES_LIBELLES.json",
+    "sha256": "b6b8cfd811ba6f2438a28f6a0011d524cd72ee21138c1c74160a60063400f165"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/README.md",
+    "sha256": "221916e71122733174879214bd12c279697dbad7dd4c8591c9c5ca821473131b"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/sources/construire.py",
+    "sha256": "bfe439e3b1ed85ab4fc2c097fcc92a967fb0074fd34534d380433c6e15d5447e"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/sources/donnees_exploration.js",
+    "sha256": "bbc8cd75f42ca80b56ac410a0a67eb51c3abacaa6c700d238222a4fca2359c27"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/sources/experience_exploration.js",
+    "sha256": "45eeddab673e8599a2e3fbb88212dfc54c15d82fbab9b04ba91a1ea0b6eab7da"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/sources/interface_citoyenne.js",
+    "sha256": "7aaee8cbc2a5bcabdaef1004addcaca3fd6fd5fd41b30441eed6ca127a4e33e5"
+  },
+  {
+    "path": "07_parcours/Explorer/12_maquette_html/sources/modele.html",
+    "sha256": "8fc8f628dab531745677bb528d5bb3c97ec1ca00c1fffbeda3e930f7070b6556"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/actualiser_documents.py",
+    "sha256": "8c74c8e6a8bdfcd9905ed84cb8d56dc7df1018fc46a57b3c32a551d180d73b24"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/ajuster.py",
+    "sha256": "42c3b6b066300d2b7d43f64d7fef1dc75f0beea3cf18f482a9921691f050d18d"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/appliquer.py",
+    "sha256": "9eee08b6bb23dc2caa43aaf5f44e912664962c309299a4b3ee4eead0c5522134"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/ETAT_AVANT.zip",
+    "sha256": "c72707a2a69d92b267b548cce658821cb02589b49add4c030eb28729814d5411"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/finaliser_sources.py",
+    "sha256": "f2e43e5ec9fde88611f37515beee2897c11040bcec1869895785020e57e75c4b"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/INVENTAIRE_AVANT.json",
+    "sha256": "21ae3ab87e607c2439a3abf805302544ba205fb86c1a6a94133706e3aeb5848f"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/preparer.py",
+    "sha256": "ba2288704ffd743dc0b36f0841ebc66a840149960511d75dfdb0cc7f982b7e82"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/README.md",
+    "sha256": "6bae5ab61ec6a07e4f4ef0ce64bb805a16de88ca7c1a86d9bdf2052dbc945a17"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/VERIFICATION_EVOLUTION.json",
+    "sha256": "045fe221c923a438e5e67c3607320ec58155832c9afb7de39671b2e099e9d85c"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_evolution_ux/verifier_evolution.py",
+    "sha256": "4bccb9d7888cd3bceb7123b866d9aa7cc47947fb06a9c1129efc11980f693c03"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/actualiser_documents.py",
+    "sha256": "6c982fcfc38657fc9042cdb69929e7abb9fd01b104c5c0c9f79d70095f8ec916"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/CONTROLES_API.json",
+    "sha256": "d028fb45be25642cf1554dfecd5d1ec52cccda656c8fbd99b113761dc72ea1b5"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/DEPLACEMENTS.json",
+    "sha256": "d6aa592262747da949b48bd8554a6c1022af487956343516bbbec4a1af8c8835"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/finaliser.py",
+    "sha256": "0579f00aeb21a371f21fd18c8517855d799e37e7e194ff094a86a286b8c88b1c"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/INVENTAIRE_AVANT.json",
+    "sha256": "6364c731ce84ec2ef432bddbae6ed8401ec40699c57d5a06b11fe333bdf2d047"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/LIVRABLES_L0_AVANT_MISE_A_JOUR.zip",
+    "sha256": "de63b995ddef21afbbb648b7398f75d095c1095136a90564c2fe41ae0ac916c2"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/README.md",
+    "sha256": "647b3cd81e3e048bc6f95592d6d166d3f5192ae2abaf833f27f2b6d63023a503"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/reorganiser.py",
+    "sha256": "208749597168b8add4942e64255dea32cc3cfa8a322d651047d44035892a5317"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/VERIFICATION_RANGEMENT.json",
+    "sha256": "86dbdb7f6ba3e57f3a36c22cc732d41f166fe5b00e45fbd71349fa3f6df318c2"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/2026-11-02_nettoyage/verifier_rangement.py",
+    "sha256": "4dcc13ae28f2ca7b32b01b031d2a4f87ea1ffa87293d7674ae818a7eeb0edb35"
+  },
+  {
+    "path": "07_parcours/Explorer/99_archives/README.md",
+    "sha256": "dda9056bfcfbd9fa9774b69c2933a5ba689ad3302f9d10301891a4126a4fbd2b"
+  },
+  {
+    "path": "07_parcours/Explorer/README.md",
+    "sha256": "59f79f2092dd841da042ecfedb14cd6e269ad3847cc422578996da5a254fc51f"
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "65f81862c67a60c201f7bb7f211f9ed3b1a2bb158ef414ec53ee8c9226ddcead"
+  },
+  {
+    "path": "debug.log",
+    "sha256": "be890e0defa385344739a4655ecab49c930c8e996711894d6ebf9e0fdf12ecb0"
+  },
+  {
+    "path": "JOURNAL_CORRECTIONS_2026-11-01.md",
+    "sha256": "cda7205314a6d10ad51120c2121e1dcd129f6c82704e8bb9cfd782f57b275ff7"
+  },
+  {
+    "path": "LANCER_CONTROLES.cmd",
+    "sha256": "a26af4c1b2aa3ed34ab4c759785f3c7cced42973d2eaebab26ae56f3ac467dbd"
+  },
+  {
+    "path": "MANIFESTE_FICHIERS_SHA256.csv",
+    "sha256": "02a659bb4c92aeaa929bb050b2ad6300d37ec9a42fe6d399d17c8ad5daf9cc4c"
+  },
+  {
+    "path": "README.md",
+    "sha256": "447376e7cc146e4e1e3d3b9f12be902837e9bd969f7fbdee33e36b5f25e62041"
+  },
+  {
+    "path": "scripts/verifier_contrat.ps1",
+    "sha256": "ee6f3d9e070b0ae81de8991f83035b37029d0441c7c47112e9c08878c728a54d"
+  },
+  {
+    "path": "scripts/verifier_contrat.py",
+    "sha256": "5a304395c3eea7634324b48d4e19182d530433ccad33583b964fc414ca81f5c3"
+  },
+  {
+    "path": "scripts/verifier_dossier.py",
+    "sha256": "1885198ad49e9fd24f175703575907d3ddcc8f211d503eaf28135d4327d93d2a"
+  },
+  {
+    "path": "scripts/verifier_echantillons.ps1",
+    "sha256": "7e6b82696b5557d5ecb0e850457546bb0f90ced5b93d4430f9e9bbe4f5612454"
+  },
+  {
+    "path": "scripts/verifier_echantillons.py",
+    "sha256": "40354f1db91def60ae4d8fe83738ecf8b2a52e5f61da210cba9363d2d8e9d412"
+  },
+  {
+    "path": "scripts/verifier_preuves_directes.py",
+    "sha256": "d65fcc6de876822a6298fcbed800066761a28f6aa5974fab0e7f26affc43a053"
+  },
+  {
+    "path": "scripts/verifier_relations_api.py",
+    "sha256": "62648eeb100228898e281b9206cf90128cac1d91cd7ade88038499eb38b5915d"
+  },
+  {
+    "path": "scripts/verifier_schemas_complementaires.py",
+    "sha256": "1689198eebe3e43b44f3b30b40491c41cb50fe83704f605a043f2cf47d9f898a"
+  },
+  {
+    "path": "scripts/verifier_uml_global.py",
+    "sha256": "563dff849f286e8a519524e5bc5279cfcd8b2c637c3d27d015a8083fc99c9038"
+  }
+]

@@ -1,0 +1,18 @@
+@startuml
+hide footbox
+title Echanges techniques - Territoires et mesures
+actor "Client API" as Client
+participant "GET /territoires" as T
+participant "GET /indicateurs" as I
+participant "GET /mesures" as M
+Client -> T : GET /territoires?q={texte}
+T --> Client : items[].zonage, items[].territoire_code
+Client -> M : GET /mesures
+M --> Client : items[].code, grain, champs[], mailles[]
+Client -> I : GET /indicateurs?rome={rome_code}&zonage={zonage}&territoire={territoire_code}
+I --> Client : items[].mesure, grain, maille_reelle, repli, valeurs[]
+note over Client,I
+  Chaque mesure peut changer de maille. Les valeurs[] changent de structure selon mesure.
+  Aucune donnee n est publiee a la commune.
+end note
+@enduml

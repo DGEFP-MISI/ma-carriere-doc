@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-02",
+  "sources_hors_explorer_verifiees": 165,
+  "sources_hors_explorer_modifiees": [],
+  "ids_31_conserves": true,
+  "colonnes_table": 31,
+  "modifications_API_dans_table": [],
+  "liens_documents_actifs_verifies": 119,
+  "liens_casses": [],
+  "html_identique_avant_apres": true,
+  "mesures_catalogue": 29,
+  "controles_html": {
+    "DESKTOP": {
+      "reussis": 108,
+      "echoues": 0
+    },
+    "MOBILE": {
+      "reussis": 108,
+      "echoues": 0
+    }
+  },
+  "nouveaux_tests_HTTP": false,
+  "fichiers_preexistants_introuvables_apres_rangement": []
+}

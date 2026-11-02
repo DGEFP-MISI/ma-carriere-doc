@@ -1,0 +1,267 @@
+{
+  "type": "object",
+  "properties": {
+    "ensemble": {
+      "type": "object",
+      "properties": {
+        "date_debut_defaillances": {
+          "type": "string",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "date_fin_defaillances": {
+          "type": "string",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_creations_etablissements": {
+          "type": "integer",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_creations_etablissements_n1": {
+          "type": "integer",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_defaillances": {
+          "type": "integer",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_etablissements": {
+          "type": "integer",
+          "nullable": true,
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_etablissements_employeurs": {
+          "type": "integer",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_etablissements_n5": {
+          "type": "integer",
+          "nullable": true,
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_salaries_prives": {
+          "type": "integer",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_salaries_prives_n5": {
+          "type": "integer",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "nb_unites_legales": {
+          "type": "integer",
+          "nullable": true,
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "secteur_naf38_code": {
+          "type": "string",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "secteur_naf38_libelle": {
+          "type": "string",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "tx_defaillances_1000_unites_legales": {
+          "type": "number",
+          "nullable": true,
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "tx_evolution_creations_1an": {
+          "type": "number",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "tx_evolution_etablissements_5ans": {
+          "type": "number",
+          "nullable": true,
+          "x-niveau-preuve": "reponse_JSON_observee"
+        },
+        "tx_evolution_salaries_5ans": {
+          "type": "number",
+          "x-niveau-preuve": "reponse_JSON_observee"
+        }
+      },
+      "additionalProperties": true,
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "grain": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date_debut_defaillances": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "date_fin_defaillances": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_creations_etablissements": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_creations_etablissements_n1": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_defaillances": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_etablissements": {
+            "type": "integer",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_etablissements_employeurs": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_etablissements_n5": {
+            "type": "integer",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_salaries_prives": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_salaries_prives_n5": {
+            "type": "integer",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "nb_unites_legales": {
+            "type": "integer",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "secteur_naf38_code": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "secteur_naf38_libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_defaillances_1000_unites_legales": {
+            "type": "number",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_evolution_creations_1an": {
+            "type": "number",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_evolution_etablissements_5ans": {
+            "type": "number",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "tx_evolution_salaries_5ans": {
+            "type": "number",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "rang": {
+            "type": "integer",
+            "x-niveau-preuve": "contrat_interface_uniquement"
+          },
+          "nb_actifs_metier": {
+            "type": "integer",
+            "nullable": true,
+            "x-niveau-preuve": "contrat_interface_uniquement"
+          },
+          "tx_actifs_metier": {
+            "type": "number",
+            "nullable": true,
+            "x-niveau-preuve": "contrat_interface_uniquement"
+          }
+        },
+        "additionalProperties": true,
+        "x-niveau-preuve": "contrat_interface_uniquement_items_vides_dans_4_JSON"
+      },
+      "x-niveau-preuve": "reponse_JSON_observee",
+      "description": "4 réponses observées avec items=[] : champs documentés dans le contrat mais non constatés dans les objets items."
+    },
+    "maille_demandee": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "maille_reelle": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "metier_maille": {
+      "description": "Aucune valeur non nulle observée dans les échantillons ; type non déterminé.",
+      "nullable": true,
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "millesime": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "repli": {
+      "type": "boolean",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "rome_code": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "source_libelle": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "territoire": {
+      "type": "string",
+      "nullable": true,
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "territoire_code": {
+      "type": "string",
+      "nullable": true,
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "territoire_libelle": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "territoires": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true,
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "libelle": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          },
+          "maille": {
+            "type": "string",
+            "x-niveau-preuve": "reponse_JSON_observee"
+          }
+        },
+        "additionalProperties": true,
+        "x-niveau-preuve": "reponse_JSON_observee"
+      },
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "total": {
+      "type": "integer",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    },
+    "zonage": {
+      "type": "string",
+      "x-niveau-preuve": "reponse_JSON_observee"
+    }
+  },
+  "additionalProperties": true,
+  "x-niveau-preuve": "JSON_OBSERVE_et_contrat",
+  "x-nombre-echantillons": 4,
+  "description": "Modèle complémentaire de travail, NON OFFICIEL. Inféré des JSON collectés et lu avec le contrat du 19/10/2026. Ne garantit pas les variantes non testées."
+}

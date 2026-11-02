@@ -1,0 +1,727 @@
+{
+  "viewport": {
+    "width": 1410,
+    "height": 1005
+  },
+  "checks": [
+    {
+      "name": "Ouverture sur Explorer",
+      "ok": true
+    },
+    {
+      "name": "Écran essentiel",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement essentiel",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public essentiel",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne essentiel",
+      "ok": true
+    },
+    {
+      "name": "Écran competences",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement competences",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public competences",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne competences",
+      "ok": true
+    },
+    {
+      "name": "Écran recrutements",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement recrutements",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public recrutements",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne recrutements",
+      "ok": true
+    },
+    {
+      "name": "Écran salaires",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement salaires",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public salaires",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne salaires",
+      "ok": true
+    },
+    {
+      "name": "Écran territoires",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement territoires",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public territoires",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne territoires",
+      "ok": true
+    },
+    {
+      "name": "Écran mobilites",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement mobilites",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public mobilites",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne mobilites",
+      "ok": true
+    },
+    {
+      "name": "Écran prospective",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement prospective",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public prospective",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne prospective",
+      "ok": true
+    },
+    {
+      "name": "Écran secteurs",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement secteurs",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public secteurs",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne secteurs",
+      "ok": true
+    },
+    {
+      "name": "Écran formations",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement formations",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public formations",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne formations",
+      "ok": true
+    },
+    {
+      "name": "Écran recherche",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement recherche",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public recherche",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne recherche",
+      "ok": true
+    },
+    {
+      "name": "Écran resultats",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement resultats",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public resultats",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne resultats",
+      "ok": true
+    },
+    {
+      "name": "Écran certification",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement certification",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public certification",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne certification",
+      "ok": true
+    },
+    {
+      "name": "Écran domaine",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement domaine",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public domaine",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne domaine",
+      "ok": true
+    },
+    {
+      "name": "Écran guide",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement guide",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public guide",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne guide",
+      "ok": true
+    },
+    {
+      "name": "Écran resultats-ogr",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement resultats-ogr",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public resultats-ogr",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne resultats-ogr",
+      "ok": true
+    },
+    {
+      "name": "Écran comparateur",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement comparateur",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public comparateur",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne comparateur",
+      "ok": true
+    },
+    {
+      "name": "Écran pistes",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement pistes",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public pistes",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne pistes",
+      "ok": true
+    },
+    {
+      "name": "Écran formacodes",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement formacodes",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public formacodes",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne formacodes",
+      "ok": true
+    },
+    {
+      "name": "Écran transitions",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement transitions",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public transitions",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne transitions",
+      "ok": true
+    },
+    {
+      "name": "Écran sources",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement sources",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public sources",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne sources",
+      "ok": true
+    },
+    {
+      "name": "Écran menu",
+      "ok": true
+    },
+    {
+      "name": "Pas de débordement menu",
+      "ok": true
+    },
+    {
+      "name": "Libellés grand public menu",
+      "ok": true
+    },
+    {
+      "name": "Aucune mention interne menu",
+      "ok": true
+    },
+    {
+      "name": "Ajout piste F1610",
+      "ok": true
+    },
+    {
+      "name": "Pas de doublon",
+      "ok": true
+    },
+    {
+      "name": "Deux pistes affichées",
+      "ok": true
+    },
+    {
+      "name": "Retrait piste",
+      "ok": true
+    },
+    {
+      "name": "Recherche locale",
+      "ok": true
+    },
+    {
+      "name": "R23 au moins une",
+      "ok": true
+    },
+    {
+      "name": "R23 toutes",
+      "ok": true
+    },
+    {
+      "name": "Combinaison sans fixture non simulée",
+      "ok": true
+    },
+    {
+      "name": "Intention certification",
+      "ok": true
+    },
+    {
+      "name": "Sessions en cours réellement embarquées",
+      "ok": true
+    },
+    {
+      "name": "Comparateur marché",
+      "ok": true
+    },
+    {
+      "name": "Comparateur formation",
+      "ok": true
+    },
+    {
+      "name": "Dialogue territoire",
+      "ok": true
+    },
+    {
+      "name": "29 mesures",
+      "ok": true
+    },
+    {
+      "name": "Salaire expliqué en langage courant",
+      "ok": true
+    },
+    {
+      "name": "Périmètre du salaire préservé",
+      "ok": true
+    },
+    {
+      "name": "Valeur source du salaire inchangée",
+      "ok": true
+    },
+    {
+      "name": "Catégorie de compétence réellement fournie",
+      "ok": true
+    },
+    {
+      "name": "Zéro et absence restent distincts",
+      "ok": true
+    },
+    {
+      "name": "Deux sens de lecture des parcours",
+      "ok": true
+    },
+    {
+      "name": "Changement du sens des parcours",
+      "ok": true
+    },
+    {
+      "name": "Lecture des perspectives par région",
+      "ok": true
+    },
+    {
+      "name": "Quatre questions principales",
+      "ok": true
+    },
+    {
+      "name": "Mobilités et prospective restent accessibles",
+      "ok": true
+    },
+    {
+      "name": "Pas de mur de chiffres en première lecture",
+      "ok": true
+    },
+    {
+      "name": "Recherche disponible dans la fiche",
+      "ok": true
+    },
+    {
+      "name": "Lien d’évitement sans changer de page",
+      "ok": true
+    },
+    {
+      "name": "Saisie conservée entre les fiches",
+      "ok": true
+    },
+    {
+      "name": "Focus sur le titre après navigation",
+      "ok": true
+    },
+    {
+      "name": "Recherche de certification issue du catalogue",
+      "ok": true
+    },
+    {
+      "name": "Focus conservé à la fin de la recherche",
+      "ok": true
+    },
+    {
+      "name": "Sélection explicite de la certification",
+      "ok": true
+    },
+    {
+      "name": "Fiche du certificat sélectionné",
+      "ok": true
+    },
+    {
+      "name": "Mode de recherche conservé",
+      "ok": true
+    },
+    {
+      "name": "Domaine trouvé par son nom",
+      "ok": true
+    },
+    {
+      "name": "Fiche du domaine sélectionné",
+      "ok": true
+    },
+    {
+      "name": "Les métiers restent dans le domaine choisi",
+      "ok": true
+    },
+    {
+      "name": "Filtres sans étapes numérotées",
+      "ok": true
+    },
+    {
+      "name": "Filtres accessibles simultanément",
+      "ok": true
+    },
+    {
+      "name": "Choix libre des deux métiers",
+      "ok": true
+    },
+    {
+      "name": "Pas de chiffres du couvreur attribués aux autres métiers",
+      "ok": true
+    },
+    {
+      "name": "Comparaison détaillée conservée",
+      "ok": true
+    },
+    {
+      "name": "Inversion des métiers",
+      "ok": true
+    },
+    {
+      "name": "Deux métiers identiques signalés",
+      "ok": true
+    },
+    {
+      "name": "Comparer depuis la fiche prend le bon métier",
+      "ok": true
+    },
+    {
+      "name": "Comparaison depuis deux pistes",
+      "ok": true
+    },
+    {
+      "name": "Territoire de référence observé",
+      "ok": true
+    },
+    {
+      "name": "Le lieu sélectionné change",
+      "ok": true
+    },
+    {
+      "name": "Pas de transposition des chiffres de Montpellier",
+      "ok": true
+    },
+    {
+      "name": "Le choix territorial reste visible dans la recherche",
+      "ok": true
+    },
+    {
+      "name": "Sélection conservée dans la session",
+      "ok": true
+    },
+    {
+      "name": "Reprise de la sélection en session",
+      "ok": true
+    },
+    {
+      "name": "Reprise d’un fichier de sélection",
+      "ok": true
+    },
+    {
+      "name": "Un identifiant inconnu n’ajoute pas de données",
+      "ok": true
+    },
+    {
+      "name": "Une réponse périmée ne remplace pas la nouvelle",
+      "ok": true
+    },
+    {
+      "name": "Reflow et titre alternatives",
+      "ok": true
+    },
+    {
+      "name": "Reflow et titre certification/114487",
+      "ok": true
+    },
+    {
+      "name": "Reflow et titre domaine/F16",
+      "ok": true
+    },
+    {
+      "name": "Bibliothèques officielles enregistrées",
+      "ok": true
+    },
+    {
+      "name": "Zéro, absence, confidentialité distincts",
+      "ok": true
+    },
+    {
+      "name": "Graphiques chargés à la demande",
+      "ok": true
+    },
+    {
+      "name": "Barres réellement dessinées",
+      "ok": true
+    },
+    {
+      "name": "Quantiles annuels issus du JSON",
+      "ok": true
+    },
+    {
+      "name": "Table officielle réellement rendue",
+      "ok": true
+    },
+    {
+      "name": "Icône officielle du tableau chargée",
+      "ok": true
+    },
+    {
+      "name": "Bascule accessible vers tableau",
+      "ok": true
+    },
+    {
+      "name": "Table : mêmes valeurs et en-têtes",
+      "ok": true
+    },
+    {
+      "name": "Reflow graphique salaires",
+      "ok": true
+    },
+    {
+      "name": "Courbe mensuelle réelle",
+      "ok": true
+    },
+    {
+      "name": "Carte officielle réellement dessinée",
+      "ok": true
+    },
+    {
+      "name": "Codes carte vérifiés et valeurs conservées",
+      "ok": true
+    },
+    {
+      "name": "Zone sans donnée neutralisée visuellement",
+      "ok": true
+    },
+    {
+      "name": "Absence sur la carte ne signifie pas zéro",
+      "ok": true
+    },
+    {
+      "name": "Reflow carte",
+      "ok": true
+    },
+    {
+      "name": "Repère national publié sans NaN",
+      "ok": true
+    },
+    {
+      "name": "Carte départementale rendue",
+      "ok": true
+    },
+    {
+      "name": "Passerelle territoriale utilise les lieux observés",
+      "ok": true
+    },
+    {
+      "name": "Deux régions filtrées sans fusion de grains",
+      "ok": true
+    },
+    {
+      "name": "Retour au classement régional complet",
+      "ok": true
+    },
+    {
+      "name": "Projection réellement dessinée",
+      "ok": true
+    },
+    {
+      "name": "Valeurs négatives conservées",
+      "ok": true
+    },
+    {
+      "name": "Zone graphique atteignable au clavier",
+      "ok": true
+    },
+    {
+      "name": "Carte prospective réelle",
+      "ok": true
+    },
+    {
+      "name": "Perspective conserve le chiffre régional",
+      "ok": true
+    },
+    {
+      "name": "Mobilités origines réellement dessinées",
+      "ok": true
+    },
+    {
+      "name": "Aucune barre personnalisée restante",
+      "ok": true
+    },
+    {
+      "name": "Insertion : populations séparées",
+      "ok": true
+    },
+    {
+      "name": "Null n’est pas représenté par zéro",
+      "ok": true
+    },
+    {
+      "name": "DataBox chiffre clé affiche zéro",
+      "ok": true
+    },
+    {
+      "name": "Table toujours accessible sans graphique",
+      "ok": true
+    },
+    {
+      "name": "Comparateur conserve les deux sélecteurs",
+      "ok": true
+    },
+    {
+      "name": "Comparaison : aucun chiffre emprunté à un autre métier",
+      "ok": true
+    },
+    {
+      "name": "Pas de ressource distante",
+      "ok": true
+    },
+    {
+      "name": "Aucune erreur JavaScript",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "passed": 179,
+  "failed": 0
+}

@@ -1,0 +1,736 @@
+{
+  "archive": "API_DGEFP_RCO_REFERENCE_V3_PROPRE.zip",
+  "sha256": "093f47a17caf5b9b5b18306d9d4a5924a543084ca1a355ab443f08b8b5c8e8be",
+  "fichiers": [
+    {
+      "path": "01_sources/contrat_interface_2026-10-19.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "01_sources/openapi/docs_json_interface.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "01_sources/openapi/swagger_precedent.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/A_LIRE.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/certifications/response_certifications-certifinfo.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/certifications/response_certifications.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/certifications/response_certificationsblocs.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/certifications/response_formacode.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_Tx_postes_a_pourvoir.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_creations_nettes_emplois.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_departs_fin_carriere.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_desequilibre_potentiel.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_emplois_2019.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_prospectivemetiers_poste a  pourvoir.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_tx_creations_nettes_emplois.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_tx_departs_fin_carriere.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/ProspectiveMetier/response_tx_desequilibre_potentiel.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Recrutementregions/response_Recrutement France CLPE projet.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Recrutementregions/response_Recrutement France departement projet.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Recrutementregions/response_Recrutement france region Projet.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Recrutementregions/response_indicateurs.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Recrutementregions/response_mesures.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Secteurs/response_Departement.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Secteurs/response_FRANCE.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Secteurs/response_clpe.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/Secteurs/response_secteurnaf.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_destination 15-29 ans.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_destination 30-39 ans.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_destination 40-49 ans.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_destination 50-59 ans.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_destination 60 ans ou plus.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_destination.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_origine 15-29 ans.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_origine 30-39 ans.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_origine 40-49 ans.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_origine 50-59 ans.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_origine 60 ans ou plus.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/mobilites/response_origine.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospective_regions/response_1793525580226.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_creations_nettes_emplois.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_departs_fin_carriere.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_desequilibre_potentiel.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_emplois_2019.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_part_emploi.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_postes_a_pourvoir.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_specificite.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_tx_creations_nettes_emplois.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_tx_departs_fin_carriere.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_tx_postes_a_pourvoir.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/prospectiveregions/response_x_desequilibre_potentiel.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/response_salairessecteurs.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/salaires/response_departement.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/indicateurs/salaires/response_regions.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/inventaire_echantillons.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/metiers/response_metiers-rome.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/metiers/response_metiers{rome}competences.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/sessions/response_sessions_a_venir.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/sessions/response_sessions_en_cours.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/territoires/response_Commune.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/territoires/response_clpe.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/territoires/response_departement.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "02_reponses_observees/territoires/response_regions.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/A_LIRE_COMPLEMENTS.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/champs_observes_tous_endpoints.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/dictionnaire_initial.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/docs_json_ENRICHI_NON_OFFICIEL.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modele_valeurs_par_mesure.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/domaines.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/indicateurs.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/mesures.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/mobilites.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/prospective_metiers.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/prospective_regions.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/recrutements.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/salaires.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/salaires_secteurs.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/modeles_reponses/secteurs.schema.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "03_catalogue/routes_openapi.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/A_LIRE_CONTROLE_AUTOMATIQUE.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/CHAINES_APPELS_API.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/METHODE_VERIFICATION.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/PREUVES_ET_LIMITES.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/STATUTS_EN_COURS.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/audit_precedent/01_Audit_21_endpoints.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/audit_precedent/02_4_ecarts_de_champs.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/audit_precedent/03_Matrice_relations_appels_API.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/audit_precedent/04_Points_a_valider_dev.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/audit_precedent/README_Audit.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/matrice_liens_controles.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "04_relations/matrice_statuts_apres_tests.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/00_modele_global/00_LIRE_EN_PREMIER.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/00_modele_global/01_MODELE_LOGIQUE_API_V3.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/00_modele_global/02_CARTE_21_GET_API.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/00_modele_global/03_EXEMPLES_CHAINAGES_GET.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/00_modele_global/04_INVENTAIRE_EXACT_21_GET.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/A_LIRE.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/A_LIRE_MODELE_GLOBAL.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/00_LIRE_AVANT_UTILISATION.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/01_MODELE_LOGIQUE_GLOBAL.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/02_CARTE_DES_21_ENDPOINTS.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/03_STRUCTURE_DES_REPONSES_JSON.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/APER#U251c#U00e7U_CARTE_GLOBALE.dot",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/APER#U251c#U00e7U_CARTE_GLOBALE.svg",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/API_RCO_UML_00_Associations.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/API_RCO_UML_01_Certifications.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/API_RCO_UML_02_Metiers_Competences.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/API_RCO_UML_03_Indicateurs_Mesures.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/API_RCO_UML_04_Emploi_Prospective.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/API_RCO_UML_05_Territoires_Sessions.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/_archives_non_reference/NOTICE_MODELES_ANTERIEURS.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/sequences_api/01_codes_rome_ogr.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/sequences_api/02_certifications_blocs_formacodes.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/sequences_api/03_territoires_mesures.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "05_uml/sequences_api/04_granularites_et_limites.puml",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/A_LIRE.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/CONTROLE_R24_ERREUR_422_A_RETESTER.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/RAPPORT_VERIFICATION_FINALE.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/VALIDATION_R16_territoires_indicateurs.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/VALIDATION_R17_territoires_secteurs_V2.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/VALIDATION_R18_certifications_sessions_a_venir.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/VALIDATION_R19_certifications_sessions_en_cours.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/VALIDATION_R23_competences_metiers.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/VALIDATION_R23_recherche_multicompetences.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/VALIDATION_R24_contextes_metiers.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/_archives_non_reference/R17_ancien_compte_rendu_partiel.md",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R16 test/GET_indicateurs__rome_F1610__zonage_commune__territoire_34172.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R16 test/GET_territoires__zonage_commune__code_34172.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R17 test/R17 verif GET secteursrome=F1610&zonage=region&territoire=76.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R17 test/R17 verif GET secteurszonage=commune&territoire=34172.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R17 test/R17GET secteurs.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R18 test/R18 GET sessions_a_venircertifinfo=112561&zonage=region&territoire=76&onisep=exclure&page=1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R19/R19 GET sessions_en_courscertifinfo=112561&zonage=region&territoire=76&onisep=exclure&page=1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R23 test/GET_competences__code_103659__page_1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R23 test/R23 GET competencescode=125416&page=1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R23 test/R23 GET metierscompetence=125416&mode_competence=toutes&page=1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R23 test/R23 GET metierscompetence=125416,103659&mode_competence=au_moins_une&page=1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R23 test/R23 GET metierscompetence=125416,103659&mode_competence=toutes&page=1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R24/R24 GET metiersdomaine=F16&contexte=300782&page=1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R24/R24 GET metiersdomaine=F16&sans_contexte=300782&page=1.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R24/erreurs_422_initiales/GET_metiers__contexte__fields_422.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/R24/erreurs_422_initiales/GET_metiers__sans_contexte__fields_422.json",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/comparaison_echantillons.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/comparaison_openapi.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/comparaison_schemas_complementaires.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/controle_relations_api.csv",
+      "present": true,
+      "identique": true
+    },
+    {
+      "path": "06_controles/resultats/preuves_correspondances_json.csv",
+      "present": true,
+      "identique": true
+    }
+  ]
+}

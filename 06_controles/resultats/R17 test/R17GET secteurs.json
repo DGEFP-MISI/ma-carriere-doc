@@ -1,0 +1,62 @@
+{
+  "zonage": "commune",
+  "territoire": "34172",
+  "territoires": [
+    {
+      "maille": "com",
+      "code": "34172",
+      "libelle": "Montpellier"
+    },
+    {
+      "maille": "clpe",
+      "code": "CLPE34003",
+      "libelle": "Montpellier"
+    },
+    {
+      "maille": "dep",
+      "code": "34",
+      "libelle": "HERAULT"
+    },
+    {
+      "maille": "reg",
+      "code": "76",
+      "libelle": "OCCITANIE"
+    },
+    {
+      "maille": "nat",
+      "code": null,
+      "libelle": "France"
+    }
+  ],
+  "maille_demandee": "com",
+  "maille_reelle": "clpe",
+  "territoire_code": "CLPE34003",
+  "territoire_libelle": "Montpellier",
+  "repli": true,
+  "rome_code": "F1610",
+  "metier_maille": null,
+  "source_libelle": "INSEE - SIDE ; URSSAF - établissements employeurs et effectifs salariés ; BODACC ; calculs RCO",
+  "grain": "secteur_naf38",
+  "millesime": "SIDE 2024-2025, URSSAF 2025, BODACC 2026",
+  "ensemble": {
+    "date_debut_defaillances": "2026-01-01",
+    "date_fin_defaillances": "2026-09-30",
+    "nb_creations_etablissements": 20064,
+    "nb_creations_etablissements_n1": 19185,
+    "nb_defaillances": 519,
+    "nb_etablissements": null,
+    "nb_etablissements_employeurs": 24543,
+    "nb_etablissements_n5": null,
+    "nb_salaries_prives": 227013,
+    "nb_salaries_prives_n5": 205413,
+    "nb_unites_legales": null,
+    "secteur_naf38_code": "ENS",
+    "secteur_naf38_libelle": "Ensemble des secteurs",
+    "tx_defaillances_1000_unites_legales": null,
+    "tx_evolution_creations_1an": 4.6,
+    "tx_evolution_etablissements_5ans": null,
+    "tx_evolution_salaries_5ans": 10.5
+  },
+  "items": [],
+  "total": 0
+}
