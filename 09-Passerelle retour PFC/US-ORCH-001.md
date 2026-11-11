@@ -4,7 +4,7 @@
 
 ### US-ORCH-001 — Question sans métier cible
 
-**Scénario :** O01 · **Personas de test :** PER-FOR-001, PER-FOR-004, PER-FOR-008 · **Expérience+ :** D09, D10  
+**Scénario :** O01 · **Personas de test :** PER-FOR-001, PER-FOR-004, PER-FOR-008 · 
 **Source utilisateur :** F068 / SRC022 ; FR-02.
 
 #### User Story
@@ -33,6 +33,4 @@ Identifier l’intention de clarification ; ouvrir l’exploration par activité
 #### À joindre à la recette
 Capture de la question et de la réponse ; référence du GET métier/certification le cas échéant ; capture du CTA ; contrôle du lien et de la destination ; décision sur l’opportunité de présenter cette passerelle dans le MVP.
 
----
 
-**Traçabilité :** les questions scénarisées ne sont pas nécessairement des citations littérales des forums. Les liens et conditions des services tiers sont à vérifier avant mise en production.
