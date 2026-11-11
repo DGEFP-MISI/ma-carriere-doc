@@ -1,0 +1,38 @@
+# MaCarrière — US-ORCH-018
+
+**Statut :** proposition de recette à arbitrer · **Public prioritaire :** actifs occupés · **Rôle :** information et orchestration, sans diagnostic ni décision d’éligibilité.
+
+### US-ORCH-018 — Accompagnement vers l’emploi
+
+**Scénario :** O21 · **Personas de test :** PER-FOR-001, PER-FOR-004, PER-FOR-009 · **Expérience+ :** D09 ; cartes 027, 031–034  
+**Source utilisateur :** F045/SRC027 ; FR-02.
+
+#### User Story
+**ETQ** usager ou usagère qui exprime une question sur son parcours, **je veux** obtenir l’information pertinente et accéder au bon service, **afin de** savoir où poursuivre ma démarche sans être soumis à un diagnostic.
+
+#### Constat
+La réponse dépend du type d’accompagnement et du statut ; les services ne sont pas interchangeables.
+
+#### Exemple à reproduire
+> « Je cherche un emploi et je ne sais pas vers qui aller. »
+
+#### Comportement attendu
+Montrer offres et métiers pertinents, puis proposer France Travail ou APEC/Cap emploi seulement si la demande correspond à leurs missions.
+
+#### Passerelle(s) et lien(s)
+**CTA MaCarrière :** « Voir offres et métiers ». **Service(s) :** France Travail / APEC / Cap emploi.  
+**URL source :** [France Travail](https://candidat.francetravail.fr/offres/recherche) · [APEC](https://www.apec.fr/candidat/accompagnement.html) · [Cap emploi](https://www.capemploi.info/).
+
+#### Critères d'acceptation
+- **Étant donné** la question de l’exemple, **quand** MaCarrière répond, **alors** la réponse traite l’intention et ne se limite pas à une suggestion générique de formation.
+- **Étant donné** que des données métiers ou certifications pertinentes sont disponibles, **alors** elles sont présentées avec leur source et leurs limites, sans créer de chiffres ou de conditions d’accès.
+- **Étant donné** que la démarche relève d’un service tiers, **alors** un lien explicite vers ce service est proposé, avec une explication de son rôle.
+- **Étant donné** que la question ne justifie pas une passerelle spécifique, **alors** MaCarrière ne multiplie pas les liens non pertinents.
+- **Dans tous les cas**, aucun score, diagnostic, prescription ou décision d’éligibilité n’est produit.
+
+#### À joindre à la recette
+Capture de la question et de la réponse ; référence du GET métier/certification le cas échéant ; capture du CTA ; contrôle du lien et de la destination ; décision sur l’opportunité de présenter cette passerelle dans le MVP.
+
+---
+
+**Traçabilité :** les questions scénarisées ne sont pas nécessairement des citations littérales des forums. Les liens et conditions des services tiers sont à vérifier avant mise en production.
