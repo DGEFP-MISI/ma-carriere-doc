@@ -4,7 +4,7 @@
 
 ### US-ORCH-002 — Transférer ses compétences
 
-**Scénario :** O02, O12 · **Personas de test :** PER-FOR-001, PER-FOR-007, PER-FOR-009 · **Expérience+ :** D09, D13, D24  
+**Scénario :** O02, O12 · **Personas de test :** PER-FOR-001, PER-FOR-007, PER-FOR-009 · 
 **Source utilisateur :** F039/R11 ; FR-04, FR-05.
 
 #### User Story
@@ -33,6 +33,3 @@ Restituer les métiers et compétences identifiés par l’API ; indiquer ce qui
 #### À joindre à la recette
 Capture de la question et de la réponse ; référence du GET métier/certification le cas échéant ; capture du CTA ; contrôle du lien et de la destination ; décision sur l’opportunité de présenter cette passerelle dans le MVP.
 
----
-
-**Traçabilité :** les questions scénarisées ne sont pas nécessairement des citations littérales des forums. Les liens et conditions des services tiers sont à vérifier avant mise en production.
